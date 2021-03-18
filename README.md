@@ -10,4 +10,7 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
 <ul>
   <li>Improved base textures for the cockpit</li>
   <li>Made the CDU 3D and added nightlighting</li>
+  <li>Improved the Flaphandle and engine cutoff switches</li>
+  <li>Added nightlight with switch controls (generic renderer is enough)</li>
+  <li>Firewarning on the engine-cutoff and fire extinguishers</li>
 <ul>
