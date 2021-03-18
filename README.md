@@ -5,3 +5,9 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
 # Currently being developed by:
 <b>Itmam Mahmud (Sadia2000/AVIONADE)</b><br><br>
 <b>Mohammed Aissa (aka Uncle Aissa)</b>
+<br><br><br>
+#ChangeLog
+<ul>
+  <li>Improved Textures for the Throttle Quadrants</li>
+  <li>Made the CDU 3D and added nightlighting</li>
+<ul>
