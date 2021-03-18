@@ -1,0 +1,1797 @@
+<PropertyList>
+
+<path>boeing.ac</path>
+
+<animation> 
+	<type>material</type> 
+	<texture alias="../../texture"/> 
+</animation>
+
+<effect>
+	<inherits-from>Effects/lightmap</inherits-from>
+	<parameters>
+		<texture n="1">
+			<image>Aircraft/Instruments-3d/cdu/boeing_lightmap.png</image>
+		</texture>
+		<condition><use>/instrumentation/cdu/serviceable</use></condition>
+		<factor><use>/controls/lighting/panel-norm</use></factor>
+	</parameters>
+	<object-name>CDU</object-name>
+ 	<object-name>Btn.A</object-name>
+	<object-name>Btn.B</object-name>
+	<object-name>Btn.C</object-name>
+	<object-name>Btn.D</object-name>
+	<object-name>Btn.E</object-name>
+	<object-name>Btn.F</object-name>
+	<object-name>Btn.G</object-name>
+	<object-name>Btn.H</object-name>
+	<object-name>Btn.I</object-name>
+	<object-name>Btn.J</object-name>
+	<object-name>Btn.K</object-name>
+	<object-name>Btn.L</object-name>
+	<object-name>Btn.M</object-name>
+	<object-name>Btn.N</object-name>
+	<object-name>Btn.O</object-name>
+	<object-name>Btn.P</object-name>
+	<object-name>Btn.Q</object-name>
+	<object-name>Btn.R</object-name>
+	<object-name>Btn.S</object-name>
+	<object-name>Btn.T</object-name>
+	<object-name>Btn.U</object-name>
+	<object-name>Btn.V</object-name>
+	<object-name>Btn.W</object-name>
+	<object-name>Btn.X</object-name>
+	<object-name>Btn.Y</object-name>
+	<object-name>Btn.Z</object-name>
+	<object-name>Btn.zero</object-name>
+	<object-name>Btn.num1</object-name>
+	<object-name>Btn.num2</object-name>
+	<object-name>Btn.num3</object-name>
+	<object-name>Btn.num4</object-name>
+	<object-name>Btn.num5</object-name>
+	<object-name>Btn.num6</object-name>
+	<object-name>Btn.num7</object-name>
+	<object-name>Btn.num8</object-name>
+	<object-name>Btn.num9</object-name>
+	<object-name>Btn.period</object-name>
+	<object-name>Btn.plusminus</object-name>
+	<object-name>Btn.sp</object-name>
+	<object-name>Btn.slash</object-name>
+	<object-name>Btn.del</object-name>
+	<object-name>Btn.clr</object-name>
+	<object-name>Btn.init-ref</object-name>
+	<object-name>Btn.rte</object-name>
+	<object-name>Btn.dep-arr</object-name>
+	<object-name>Btn.altn</object-name>
+	<object-name>Btn.vnav</object-name>
+	<object-name>Btn.fix</object-name>
+	<object-name>Btn.legs</object-name>
+	<object-name>Btn.hold</object-name>
+	<object-name>Btn.fmc-comm</object-name>
+	<object-name>Btn.prog</object-name>
+	<object-name>Btn.exec</object-name>
+	<object-name>Btn.menu</object-name>
+	<object-name>Btn.nav-rad</object-name>
+	<object-name>Btn.prev-page</object-name>
+	<object-name>Btn.next-page</object-name>
+	<object-name>Btn.side.l.1</object-name>
+	<object-name>Btn.side.l.2</object-name>
+	<object-name>Btn.side.l.3</object-name>
+	<object-name>Btn.side.l.4</object-name>
+	<object-name>Btn.side.l.5</object-name>
+	<object-name>Btn.side.l.6</object-name>
+	<object-name>Btn.side.r.1</object-name>
+	<object-name>Btn.side.r.2</object-name>
+	<object-name>Btn.side.r.3</object-name>
+	<object-name>Btn.side.r.4</object-name>
+	<object-name>Btn.side.r.5</object-name>
+	<object-name>Btn.side.r.6</object-name>
+</effect>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.104</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/title</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.043</y-m>
+		<z-m> 0.103</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/page</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.045</y-m>
+		<z-m> 0.097</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line1/left-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.049</y-m>
+		<z-m> 0.092</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line1/left</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.097</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line1/center-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.092</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line1/center</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.045</y-m>
+		<z-m> 0.097</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line1/right-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.049</y-m>
+		<z-m> 0.092</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line1/right</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.045</y-m>
+		<z-m> 0.085</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line2/left-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.049</y-m>
+		<z-m> 0.080</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line2/left</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.085</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line2/center-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.080</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line2/center</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.045</y-m>
+		<z-m> 0.085</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line2/right-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.049</y-m>
+		<z-m> 0.080</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line2/right</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.045</y-m>
+		<z-m> 0.073</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line3/left-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.049</y-m>
+		<z-m> 0.068</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line3/left</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.073</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line3/center-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.068</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line3/center</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.045</y-m>
+		<z-m> 0.073</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line3/right-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.049</y-m>
+		<z-m> 0.068</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line3/right</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.045</y-m>
+		<z-m> 0.061</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line4/left-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.049</y-m>
+		<z-m> 0.056</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line4/left</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.061</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line4/center-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.056</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line4/center</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.045</y-m>
+		<z-m> 0.061</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line4/right-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.049</y-m>
+		<z-m> 0.056</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line4/right</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.045</y-m>
+		<z-m> 0.049</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line5/left-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.049</y-m>
+		<z-m> 0.044</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line5/left</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.049</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line5/center-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.044</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line5/center</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.045</y-m>
+		<z-m> 0.049</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line5/right-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.049</y-m>
+		<z-m> 0.044</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line5/right</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.045</y-m>
+		<z-m> 0.037</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line6/left-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m>-0.049</y-m>
+		<z-m> 0.032</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line6/left</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>left-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.037</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line6/center-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.032</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line6/center</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.045</y-m>
+		<z-m> 0.037</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line6/right-title</property>
+			<character-size type="double">0.004</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.049</y-m>
+		<z-m> 0.032</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/output/line6/right</property>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>right-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<model>
+	<path>Aircraft/Instruments-3d/cdu/display-text-value.xml</path>
+	<offsets>
+		<x-m> 0.004</x-m>
+		<y-m> 0.000</y-m>
+		<z-m> 0.024</z-m>
+	</offsets>
+	<overlay>
+		<params>
+			<property type="string">/instrumentation/cdu/input</property>
+			<format type="string">%03.1f</format>
+			<factor>1</factor>
+			<character-size type="double">0.007</character-size>
+			<color>
+				<red   type="double">0.1</red>
+				<green type="double">1.0</green>
+				<blue  type="double">0.1</blue>
+			</color>
+			<alignment>center-center</alignment>
+		</params>
+	</overlay>
+</model>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.l.1</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable> 
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK1L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.r.1</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK1R');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.l.2</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK2L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.r.2</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK2R');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.l.3</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK3L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.l.4</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK4L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.l.5</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK5L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.l.6</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK6L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.side.r.6</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+				<binding>
+			<command>nasal</command>
+			<script>cdu.key('LSK6R');</script>
+		</binding>
+
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.init-ref</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value type="string">INIT_REF</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.rte</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value type="string">RTE1_1</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.nav-rad</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value type="string">NAV_RAD</value>
+		</binding>
+	</action>
+</animation>
+ 
+<animation>
+	<type>pick</type>
+	<object-name>Btn.dep-arr</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value type="string">DEP_ARR_INDEX</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.legs</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value type="string">RTE1_LEGS</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+ <type>material</type> 
+<!--Letters Start-->
+ <object-name>Btn.E_Mesh.005_extract126.001</object-name>
+<object-name>Btn.D_Mesh.004_extract127.001</object-name>
+<object-name>Btn.C_Mesh.003_extract128.001</object-name>
+<object-name>Btn.B_Mesh.002_extract129.001</object-name>
+<object-name>Btn.A_extract130</object-name>
+<object-name>Btn.F_Mesh.006_extract125.001</object-name>
+<object-name>Btn.G_Mesh.007_extract124.001</object-name>
+<object-name>Btn.H_Mesh.008_extract123.001</object-name>
+<object-name>Btn.I_Mesh.009_extract122.001</object-name>
+<object-name>Btn.J_Mesh.010_extract121.001</object-name>
+<object-name>Btn.K_Mesh.011_extract120.001</object-name>
+<object-name>Btn.L_Mesh.012_extract119.001</object-name>
+<object-name>Btn.M_Mesh.013_extract118.001</object-name>
+<object-name>Btn.N_Mesh.014_extract117.001</object-name>
+<object-name>Btn.O_Mesh.015_extract116.001</object-name>
+<object-name>Btn.P_Mesh.016_extract115.001</object-name>
+<object-name>Btn.Q_Mesh.017_extract114.001</object-name>
+<object-name>Btn.R_Mesh.018_extract113.001</object-name>
+<object-name>Btn.S_Mesh.019_extract112.001</object-name>
+<object-name>Btn.T_Mesh.020_extract111.001</object-name>
+<object-name>Btn.U_Mesh.021_extract110.001</object-name>
+<object-name>Btn.V_Mesh.022_extract109.001</object-name>
+<object-name>Btn.W_Mesh.023_extract108.001</object-name>
+<object-name>Btn.X_Mesh.024_extract107.001</object-name>
+<object-name>Btn.Y_Mesh.025_extract106.001</object-name>
+<object-name>Btn.Z_Mesh.026_extract105.001</object-name>
+<!--Letters Done-->
+<!--Extra Keys-->
+<object-name>Btn.sp_Mesh.056_extract75.001</object-name>
+<object-name>Btn.del_Mesh.029_extract102.001</object-name>
+<object-name>Btn.slash_Mesh.055_extract76.001</object-name>
+<object-name>Btn.clr_Mesh.028_extract103.001</object-name>
+<object-name>Btn.prev-page_Mesh.051_extract91.001</object-name>
+<object-name>Btn.next-page_Mesh.039_extract92.001</object-name>
+<object-name>Btn.nav-rad_Mesh.038_extract93.001</object-name>
+<object-name>Btn.menu_Mesh.037_extract94.001</object-name>
+<object-name>Btn.fix_Mesh.032_extract99.001</object-name>
+<object-name>Btn.legs_Mesh.036_extract95.001</object-name>
+<object-name>Btn.init-ref_Mesh.035_extract96.001</object-name>
+<object-name>Btn.rte_Mesh.053_extract89.001</object-name>
+<object-name>Btn.dep-arr_Mesh.030_extract101.001</object-name>
+<object-name>Btn.hold_Mesh.034_extract97.001</object-name>
+<object-name>Btn.altn_Mesh.027_extract104.001</object-name>
+<object-name>Btn.fmc-comm_Mesh.033_extract98.001</object-name>
+<object-name>Btn.prog_Mesh.052_extract90.001</object-name>
+<object-name>Btn.vnav_Mesh.057_extract74.001</object-name>
+<object-name>Btn.side.l.1_Mesh_extract88.001</object-name>
+<object-name>Btn.side.l.2_Mesh.063_extract87.001</object-name>
+<object-name>Btn.side.l.3_Mesh.064_extract86.001</object-name>
+<object-name>Btn.side.l.4_Mesh.065_extract85.001</object-name>
+<object-name>Btn.side.l.5_Mesh.066_extract84.001</object-name>
+<object-name>Btn.side.l.6_Mesh.067_extract83.001</object-name>
+<object-name>Btn.side.r.1_Mesh.073_extract82.001</object-name>
+<object-name>Btn.side.r.2_Mesh.072_extract81.001</object-name>
+<object-name>Btn.side.r.3_Mesh.071_extract80.001</object-name>
+<object-name>Btn.side.r.4_Mesh.070_extract79.001</object-name>
+<object-name>Btn.side.r.5_Mesh.069_extract78.001</object-name>
+<object-name>Btn.side.r.6_Mesh.068_extract77.001</object-name>
+<!--Numeric Start-->
+<object-name>Btn.num1_Mesh.040_extract142.001</object-name>
+<object-name>Btn.num2_Mesh.041_extract141.001</object-name>
+<object-name>Btn.num3_Mesh.042_extract140.001</object-name>
+<object-name>Btn.num4_Mesh.043_extract139.001</object-name>
+<object-name>Btn.num5_Mesh.044_extract138.001</object-name>
+<object-name>Btn.num6_Mesh.045_extract137.001</object-name>
+<object-name>Btn.num7_Mesh.046_extract136.001</object-name>
+<object-name>Btn.num8_Mesh.047_extract135.001</object-name>
+<object-name>Btn.num9_Mesh.048_extract134.001</object-name>
+<object-name>Btn.period_Mesh.049_extract133.001</object-name>
+<object-name>Btn.zero_Mesh.058_extract131.001</object-name>
+<object-name>Btn.plusminus_Mesh.050_extract132.001</object-name>
+<!--Numeric Ends-->
+ <condition>		
+  <greater-than>		
+   <property>/sim/time/sun-angle-rad</property>
+   <value>1.57</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0.75</green>	
+  <blue>0.75</blue>
+ </emission>
+</animation>
+ 
+<animation>
+	<type>pick</type>
+	<object-name>Btn.menu</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value type="string">MENU</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.prev-page</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<condition>
+				<equals>
+					<property>/instrumentation/cdu/display</property>
+					<value>RTE1_2</value>
+				</equals>
+			</condition>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value>RTE1_1</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.next-page</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<condition>
+				<equals>
+					<property>/instrumentation/cdu/display</property>
+					<value>RTE1_1</value>
+				</equals>
+			</condition>
+			<command>property-assign</command>
+			<property>/instrumentation/cdu/display</property>
+			<value>RTE1_2</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.zero</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('0');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num1</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('1');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num2</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('2');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num3</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('3');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num4</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('4');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num5</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('5');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num6</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('6');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num7</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('7');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num8</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('8');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.num9</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('9');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.A</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('A');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.B</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('B');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.C</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('C');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.D</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('D');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.E</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('E');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.F</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('F');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.G</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('G');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.H</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('H');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.I</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('I');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.J</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('J');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.K</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('K');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.L</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('L');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.M</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('M');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.N</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('N');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.O</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('O');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.P</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('P');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.Q</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('Q');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.R</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('R');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.S</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('S');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.T</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('T');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.U</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('U');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.V</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('V');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.W</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('W');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.X</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('X');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.Y</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('Y');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.Z</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('Z');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.period</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('.');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.plusminus</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.plusminus();</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.sp</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input(' ');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.slash</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.input('/');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.del</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.delete();</script>
+		</binding>
+		<binding>
+			<condition>
+				<equals>
+					<property>/instrumentation/cdu/display</property>
+					<value>RTE1_LEGS</value>
+				</equals>
+			</condition>
+			<command>nasal</command>
+			<script>cdu.input('DELETE');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.clr</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>setprop("/instrumentation/cdu/input","");</script>
+		</binding>
+	</action>
+</animation>
+
+</PropertyList>
