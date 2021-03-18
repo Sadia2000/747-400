@@ -8,6 +8,6 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
 <br><br><br>
 # ChangeLog
 <ul>
-  <li>Improved Textures for the Throttle Quadrants</li>
+  <li>Improved base textures for the cockpit</li>
   <li>Made the CDU 3D and added nightlighting</li>
 <ul>
