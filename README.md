@@ -4,7 +4,7 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
 
 # Currently being developed by:
 <b>Itmam Mahmud (Sadia2000/AVIONADE)</b><br><br>
-<b>Mohammed Aissa (aka Uncle Aissa)</b>
+<b>Mohamed Aissa (aka Uncle Aissa)</b>
 <br><br><br>
 # Change-Log
 <ul>
