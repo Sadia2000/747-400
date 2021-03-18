@@ -6,7 +6,7 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
 <b>Itmam Mahmud (Sadia2000/AVIONADE)</b><br><br>
 <b>Mohammed Aissa (aka Uncle Aissa)</b>
 <br><br><br>
-# ChangeLog
+# Change-Log
 <ul>
   <li>Improved base textures for the cockpit</li>
   <li>Made the CDU 3D and added nightlighting</li>
