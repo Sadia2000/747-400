@@ -1274,16 +1274,11 @@
 <animation>
  <type>material</type> 
  <object-name>btn.hdgsel.001</object-name>
- <condition>
-  <greater-than>		
-   <property>/controls/lighting/panel-glareshield-norm</property>
-   <value>0</value>
-  </greater-than>
- </condition>
- <emission>	
-  <red>0.25</red>	
-  <green>0.25</green>	
-  <blue>0.25</blue>
- </emission>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+			<factor-prop>/controls/lighting/panel-glareshield-norm</factor-prop>
+		</emission>
 </animation>
 </PropertyList>
