@@ -3603,6 +3603,15 @@
   <blue>0.75</blue>
  </emission>
 </animation>
-
+<animation>
+ <type>material</type> 
+ <object-name>ohpanel</object-name>
+<emission>
+<red>1</red>
+<green>1</green>
+<blue>1</blue>
+	<factor-prop>/controls/lighting/panel-overhead-norm</factor-prop>
+</emission>
+</animation>
 
 </PropertyList>
