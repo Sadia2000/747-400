@@ -141,4 +141,32 @@
 
 	</group>
 
+ 	<hrule/>
+
+  
+  <group>
+  				<layout>vbox</layout>
+					<button>
+						<legend>Reset Engine fire</legend>
+						<padding>1</padding>
+						<binding>
+							<command>nasal</command>
+							<script>
+								setprop("engines/engine[0]/on-fire", 0);
+								setprop("engines/engine[0]/extinguished", 0);
+								setprop("engines/engine[0]/extinguisher", 0);
+								setprop("engines/engine[1]/on-fire", 0);
+								setprop("engines/engine[1]/extinguished", 0);
+								setprop("engines/engine[1]/extinguisher", 0);
+								setprop("engines/engine[2]/on-fire", 0);
+								setprop("engines/engine[2]/extinguished", 0);
+								setprop("engines/engine[2]/extinguisher", 0);
+								setprop("engines/engine[3]/on-fire", 0);
+								setprop("engines/engine[3]/extinguished", 0);
+								setprop("engines/engine[3]/extinguisher", 0);
+							</script>
+						</binding>
+					</button>				
+	</group>	
+	
 </PropertyList>
