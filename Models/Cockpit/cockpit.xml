@@ -1694,16 +1694,11 @@
  <object-name>throttle_eng3</object-name>
  <object-name>throttle_eng4</object-name>
  <object-name>flap_handle</object-name>
- <condition>
-  <greater-than>		
-   <property>/controls/lighting/panel-norm</property>
-   <value>0</value>
-  </greater-than>
- </condition>
- <emission>	
-  <red>0.25</red>	
-  <green>0.25</green>	
-  <blue>0.25</blue>
- </emission>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+			<factor-prop>/controls/lighting/panel-norm</factor-prop>
+		</emission>
 </animation>
 </PropertyList>
