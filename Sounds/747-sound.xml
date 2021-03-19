@@ -165,11 +165,13 @@
 
 	<!-- Warnings -->
 	
-	<config-flaps>
+	<config-TO>
 		<name>config-flaps</name>
 		<mode>looped</mode>
 		<path>Aircraft/747-400/Sounds/FGOS_Configuration_Warn.wav</path>
 		<condition>
+	<and>
+		<or>
 			<and>
 				<equals>
 					<property>/gear/gear[0]/wow</property>
@@ -188,14 +190,6 @@
 					<value>0.5</value>
 				</greater-than>
 			</and>
-		</condition>
-	</config-flaps>
-	
-	<config-park-brk>
-		<name>config-park-brk</name>
-		<mode>looped</mode>
-		<path>Aircraft/747-400/Sounds/FGOS_Configuration_Warn.wav</path>
-		<condition>
 			<and>
 				<equals>
 					<property>/controls/gear/brake-parking</property>
@@ -210,8 +204,28 @@
 					<value>0.5</value>
 				</greater-than>
 			</and>
-		</condition>
-	</config-park-brk>
+		</or>
+		<or>
+		<equals>
+		<property>engines/engine[0]/running</property>
+        <value>true</value>		
+	    </equals>
+		<equals>
+		<property>engines/engine[1]/running</property>
+        <value>true</value>		
+	    </equals>
+		<equals>
+		<property>engines/engine[2]/running</property>
+        <value>true</value>		
+	    </equals>
+		<equals>
+		<property>engines/engine[3]/running</property>
+        <value>true</value>		
+	    </equals>		
+		</or>
+	</and>
+</condition>
+	</config-TO>	
 	
 	<overspeed>
 		<name>overspeed</name>
@@ -224,6 +238,52 @@
 			</greater-than>
 		</condition>
 	</overspeed>
+	
+	<fire>
+		<name>fire</name>
+		<mode>looped</mode>
+		<path>Sounds/fire-warning.wav</path>
+		<condition>
+		<or>
+		<and>
+			<greater-than>
+				<property>/engines/engine[0]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[0]/extinguished</property>
+			</not>
+	    </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[1]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[1]/extinguished</property>
+			</not>
+	    </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[2]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[2]/extinguished</property>
+			</not>
+	    </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[3]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[3]/extinguished</property>
+			</not>
+	    </and>
+		</or>
+		</condition>
+	</fire>
 	
 	<!-- Additions -->
 	<switch>
