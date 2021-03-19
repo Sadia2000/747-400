@@ -3,14 +3,24 @@
 <PropertyList>
 
 <path>stby-alt.ac</path>
-
+<!--Custom Lite Light-->
 <animation>
- <type>material</type>
- <emission>
-  <red>1</red>
-  <green>0.8</green>
-  <blue>0.5</blue>
-  <factor-prop>controls/lighting/instruments-norm</factor-prop>
+ <type>material</type> 
+ <object-name>Face</object-name>
+ <object-name>alt4</object-name>
+ <object-name>alt3</object-name>
+ <object-name>alt2</object-name>
+ <object-name>alt1</object-name>
+ <condition>
+  <greater-than>		
+   <property>/controls/lighting/panel-overhead-norm</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0.75</green>	
+  <blue>0.75</blue>
  </emission>
 </animation>
 

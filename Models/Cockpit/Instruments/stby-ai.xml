@@ -5,16 +5,6 @@
 <path>stby-ai.ac</path>
 
 <animation>
- <type>material</type>
- <emission>
-  <red>1</red>
-  <green>0.8</green>
-  <blue>0.5</blue>
-  <factor-prop>controls/lighting/instruments-norm</factor-prop>
- </emission>
-</animation>
-
-<animation>
  <type>rotate</type>
  <object-name>ball</object-name>
  <property>/orientation/roll-deg</property>
@@ -56,5 +46,22 @@
   <z>0</z>
  </axis>
 </animation>
-
+<!--Custom Lite Light-->
+<animation>
+ <type>material</type> 
+ <object-name>wings</object-name>
+ <object-name>rollindex</object-name>
+ <object-name>ball</object-name>
+ <condition>
+  <greater-than>		
+   <property>/controls/lighting/panel-norm</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0.75</green>	
+  <blue>0.75</blue>
+ </emission>
+</animation>
 </PropertyList>

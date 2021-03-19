@@ -4,16 +4,23 @@
 
 <path>stby-asi.ac</path>
 
+<!--Custom Lite Light-->
 <animation>
- <type>material</type>
- <emission>
-  <red>1</red>
-  <green>0.8</green>
-  <blue>0.5</blue>
-  <factor-prop>controls/lighting/instruments-norm</factor-prop>
+ <type>material</type> 
+ <object-name>Face</object-name>
+ <object-name>Needle1</object-name>
+ <condition>
+  <greater-than>		
+   <property>/controls/lighting/panel-norm</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0.75</green>	
+  <blue>0.75</blue>
  </emission>
 </animation>
-
 <animation>
  <type>rotate</type>
  <object-name>Needle1</object-name>

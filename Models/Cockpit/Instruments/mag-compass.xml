@@ -14,5 +14,22 @@
    <z>1.0</z>
   </axis>
  </animation>
-
+<!--Custom Lite Light-->
+<animation>
+ <type>material</type> 
+ <object-name>wings</object-name>
+ <object-name>rollindex</object-name>
+ <object-name>ball</object-name>
+ <condition>
+  <greater-than>		
+   <property>/controls/lighting/panel-norm</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0.75</green>	
+  <blue>0.75</blue>
+ </emission>
+</animation>
 </PropertyList>
