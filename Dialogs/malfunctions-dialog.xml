@@ -33,45 +33,53 @@
 	</text>
 
 	<group>
-		<layout>hbox</layout>
+		<layout>vbox</layout>
 
-		<checkbox>
-			<label>Engine 1</label>
-			<property>engines/engine[0]/on-fire</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
+					<button>
+						<legend>Engine 1 Fire</legend>
+						<padding>1</padding>
+						<binding>
+							<command>nasal</command>
+							<script>
+								setprop("engines/engine[0]/on-fire", 1);							
+							</script>
+						</binding>
+					</button>				
 
-		<checkbox>
-			<label>Engine 2</label>
-			<property>engines/engine[1]/on-fire</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
+					<button>
+						<legend>Engine 2 Fire</legend>
+						<padding>1</padding>
+						<binding>
+							<command>nasal</command>
+							<script>
+								setprop("engines/engine[1]/on-fire", 1);							
+							</script>
+						</binding>
+					</button>
 		
 		
-		<checkbox>
-			<label>Engine 3</label>
-			<property>engines/engine[2]/on-fire</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
+					<button>
+						<legend>Engine 3 Fire</legend>
+						<padding>1</padding>
+						<binding>
+							<command>nasal</command>
+							<script>
+								setprop("engines/engine[2]/on-fire", 1);							
+							</script>
+						</binding>
+					</button>
 		
 		
-		<checkbox>
-			<label>Engine 4</label>
-			<property>engines/engine[3]/on-fire</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
+					<button>
+						<legend>Engine 4 Fire</legend>
+						<padding>1</padding>
+						<binding>
+							<command>nasal</command>
+							<script>
+								setprop("engines/engine[3]/on-fire", 1);							
+							</script>
+						</binding>
+					</button>
 	</group>
 	
 	<hrule/>
@@ -151,19 +159,8 @@
 						<padding>1</padding>
 						<binding>
 							<command>nasal</command>
-							<script>
-								setprop("engines/engine[0]/on-fire", 0);
-								setprop("engines/engine[0]/extinguished", 0);
-								setprop("engines/engine[0]/extinguisher", 0);
-								setprop("engines/engine[1]/on-fire", 0);
-								setprop("engines/engine[1]/extinguished", 0);
-								setprop("engines/engine[1]/extinguisher", 0);
-								setprop("engines/engine[2]/on-fire", 0);
-								setprop("engines/engine[2]/extinguished", 0);
-								setprop("engines/engine[2]/extinguisher", 0);
-								setprop("engines/engine[3]/on-fire", 0);
-								setprop("engines/engine[3]/extinguished", 0);
-								setprop("engines/engine[3]/extinguisher", 0);
+							<script>					
+resetfail.enginefirereset();			   						   							
 							</script>
 						</binding>
 					</button>				
