@@ -28,70 +28,50 @@
 
   <hrule/>
 	
-  <text>
-    <label>Engine fire</label>
-  </text>
-  
-  <group>
-    <stretch>true</stretch>
-    <layout>table</layout>
-  
+	<text>
+		<label>Engine fire</label>
+	</text>
+
+	<group>
+		<layout>hbox</layout>
+
 		<checkbox>
-		  <row>0</row><col>0</col>
-		  <halign>left</halign>
-		  <property>/controls/engines/engine[0]/on-fire</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[0]/on-fire</property>
-		  </binding>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[0]/cutoff</property>
-		  </binding>
+			<label>Engine 1</label>
+			<property>engines/engine[0]/on-fire</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
 		</checkbox>
 
 		<checkbox>
-		  <row>0</row><col>1</col>
-		  <halign>left</halign>
-		  <property>/controls/engines/engine[1]/on-fire</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[1]/on-fire</property>
-		  </binding>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[1]/cutoff</property>
-		  </binding>
+			<label>Engine 2</label>
+			<property>engines/engine[1]/on-fire</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
 		</checkbox>
-
+		
+		
 		<checkbox>
-		  <row>0</row><col>2</col>
-		  <halign>left</halign>
-		  <property>/controls/engines/engine[2]/on-fire</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[2]/on-fire</property>
-		  </binding>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[2]/cutoff</property>
-		  </binding>
+			<label>Engine 3</label>
+			<property>engines/engine[2]/on-fire</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
 		</checkbox>
-
+		
+		
 		<checkbox>
-		  <row>0</row><col>3</col>
-		  <halign>left</halign>
-		  <property>/controls/engines/engine[3]/on-fire</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[3]/on-fire</property>
-		  </binding>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/engines/engine[3]/cutoff</property>
-		  </binding>
+			<label>Engine 4</label>
+			<property>engines/engine[3]/on-fire</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
 		</checkbox>
-
 	</group>
 	
 	<hrule/>
