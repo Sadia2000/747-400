@@ -1,5 +1,5 @@
-<PropertyList>
 
+<PropertyList>
 <path>cockpit.ac</path>
 <offsets> 
 	<x-m>-25.60</x-m>
@@ -28,6 +28,8 @@
 		<pitch-deg>-22</pitch-deg>
 	</offsets>
 </model>
+
+
 
 <!-- ### PEDESTAL PANEL ### -->
 
@@ -90,6 +92,35 @@
 		</binding>
 	</action>
 </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>BrkLever</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/gear/brake-parking</property>
+            </binding>
+        </action>
+    </animation>
+	
+    <animation>
+        <type>rotate</type>
+        <object-name>BrkLever</object-name>
+        <property>controls/gear/brake-parking</property>
+        <factor>60</factor>
+        <center>
+            <x-m>1.23466</x-m>
+            <y-m>-0.20655</y-m>
+            <z-m>0.40822</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
 <!-- CDU -->
 <model>
@@ -735,31 +766,31 @@
 	<interpolation>
 		<entry>
 			<ind>0</ind>
-			<dep>0.00</dep>
+			<dep>27</dep>
 		</entry>
 		<entry>
 			<ind>0.001</ind>
-			<dep>10.83</dep>
+			<dep>32</dep>
 		</entry>
 		<entry>
 			<ind>0.167</ind>
-			<dep>21.67</dep>
+			<dep>45</dep>
 		</entry>
 		<entry>
 			<ind>0.333</ind>
-			<dep>32.50</dep>
+			<dep>52</dep>
 		</entry>
 		<entry>
 			<ind>0.667</ind>
-			<dep>43.33</dep>
+			<dep>62</dep>
 		</entry>
 		<entry>
 			<ind>0.833</ind>
-			<dep>54.17</dep>
+			<dep>72</dep>
 		</entry>
 		<entry>
 			<ind>1</ind>
-			<dep>65.00</dep>
+			<dep>80</dep>
 		</entry>
 	</interpolation>
 	<center>
@@ -802,7 +833,7 @@
 		</entry>
 		<entry>
 			<ind>3</ind>
-			<dep>74</dep>
+			<dep>56</dep>
 		</entry>
 	</interpolation>
 	<center>
@@ -817,7 +848,8 @@
 
 <animation>
 	<type>pick</type>
-	<object-name>fuel_ctrl.1</object-name>
+	<object-name>Lcutoff.Lever</object-name>
+	<object-name>Lcutoff.Knob</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>false</repeatable>  
@@ -830,13 +862,14 @@
 
 <animation>
 	<type>rotate</type>
-	<object-name>fuel_ctrl.1</object-name>
+	<object-name>Lcutoff.Lever</object-name>
+	<object-name>Lcutoff.Knob</object-name>
 	<property>/controls/engines/engine/cutoff</property>
-	<factor>80</factor>
+	<factor>40</factor>
 	<center>
-		<x-m>1.239</x-m>
-		<y-m>0</y-m>
-		<z-m>0.465</z-m>
+		<x-m>1.2325</x-m>
+		<y-m>-0.08569</y-m>
+		<z-m>0.46458</z-m>
 	</center>
 	<axis>
 		<x>0</x>
@@ -847,7 +880,8 @@
 
 <animation>
 	<type>pick</type>
-	<object-name>fuel_ctrl.2</object-name>
+	<object-name>Rcutoff.Lever</object-name>
+	<object-name>Rcutoff.Knob</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>false</repeatable>  
@@ -860,13 +894,14 @@
 
 <animation>
 	<type>rotate</type>
-	<object-name>fuel_ctrl.2</object-name>
+	<object-name>Rcutoff.Lever</object-name>
+	<object-name>Rcutoff.Knob</object-name>
 	<property>/controls/engines/engine[1]/cutoff</property>
-	<factor>80</factor>
+	<factor>40</factor>
 	<center>
-		<x-m>1.239</x-m>
-		<y-m>0</y-m>
-		<z-m>0.465</z-m>
+		<x-m>1.23177</x-m>
+		<y-m>-0.04291</y-m>
+		<z-m>0.46229</z-m>
 	</center>
 	<axis>
 		<x>0</x>
@@ -877,7 +912,8 @@
 
 <animation>
 	<type>pick</type>
-	<object-name>fuel_ctrl.3</object-name>
+	<object-name>Lcutoff.Lever.001</object-name>
+	<object-name>Lcutoff.Knob.001</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>false</repeatable>  
@@ -890,13 +926,14 @@
 
 <animation>
 	<type>rotate</type>
-	<object-name>fuel_ctrl.3</object-name>
+	<object-name>Lcutoff.Lever.001</object-name>
+	<object-name>Lcutoff.Knob.001</object-name>
 	<property>/controls/engines/engine[2]/cutoff</property>
-	<factor>80</factor>
+	<factor>40</factor>
 	<center>
-		<x-m>1.239</x-m>
-		<y-m>0</y-m>
-		<z-m>0.465</z-m>
+		<x-m>1.2325</x-m>
+		<y-m>0.00169</y-m>
+		<z-m>0.46458</z-m>
 	</center>
 	<axis>
 		<x>0</x>
@@ -907,7 +944,8 @@
 
 <animation>
 	<type>pick</type>
-	<object-name>fuel_ctrl.4</object-name>
+	<object-name>Rcutoff.Lever.001</object-name>
+	<object-name>Rcutoff.Knob.001</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>false</repeatable>  
@@ -920,13 +958,14 @@
 
 <animation>
 	<type>rotate</type>
-	<object-name>fuel_ctrl.4</object-name>
+	<object-name>Rcutoff.Lever.001</object-name>
+	<object-name>Rcutoff.Knob.001</object-name>
 	<property>/controls/engines/engine[3]/cutoff</property>
-	<factor>80</factor>
+	<factor>40</factor>
 	<center>
-		<x-m>1.239</x-m>
-		<y-m>0</y-m>
-		<z-m>0.465</z-m>
+		<x-m>1.23177</x-m>
+		<y-m>0.04447</y-m>
+		<z-m>0.46229</z-m>
 	</center>
 	<axis>
 		<x>0</x>
@@ -1583,4 +1622,88 @@
 	</action>
 </animation>
 
+<!--Engine Fire-->
+<animation>
+ <type>material</type> 
+<object-name>Lcutoff.Knob</object-name>
+ <condition>		
+  <greater-than>		
+   <property>engines/engine[0]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0</green>	
+  <blue>0</blue>
+ </emission>
+</animation>
+<animation>
+ <type>material</type> 
+<object-name>Rcutoff.Knob</object-name>
+ <condition>		
+  <greater-than>		
+   <property>engines/engine[1]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0</green>	
+  <blue>0</blue>
+ </emission>
+</animation>
+<animation>
+ <type>material</type> 
+ <object-name>Lcutoff.Knob.001</object-name>
+ <condition>		
+  <greater-than>		
+   <property>engines/engine[2]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0</green>	
+  <blue>0</blue>
+ </emission>
+</animation>
+<animation>
+ <type>material</type> 
+ <object-name>Rcutoff.Knob.001</object-name>
+ <condition>		
+  <greater-than>		
+  <property>engines/engine[3]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.75</red>	
+  <green>0</green>	
+  <blue>0</blue>
+ </emission>
+</animation>
+
+<!--Custom Lite Light-->
+<animation>
+ <type>material</type> 
+ <object-name>pedestal</object-name>
+ <object-name>Circle.003_1_Mesh.008</object-name>
+ <object-name>throttle_eng1</object-name>
+ <object-name>throttle_eng2</object-name>
+ <object-name>throttle_eng3</object-name>
+ <object-name>throttle_eng4</object-name>
+ <object-name>flap_handle</object-name>
+ <condition>
+  <greater-than>		
+   <property>/controls/lighting/panel-norm</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.25</red>	
+  <green>0.25</green>	
+  <blue>0.25</blue>
+ </emission>
+</animation>
 </PropertyList>

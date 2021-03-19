@@ -1,3 +1,4 @@
+
 <PropertyList>
 
 <path>forward.ac</path>
@@ -218,7 +219,8 @@
 
 <animation>
 	<type>knob</type>
-	<object-name>gear.lever</object-name>
+		<object-name>GearLever</object-name>
+		<object-name>GearLever.arm</object-name>
 	<property>/controls/gear/gear-down</property>
 	<interpolation>
 		<entry><ind>0</ind><dep>-35</dep></entry>
@@ -772,6 +774,16 @@
 		</or>
 	</condition>
 </animation>
+<animation>
+	<type>select</type>
+	<object-name>ap-cmd-lt</object-name>
+	<condition>
+		<equals>
+				<property>it-autoflight/input/ap1</property>
+				<value>1</value>
+		</equals>
+	</condition>
+</animation>
 
 <animation>
 	<type>pick</type>
@@ -1258,5 +1270,20 @@
 		</binding>
 	</action>
 </animation>
-
+<!--Custom Lite Light-->
+<animation>
+ <type>material</type> 
+ <object-name>btn.hdgsel.001</object-name>
+ <condition>
+  <greater-than>		
+   <property>/controls/lighting/panel-glareshield-norm</property>
+   <value>0</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.25</red>	
+  <green>0.25</green>	
+  <blue>0.25</blue>
+ </emission>
+</animation>
 </PropertyList>

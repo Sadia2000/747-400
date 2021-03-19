@@ -1,5 +1,6 @@
 <PropertyList>
 
+
 <path>overhead.ac</path>
 
 <effect>
@@ -1343,13 +1344,13 @@
 		<repeatable>false</repeatable>
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/engines/engine/fire</property>
+			<property>engines/engine[0]/extinguisher</property>
 		</binding>
-		<binding>
-			<command>property-assign</command>
-			<property>/controls/engines/engine/cutoff</property>
-			<value>1</value>
-		</binding>
+					<binding>
+				<command>property-assign</command>
+				<property>engines/engine[0]/extinguished</property>
+				<value>1</value>
+			</binding>
 		<binding>
 			<command>property-assign</command>
 			<property>/controls/pneumatic/engine/bleed</property>
@@ -1360,7 +1361,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>fire.1</object-name>
-	<property>/controls/engines/engine/fire</property>
+			<property>engines/engine[0]/extinguisher</property>
 	<factor>0.02</factor>
 	<axis>
 		<z>1</z>
@@ -1375,13 +1376,13 @@
 		<repeatable>false</repeatable>
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/engines/engine[1]/fire</property>
+			<property>engines/engine[1]/extinguisher</property>
 		</binding>
-		<binding>
-			<command>property-assign</command>
-			<property>/controls/engines/engine[1]/cutoff</property>
-			<value>1</value>
-		</binding>
+					<binding>
+				<command>property-assign</command>
+				<property>engines/engine[1]/extinguished</property>
+				<value>1</value>
+			</binding>
 		<binding>
 			<command>property-assign</command>
 			<property>/controls/pneumatic/engine[1]/bleed</property>
@@ -1392,7 +1393,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>fire.2</object-name>
-	<property>/controls/engines/engine[1]/fire</property>
+	<property>engines/engine[1]/extinguisher</property>
 	<factor>0.02</factor>
 	<axis>
 		<z>1</z>
@@ -1407,13 +1408,13 @@
 		<repeatable>false</repeatable>	
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/engines/engine[2]/fire</property>
+			<property>engines/engine[2]/extinguisher</property>
 		</binding>
-		<binding>
-			<command>property-assign</command>
-			<property>/controls/engines/engine[2]/cutoff</property>
-			<value>1</value>
-		</binding>
+					<binding>
+				<command>property-assign</command>
+				<property>engines/engine[2]/extinguished</property>
+				<value>1</value>
+			</binding>
 		<binding>
 			<command>property-assign</command>
 			<property>/controls/pneumatic/engine[2]/bleed</property>
@@ -1424,7 +1425,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>fire.3</object-name>
-	<property>/controls/engines/engine[2]/fire</property>
+			<property>engines/engine[2]/extinguisher</property>
 	<factor>0.02</factor>
 	<axis>
 		<z>1</z>
@@ -1439,13 +1440,13 @@
 		<repeatable>false</repeatable>
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/engines/engine[3]/fire</property>
+			<property>engines/engine[3]/extinguisher</property>
 		</binding>
-		<binding>
-			<command>property-assign</command>
-			<property>/controls/engines/engine[3]/cutoff</property>
-			<value>1</value>
-		</binding>
+				<binding>
+				<command>property-assign</command>
+				<property>engines/engine[3]/extinguished</property>
+				<value>1</value>
+			</binding>
 		<binding>
 			<command>property-assign</command>
 			<property>/controls/pneumatic/engine[3]/bleed</property>
@@ -1456,7 +1457,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>fire.4</object-name>
-	<property>/controls/engines/engine[3]/fire</property>
+	<property>engines/engine[3]/extinguisher</property>
 	<factor>0.02</factor>
 	<axis>
 		<z>1</z>
@@ -1469,7 +1470,7 @@
 		<texture n="1">
 			<image>Aircraft/747-400/Models/Cockpit/overhead_lit.png</image>
 		</texture>
-		<factor><use>/controls/engines/engine[0]/on-fire</use></factor>
+		<factor><use>engines/engine[0]/on-fire</use></factor>
 	</parameters>
 	<object-name>fire.1</object-name>
 </effect>
@@ -1479,7 +1480,7 @@
 		<texture n="1">
 			<image>Aircraft/747-400/Models/Cockpit/overhead_lit.png</image>
 		</texture>
-		<factor><use>/controls/engines/engine[1]/on-fire</use></factor>
+		<factor><use>engines/engine[1]/on-fire</use></factor>
 	</parameters>
 	<object-name>fire.2</object-name>
 </effect>
@@ -1489,7 +1490,7 @@
 		<texture n="1">
 			<image>Aircraft/747-400/Models/Cockpit/overhead_lit.png</image>
 		</texture>
-		<factor><use>/controls/engines/engine[2]/on-fire</use></factor>
+		<factor><use>engines/engine[2]/on-fire</use></factor>
 	</parameters>
 	<object-name>fire.3</object-name>
 </effect>
@@ -1499,7 +1500,7 @@
 		<texture n="1">
 			<image>Aircraft/747-400/Models/Cockpit/overhead_lit.png</image>
 		</texture>
-		<factor><use>/controls/engines/engine[3]/on-fire</use></factor>
+		<factor><use>engines/engine[3]/on-fire</use></factor>
 	</parameters>
 	<object-name>fire.4</object-name>
 </effect>
@@ -3516,5 +3517,92 @@
 		<z>-1</z>
 	</axis>
 </animation>
+
+<!--Extinguishers Lighting Up-->
+<animation>
+ <type>material</type> 
+ <object-name>fire.1</object-name>
+ <condition>
+ <and>
+  <greater-than>
+   <property>engines/engine[0]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+   <equals>
+   <property>engines/engine[0]/extinguished</property>
+   <value>0</value>
+  </equals> 
+ </and>
+ </condition>
+ <emission>
+  <red>0.75</red>
+  <green>0.75</green>
+  <blue>0.75</blue>
+ </emission>
+</animation>
+<animation>
+ <type>material</type> 
+ <object-name>fire.2</object-name>
+ <condition>
+ <and>
+  <greater-than>
+   <property>engines/engine[1]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+   <equals>
+   <property>engines/engine[1]/extinguished</property>
+   <value>0</value>
+  </equals> 
+ </and>
+ </condition>
+ <emission>
+  <red>0.75</red>
+  <green>0.75</green>
+  <blue>0.75</blue>
+ </emission>
+</animation>
+<animation>
+ <type>material</type> 
+ <object-name>fire.3</object-name>
+ <condition>
+ <and>
+  <greater-than>
+   <property>engines/engine[2]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+   <equals>
+   <property>engines/engine[2]/extinguished</property>
+   <value>0</value>
+  </equals> 
+ </and>
+ </condition>
+ <emission>
+  <red>0.75</red>
+  <green>0.75</green>
+  <blue>0.75</blue>
+ </emission>
+</animation>
+<animation>
+ <type>material</type> 
+ <object-name>fire.4</object-name>
+ <condition>
+ <and>
+  <greater-than>
+   <property>engines/engine[3]/on-fire</property>
+   <value>0</value>
+  </greater-than>
+   <equals>
+   <property>engines/engine[3]/extinguished</property>
+   <value>0</value>
+  </equals> 
+ </and>
+ </condition>
+ <emission>
+  <red>0.75</red>
+  <green>0.75</green>
+  <blue>0.75</blue>
+ </emission>
+</animation>
+
 
 </PropertyList>
