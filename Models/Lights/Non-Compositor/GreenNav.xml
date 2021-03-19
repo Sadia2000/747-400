@@ -1,0 +1,51 @@
+<PropertyList>
+<path>GreenLight.ac</path>
+<animation>
+	<type>noshadow</type>
+        	<object-name>GreenNav</object-name>
+
+</animation>
+<animation>
+	<type>select</type>
+        	<object-name>GreenNav</object-name>
+        		<condition>
+            			<equals>
+            				<property>sim/rendering/rembrandt/enabled</property>
+            					<value>false</value>
+            			</equals>
+        		</condition>
+</animation>
+<animation>
+ <type>material</type> 
+<object-name>GreenNav</object-name>
+ <condition>
+  <equals>
+   <property>controls/lighting/nav</property>
+   <value>1</value>
+  </equals>
+ </condition>
+ <emission>
+  <red>1</red>
+  <green>1</green>
+  <blue>1</blue>
+ </emission>
+</animation>
+<animation>
+	<type>dist-scale</type>
+        	<object-name>GreenNav</object-name>
+	<interpolation>
+		<entry>
+			<ind>0.001</ind>
+			<dep>1</dep>
+		</entry>
+		<entry>
+			<ind>40000</ind>
+			<dep>8</dep>
+		</entry>
+		<entry>
+			<ind>80000</ind>
+			<dep>16</dep>
+		</entry>
+	</interpolation>
+</animation>
+</PropertyList>

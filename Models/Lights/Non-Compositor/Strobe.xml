@@ -1,0 +1,75 @@
+<PropertyList>
+<path>WhiteLight.ac</path>
+<animation>
+	<type>noshadow</type>
+        	<object-name>Strobe</object-name>
+</animation>
+<animation>
+	<type>select</type>
+        	<object-name>Strobe</object-name>
+        		<condition>
+            			<equals>
+            				<property>sim/rendering/rembrandt/enabled</property>
+            					<value>false</value>
+            			</equals>
+        		</condition>
+</animation>
+<animation>
+	<type>select</type>
+        	<object-name>Strobe</object-name>
+        		<condition>
+            			<equals>
+            				<property>/sim/model/lights/strobe/state</property>
+            					<value>1</value>
+            			</equals>
+        		</condition>
+</animation>
+<animation>
+	<type>dist-scale</type>
+        	<object-name>Strobe</object-name>
+	<interpolation>
+		<entry>
+			<ind>0.001</ind>
+			<dep>1</dep>
+		</entry>
+		<entry>
+			<ind>40000</ind>
+			<dep>8</dep>
+		</entry>
+		<entry>
+			<ind>80000</ind>
+			<dep>16</dep>
+		</entry>
+	</interpolation>
+</animation>
+<animation>
+ <type>material</type> 
+<object-name>Strobe</object-name>
+ <condition>
+  <equals>
+   <property>/sim/model/lights/strobe/state</property>
+   <value>1</value>
+  </equals>
+ </condition>
+ <emission>
+  <red>1</red>
+  <green>1</green>
+  <blue>1</blue>
+</emission>
+</animation>
+<animation>
+ <type>material</type> 
+<object-name>Strobe</object-name>
+ <condition>
+  <equals>
+   <property>/sim/model/lights/strobe/state</property>
+   <value>1</value>
+  </equals>
+ </condition>
+ <emission>
+  <red>1</red>
+  <green>1</green>
+  <blue>1</blue>
+ </emission>
+</animation>
+</PropertyList>
