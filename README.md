@@ -17,4 +17,4 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
   <li>New Gear handle from the 757</li>
   <li>New Yoke from the 757</li>
 </ul><br>
-# Requesting **SP-NTX** to allow us to use his enhanced Engine
+# Requesting SP-NTX to allow us to use his enhanced Engine
