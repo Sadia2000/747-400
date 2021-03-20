@@ -16,4 +16,5 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
   <li>Enhance Fire effect and give it smoke and extinguisher foam effects</li>
   <li>New Gear handle from the 757</li>
   <li>New Yoke from the 757</li>
+  <li>New Fire Sound Effects</li>
 </ul><br>
