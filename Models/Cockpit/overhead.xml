@@ -1160,8 +1160,27 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
+		<condition>
+		<and>
+		<property>controls/pneumatic/APU-bleed</property>
+		<or>
+		<equals>
+		<property>systems/electrical/apu-generator[0]</property>
+		<value>2</value>
+		</equals>
+		<equals>
+		<property>systems/electrical/apu-generator[1]</property>
+		<value>2</value>
+		</equals>
+		</or>
+		</and>
+		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[0]/starter</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/engines/engine[0]/starter-switch</property>
 		</binding>
 	</action>
 </animation>
@@ -1170,7 +1189,7 @@
 	<type>select</type>
 	<object-name>starter.sel.1</object-name>
 	<condition>
-		<property>/controls/engines/engine[0]/starter</property>
+		<property>/controls/engines/engine[0]/starter-switch</property>
 	</condition>
 </animation>
 
@@ -1178,7 +1197,7 @@
 	<type>translate</type>
 	<object-name>starter.1</object-name>
 	<object-name>starter.sel.1</object-name>
-	<property>/controls/engines/engine[0]/starter</property>
+	<property>/controls/engines/engine[0]/starter-switch</property>
 	<factor>0.011</factor>
 	<axis>
 		<z>1</z>
@@ -1192,9 +1211,28 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
+		<condition>
+		<and>
+		<property>controls/pneumatic/APU-bleed</property>
+		<or>
+		<equals>
+		<property>systems/electrical/apu-generator[0]</property>
+		<value>2</value>
+		</equals>
+		<equals>
+		<property>systems/electrical/apu-generator[1]</property>
+		<value>2</value>
+		</equals>
+		</or>
+		</and>
+		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[1]/starter</property>
 		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/engines/engine[1]/starter-switch</property>
+		</binding>
 	</action>
 </animation>
 
@@ -1202,7 +1240,7 @@
 	<type>select</type>
 	<object-name>starter.sel.2</object-name>
 	<condition>
-		<property>/controls/engines/engine[1]/starter</property>
+		<property>/controls/engines/engine[1]/starter-switch</property>
 	</condition>
 </animation>
 
@@ -1210,7 +1248,7 @@
 	<type>translate</type>
 	<object-name>starter.2</object-name>
 	<object-name>starter.sel.2</object-name>
-	<property>/controls/engines/engine[1]/starter</property>
+	<property>/controls/engines/engine[1]/starter-switch</property>
 	<factor>0.011</factor>
 	<axis>
 		<z>1</z>
@@ -1224,9 +1262,28 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
+		<condition>
+		<and>
+		<property>controls/pneumatic/APU-bleed</property>
+		<or>
+		<equals>
+		<property>systems/electrical/apu-generator[0]</property>
+		<value>2</value>
+		</equals>
+		<equals>
+		<property>systems/electrical/apu-generator[1]</property>
+		<value>2</value>
+		</equals>
+		</or>
+		</and>
+		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[2]/starter</property>
 		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/engines/engine[2]/starter-switch</property>
+		</binding>
 	</action>
 </animation>
 
@@ -1234,7 +1291,7 @@
 	<type>select</type>
 	<object-name>starter.sel.3</object-name>
 	<condition>
-		<property>/controls/engines/engine[2]/starter</property>
+		<property>/controls/engines/engine[2]/starter-switch</property>
 	</condition>
 </animation>
 
@@ -1242,7 +1299,7 @@
 	<type>translate</type>
 	<object-name>starter.3</object-name>
 	<object-name>starter.sel.3</object-name>
-	<property>/controls/engines/engine[2]/starter</property>
+	<property>/controls/engines/engine[2]/starter-switch</property>
 	<factor>0.011</factor>
 	<axis>
 		<z>1</z>
@@ -1256,8 +1313,27 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
+		<condition>
+		<and>
+		<property>controls/pneumatic/APU-bleed</property>
+		<or>
+		<equals>
+		<property>systems/electrical/apu-generator[0]</property>
+		<value>2</value>
+		</equals>
+		<equals>
+		<property>systems/electrical/apu-generator[1]</property>
+		<value>2</value>
+		</equals>
+		</or>
+		</and>
+		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[3]/starter</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/engines/engine[3]/starter-switch</property>
 		</binding>
 	</action>
 </animation>
@@ -1266,7 +1342,7 @@
 	<type>select</type>
 	<object-name>starter.sel.4</object-name>
 	<condition>
-		<property>/controls/engines/engine[3]/starter</property>
+		<property>/controls/engines/engine[3]/starter-switch</property>
 	</condition>
 </animation>
 
@@ -1274,13 +1350,12 @@
 	<type>translate</type>
 	<object-name>starter.4</object-name>
 	<object-name>starter.sel.4</object-name>
-	<property>/controls/engines/engine[3]/starter</property>
+	<property>/controls/engines/engine[3]/starter-switch</property>
 	<factor>0.011</factor>
 	<axis>
 		<z>1</z>
 	</axis>
 </animation>
-
 <animation>		
 	<type>knob</type>
 	<object-name>fuel-to-remain</object-name>
