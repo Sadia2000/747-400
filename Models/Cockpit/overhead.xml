@@ -3017,7 +3017,94 @@
 		<z>1</z>
 	</axis>
 </animation>
-
+<animation>
+	<type>pick</type>
+	<object-name>FuelDumpCover</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<condition>
+				<less-than>
+					<property>/controls/switches/covers/fuel-dump-switch</property>
+					<value>0.01</value>
+				</less-than>
+			</condition>
+			<command>property-interpolate</command>
+			<property>/controls/switches/covers/fuel-dump-switch</property>
+			<value>1</value>
+			<time>0.25</time>
+		</binding>
+		<binding>
+			<condition>
+				<greater-than>
+					<property>/controls/switches/covers/fuel-dump-switch</property>
+					<value>0.99</value>
+				</greater-than>
+			</condition>
+			<command>property-interpolate</command>
+			<property>/controls/switches/covers/fuel-dump-switch</property>
+			<value>0</value>
+			<time>0.25</time>
+		</binding>
+	</action>
+</animation>
+<animation>
+	<type>rotate</type>
+	<object-name>FuelDumpCover</object-name>
+	<property>/controls/switches/covers/fuel-dump-switch</property>
+	<factor>-90</factor>
+	<center>
+		<x-m>0.01601</x-m>
+		<z-m>-0.01269</z-m>
+	</center>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+<animation>
+	<type>pick</type>
+	<object-name>FuelDumpCover.001</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<condition>
+				<less-than>
+					<property>/controls/switches/covers/fuel-dump-switch-1</property>
+					<value>0.01</value>
+				</less-than>
+			</condition>
+			<command>property-interpolate</command>
+			<property>/controls/switches/covers/fuel-dump-switch-1</property>
+			<value>1</value>
+			<time>0.25</time>
+		</binding>
+		<binding>
+			<condition>
+				<greater-than>
+					<property>/controls/switches/covers/fuel-dump-switch-1</property>
+					<value>0.99</value>
+				</greater-than>
+			</condition>
+			<command>property-interpolate</command>
+			<property>/controls/switches/covers/fuel-dump-switch-1</property>
+			<value>0</value>
+			<time>0.25</time>
+		</binding>
+	</action>
+</animation>
+<animation>
+	<type>rotate</type>
+	<object-name>FuelDumpCover.001</object-name>
+	<property>/controls/switches/covers/fuel-dump-switch-1</property>
+	<factor>-90</factor>
+	<center>
+		<x-m>0.01601</x-m>
+		<z-m>-0.01269</z-m>
+	</center>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
 <animation>
 	<type>knob</type>
 	<object-name>dem_pump_sw.2</object-name>
