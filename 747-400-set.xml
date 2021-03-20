@@ -913,6 +913,9 @@ left mouse button and counter clockwise using the middle mouse button.
 	<walk>
 		<file>Aircraft/747-400/Nasal/walk.nas</file>
 	</walk>
+	<resetfail>
+		<file>Aircraft/747-400/Nasal/resetfail.nas</file>
+	</resetfail>
 </nasal>
 
 <payload>
