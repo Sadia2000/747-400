@@ -306,18 +306,18 @@ var canvas_PFD = {
 		if (var navId = getprop("instrumentation/nav/data-is-valid") != nil)
 			me["ilsId"].setText(navId);
 		
-		var v1 = getprop("instrumentation/fmc/speeds/v1-kt") or 0;
+		var v1 = getprop("instrumentation/fmc/vspeeds/V1") or 0;
 		if (v1 > 0) {
 			if (wow) {
 				me["v1"].show();
 				me["v1"].setTranslation(0,-v1*5.63915);
 				me["vr"].show();
-				me["vr"].setTranslation(0,-getprop("instrumentation/fmc/speeds/vr-kt")*5.63915);
+				me["vr"].setTranslation(0,-getprop("instrumentation/fmc/vspeeds/VR")*5.63915);
 			} else {
 				me["v1"].hide();
 				me["vr"].hide();
 			}
-			me["v2"].setTranslation(0,-getprop("instrumentation/fmc/speeds/v2-kt")*5.63915);
+			me["v2"].setTranslation(0,-getprop("instrumentation/fmc/vspeeds/V2")*5.63915);
 		} else {
 			me["v1"].hide();
 			me["vr"].hide();
