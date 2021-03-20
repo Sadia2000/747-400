@@ -160,7 +160,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>					
-resetfail.enginefirereset();			   						   							
+                                                        resetfail.enginefirereset();			   						   							
 							</script>
 						</binding>
 					</button>				
