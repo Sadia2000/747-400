@@ -64,34 +64,6 @@
 
 <animation>
 	<type>pick</type>
-	<object-name>cockpitdoor</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.cockpit_door.toggle();</script>
-		</binding>
-	</action>
-</animation>
-
-<animation>
-	<type>rotate</type>
-	<object-name>cockpitdoor</object-name>
-	<property>controls/doors/cockpit/position-norm</property>
-	<factor>85</factor>
-	<axis>
-		<x1-m>-22.236</x1-m>
-		<y1-m>  0.339</y1-m>
-		<z1-m>  4.322</z1-m>
-		<x2-m>-22.236</x2-m>
-		<y2-m>  0.339</y2-m>
-		<z2-m>  2.322</z2-m>
-	</axis>
-</animation>
-
-<animation>
-	<type>pick</type>
 	<object-name>lav1door1</object-name>
 	<object-name>lav1door2</object-name>
 	<action>
