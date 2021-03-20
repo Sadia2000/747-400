@@ -242,7 +242,7 @@
 	<fire>
 		<name>fire</name>
 		<mode>looped</mode>
-		<path>Sounds/fire-warning.wav</path>
+		<path>Aircraft/747-400/Sounds/fire-warning.wav</path>
 		<condition>
 		<or>
 		<and>
