@@ -19,4 +19,6 @@ This is a project trying to do basic improvements to the LincolnWorks-Flightgear
   <li>New Seats from the 757</li>
   <li>New Fire Warnings</li>
   <li>New Fire warning on EICAS</li>
+  <li>Optimised the systems to be FPS friendly as possible</li>
+  <li>Much, much more!</li>
 </ul><br>
