@@ -1736,7 +1736,7 @@
   <x-m>16.6478</x-m>
   <y-m>-32.28197</y-m>
   <z-m>1.42833</z-m>
-<offsets>
+</offsets>
 </model>
 <model>
 <path>Aircraft/747-400/Models/Lights/Non-Compositor/GreenNav.xml</path>
@@ -1754,7 +1754,7 @@
   <x-m>16.6613</x-m>
   <y-m>32.06531</y-m>
   <z-m>1.31989</z-m>
-<offsets>
+</offsets>
 </model>
 <model>
 <path>Aircraft/747-400/Models/Lights/Non-Compositor/Strobe.xml</path>
@@ -1763,6 +1763,6 @@
   <x-m>20.378</x-m>
   <y-m>-32.11529</y-m>
   <z-m>1.28297</z-m>
-<offsets>
+</offsets>
 </model>
 </PropertyList>
