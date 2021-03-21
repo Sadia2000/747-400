@@ -1729,6 +1729,7 @@
  </offsets>
 </model>
 <!--Non-Compositor Lighting-->
+<!--Non-Compositor Lighting-->
 <model>
 <path>Aircraft/747-400/Models/Lights/Non-Compositor/RedNav.xml</path>
 <name>RedNav</name>
@@ -1745,7 +1746,7 @@
   <x-m>16.6613</x-m>
   <y-m>32.06531</y-m>
   <z-m>1.31989</z-m>
-<offsets>
+</offsets>
 </model>
 <model>
 <path>Aircraft/747-400/Models/Lights/Non-Compositor/Strobe.xml</path>
