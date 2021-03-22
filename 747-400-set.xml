@@ -520,6 +520,7 @@ left mouse button and counter clockwise using the middle mouse button.
 		<brake-parking>1</brake-parking>
 		<tiller-cmd-norm type="double">0</tiller-cmd-norm>
 		<tiller-enabled type="bool">false</tiller-enabled>
+		<gear-state>-1</gear-state>
 		<gear n="0">
 			<tyre-smoke type="int">0</tyre-smoke>
 			<sprayspeed-ms type="double">0</sprayspeed-ms>
