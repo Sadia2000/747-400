@@ -149,55 +149,55 @@
 </animation>
 
 <animation>
-	<type>textranslate</type>
-	<object-name>dis.vertspd.2</object-name>
-	<property>it-autoflight/input/vs</property>
-	<factor>0.0001</factor>
-	<step>1000</step>
-	<axis>
-		<x>0</x>
-		<y>1</y>
-		<z>0</z>
-	</axis>
+    <type>textranslate</type>
+    <object-name>dis.vertspd.2</object-name>
+    <property>it-autoflight/input/vs-abs</property>
+    <factor>0.0001</factor>
+    <step>1000</step>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
 </animation>
 
 <animation>
-	<type>textranslate</type>
-	<object-name>dis.vertspd.3</object-name>
-	<property>it-autoflight/input/vs</property>
-	<factor>0.001</factor>
-	<step>100</step>
-	<axis>
-		<x>0</x>
-		<y>1</y>
-		<z>0</z>
-	</axis>
+    <type>textranslate</type>
+    <object-name>dis.vertspd.3</object-name>
+    <property>it-autoflight/input/vs-abs</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
 </animation>
 
 <animation>
-	<type>textranslate</type>
-	<object-name>dis.vertspd.4</object-name>
-	<property>it-autoflight/input/vs</property>
-	<factor>0.01</factor>
-	<step>10</step>
-	<axis>
-		<x>0</x>
-		<y>1</y>
-		<z>0</z>
-	</axis>
+    <type>textranslate</type>
+    <object-name>dis.vertspd.4</object-name>
+    <property>it-autoflight/input/vs-abs</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
 </animation>
 
 <animation>
-	<type>textranslate</type>
-	<object-name>dis.vertspd.5</object-name>
-	<property>it-autoflight/input/vs</property>
-	<factor>0.1</factor>
-	<step>1</step>
-	<axis>
-		<x>0</x>
-		<y>1</y>
-		<z>0</z>
-	</axis>
+    <type>textranslate</type>
+    <object-name>dis.vertspd.5</object-name>
+    <property>it-autoflight/input/vs-abs</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
 </animation>
 
 <animation>
