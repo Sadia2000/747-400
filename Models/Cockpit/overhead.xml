@@ -3688,7 +3688,7 @@
  <and>
   <greater-than>
    <property>engines/engine[0]/on-fire</property>
-   <value>0.000000</value>
+   <value>0</value>
   </greater-than>
    <equals>
    <property>engines/engine[0]/extinguished</property>
@@ -3709,7 +3709,7 @@
  <and>
   <greater-than>
    <property>engines/engine[1]/on-fire</property>
-   <value>0.000000</value>
+   <value>0</value>
   </greater-than>
    <equals>
    <property>engines/engine[1]/extinguished</property>
@@ -3730,7 +3730,7 @@
  <and>
   <greater-than>
    <property>engines/engine[2]/on-fire</property>
-   <value>0.000000</value>
+   <value>0</value>
   </greater-than>
    <equals>
    <property>engines/engine[2]/extinguished</property>
@@ -3751,7 +3751,7 @@
  <and>
   <greater-than>
    <property>engines/engine[3]/on-fire</property>
-   <value>0.000000</value>
+   <value>0</value>
   </greater-than>
    <equals>
    <property>engines/engine[3]/extinguished</property>
