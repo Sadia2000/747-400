@@ -1658,16 +1658,15 @@
  <type>material</type> 
 <object-name>Lcutoff.Knob</object-name>
  <condition>		
- <and>
-  <greater-than>
-   <property>engines/engine[0]/on-fire</property>
-   <value>0</value>
-  </greater-than>
-   <equals>
-   <property>engines/engine[0]/extinguished</property>
-   <value>0</value>
-  </equals> 
- </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[0]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[0]/extinguished</property>
+			</not>
+	    </and>
  </condition>
  <emission>	
   <red>0.75</red>	
@@ -1679,16 +1678,15 @@
  <type>material</type> 
 <object-name>Rcutoff.Knob</object-name>
  <condition>		
- <and>
-  <greater-than>
-   <property>engines/engine[1]/on-fire</property>
-   <value>0</value>
-  </greater-than>
-   <equals>
-   <property>engines/engine[1]/extinguished</property>
-   <value>0</value>
-  </equals> 
- </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[1]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[1]/extinguished</property>
+			</not>
+	    </and>
  </condition>
  <emission>	
   <red>0.75</red>	
@@ -1700,16 +1698,15 @@
  <type>material</type> 
  <object-name>Lcutoff.Knob.001</object-name>
  <condition>		
- <and>
-  <greater-than>
-   <property>engines/engine[2]/on-fire</property>
-   <value>0</value>
-  </greater-than>
-   <equals>
-   <property>engines/engine[2]/extinguished</property>
-   <value>0</value>
-  </equals> 
- </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[2]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[2]/extinguished</property>
+			</not>
+	    </and>
  </condition>
  <emission>	
   <red>0.75</red>	
@@ -1721,16 +1718,15 @@
  <type>material</type> 
  <object-name>Rcutoff.Knob.001</object-name>
  <condition>
- <and>
-  <greater-than>
-   <property>engines/engine[3]/on-fire</property>
-   <value>0</value>
-  </greater-than>
-   <equals>
-   <property>engines/engine[3]/extinguished</property>
-   <value>0</value>
-  </equals> 
- </and>
+		<and>
+			<greater-than>
+				<property>/engines/engine[3]/on-fire</property>
+				<value>0</value>
+			</greater-than>
+			<not>
+				<property>/engines/engine[3]/extinguished</property>
+			</not>
+	    </and>
  </condition>
  <emission>	
   <red>0.75</red>	
