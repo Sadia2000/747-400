@@ -13,6 +13,7 @@ var ap_disengaged	= 0;
 var rudder_trim		= 0;
 var elev_trim		= 0;
 var engfire			= [0,0,0,0];
+var engext	        = [0,0,0,0];
 var secondary_eicas = {};
 var secEICAS		= {};
 var pack 			= [0,0,0];
@@ -40,6 +41,10 @@ setlistener("sim/signals/fdm-initialized", func() {
 	setlistener("engines/engine[1]/on-fire", func(n) { engfire[1] = n.getValue(); } );
 	setlistener("engines/engine[2]/on-fire", func(n) { engfire[2] = n.getValue(); } );
 	setlistener("engines/engine[3]/on-fire", func(n) { engfire[3] = n.getValue(); } );
+	setlistener("engines/engine[0]/extinguished", func(n) { engext[0] = n.getValue(); } );
+	setlistener("engines/engine[1]/extinguished", func(n) { engext[1] = n.getValue(); } );
+	setlistener("engines/engine[2]/extinguished", func(n) { engext[2] = n.getValue(); } );
+	setlistener("engines/engine[3]/extinguished", func(n) { engext[3] = n.getValue(); } );
 	setlistener("controls/flight/rudder-trim",        func { update_listener_inputs() } );
 	setlistener("controls/flight/elevator-trim",      func { update_listener_inputs() } );
 	setlistener("sim/freeze/replay-state",            func { update_listener_inputs() } );
@@ -119,13 +124,13 @@ var warning_messages = func {
 		append(msgs_warning,">CONFIG SPOILERS");	
 	if (engfire[0] or engfire[1] or engfire[2] or engfire[3]) {
 		var msgs_fire = "FIRE ENGINE ";
-		if (engfire[0] and getprop("engines/engine[0]/extinguished") == 0)
+		if (engfire[0] and !engext[0])
 			msgs_fire = msgs_fire~"1, ";
-		if (engfire[1] and getprop("engines/engine[1]/extinguished") == 0)
+		if (engfire[1] and !engext[1])
 			msgs_fire = msgs_fire~"2, ";
-		if (engfire[2] and getprop("engines/engine[2]/extinguished") == 0)
+		if (engfire[2] and !engext[2])
 			msgs_fire = msgs_fire~"3, ";
-		if (engfire[3] and getprop("engines/engine[3]/extinguished") == 0)
+		if (engfire[3] and !engext[3])
 			msgs_fire = msgs_fire~"4, ";
 		append(msgs_warning,substr(msgs_fire,0,size(msgs_fire)-2));
 	}
