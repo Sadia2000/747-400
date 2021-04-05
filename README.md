@@ -5,7 +5,8 @@ Discrod server link:https://discord.gg/jZPuxwNmgw.<br><br>
 
 # Currently being developed by:
 <b>Itmam Mahmud (aka Sadia2000/AVIONADE) Working on 3D Modelling improvements, textures and lighting</b><br><br>
-<b>Mohamed Aissa (aka Uncle Aissa) Working on Enhancing systems, Cockpit 3D model, and new effects</b>
+<b>Mohamed Aissa (aka Uncle Aissa) Working on Enhancing systems, Cockpit 3D model, and new effects</b><br><br>
+<b>SP-NTX (aka NTX) Working on Enhancing systems, Cockpit Textures, and new effects</b>
 <br><br><br>
 # Change-Log
 <ul>
