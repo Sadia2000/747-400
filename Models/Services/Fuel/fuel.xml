@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Fuel-Truck.ac</path>
+<animation>
+	<type>select</type>
+		<object-name>refueling-drogue.001<object-name>
+		<object-name>refueling-drogue.005<object-name>
+		<object-name>refueling-drogue.004<object-name>
+		<object-name>refueling-drogue.003<object-name>
+		<object-name>refueling-drogue.002<object-name>
+		<object-name>refueling-drogue<object-name>
+ 		   <condition>
+      			  <property>controls/switches/Fuel-pipe</property>
+   		 </condition>
+</animation>
+</PropertyList>
