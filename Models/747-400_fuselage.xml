@@ -1,7 +1,12 @@
 <PropertyList>
 
 <path>747-400_fuselage.ac</path>
-
+	
+  <model>
+    <name>Ground-Services</name>
+    <path>Aircraft/747-400/Models/Services/Services.xml</path>
+  </model>
+	
 <animation> 
 	<type>material</type> 
 	<object-name>cargodoor1</object-name> 
