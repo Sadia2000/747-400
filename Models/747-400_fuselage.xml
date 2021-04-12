@@ -7,6 +7,23 @@
     <path>Aircraft/747-400/Models/Services/Services.xml</path>
   </model>
 	
+	
+    <animation>
+	<type>select</type>
+	<object-name>hstab</object-name>
+    	<object-name>elevator_left</object-name>
+    	<object-name>elevator_right</object-name>
+    	<object-name>vstab</object-name>
+    	<object-name>rudder</object-name>
+	<condition>
+		<equals>
+			<property>sim/current-view/internal</property>
+				<value>0</value>
+		</equals>
+	</condition>
+    </animation>
+	
+	
 <animation> 
 	<type>material</type> 
 	<object-name>cargodoor1</object-name> 
