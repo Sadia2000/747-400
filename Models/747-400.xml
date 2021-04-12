@@ -60,8 +60,21 @@
 </animation>
 
 <model>
-	<path>Aircraft/747-400/Models/747-400_wings.xml</path> 
+	<path>Aircraft/747-400/Models/747-400_wings.xml</path>
+	<name>Wings</name>
 </model>
+	
+<animation>
+	<type>select</type>
+	<object-name>Wings</object-name>
+	<object-name>gear</object-name>
+	<condition>
+		<equals>
+			<property>sim/current-view/internal</property>
+				<value>0</value>
+		</equals>
+	</condition>
+</animation>
 
 <!-- LANDING LIGHTS WINGS -->
 
