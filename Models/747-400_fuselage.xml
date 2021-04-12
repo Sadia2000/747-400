@@ -755,23 +755,4 @@
 		<z2-m>-2.792</z2-m>
 	</axis>
 </animation>
-<!--Non Compositor Lights-->
-<model>
-<path>Aircraft/747-400/Models/Lights/Non-Compositor/beacon.xml</path>
-<name>BeaconUp</name>
-<offsets>
-  <x-m>-0.73716</x-m>
-  <y-m>-0.0000095</y-m>
-  <z-m>-2.92465</z-m>
-</offsets>
-</model>
-<model>
-<path>Aircraft/747-400/Models/Lights/Non-Compositor/beacon.xml</path>
-<name>BeaconDown</name>
-<offsets>
-  <x-m>-16.07601</x-m>
-  <y-m>0.00002</y-m>
-  <z-m>5.14273</z-m>
-</offsets>
-</model>
 </PropertyList>
