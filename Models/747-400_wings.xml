@@ -1628,45 +1628,4 @@
   <z-m>1.35</z-m>
  </offsets>
 </model>
-
-<model>
- <path>Lights/GreenNav.xml</path>
- <name>GreenLight</name>
- <offsets>
-  <x-m>16.75213</x-m>
-  <y-m>32.04939</y-m>
-  <z-m>1.38344</z-m>
- </offsets>
-</model>
-
-<model>
- <path>Lights/Non-Compositor/RedNav.xml</path>
- <name>RedLight</name>
- <offsets>
-  <x-m>16.6769</x-m>
-  <y-m>-31.92425</y-m>
-  <z-m>1.30518</z-m>
- </offsets>
-</model>
-
-<model>
- <path>Lights/Non-Compositor/strobe.xml</path>
- <name>StrobeLight.R</name>
- <offsets>
-  <x-m>20.37952</x-m>
-  <y-m>32.07202</y-m>
-  <z-m>1.42622</z-m>
- </offsets>
-</model>
-
-<model>
- <path>Lights/Non-Compositor/Strobe.xml</path>
- <name>StrobeLight.L</name>
- <offsets>
-  <x-m>20.37952</x-m>
-  <y-m>-32.24371</y-m>
-  <z-m>1.4262</z-m>
- </offsets>
-</model>
-
 </PropertyList>
