@@ -5,4 +5,5 @@
 <li>Clock texture glitch</li>
 <li>Landing lights don't turn off (bon sang)</li>
 <li>Flaps indicator on EICAS bug</li>
+<li>Read the FG error report and try to fix</li>
 </ul>
