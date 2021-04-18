@@ -755,4 +755,26 @@
 		<z2-m>-2.792</z2-m>
 	</axis>
 </animation>
+	
+	<!-- EFB-->
+
+  <model>
+    <name>F/O_Electronic-FB</name>
+    <path>Aircraft/747-400/Models/Cockpit/Instruments/EFB-DB/EFB.xml</path>
+<offsets>
+  <x-m>-24.59794</x-m>
+  <y-m>1.09147</y-m>
+  <z-m>2.95769</z-m>
+</offsets>
+  </model>
+  <model>
+    <name>CAP_Electronic-FB</name>
+    <path>Aircraft/747-400/Models/Cockpit/Instruments/EFB-DB/EFB.xml</path>
+<offsets>
+  <x-m>-24.59794</x-m>
+  <y-m>-1.03124</y-m>
+  <z-m>2.95769</z-m>
+</offsets>
+  </model>
+	
 </PropertyList>
