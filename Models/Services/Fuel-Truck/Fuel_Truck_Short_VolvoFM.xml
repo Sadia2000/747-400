@@ -18,7 +18,7 @@
 	<object-name>fuel_pipe</object-name>
 	<condition>
 		<equals>
-			<property>controls/switches/Fuel</property>
+			<property>controls/switches/Fuel-pipe</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -29,7 +29,7 @@
 	<object-name>fuel_pipe_disconnecte</object-name>
 	<condition>
 		<equals>
-			<property>controls/switches/Fuel</property>
+			<property>controls/switches/Fuel-pipe</property>
 			<value>0</value>
 		</equals>
 	</condition>
