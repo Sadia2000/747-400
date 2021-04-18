@@ -1160,21 +1160,6 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
-		<condition>
-		<and>
-		<property>controls/pneumatic/APU-bleed</property>
-		<or>
-		<equals>
-		<property>systems/electrical/apu-generator[0]</property>
-		<value>2</value>
-		</equals>
-		<equals>
-		<property>systems/electrical/apu-generator[1]</property>
-		<value>2</value>
-		</equals>
-		</or>
-		</and>
-		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[0]/starter</property>
 		</binding>
@@ -1211,21 +1196,6 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
-		<condition>
-		<and>
-		<property>controls/pneumatic/APU-bleed</property>
-		<or>
-		<equals>
-		<property>systems/electrical/apu-generator[0]</property>
-		<value>2</value>
-		</equals>
-		<equals>
-		<property>systems/electrical/apu-generator[1]</property>
-		<value>2</value>
-		</equals>
-		</or>
-		</and>
-		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[1]/starter</property>
 		</binding>
@@ -1262,21 +1232,6 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
-		<condition>
-		<and>
-		<property>controls/pneumatic/APU-bleed</property>
-		<or>
-		<equals>
-		<property>systems/electrical/apu-generator[0]</property>
-		<value>2</value>
-		</equals>
-		<equals>
-		<property>systems/electrical/apu-generator[1]</property>
-		<value>2</value>
-		</equals>
-		</or>
-		</and>
-		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[2]/starter</property>
 		</binding>
@@ -1313,21 +1268,6 @@
 		<button>0</button>
 		<repeatable>false</repeatable>	
 		<binding>
-		<condition>
-		<and>
-		<property>controls/pneumatic/APU-bleed</property>
-		<or>
-		<equals>
-		<property>systems/electrical/apu-generator[0]</property>
-		<value>2</value>
-		</equals>
-		<equals>
-		<property>systems/electrical/apu-generator[1]</property>
-		<value>2</value>
-		</equals>
-		</or>
-		</and>
-		</condition>
 			<command>property-toggle</command>
 			<property>/controls/engines/engine[3]/starter</property>
 		</binding>
