@@ -28,10 +28,24 @@ Link: https://github.com/YV3399/737-800YV
 
   <model>
     <name>Fuel truck</name>
-    <path>Aircraft/747-400/Models/Services/Fuel/fuel.xml</path>
+    <path>Aircraft/747-400/Models/Services/Fuel/Fuel_Truck_Short_VolvoFM.xml</path>
     <condition>
       <and>
         <property>controls/switches/Fuel</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>1</value>
+        </less-than>
+      </and>
+    </condition>
+  </model>
+  
+    <model>
+    <name>Fuel Pipe</name>
+    <path>Aircraft/747-400/Models/Services/Fuel/fuel.xml</path>
+    <condition>
+      <and>
+        <property>controls/switches/Fuel-pipe</property>
         <less-than>
           <property>velocities/airspeed-kt</property>
           <value>1</value>
