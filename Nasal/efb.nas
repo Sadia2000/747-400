@@ -312,12 +312,12 @@ l3 = "< Ground Services";
 
 	if (getprop("/gear/gear[1]/wow") == 1 and getprop("/gear/gear[2]/wow") == 1 and getprop("/gear/gear[3]/wow") == 1 and getprop("/gear/gear[4]/wow") == 1) {
 
-if (getprop("controls/switches/gpu") == 0){	
+if (getprop("controls/switches/gpu") == 1){	
 		l1 = "< Ground Power Unit (State:Connected)";
 }
 else l1 = "< Ground Power Unit (State:Disconnected)";
 
-if (getprop("controls/switches/cargo_ramp") == 0){	
+if (getprop("controls/switches/cargo_ramp") == 1){	
 		l3 = "< Baggage Truck (State:Connected)";
 }
 else l3 = "< Baggage Truck (State:Disconnected)";
@@ -333,7 +333,7 @@ l5 = "< Fuel Truck Page"
 	if (getprop("/gear/gear[1]/wow") == 1 and getprop("/gear/gear[2]/wow") == 1 and getprop("/gear/gear[3]/wow") == 1 and getprop("/gear/gear[4]/wow") == 1) {
 
 if (getprop("controls/switches/Fuel-pipe") == 0){
-if (getprop("controls/switches/Fuel") == 0){	
+if (getprop("controls/switches/Fuel") == 1){	
 		l1 = "< Fuel Truck (State:Connected)";
 }
 else l1 = "< Fuel Truck (State:Disconnected)";
@@ -341,7 +341,7 @@ else l1 = "< Fuel Truck (State:Disconnected)";
 else l1 = "Disconnect Fuel Pipe First";
 
 if (getprop("controls/switches/Fuel") == 1){
-if (getprop("controls/switches/Fuel-pipe") == 0){	
+if (getprop("controls/switches/Fuel-pipe") == 1){	
 		l3 = "< Fuel Pipe (State:Connected)";
 }
 else l3 = "< Fuel Pipe (State:Disconnected)";
