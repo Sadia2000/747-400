@@ -28,7 +28,7 @@ Link: https://github.com/YV3399/737-800YV
 
   <model>
     <name>Fuel truck</name>
-    <path>Aircraft/747-400/Models/Services/Fuel/Fuel_Truck_Short_VolvoFM.xml</path>
+    <path>Aircraft/747-400/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.xml</path>
     <condition>
       <and>
         <property>controls/switches/Fuel</property>
