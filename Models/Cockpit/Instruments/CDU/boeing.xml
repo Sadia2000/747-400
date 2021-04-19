@@ -1793,5 +1793,27 @@
 		</binding>
 	</action>
 </animation>
-
+<animation>
+	<type>knob</type>
+	<object-name>Cylinder.039</object-name>
+	<property>/controls/lighting/cdu-screen-brightness</property>
+	<factor>360</factor>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/cdu-screen-brightness</property>
+			<factor>-0.05</factor>
+			<min>0</min>
+			<max>1</max>
+		</binding>
+	</action>
+	<center>
+		<x-m>0.00545</x-m><y-m>0.05271</y-m><z-m>-0.00135</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
 </PropertyList>
