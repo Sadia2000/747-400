@@ -1341,4 +1341,33 @@
 		</binding>
 	</action>
 </animation>
+<animation>
+ <type>material</type> 
+ <object-name>btn.hdgsel.001</object-name>
+ <object-name>cpt.panel.light</object-name>
+ <object-name>btn.spd.sel.001</object-name>
+ <object-name>GearLever.arm</object-name>
+ <object-name>btn.wxr.L</object-name>
+ <object-name>btn.sta.L</object-name>
+ <object-name>btn.wpt.L</object-name>
+ <object-name>btn.arpt.L</object-name>
+ <object-name>btn.wxr.R</object-name>
+ <object-name>btn.sta.R</object-name>
+ <object-name>btn.wpt.R</object-name>
+ <object-name>btn.arpt.R</object-name>
+ <object-name>btn.nd.mode.L</object-name>
+ <object-name>btn.nd.range.L</object-name>
+ <object-name>btn.nd.mode.R</object-name>
+ <object-name>btn.nd.range.R</object-name>
+ <object-name>btn.pos.L</object-name>
+ <object-name>btn.pos.R</object-name>
+ <object-name>fdcap</object-name>
+ <object-name>fdfo</object-name>
+<emission>
+<red>0.5</red>
+<green>0.5</green>
+<blue>0.5</blue>
+	<factor-prop>/controls/lighting/panel-overhead-norm</factor-prop>
+</emission>
+</animation>
 </PropertyList>
