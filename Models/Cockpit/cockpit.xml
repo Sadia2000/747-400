@@ -24,16 +24,6 @@
 		<property>sim/current-view/internal</property>
 	</condition>
     </animation>
-<animation>
- <type>material</type> 
- <object-name>overhead</object-name>
-<emission>
-<red>0.5</red>
-<green>0.5</green>
-<blue>0.5</blue>
-	<factor-prop>/controls/lighting/panel-overhead-norm</factor-prop>
-</emission>
-</animation>
 <model>
 	<name>forward</name>
 	<path>Aircraft/747-400/Models/Cockpit/forward.xml</path>
@@ -51,17 +41,6 @@
 		<property>sim/current-view/internal</property>
 	</condition>
     </animation>
-<animation>
- <type>material</type> 
- 	<object-name>forward</object-name>
-	<emission>
-		<red>0.5</red>
-		<green>0.5</green>
-		<blue>0.5</blue>
-			<factor-prop>/controls/lighting/panel-glareshield-norm</factor-prop>
-	</emission>
-</animation>
-
 <!-- ### PEDESTAL PANEL ### -->
 
 <effect>
