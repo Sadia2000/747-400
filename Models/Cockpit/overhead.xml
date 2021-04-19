@@ -3704,12 +3704,46 @@
 <animation>
  <type>material</type> 
  <object-name>ohpanel</object-name>
+ <object-name>dem_pump_sw.1</object-name>
+ <object-name>dem_pump_sw.2</object-name>
+ <object-name>dem_pump_sw.3</object-name>
+ <object-name>dem_pump_sw.4</object-name>
+ <object-name>stbypwr</object-name>
+ <object-name>apu</object-name>
+ <object-name>apu.003</object-name>
+ <object-name>apu.002</object-name>
+ <object-name>apu.001</object-name>
+ <object-name>wiper.l</object-name>
+ <object-name>wiper.r</object-name>
+ <object-name>light.outbd.l</object-name>
+ <object-name>light.outbd.r</object-name>
+ <object-name>light.inbd.l</object-name>
+ <object-name>light.inbd.r</object-name>
+ <object-name>light.rwy.l</object-name>
+ <object-name>light.rwy.r</object-name>
+ <object-name>light.beacon</object-name>
+ <object-name>light.nav</object-name>
+ <object-name>light.strobe</object-name>
+ <object-name>light.wing</object-name>
+ <object-name>light.logo</object-name>
+ <object-name>sw.light.nav.005</object-name>
+ <object-name>pack.004</object-name>
+ <object-name>auto-ignition</object-name>
+ <object-name>fuel-to-remain</object-name>
+ <object-name>auto-ignition.002</object-name>
+ <object-name>fuel-to-remain.003</object-name>
+ <object-name>pass.temp</object-name>
+ <object-name>flt.deck.temp</object-name>
+ <object-name>cargo.temp</object-name>
+ <object-name>equip.cooling</object-name>
+ <object-name>pack.1</object-name>
+ <object-name>pack.2</object-name>
+ <object-name>pack.3</object-name>
 <emission>
-<red>1</red>
-<green>1</green>
-<blue>1</blue>
+<red>0.5</red>
+<green>0.5</green>
+<blue>0.5</blue>
 	<factor-prop>/controls/lighting/panel-overhead-norm</factor-prop>
 </emission>
 </animation>
-
 </PropertyList>
