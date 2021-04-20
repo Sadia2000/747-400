@@ -235,7 +235,7 @@
 		<y>1</y>
 	</axis>
 </animation>
-
+	
 <animation>
 <type>pick</type>
 <object-name>GearLever</object-name>
@@ -244,21 +244,11 @@
 	<button>0</button>
 	<repeatable>false</repeatable>
 <binding>
-<command>nasal</command>
-	<script>
-	if (getprop ("controls/gear/gear-state") == -1 and !getprop ("gear/gear[1]/wow")){
-	setprop ("controls/gear/gear-state", 1);
-    controls.gearDown(-1)
-}
-}
-	elsif (getprop ("controls/gear/gear-state") == 1){
-	setprop ("controls/gear/gear-state", 0);
-}
-	elsif (getprop ("controls/gear/gear-state") == 0){
-	setprop ("controls/gear/gear-state", -1);
-    controls.gearDown(1)
-}			
-	</script>
+<command>property-cycle</command>
+<property>controls/gear/gear-state</property>
+<value>-1</value>
+<value>1</value>
+<value>0</value>
 </binding>
 </action>
 </animation>
