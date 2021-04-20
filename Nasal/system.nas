@@ -225,16 +225,13 @@ controls.gearDown = func(v) {
 ## Repair failures/malfunctions ##
 var repair = func() {
 	setprop("/controls/failures/wings/broken",0);
-	setprop("/controls/engines/engine[0]/on-fire",0);
-	setprop("/controls/engines/engine[1]/on-fire",0);
-	setprop("/controls/engines/engine[2]/on-fire",0);
-	setprop("/controls/engines/engine[3]/on-fire",0);
 	setprop("/controls/failures/gear[0]/stuck",0);
 	setprop("/controls/failures/gear[1]/stuck",0);
 	setprop("/controls/failures/gear[2]/stuck",0);
 	setprop("/controls/failures/gear[3]/stuck",0);
 	setprop("/controls/failures/gear[4]/stuck",0);
 	gearHeating.reset();
+	resetfail.enginefirereset();
 }
 
 ## Fill fuel tanks ##
