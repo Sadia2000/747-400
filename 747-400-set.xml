@@ -920,6 +920,9 @@ left mouse button and counter clockwise using the middle mouse button.
         <efb>
 		<file>Aircraft/747-400/Nasal/efb.nas</file>
 	</efb>
+        <gear>
+		<file>Aircraft/747-400/Nasal/gear.nas</file>
+	</gear>
 </nasal>
 
 <payload>
