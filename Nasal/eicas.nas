@@ -132,6 +132,7 @@ var warning_messages = func {
 			msgs_fire = msgs_fire~"3, ";
 		if (engfire[3] and !engext[3])
 			msgs_fire = msgs_fire~"4, ";
+		if(!engext[0] or !engext[1] or !engext[2] or !engext[3])
 		append(msgs_warning,substr(msgs_fire,0,size(msgs_fire)-2));
 	}
 	if (getprop("instrumentation/fmc/vspeeds/Vmax") != nil) {
