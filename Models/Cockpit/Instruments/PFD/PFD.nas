@@ -358,8 +358,8 @@ var canvas_PFD = {
 		}
 		if (getprop("instrumentation/weu/state/stall-speed") != nil)
 			me["minSpdInd"].setTranslation(0,-getprop("instrumentation/weu/state/stall-speed")*5.63915);
-		if (getprop("instrumentation/pfd/overspeed-kt") != nil)
-			me["maxSpdInd"].setTranslation(0,-getprop("instrumentation/pfd/overspeed-kt")*5.63915);
+		if (getprop("instrumentation/fmc/vspeeds/Vmax") != nil)
+			me["maxSpdInd"].setTranslation(0,-getprop("instrumentation/fmc/vspeeds/Vmax")*5.63915);
 		if (dh != nil)
 			me["minimums"].setTranslation(0,-dh*0.9);
 		if (getprop("autopilot/route-manager/destination/field-elevation-ft") != nil) {
