@@ -1,6 +1,6 @@
 # 747-400
 This is a project trying to do basic improvements to the LincolnWorks-Flightgear/747-400.<br><br>
-Discrod server link:https://discord.gg/jZPuxwNmgw.<br><br>
+Discrod server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <img src=https://github.com/Sadia2000/747-400/blob/master/Splash/splash1.png alt=747-400_splashscreen>
 
 # Currently being developed by:
@@ -17,7 +17,6 @@ Discrod server link:https://discord.gg/jZPuxwNmgw.<br><br>
   <li>Firewarning on the engine-cutoff and fire extinguishers</li>
   <li>Enhance Fire effect and give it smoke and extinguisher foam effects</li>
   <li>New Gear handle from the 757</li>
-  <li>New Yoke from the 757</li>
   <li>New Seats from the 757</li>
   <li>New Fire Warnings</li>
   <li>New Fire warning on EICAS</li>
