@@ -24,6 +24,7 @@
 	<object-name>Blades</object-name>
 	<object-name>Cone</object-name>
 	<property alias="../../params/n1"/>
+   	<factor>38.54</factor>
 	<center>
 		<x-m>0</x-m>
 		<y-m>0</y-m>
