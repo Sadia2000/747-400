@@ -215,10 +215,13 @@ aircraft.livery.init("Aircraft/747-400/Models/Liveries");
 
 controls.gearDown = func(v) {
 	if (v < 0) {
-		if(!getprop("gear/gear[1]/wow"))setprop("/controls/gear/gear-down", 0);
+		if(!getprop("gear/gear[1]/wow")){
+		setprop("/controls/gear/gear-down", 0);
+		setprop("/controls/gear/gear-state", 1);
 	}
-	elsif (v > 0) {
+	}elsif (v > 0) {
 		setprop("/controls/gear/gear-down", 1);
+		setprop("/controls/gear/gear-state", -1);
 	}
 }
 
