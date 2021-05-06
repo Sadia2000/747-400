@@ -230,10 +230,11 @@
 		</pitch>
 	</engine>
 <!--Cockpit-->
+
 	<!-- Engine-n1-->
 	
 	<engine>
-		<name>engine1-n1</name>
+		<name>engine1-n1-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -246,20 +247,20 @@
 		</position>
 		<volume>
 			<property>/engines/engine/n1</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0065</factor>
 			            <min>0.0</min>
 			            <max>1.0</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine/n1</property>
 			<type>log</type>
-			<factor>0.25</factor>
+			<factor>0.35</factor>
 			            <min>0.0</min>
-			            <max>1.35</max>
+			            <max>0.75</max>
 		</pitch>
 	</engine>	
 	<engine>
-		<name>engine2-n1</name>
+		<name>engine2-n1-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -272,20 +273,20 @@
 		</position>
 		<volume>
 			<property>/engines/engine[1]/n1</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0065</factor>
 			            <min>0.0</min>
 			            <max>1.0</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine[1]/n1</property>
 			<type>log</type>
-			<factor>0.25</factor>
+			<factor>0.35</factor>
 			            <min>0.0</min>
-			            <max>1.35</max>
+			            <max>0.75</max>
 		</pitch>
 	</engine>
 	<engine>
-		<name>engine3-n1</name>
+		<name>engine3-n1-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -298,24 +299,24 @@
 		</position>
 		<volume>
 			<property>/engines/engine[2]/n1</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0065</factor>
 			            <min>0.0</min>
 			            <max>1.0</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine[2]/n1</property>
 			<type>log</type>
-			<factor>0.25</factor>
+			<factor>0.35</factor>
 			            <min>0.0</min>
-			            <max>1.35</max>
+			            <max>0.75</max>
 		</pitch>
 	</engine>
 	<engine>
-		<name>engine4-n1</name>
+		<name>engine4-n1-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
-            <property>sim/current-view/internal</property>
+           <property>sim/current-view/internal</property>
 	</condition>
 		<position>
 			<x>7.27922</x>
@@ -324,22 +325,22 @@
 		</position>
 		<volume>
 			<property>/engines/engine[3]/n1</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0065</factor>
 			            <min>0.0</min>
 			            <max>1.0</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine[3]/n1</property>
 			<type>log</type>
-			<factor>0.35</factor>
+			<factor>0.25</factor>
 			            <min>0.0</min>
-			            <max>1.35</max>
+			            <max>0.35</max>
 		</pitch>
 	</engine>
 	<!-- Engine-n2-->
 	
 	<engine>
-		<name>engine1-n2</name>
+		<name>engine1-n2-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -352,19 +353,19 @@
 		</position>
 		<volume>
 			<property>/engines/engine/n2</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0045</factor>
 			            <min>0.0</min>
 			            <max>0.75</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine/n2</property>
-			<factor>0.35</factor>
+			<factor>0.55</factor>
 			            <min>0.0</min>
 			            <max>2.5</max>
 		</pitch>
 	</engine>	
 	<engine>
-		<name>engine2-n2</name>
+		<name>engine2-n2-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -377,20 +378,20 @@
 		</position>
 		<volume>
 			<property>/engines/engine[1]/n2</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0045</factor>
 			            <min>0.0</min>
 			            <max>0.75</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine[1]/n2</property>
 			<type>log</type>
-			<factor>0.35</factor>
+			<factor>0.55</factor>
 			            <min>0.0</min>
 			            <max>2.5</max>
 		</pitch>
 	</engine>
 	<engine>
-		<name>engine3-n2</name>
+		<name>engine3-n2-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -403,20 +404,20 @@
 		</position>
 		<volume>
 			<property>/engines/engine[2]/n2</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0045</factor>
 			            <min>0.0</min>
 			            <max>0.75</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine[2]/n2</property>
 			<type>log</type>
-			<factor>0.35</factor>
+			<factor>0.55</factor>
 			            <min>0.0</min>
 			            <max>2.5</max>
 		</pitch>
 	</engine>
 	<engine>
-		<name>engine4-n2</name>
+		<name>engine4-n2-cockpit</name>
 		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
@@ -429,14 +430,14 @@
 		</position>
 		<volume>
 			<property>/engines/engine[3]/n2</property>
-			<factor type="double">0.0055</factor>
+			<factor type="double">0.0045</factor>
 			            <min>0.0</min>
 			            <max>0.75</max>
 		</volume>
 		<pitch>
 			<property>/engines/engine[3]/n2</property>
 			<type>log</type>
-			<factor>0.35</factor>
+			<factor>0.55</factor>
 			            <min>0.0</min>
 			            <max>2.5</max>
 		</pitch>
