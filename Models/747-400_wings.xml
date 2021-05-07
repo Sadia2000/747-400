@@ -41,6 +41,58 @@
 		<z-m> 0  </z-m>
 	</offsets>
 </model>
+	
+
+<!-- Starter-Smoke -->
+
+<model>
+	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+	
+	<condition>
+		<property>/controls/engines/engine[0]/starter</property>
+	</condition>
+	<offsets>
+		<x-m> 10.5 </x-m>
+		<y-m>-21.23</y-m>
+		<z-m> -1.97</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+		<condition>
+		<property>/controls/engines/engine[1]/starter</property>
+	</condition>
+	<offsets>
+		<x-m>  3    </x-m>
+		<y-m>-13.447</y-m>
+		<z-m> -2.575</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+		<condition>
+		<property>/controls/engines/engine[2]/starter</property>
+	</condition>
+	<offsets>
+		<x-m>  3    </x-m>
+		<y-m> 13.447</y-m>
+		<z-m> -2.575</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+		<condition>
+		<property>/controls/engines/engine[3]/starter</property>
+	</condition>
+	<offsets>
+		<x-m> 10.5 </x-m>
+		<y-m> 21.23</y-m>
+		<z-m> -1.97</z-m>
+	</offsets>
+</model>
 
 <!-- CONTRAILS -->
 
