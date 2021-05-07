@@ -22,7 +22,7 @@
 <animation>
 	<type>spin</type>
 	<object-name>Blades</object-name>
-	<object-name>Cone</object-name>
+	<object-name>shroud</object-name>
 	<property alias="../../params/n1"/>
    	<factor>38.54</factor>
 	<center>
@@ -48,5 +48,13 @@
 		<z>0</z>
 	</axis>
 </animation>
+
+    <animation>
+	<type>select</type>
+	<object-name>engine.cover</object-name>
+	<condition>
+		<property>controls/engine-cover</property>
+	</condition>
+    </animation>
 
 </PropertyList>
