@@ -7,7 +7,7 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <b>Itmam Mahmud (aka Sadia2000/AVIONADE) Working on 3D Modelling improvements, textures and lighting</b><br><br>
 <b>Mohamed Aissa (aka Uncle Aissa) Working on Enhancing systems, Cockpit 3D model, and new effects</b><br><br>
 <b>SP-NTX (aka NTX) Working on Enhancing systems, Cockpit Textures, and new effects</b><br><br>
-<b>Hornet (aka TheKaiTakGuy) Working on New Cockpit Textures.</b>
+<b>Hornet (aka Hornet) Working on New Cockpit Textures.</b>
 <br><br><br>
 # Change-Log
 <ul>
