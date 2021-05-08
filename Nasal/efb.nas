@@ -50,6 +50,11 @@ setprop("/instrumentation/efb/vnav_autogen/gen", 0);
 
 setprop("/instrumentation/efb/catchme/score", 0);
 
+setprop("/controls/engine-cover", 0);
+setprop("/controls/switches/Fuel", 0);
+setprop("/controls/switches/Fuel-pipe", 0);
+setprop("/controls/switches/cargo_ramp", 0);
+setprop("/controls/switches/gpu", 0);
 
         me.reset(); 
 }, 
@@ -95,6 +100,17 @@ keypress = "";
 }
 
 if (keypress == "l3") {
+if(getprop("engines/engine[0]/n2") == 0 and getprop("engines/engine[1]/n2") == 0 and getprop("engines/engine[2]/n2") == 0 and getprop("engines/engine[3]/n2") == 0){
+if (getprop("controls/engine-cover") == 0) {
+setprop("controls/engine-cover", 1);
+}else{
+setprop("controls/engine-cover", 0);
+}
+keypress = "";
+}
+}
+
+if (keypress == "l4") {
 setprop("instrumentation/efb/page", "Fuel Truck Page");
 keypress = "";
 }
@@ -322,9 +338,18 @@ if (getprop("controls/switches/cargo_ramp") == 1){
 }
 else l3 = "< Baggage Truck (State:Disconnected)";
 
-l5 = "< Fuel Truck Page"
+l7 = "< Fuel Truck Page";
 
-}	
+if(getprop("engines/engine[0]/n2") == 0 and getprop("engines/engine[1]/n2") == 0 and getprop("engines/engine[2]/n2") == 0 and getprop("engines/engine[3]/n2") == 0){
+if (getprop("controls/engine-cover") == 1){
+		l5 = "< Engine Cover (State:ON)";
+}
+else l5 = "< Engine Cover (State:Removed)";
+}
+else l5 ="All Engines have To Be OFF";
+
+}
+
 	else l1 = "No";
 },  
 
