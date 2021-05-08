@@ -1,5 +1,5 @@
 # 747-400
-This is a project trying to do basic improvements to the LincolnWorks-Flightgear/747-400.<br><br>
+This is a project trying to do some serious improvements to the LincolnWorks-Flightgear/747-400.<br><br>
 Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <img src=https://github.com/Sadia2000/747-400/blob/master/Splash/splash1.png alt=747-400_splashscreen>
 
