@@ -12,7 +12,7 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 # Change-Log
 <ul>
   <li>Improved base textures for the cockpit</li>
-  <li>Make a new EFB and Custom CDU</li>
+  <li>Make a new EFB and ...(secret, upcoming release will contain that.)</li>
   <li>Improved the Flaphandle and engine cutoff switches</li>
   <li>Added nightlight with switch controls (generic renderer is enough)</li>
   <li>Firewarning on the engine-cutoff and fire extinguishers</li>
