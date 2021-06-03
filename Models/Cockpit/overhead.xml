@@ -3337,13 +3337,13 @@
 <animation>
 	<type>knob</type>
 	<object-name>light.inbd.l</object-name>
-	<property>controls/lighting/landing-light-inbdl</property>
+	<property>controls/lighting/landing-light-inbd</property>
 	<factor>-25</factor>
 	<cursor>hand</cursor>
 	<action>
 		<binding>
 			<command>property-toggle</command>
-			<property>controls/lighting/landing-light-inbdl</property>
+			<property>controls/lighting/landing-light-inbd</property>
 		</binding>
 		<binding>
 			<command>nasal</command>
@@ -3361,13 +3361,13 @@
 <animation>
 	<type>knob</type>
 	<object-name>light.inbd.r</object-name>
-	<property>controls/lighting/landing-light-inbdr</property>
+	<property>controls/lighting/landing-light-inbd</property>
 	<factor>-25</factor>
 	<cursor>hand</cursor>
 	<action>
 		<binding>
 			<command>property-toggle</command>
-			<property>controls/lighting/landing-light-inbdr</property>
+			<property>controls/lighting/landing-light-inbd</property>
 		</binding>
 		<binding>
 			<command>nasal</command>
@@ -3385,13 +3385,13 @@
 <animation>
 	<type>knob</type>
 	<object-name>light.outbd.l</object-name>
-	<property>controls/lighting/landing-light-outbdl</property>
+	<property>controls/lighting/landing-light-outbd</property>
 	<factor>-25</factor>
 	<cursor>hand</cursor>
 	<action>
 		<binding>
 			<command>property-toggle</command>
-			<property>controls/lighting/landing-light-outbdl</property>
+			<property>controls/lighting/landing-light-outbd</property>
 		</binding>
 		<binding>
 			<command>nasal</command>
@@ -3409,13 +3409,13 @@
 <animation>
 	<type>knob</type>
 	<object-name>light.outbd.r</object-name>
-	<property>controls/lighting/landing-light-outbdr</property>
+	<property>controls/lighting/landing-light-outbd</property>
 	<factor>-25</factor>
 	<cursor>hand</cursor>
 	<action>
 		<binding>
 			<command>property-toggle</command>
-			<property>controls/lighting/landing-light-outbdr</property>
+			<property>controls/lighting/landing-light-outbd</property>
 		</binding>
 		<binding>
 			<command>nasal</command>
@@ -3429,7 +3429,6 @@
 		<y>1</y>
 	</axis>
 </animation>
-
 <animation>
 	<type>knob</type>
 	<object-name>light.rwy.l</object-name>
