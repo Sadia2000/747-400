@@ -22,7 +22,7 @@
 	
 	<engine>
 		<name>engine1-n1</name>
-		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
             <not><property>sim/current-view/internal</property></not>
@@ -48,7 +48,7 @@
 	</engine>	
 	<engine>
 		<name>engine2-n1</name>
-		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
             <not><property>sim/current-view/internal</property></not>
@@ -74,7 +74,7 @@
 	</engine>
 	<engine>
 		<name>engine3-n1</name>
-		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
             <not><property>sim/current-view/internal</property></not>
@@ -100,7 +100,7 @@
 	</engine>
 	<engine>
 		<name>engine4-n1</name>
-		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
 		<mode>looped</mode>
 	<condition>
             <not><property>sim/current-view/internal</property></not>
@@ -341,7 +341,7 @@
 	
 	<engine>
 		<name>engine1-n2-cockpit</name>
-		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
             <property>sim/current-view/internal</property>
@@ -366,7 +366,7 @@
 	</engine>	
 	<engine>
 		<name>engine2-n2-cockpit</name>
-		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
             <property>sim/current-view/internal</property>
@@ -392,7 +392,7 @@
 	</engine>
 	<engine>
 		<name>engine3-n2-cockpit</name>
-		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
             <property>sim/current-view/internal</property>
@@ -418,7 +418,7 @@
 	</engine>
 	<engine>
 		<name>engine4-n2-cockpit</name>
-		<path>Aircraft/747-400/Sounds/jet-trent2.wav</path>
+		<path>Aircraft/747-400/Sounds/jet-trent1.wav</path>
 		<mode>looped</mode>
 	<condition>
             <property>sim/current-view/internal</property>
