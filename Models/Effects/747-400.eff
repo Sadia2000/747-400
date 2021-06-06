@@ -25,14 +25,14 @@
 		</texture>
 		
 		<!-- Reflection -->
-		<reflection-enabled type="int">1</reflection-enabled>
-		<reflection-correction type="float">-0.1</reflection-correction>
-		<reflect-map-enabled type="int">0</reflect-map-enabled>
-		<reflection-dynamic type="int">1</reflection-dynamic>
-		<reflection-fresnel type="float">0.0</reflection-fresnel>
-		<reflection-rainbow type="float">0.0</reflection-rainbow>
-		<reflection-noise type="float">0.0</reflection-noise>
-		<ambient-correction type="float">0.15</ambient-correction>
+	        <reflection-enabled type="int"> 1 </reflection-enabled>
+	        <reflection-correction type="float">-0.2</reflection-correction>
+	        <reflection-fresnel-factor type="float">0.6</reflection-fresnel-factor>
+	        <reflection-type type="int">2</reflection-type>
+	        <reflection-dynamic type="int"> 2 </reflection-dynamic>
+	        <reflection-fresnel type="float"> 0.2 </reflection-fresnel>
+	        <reflection-rainbow type="float"> 0.1 </reflection-rainbow>
+	        <reflection-noise type="float"> 0.7 </reflection-noise>
 	</parameters>
 
 </PropertyList>
