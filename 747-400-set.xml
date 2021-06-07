@@ -372,7 +372,7 @@ left mouse button and counter clockwise using the middle mouse button.
 		<path>sim/model/autopush/route/show</path>
 		<path>sim/model/autopush/route/show-wingtip</path>
 	</aircraft-data>
-<minimum-fg-version>2018.3.5</minimum-fg-version>
+<minimum-fg-version>2020.2</minimum-fg-version>
 </sim>
 
 <it-autoflight>
