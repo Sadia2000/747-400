@@ -3,7 +3,7 @@ This is a basic documentation as to how to install the <b>TRD 747-400</b><br><br
   
 To install this Add-On, one MUST have a <b>Minimum FG V.2020.1</b><br><br>
 
-<a href=https://codeload.github.com/Sadia2000/747-400/zip/refs/heads/master>Download Link</a></li> for the zip file.  
+<a href=https://codeload.github.com/Sadia2000/747-400/zip/refs/heads/master>Download Link</a> for the zip file.  
 Extract the file like you would've done with any other Addon Aircraft
 Move the unpacked directory to your custom addon aircraft directory you've specified.
 
