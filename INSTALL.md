@@ -1,5 +1,5 @@
 # INSTALLATION
-This is a basic documentation as to how to install the "TRD 747-400"<br><br>
+This is a basic documentation as to how to install the <b>TRD 747-400</b><br><br>
   
 To install this Add-On, one MUST have a <b>Minimum FG V.2020.1</b><br><br>
 
