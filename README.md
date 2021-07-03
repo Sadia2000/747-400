@@ -24,3 +24,6 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
   <li>Optimised the systems to be FPS friendly as possible</li>
   <li>Much, much more!</li>
 </ul><br>
+<br>
+# Installation
+For the installation process, <a href=https://github.com/Sadia2000/747-400/blob/master/INSTALL.md><b>CLICK ME</b>/a>
