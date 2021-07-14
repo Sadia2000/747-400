@@ -70,7 +70,7 @@
 <effect>
 	<inherits-from>Effects/747-400</inherits-from>
 	<parameters>
-		<lightmap-factor n="2"><use>/controls/lighting/logo-lights</use></lightmap-factor>
+		<lightmap-factor n="2"><use>controls/lighting/logo</use></lightmap-factor>
 		<texture n="3">
 			<image>Aircraft/747-400/Models/Effects/lightmap.png</image>
 		</texture>
