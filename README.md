@@ -4,7 +4,7 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <img src=https://github.com/Sadia2000/747-400/blob/master/Splash/splash1.png alt=747-400_splashscreen>
 
 # Currently being developed by:
-<b>Itmam Mahmud (aka Sadia2000/AVIONADE) Working on textures and a total remodel of the entire cockpit</b><br><br>
+<b>Itmam Mahmud (aka Sadia2000/AVIONADE) Working on a total remodel of the entire cockpit</b><br><br>
 <b>Mohamed Aissa (aka Uncle Aissa) Working on Enhancing systems, Cockpit 3D model, and new effects</b><br><br>
 <b>SP-NTX (aka NTX) Working on Enhancing systems, Cockpit Textures, and new effects</b><br><br>
 <b>Hornet (aka Hornet) Working on Cockpit Textures, effects and reflections.</b>
