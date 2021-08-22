@@ -7,8 +7,8 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <b>Itmam Mahmud (aka Sadia2000/AVIONADE) Working on a total remodel of the entire cockpit</b><br><br>
 <b>Mohamed Aissa (aka Uncle Aissa) Working on Enhancing systems, Cockpit 3D model, and new effects</b><br><br>
 <b>SP-NTX (aka NTX) Working on Enhancing systems, Cockpit Textures, and new effects</b><br><br>
-<b>Hornet - Working on Cockpit Textures, effects and reflections.</b>
-<b>Www2 - Fixes to fuselage model.</b>
+<b>Hornet (aka Hornet979) Working on Cockpit Textures, effects and reflections.</b><br><br>
+<b>www2 Fixes to fuselage model.</b>
 <br><br><br>
 # Change-Log
 <ul>
