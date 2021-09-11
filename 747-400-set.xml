@@ -418,6 +418,9 @@ left mouse button and counter clockwise using the middle mouse button.
 		<retard-ft>50</retard-ft> <!-- Enable Thrust Retard -->
 		<togaspd>160</togaspd> <!-- V2 + 10kts -->
 	</settings>
+	<custom>
+		<at-arm>0</at-arm>
+	</custom>
 </it-autoflight>
 
 <consumables>
