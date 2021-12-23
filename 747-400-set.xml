@@ -182,6 +182,26 @@
 			<enabled type="bool">false</enabled>
 		</dynamic>
 	</view>
+	
+	
+	<view n="104">
+		<name>Overhead-View</name>
+		<type>lookfrom</type>
+		<internal type="bool">true</internal>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">3.49</y-offset-m>
+			<z-offset-m type="double">-23.99</z-offset-m>
+			<pitch-offset-deg>65</pitch-offset-deg>
+			<default-field-of-view-deg type="double">85.0</default-field-of-view-deg>
+		</config>
+		<dynamic>
+			<enabled type="bool">false</enabled>
+		</dynamic>
+	</view>
 
 	<chase-distance-m type="double" archive="y">-90.0</chase-distance-m>
 
