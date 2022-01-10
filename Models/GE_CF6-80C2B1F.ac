@@ -6945,6 +6945,7 @@ OBJECT poly
 name "engine_chrome"
 data 12
 Cylinder.002
+texture "engine_chrome.png"
 crease 30.0
 numvert 642
 -0.76602 -0.85585 -0.67858
