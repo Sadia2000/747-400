@@ -3,7 +3,7 @@
 
 <sim>
 	<description>Boeing 747-400</description>
-	<long-description>The Boeing 747-400 "Queen of the Skies" is a four-engine wide-body airliner. The -400 variant is the best-selling model of the 747 family.
+	<long-description>This is an improved version of the LincolnWorks-FlightGear/747-400.
 	</long-description>
 	<tags>
 		<tag>passenger</tag>
@@ -140,7 +140,7 @@
 		<config>
 			<x-offset-m type="double">-0.55</x-offset-m>
 			<y-offset-m type="double">3.8</y-offset-m>
-			<z-offset-m type="double">-24.05</z-offset-m>
+			<z-offset-m type="double">-23.80</z-offset-m>
 			<pitch-offset-deg>-10</pitch-offset-deg>
 			<default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
 		</config>
@@ -149,7 +149,7 @@
 	<view n="101">
 		<name>Nose Gear</name>
 		<type>lookfrom</type>
-		<internal type="bool">true</internal>
+		<internal type="bool">false</internal>
 		<config>
 			<from-model type="bool">true</from-model>
 			<from-model-idx type="int">0</from-model-idx>
@@ -174,8 +174,8 @@
 			<ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
 			<x-offset-m type="double">0.55</x-offset-m>
 			<y-offset-m type="double">3.8</y-offset-m>
-			<z-offset-m type="double">-24.05</z-offset-m>
-			<pitch-offset-deg>-10</pitch-offset-deg>
+			<z-offset-m type="double">-24.15</z-offset-m>
+			<pitch-offset-deg>-15</pitch-offset-deg>
 			<default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
 		</config>
 		<dynamic>
@@ -185,7 +185,7 @@
 	
 	
 	<view n="104">
-		<name>Overhead-View</name>
+		<name>Overhead View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
 		<config>
@@ -197,6 +197,46 @@
 			<z-offset-m type="double">-23.99</z-offset-m>
 			<pitch-offset-deg>65</pitch-offset-deg>
 			<default-field-of-view-deg type="double">85.0</default-field-of-view-deg>
+		</config>
+		<dynamic>
+			<enabled type="bool">false</enabled>
+		</dynamic>
+	</view>
+
+	<view n="103">
+		<name>Engine view</name>
+		<type>lookfrom</type>
+		<internal type="bool">false</internal>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">3.49</y-offset-m>
+			<z-offset-m type="double">-15.00</z-offset-m>
+			<pitch-offset-deg>-10</pitch-offset-deg>
+			<heading-offset-deg type="double">230</heading-offset-deg> 
+			<default-field-of-view-deg type="double">50.0</default-field-of-view-deg>
+		</config>
+		<dynamic>
+			<enabled type="bool">false</enabled>
+		</dynamic>
+	</view>
+
+	<view n="102">
+		<name>Wing view</name>
+		<type>lookfrom</type>
+		<internal type="bool">false</internal>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">3.49</y-offset-m>
+			<z-offset-m type="double">10.00</z-offset-m>
+			<pitch-offset-deg>-10</pitch-offset-deg>
+			<heading-offset-deg type="double">90</heading-offset-deg> 
+			<default-field-of-view-deg type="double">56.0</default-field-of-view-deg>
 		</config>
 		<dynamic>
 			<enabled type="bool">false</enabled>
