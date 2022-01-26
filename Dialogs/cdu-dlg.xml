@@ -125,7 +125,7 @@
 						var root = cdu_canvas_dlg.createGroup();
 						root.setScale(0.287, 0.257);
 						cdu_canvas_dlg.setColorBackground(0, 0, 0, 1.0);
-						root.createChild("image").set("src", "canvas://by-index/texture[8]");
+						root.createChild("image").set("src", "canvas://by-index/texture[6]");
 					]]>
 				</load>
 				<unload>
