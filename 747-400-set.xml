@@ -765,15 +765,6 @@ left mouse button and counter clockwise using the middle mouse button.
 			<volume>1</volume>
 		</gpws>
 	</annunciators>
-	<cdu>
-		<display>IDENT</display>
-		<ident>
-			<model>747-400</model>
-			<engines>-80C2B1F</engines>
-		</ident>
-		<input type="string"/>
-		<serviceable type="bool">1</serviceable>
-	</cdu>
 	<efis>
 		<inputs>
 			<tfc  type="bool">true</tfc>
