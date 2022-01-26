@@ -211,18 +211,6 @@
 		<texture>boeing_brown.png</texture>
 	</overlay>
 </model>
-<animation>
-	<type>scale</type>
-	<object-name>CDU3</object-name>
-	<x-offset>0.963</x-offset>
-	<y-offset>0.986</y-offset>
-	<z-offset>1</z-offset>
-	<center>
-		<x-m>1.450</x-m>
-		<y-m>0.000</y-m>
-		<z-m>0.415</z-m>
-	</center>
-</animation>
 
 <!-- TRANSPONDER -->
 
