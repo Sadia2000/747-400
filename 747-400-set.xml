@@ -973,11 +973,6 @@ left mouse button and counter clockwise using the middle mouse button.
   	  <file>Aircraft/747-400/Nasal/it-autoflight-interface.nas</file>
 	</itaf>
 	<Boeing747>
-	<cdu>
-        <file>Aircraft/747-400/Nasal/CDU/displays.nas</file>
-        <file>Aircraft/747-400/Nasal/CDU/utilities.nas</file>
-        <file>Aircraft/747-400/Nasal/CDU/sidebuttons.nas</file>
-	</cdu>
 		<!--<file>Aircraft/747-400/Nasal/autopilot.nas</file>
 		<file>Aircraft/747-400/Nasal/autopilot-routemanager.nas</file>-->
 		<file>Aircraft/747-400/Nasal/copilot.nas</file>
@@ -989,6 +984,11 @@ left mouse button and counter clockwise using the middle mouse button.
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/gear.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/primary.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/stat.nas</file>
+	<cdu>
+        <file>Aircraft/747-400/Nasal/CDU/displays.nas</file>
+        <file>Aircraft/747-400/Nasal/CDU/utilities.nas</file>
+        <file>Aircraft/747-400/Nasal/CDU/sidebuttons.nas</file>
+	</cdu>
 		<file>Aircraft/747-400/Nasal/eicas.nas</file> <!-- must load after EICAS -->
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/PFD/PFD.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/ND/ND.nas</file>
@@ -1009,9 +1009,6 @@ left mouse button and counter clockwise using the middle mouse button.
 	<autopush_route>
 		<file>Nasal/Autopush/route.nas</file>
 	</autopush_route>
-	<cdu>
-		<file>Aircraft/Instruments-3d/cdu/boeing.nas</file>
-	</cdu>
 	<dual_control_tools>
 		<file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
 	</dual_control_tools>
