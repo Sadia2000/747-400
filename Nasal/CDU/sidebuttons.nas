@@ -312,6 +312,12 @@ update();
 clear();
 }
 }
+if(button == "L6"){
+if(deletekey == 0){
+fp.activate();
+update();
+}
+}
 if(button == "R1"){
 if(deletekey == 0){
 fp.destination = findinput(input, "airport");
