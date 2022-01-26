@@ -1006,7 +1006,7 @@ destwp = fp.indexOfWP(destwp)+1;
 }
 
 	}else{
-		destwp = getprop("instrumentation/cdu/page/RTE/destwp");
+		destwp = getprop("instrumentation/cdu/page/RTE/destwp")+1;
 	}
 }
 numi = num + i;
@@ -1069,7 +1069,7 @@ destwp = fp.indexOfWP(destwp)+1;
 }
 
 	}else{
-		destwp = getprop("instrumentation/cdu/page/RTE/destwp");
+		destwp = getprop("instrumentation/cdu/page/RTE/destwp")+1;
 	}
 }
 numi = num + i;
