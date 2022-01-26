@@ -8,10 +8,13 @@
 	<action>
 		<button>0</button>
 		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.showCdupilot();</script>
-		</binding>
+					<binding>
+						<command>nasal</command>
+						<script>
+							var cdu = gui.Dialog.new("/sim/gui/dialogs/Boeing747/menu/dialog","Aircraft/747-400/Dialogs/cdu-dlg.xml");
+							cdu.open();
+						</script>
+					</binding>
 	</action>
 </animation>
 
