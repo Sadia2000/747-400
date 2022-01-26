@@ -986,6 +986,7 @@ left mouse button and counter clockwise using the middle mouse button.
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/stat.nas</file>
 		<file>Aircraft/747-400/Nasal/eicas.nas</file> <!-- must load after EICAS -->
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/PFD/PFD.nas</file>
+		<file>Aircraft/747-400/Models/Cockpit/Instruments/CDU/CDU.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/ND/ND.nas</file>
 		<file>Aircraft/747-400/Nasal/system.nas</file>
 		<file>Aircraft/747-400/Nasal/vspeeds.nas</file>
