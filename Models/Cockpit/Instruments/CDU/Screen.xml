@@ -1,0 +1,18 @@
+<PropertyList>
+
+<path>Screen.ac</path>
+
+<animation>
+<type>pick</type>
+	<object-name>CDUscreen</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable> 
+		<binding>
+			<command>nasal</command>
+			<script>Boeing747.showCdupilot();</script>
+		</binding>
+	</action>
+</animation>
+
+</PropertyList>
