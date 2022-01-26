@@ -984,11 +984,6 @@ left mouse button and counter clockwise using the middle mouse button.
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/gear.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/primary.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/stat.nas</file>
-	<cdu>
-        <file>Aircraft/747-400/Nasal/CDU/displays.nas</file>
-        <file>Aircraft/747-400/Nasal/CDU/utilities.nas</file>
-        <file>Aircraft/747-400/Nasal/CDU/sidebuttons.nas</file>
-	</cdu>
 		<file>Aircraft/747-400/Nasal/eicas.nas</file> <!-- must load after EICAS -->
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/PFD/PFD.nas</file>
 		<file>Aircraft/747-400/Models/Cockpit/Instruments/ND/ND.nas</file>
@@ -997,6 +992,11 @@ left mouse button and counter clockwise using the middle mouse button.
 		<file>Aircraft/747-400/Nasal/wipers.nas</file>
 		<file>Aircraft/Generic/limits.nas</file>
 	</Boeing747>
+	<cdu>
+        <file>Aircraft/747-400/Nasal/CDU/displays.nas</file>
+        <file>Aircraft/747-400/Nasal/CDU/utilities.nas</file>
+        <file>Aircraft/747-400/Nasal/CDU/sidebuttons.nas</file>
+	</cdu>
 	<autopush>
 		<file>Nasal/Autopush/autopush.nas</file>
 	</autopush>
