@@ -414,6 +414,17 @@ left mouse button and counter clockwise using the middle mouse button.
 						</script>
 					</binding>
 				</item>
+				
+				<item>
+					<label>CDU</label>
+					<binding>
+						<command>nasal</command>
+						<script>
+							var cdu = gui.Dialog.new("/sim/gui/dialogs/Boeing747/menu/dialog","Aircraft/747-400/Dialogs/cdu-dlg.xml");
+							cdu.open();
+						</script>
+					</binding>
+				</item>
 
 			</menu>
 		</default>
@@ -780,6 +791,46 @@ left mouse button and counter clockwise using the middle mouse button.
 			<display-type type="string">CRT</display-type>
 		</mfd>
 	</efis>
+	<cdu>
+        <update type="double">0</update>
+        <flt-no type="string">--------</flt-no>
+        <input type="string"></input>
+        <holding type="double">0</holding>
+        <clear type="bool">0</clear>
+        <cleartimer type="double">0</cleartimer>
+        <warnmessage type="double">0</warnmessage>
+        <deletekey type="double">0</deletekey>
+		<save>
+				<title>MENU</title>
+        <input type="string"></input>
+		</save>
+	    <page>
+		<current-page type="double">1</current-page>
+		<maxpage type="double">0</maxpage>
+		<POS-INIT>
+		<airport>----</airport>
+	    </POS-INIT>
+		<dep>
+		<sidsel>0</sidsel>
+	    </dep>
+		<app>
+		<num type="double">0</num>	
+		<maxpage type="double">1</maxpage>				
+		</app>
+		<RTE>
+		<num type="double">0</num>	
+		<currentpage type="string">0</currentpage>	
+		<input type="string"></input>
+        <firststarwp type="double">9999</firststarwp>		
+        <laststarwp type="double">9999</laststarwp>		
+        <missedapp type="double">0</missedapp>		
+		</RTE>
+		</page>
+	</cdu>
+	<amogus>
+	<amogus>not avail</amogus>
+	<num>not avail</num>
+	</amogus>
 	<efis n="1">
 		<inputs>
 			<tfc  type="bool">true</tfc>
@@ -922,6 +973,11 @@ left mouse button and counter clockwise using the middle mouse button.
   	  <file>Aircraft/747-400/Nasal/it-autoflight-interface.nas</file>
 	</itaf>
 	<Boeing747>
+	<cdu>
+        <file>Aircraft/747-400/Nasal/CDU/displays.nas</file>
+        <file>Aircraft/747-400/Nasal/CDU/utilities.nas</file>
+        <file>Aircraft/747-400/Nasal/CDU/sidebuttons.nas</file>
+	</cdu>
 		<!--<file>Aircraft/747-400/Nasal/autopilot.nas</file>
 		<file>Aircraft/747-400/Nasal/autopilot-routemanager.nas</file>-->
 		<file>Aircraft/747-400/Nasal/copilot.nas</file>
