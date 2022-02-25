@@ -1,0 +1,13 @@
+<?xml version="1.0"?> 
+<PropertyList> 
+
+<sim> 
+ <model> 
+  <livery> 
+   <name type="string">KLM Cargo-100 Years (2012)</name> 
+   <texture>Liveries/KLMF3-100.png</texture>
+  </livery> 
+ </model> 
+</sim> 
+
+</PropertyList> 

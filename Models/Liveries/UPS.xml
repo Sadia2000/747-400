@@ -1,0 +1,13 @@
+<?xml version="1.0"?> 
+<PropertyList> 
+
+<sim> 
+ <model> 
+  <livery> 
+   <name type="string">United Parcel Service</name> 
+   <texture>Liveries/UPS.png</texture>
+  </livery> 
+ </model> 
+</sim> 
+
+</PropertyList> 
