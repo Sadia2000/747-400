@@ -24,6 +24,7 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
   <li>New Fire Warnings</li>
   <li>New Fire warning on EICAS</li>
   <li>Optimised the systems to be FPS friendly as possible</li>
+  <li>New UV Map, New High Quality Paitkit and Liveries</li>
   <li>Much, much more!</li>
 </ul><br>
 <br>
