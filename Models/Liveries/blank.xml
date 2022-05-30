@@ -5,7 +5,7 @@
    <model>
       <livery> 
        <name type="string">Blank livery</name>  <!-- livery name -->
-       <texture>blank.png</texture>		<!-- livery image -->
+       <texture>Liveries/blank.png</texture>		<!-- livery image -->
       </livery> 
    </model> 
 </sim> 
