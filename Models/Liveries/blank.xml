@@ -2,12 +2,12 @@
 <PropertyList> 
 
 <sim> 
-	<model> 
-		<livery> 
-			<name type="string">Blank livery</name> 
-			<texture>blank.png</texture>
-		</livery> 
-	</model> 
+   <model>
+      <livery> 
+       <name type="string">Blank livery</name>  <!-- livery name -->
+       <texture>blank.png</texture>		<!-- livery image -->
+      </livery> 
+   </model> 
 </sim> 
 
 </PropertyList> 
