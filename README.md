@@ -9,6 +9,7 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <b>SP-NTX (aka NTX) Working on Enhancing systems, Cockpit Textures, and new effects, completly new UV Map and paintkit, liveries</b><br><br>
 <b>Hornet (aka Hornet979) Working on Cockpit Textures, effects and reflections.</b><br><br>
 <b>www2 Fixes to fuselage model.</b>
+<b>sriemmanuel787 Liveries, paintkit, and so on</b>
 <br><br><br>
 # Change-Log
 <ul>
