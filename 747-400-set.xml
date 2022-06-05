@@ -3,7 +3,8 @@
 
 <sim>
 	<description>Boeing 747-400</description>
-	<long-description>This is an improved version of the LincolnWorks-FlightGear/747-400.
+	<long-description>The 747-400 is a four-engine, jet passanger aircraft, produced by Boeing since 1989 to 2009. This addon currently includes only
+	GE engines variant.
 	</long-description>
 	<tags>
 		<tag>passenger</tag>
@@ -15,9 +16,9 @@
 		<tag>pressurised</tag>
 		<tag>dual-controls</tag>
 		<tag>jet</tag>
-		<tag>four-engine</tag>
+		<tag>4-engine</tag>
 	</tags>
-	<author>Actually developed by The Random Developers, orginal by: Gijs de Rooy, Jonathan Redpath, Ivan Ngeow, Markus Bulik and others</author>
+	<author>The Random Developers, original version by: Gijs de Rooy, Jonathan Redpath, Ivan Ngeow, Markus Bulik and others</author>
 	<status>early production</status>
 	<rating>
 		<FDM type="int">4</FDM>
@@ -50,7 +51,7 @@
             	        </preview>
 			<preview>
                			 <type>exterior</type>
-                		 <splash type="bool">false</splash>
+                		 <splash type="bool">true</splash>
                 	         <path>Splash/splash3.png</path>
             	        </preview>
 			 <preview>
@@ -94,7 +95,7 @@
 	
 	<systems>
 		<autopilot>
-			<name>Autopilot</name>
+			<name>Primary Autopilot</name>
 			<path>Aircraft/747-400/Systems/it-autoflight.xml</path>
 		</autopilot>
 		<autopilot>
