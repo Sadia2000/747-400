@@ -1,6 +1,0 @@
-CHANGELOG
--------------------------------------------------------------------------------------------------------------------------
-v0.1 Initial import aircraft 
-v1.0 ITAF added
-v1.1 Bugfixes, PFD fixes
-v1.2 More bugfixes, new effects
