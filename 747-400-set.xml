@@ -15,9 +15,9 @@
 		<tag>pressurised</tag>
 		<tag>dual-controls</tag>
 		<tag>jet</tag>
-		<tag>4-engine</tag>
+		<tag>four-engine</tag>
 	</tags>
-	<author>Gijs de Rooy, Jonathan Redpath, Ivan Ngeow, Markus Bulik and others</author>
+	<author>Actually developed by The Random Developers, orginal by: Gijs de Rooy, Jonathan Redpath, Ivan Ngeow, Markus Bulik and others</author>
 	<status>early production</status>
 	<rating>
 		<FDM type="int">4</FDM>
@@ -50,7 +50,7 @@
             	        </preview>
 			<preview>
                			 <type>exterior</type>
-                		 <splash type="bool">true</splash>
+                		 <splash type="bool">false</splash>
                 	         <path>Splash/splash3.png</path>
             	        </preview>
 			 <preview>
@@ -94,7 +94,7 @@
 	
 	<systems>
 		<autopilot>
-			<name>Primary Autopilot</name>
+			<name>Autopilot</name>
 			<path>Aircraft/747-400/Systems/it-autoflight.xml</path>
 		</autopilot>
 		<autopilot>
