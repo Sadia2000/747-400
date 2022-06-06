@@ -4,7 +4,7 @@
 <sim> 
  <model> 
   <livery> 
-   <name type="string">Air France(2009)</name> 
+   <name type="string">Air France (2009)</name> 
    <texture>Liveries/AFR-2009.png</texture>
   </livery> 
  </model> 
