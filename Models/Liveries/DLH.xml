@@ -1,0 +1,13 @@
+<?xml version="1.0"?> 
+<PropertyList> 
+
+<sim> 
+ <model> 
+  <livery> 
+   <name type="string">Lufthansa</name> 
+   <texture>Liveries/DLH.png</texture>
+  </livery> 
+ </model> 
+</sim> 
+
+</PropertyList> 
