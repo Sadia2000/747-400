@@ -6135,7 +6135,7 @@ name "engine_body_1"
 data 12
 Cylinder.001
 crease 30.0
-texture "blank.png"
+texture "DLH-BOEING.png"
 numvert 128
 0.4854 -0.95351 -0.97665
 0.47941 -1.12517 -0.76735
@@ -12692,7 +12692,7 @@ name "engine_reverser"
 data 12
 Cylinder.006
 crease 30.0
-texture "blank.png"
+texture "DLH-BOEING.png"
 numvert 99
 3.58081 -1.0887 -0
 3.12107 -1.17212 -0.1136
