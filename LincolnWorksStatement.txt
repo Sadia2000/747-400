@@ -1,3 +1,0 @@
-And we are also aware that the plane is underpowered from FL240 and up. We are fixing this on short term!  - LincolnWorks
-
-I havent found the issue with the weird jumping on the ground recently. It appears to be fixed but unsure about it.

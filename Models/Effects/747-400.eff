@@ -6,7 +6,7 @@
 	<parameters>
 	
 		<!-- Light Map -->
-		<lightmap-enabled type="int">1</lightmap-enabled>
+		<!-- <lightmap-enabled type="int">1</lightmap-enabled>
 		<lightmap-multi type="int">1</lightmap-multi>
 		<lightmap-factor type="float" n="0">0.0</lightmap-factor>
 		<lightmap-color type="vec3d" n="0">1.0 1.0 1.0</lightmap-color>
@@ -22,7 +22,7 @@
 			<wrap-s>clamp</wrap-s>
 			<wrap-t>clamp</wrap-t>
 			<internal-format>normalized</internal-format>
-		</texture>
+		</texture> -->
 		
 		<!-- Reflection -->
 	        <reflection-enabled type="int"> 1 </reflection-enabled>
