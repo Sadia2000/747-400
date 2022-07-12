@@ -672,6 +672,30 @@ left mouse button and counter clockwise using the middle mouse button.
 				<script>walk.walk_about(-0.1)</script>
 			</binding>
 		</key>
+		<key n="101">
+		        <name>e</name>
+			<desc>Idle</desc>
+			<binding>
+				<command>property-assign</command>
+				<property>/controls/engines/engine[0]/throttle</property>
+				<value type="int">0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>/controls/engines/engine[1]/throttle</property>
+				<value type="int">0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>/controls/engines/engine[2]/throttle</property>
+				<value type="int">0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>/controls/engines/engine[3]/throttle</property>
+				<value type="int">0</value>
+			</binding>
+		</key>
 		<key n="127">
 			<name>Delete</name>
 			<desc>Toggle Reversers</desc>
