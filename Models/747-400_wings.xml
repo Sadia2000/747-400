@@ -1,424 +1,424 @@
 <PropertyList>
 
-<path>747-400_wings.ac</path>
+     <path>747-400_wings.ac</path>
 
-<animation> 
-	<type>material</type> 
-	<object-name>winglet_left</object-name>
-	<object-name>winglet_right</object-name>
-	<property-base>sim/model/livery</property-base> 
-	<texture-prop>texture</texture-prop> 
-	<texture>BOE.png</texture> 
-</animation>
+     <animation>
+          <type>material</type>
+          <object-name>winglet_left</object-name>
+          <object-name>winglet_right</object-name>
+          <property-base>sim/model/livery</property-base>
+          <texture-prop>texture</texture-prop>
+          <texture>BOE.png</texture>
+     </animation>
 
-<animation>
-	<type>select</type>
-	<condition>
-		<not>
-			<property>controls/failures/wings/broken</property>
-		</not>
-	</condition>
-</animation>
+     <animation>
+          <type>select</type>
+          <condition>
+               <not>
+                    <property>controls/failures/wings/broken</property>
+               </not>
+          </condition>
+     </animation>
 
-<!-- FUEL JETTISON -->
+     <!-- FUEL JETTISON -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/fuel_jettison.xml</path>
-	<name>fueldump.1</name>
-	<offsets>
-		<x-m>  0.5</x-m>
-		<y-m>-26  </y-m>
-		<z-m>  0  </z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/fuel_jettison.xml</path>
+          <name>fueldump.1</name>
+          <offsets>
+               <x-m>  0.5</x-m>
+               <y-m>-26  </y-m>
+               <z-m>  0  </z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/fuel_jettison.xml</path>
-	<name>fueldump.2</name>
-	<offsets>
-		<x-m> 0.5</x-m>
-		<y-m>26  </y-m>
-		<z-m> 0  </z-m>
-	</offsets>
-</model>
-	
+     <model>
+          <path>Aircraft/747-400/Models/Effects/fuel_jettison.xml</path>
+          <name>fueldump.2</name>
+          <offsets>
+               <x-m> 0.5</x-m>
+               <y-m>26  </y-m>
+               <z-m> 0  </z-m>
+          </offsets>
+     </model>
 
-<!-- Starter-Smoke -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
-	
-	<condition>
-		<property>/controls/engines/engine[0]/starter</property>
-	</condition>
-	<offsets>
-		<x-m> 10.5 </x-m>
-		<y-m>-21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <!-- Starter-Smoke -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
-		<condition>
-		<property>/controls/engines/engine[1]/starter</property>
-	</condition>
-	<offsets>
-		<x-m>  3    </x-m>
-		<y-m>-13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
-		<condition>
-		<property>/controls/engines/engine[2]/starter</property>
-	</condition>
-	<offsets>
-		<x-m>  3    </x-m>
-		<y-m> 13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+          <condition>
+               <property>/controls/engines/engine[0]/starter</property>
+          </condition>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m>-21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
-		<condition>
-		<property>/controls/engines/engine[3]/starter</property>
-	</condition>
-	<offsets>
-		<x-m> 10.5 </x-m>
-		<y-m> 21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+          <condition>
+               <property>/controls/engines/engine[1]/starter</property>
+          </condition>
+          <offsets>
+               <x-m>  3    </x-m>
+               <y-m>-13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<!-- CONTRAILS -->
+     <model>
+          <path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+          <condition>
+               <property>/controls/engines/engine[2]/starter</property>
+          </condition>
+          <offsets>
+               <x-m>  3    </x-m>
+               <y-m> 13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/contrail.xml</path>
-	<offsets>
-		<x-m> 10.5 </x-m>
-		<y-m>-21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/engine-start.xml</path>
+          <condition>
+               <property>/controls/engines/engine[3]/starter</property>
+          </condition>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m> 21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/contrail.xml</path>
-	<offsets>
-		<x-m>  3    </x-m>
-		<y-m>-13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+     <!-- CONTRAILS -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/contrail.xml</path>
-	<offsets>
-		<x-m>  3    </x-m>
-		<y-m> 13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/contrail.xml</path>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m>-21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/contrail.xml</path>
-	<offsets>
-		<x-m> 10.5 </x-m>
-		<y-m> 21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/contrail.xml</path>
+          <offsets>
+               <x-m>  3    </x-m>
+               <y-m>-13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<!-- ENGINE #1 FIRE AND SMOKE AND EXT -->
+     <model>
+          <path>Aircraft/747-400/Models/Effects/contrail.xml</path>
+          <offsets>
+               <x-m>  3    </x-m>
+               <y-m> 13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/enginefire.xml</path> 
-	<name>enginefire.1</name>
-	<condition>
-		<and>
-		<property>engines/engine[0]/on-fire</property>
-			<not>
-			<property>engines/engine[0]/extinguished</property>			
-			</not>
-		</and>
-	</condition>
-	<offsets> 
-		<x-m> 10.5 </x-m>
-		<y-m>-21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/contrail.xml</path>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m> 21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/ext.xml</path> 
-	<name>engineext.1</name>
-	<condition>
-			<property>engines/engine[0]/extinguisher</property>			
-	</condition>
-	<offsets> 
-		<x-m> 10.5 </x-m>
-		<y-m>-21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <!-- ENGINE #1 FIRE AND SMOKE AND EXT -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/firesmoke.xml</path> 
-	<name>enginesmoke.1</name>
-	<condition>
-			<property>engines/engine[0]/on-fire</property>			
-	</condition>
-	<offsets> 
-		<x-m> 17.5 </x-m>
-		<y-m>-21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+          <name>enginefire.1</name>
+          <condition>
+               <and>
+                    <property>engines/engine[0]/on-fire</property>
+                    <not>
+                         <property>engines/engine[0]/extinguished</property>
+                    </not>
+               </and>
+          </condition>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m>-21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<!-- ENGINE #2 FIRE AND SMOKE AND EXT -->
+     <model>
+          <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+          <name>engineext.1</name>
+          <condition>
+               <property>engines/engine[0]/extinguisher</property>
+          </condition>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m>-21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/enginefire.xml</path> 
-	<name>enginefire.2</name>
-		<condition>
-		<and>
-		<property>engines/engine[1]/on-fire</property>
-			<not>
-			<property>engines/engine[1]/extinguished</property>			
-			</not>
-		</and>
-		</condition>
-	<offsets> 
-		<x-m>  3    </x-m>
-		<y-m>-13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+          <name>enginesmoke.1</name>
+          <condition>
+               <property>engines/engine[0]/on-fire</property>
+          </condition>
+          <offsets>
+               <x-m> 17.5 </x-m>
+               <y-m>-21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/ext.xml</path> 
-	<name>engineext.2</name>
-	<condition>
-			<property>engines/engine[1]/extinguisher</property>			
-	</condition>
-	<offsets> 
-		<x-m> 3 </x-m>
-		<y-m>-13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+     <!-- ENGINE #2 FIRE AND SMOKE AND EXT -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/firesmoke.xml</path> 
-	<name>enginesmoke.2</name>
-	<condition>
-			<property>engines/engine[1]/on-fire</property>			
-	</condition>
-	<offsets> 
-		<x-m> 10 </x-m>
-		<y-m>-13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+          <name>enginefire.2</name>
+          <condition>
+               <and>
+                    <property>engines/engine[1]/on-fire</property>
+                    <not>
+                         <property>engines/engine[1]/extinguished</property>
+                    </not>
+               </and>
+          </condition>
+          <offsets>
+               <x-m>  3    </x-m>
+               <y-m>-13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<!-- ENGINE #3 FIRE AND SMOKE AND EXT -->
+     <model>
+          <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+          <name>engineext.2</name>
+          <condition>
+               <property>engines/engine[1]/extinguisher</property>
+          </condition>
+          <offsets>
+               <x-m> 3 </x-m>
+               <y-m>-13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/enginefire.xml</path> 
-	<name>enginefire.3</name>
-			<condition>
-		<and>
-		<property>engines/engine[2]/on-fire</property>
-			<not>
-			<property>engines/engine[2]/extinguished</property>			
-			</not>
-		</and>
-		</condition>
-	<offsets> 
-		<x-m> 3   </x-m>
-		<y-m>13.447</y-m>
-		<z-m>-2.575</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+          <name>enginesmoke.2</name>
+          <condition>
+               <property>engines/engine[1]/on-fire</property>
+          </condition>
+          <offsets>
+               <x-m> 10 </x-m>
+               <y-m>-13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/ext.xml</path> 
-	<name>engineext.3</name>
-	<condition>
-			<property>engines/engine[2]/extinguisher</property>			
-	</condition>
-	<offsets> 
-		<x-m> 3 </x-m>
-		<y-m>13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
- 
- <model>
-	<path>Aircraft/747-400/Models/Effects/firesmoke.xml</path> 
-	<name>enginesmoke.3</name>
-	<condition>
-			<property>engines/engine[2]/on-fire</property>			
-	</condition>
-	<offsets> 
-		<x-m> 10 </x-m>
-		<y-m>13.447</y-m>
-		<z-m> -2.575</z-m>
-	</offsets>
-</model>
- 
-<!-- ENGINE #4 FIRE AND SMOKE AND EXT-->
+     <!-- ENGINE #3 FIRE AND SMOKE AND EXT -->
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/enginefire.xml</path> 
-	<name>enginefire.4</name>
-	<condition>
-		<and>
-		<property>engines/engine[3]/on-fire</property>
-			<not>
-			<property>engines/engine[3]/extinguished</property>			
-			</not>
-		</and>
-	</condition>
-	<offsets> 
-		<x-m>10.5</x-m>
-		<y-m>21.23</y-m>
-		<z-m>-1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+          <name>enginefire.3</name>
+          <condition>
+               <and>
+                    <property>engines/engine[2]/on-fire</property>
+                    <not>
+                         <property>engines/engine[2]/extinguished</property>
+                    </not>
+               </and>
+          </condition>
+          <offsets>
+               <x-m> 3   </x-m>
+               <y-m>13.447</y-m>
+               <z-m>-2.575</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/ext.xml</path> 
-	<name>engineext.4</name>
-	<condition>
-			<property>engines/engine[3]/extinguisher</property>			
-	</condition>
-	<offsets> 
-		<x-m> 10.5 </x-m>
-		<y-m>21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+          <name>engineext.3</name>
+          <condition>
+               <property>engines/engine[2]/extinguisher</property>
+          </condition>
+          <offsets>
+               <x-m> 3 </x-m>
+               <y-m>13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Effects/firesmoke.xml</path> 
-	<name>enginesmoke.4</name>
-	<condition>
-			<property>engines/engine[3]/on-fire</property>			
-	</condition>
-	<offsets> 
-		<x-m> 17.5 </x-m>
-		<y-m> 21.23</y-m>
-		<z-m> -1.97</z-m>
-	</offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+          <name>enginesmoke.3</name>
+          <condition>
+               <property>engines/engine[2]/on-fire</property>
+          </condition>
+          <offsets>
+               <x-m> 10 </x-m>
+               <y-m>13.447</y-m>
+               <z-m> -2.575</z-m>
+          </offsets>
+     </model>
 
-<effect>
-	<inherits-from>Effects/747-400</inherits-from>
-	<object-name>eng.1_1_1</object-name>
-	<object-name>eng.2_1_1</object-name>
-	<object-name>eng.3_1_1</object-name>
-	<object-name>eng.4_1_1</object-name>
-	<object-name>wing_right.1</object-name>
-	<object-name>wing_right.2</object-name>
-	<object-name>wing_right.3</object-name>
-	<object-name>GreenLight</object-name>
-	<object-name>StrobeLight.R</object-name>
-	<object-name>engine.3</object-name>
-	<object-name>eng.3</object-name>
-	<object-name>eng.3_fan</object-name>
-	<object-name>eng.3_reverser</object-name>
-	<object-name>enginefire.3</object-name>
- <object-name>enginesmoke.3</object-name>
- <object-name>engineext.3</object-name>
-	<object-name>engine.4</object-name>
-	<object-name>eng.4</object-name>
-	<object-name>eng.4_fan</object-name>
-	<object-name>eng.4_reverser</object-name>
-	<object-name>enginefire.4</object-name>
- <object-name>enginesmoke.4</object-name>
- <object-name>engineext.4</object-name>
-	<object-name>aileron_right_inner</object-name>
-	<object-name>aileron_right_outer</object-name>
-	<object-name>speedbrake_right.1</object-name>
-	<object-name>speedbrake_right.2</object-name>
-	<object-name>speedbrake_right.3</object-name>
-	<object-name>speedbrake_right.4</object-name>
-	<object-name>speedbrake_right.5</object-name>
-	<object-name>speedbrake_right.6</object-name>
-	<object-name>flap_right_inner.1</object-name>
-	<object-name>flap_right_inner.2</object-name>
-	<object-name>flap_right_inner.3</object-name>
-	<object-name>flap_right_outer.1</object-name>
-	<object-name>flap_right_outer.2</object-name>
-	<object-name>flap_right_outer.3</object-name>
-	<object-name>flap_right_h.1</object-name>
-	<object-name>flap_right_h.2</object-name>
-	<object-name>flap_right_h.3</object-name>
-	<object-name>flap_right_h.4</object-name>
-	<object-name>flap_right_h.1.1</object-name>
-	<object-name>flap_right_h.2.1</object-name>
-	<object-name>flap_right_h.3.1</object-name>
-	<object-name>flap_right_h.4.1</object-name>
-	<object-name>winglet_right</object-name>
-	<object-name>LEinbR.1</object-name>
-	<object-name>LEinbR.2</object-name>
-	<object-name>LEinbR.3</object-name>
-	<object-name>fueldump.2</object-name>
-	<object-name>wing_left.1</object-name>
-	<object-name>wing_left.2</object-name>
-	<object-name>wing_left.3</object-name>
-	<object-name>RedLight</object-name>
-	<object-name>StrobeLight.L</object-name>
-	<object-name>engine.1</object-name>
-	<object-name>eng.1</object-name>
-	<object-name>eng.1_fan</object-name>
-	<object-name>eng.1_reverser</object-name>
-	<object-name>enginefire.1</object-name>
- <object-name>enginesmoke.1</object-name>
- <object-name>engineext.1</object-name>
-	<object-name>engine.2</object-name>
-	<object-name>eng.2</object-name>
-	<object-name>eng.2_fan</object-name>
-	<object-name>eng.2_reverser</object-name>
-	<object-name>enginefire.2</object-name>
- <object-name>enginesmoke.2</object-name>
- <object-name>engineext.2</object-name>
-	<object-name>aileron_left_inner</object-name>
-	<object-name>aileron_left_outer</object-name>
-	<object-name>speedbrake_left.1</object-name>
-	<object-name>speedbrake_left.2</object-name>
-	<object-name>speedbrake_left.3</object-name>
-	<object-name>speedbrake_left.4</object-name>
-	<object-name>speedbrake_left.5</object-name>
-	<object-name>speedbrake_left.6</object-name>
-	<object-name>flap_left_inner.1</object-name>
-	<object-name>flap_left_inner.2</object-name>
-	<object-name>flap_left_inner.3</object-name>
-	<object-name>flap_left_outer.1</object-name>
-	<object-name>flap_left_outer.2</object-name>
-	<object-name>flap_left_outer.3</object-name>
-	<object-name>flap_left_h.1</object-name>
-	<object-name>flap_left_h.2</object-name>
-	<object-name>flap_left_h.3</object-name>
-	<object-name>flap_left_h.4</object-name>
-	<object-name>flap_left_h.1.1</object-name>
-	<object-name>flap_left_h.2.1</object-name>
-	<object-name>flap_left_h.3.1</object-name>
-	<object-name>flap_left_h.4.1</object-name>
-	<object-name>winglet_left</object-name>
-	<object-name>LEinbL.1</object-name>
-	<object-name>LEinbL.2</object-name>
-	<object-name>LEinbL.3</object-name>
-	<object-name>fueldump.1</object-name>
-</effect>
+     <!-- ENGINE #4 FIRE AND SMOKE AND EXT-->
 
-<!-- WING FLEX RIGHT -->
+     <model>
+          <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+          <name>enginefire.4</name>
+          <condition>
+               <and>
+                    <property>engines/engine[3]/on-fire</property>
+                    <not>
+                         <property>engines/engine[3]/extinguished</property>
+                    </not>
+               </and>
+          </condition>
+          <offsets>
+               <x-m>10.5</x-m>
+               <y-m>21.23</y-m>
+               <z-m>-1.97</z-m>
+          </offsets>
+     </model>
 
-<!--<animation>
+     <model>
+          <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+          <name>engineext.4</name>
+          <condition>
+               <property>engines/engine[3]/extinguisher</property>
+          </condition>
+          <offsets>
+               <x-m> 10.5 </x-m>
+               <y-m>21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
+
+     <model>
+          <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+          <name>enginesmoke.4</name>
+          <condition>
+               <property>engines/engine[3]/on-fire</property>
+          </condition>
+          <offsets>
+               <x-m> 17.5 </x-m>
+               <y-m> 21.23</y-m>
+               <z-m> -1.97</z-m>
+          </offsets>
+     </model>
+
+     <effect>
+          <inherits-from>Effects/747-400</inherits-from>
+          <object-name>eng.1_1_1</object-name>
+          <object-name>eng.2_1_1</object-name>
+          <object-name>eng.3_1_1</object-name>
+          <object-name>eng.4_1_1</object-name>
+          <object-name>wing_right.1</object-name>
+          <object-name>wing_right.2</object-name>
+          <object-name>wing_right.3</object-name>
+          <object-name>GreenLight</object-name>
+          <object-name>StrobeLight.R</object-name>
+          <object-name>engine.3</object-name>
+          <object-name>eng.3</object-name>
+          <object-name>eng.3_fan</object-name>
+          <object-name>eng.3_reverser</object-name>
+          <object-name>enginefire.3</object-name>
+          <object-name>enginesmoke.3</object-name>
+          <object-name>engineext.3</object-name>
+          <object-name>engine.4</object-name>
+          <object-name>eng.4</object-name>
+          <object-name>eng.4_fan</object-name>
+          <object-name>eng.4_reverser</object-name>
+          <object-name>enginefire.4</object-name>
+          <object-name>enginesmoke.4</object-name>
+          <object-name>engineext.4</object-name>
+          <object-name>aileron_right_inner</object-name>
+          <object-name>aileron_right_outer</object-name>
+          <object-name>speedbrake_right.1</object-name>
+          <object-name>speedbrake_right.2</object-name>
+          <object-name>speedbrake_right.3</object-name>
+          <object-name>speedbrake_right.4</object-name>
+          <object-name>speedbrake_right.5</object-name>
+          <object-name>speedbrake_right.6</object-name>
+          <object-name>flap_right_inner.1</object-name>
+          <object-name>flap_right_inner.2</object-name>
+          <object-name>flap_right_inner.3</object-name>
+          <object-name>flap_right_outer.1</object-name>
+          <object-name>flap_right_outer.2</object-name>
+          <object-name>flap_right_outer.3</object-name>
+          <object-name>flap_right_h.1</object-name>
+          <object-name>flap_right_h.2</object-name>
+          <object-name>flap_right_h.3</object-name>
+          <object-name>flap_right_h.4</object-name>
+          <object-name>flap_right_h.1.1</object-name>
+          <object-name>flap_right_h.2.1</object-name>
+          <object-name>flap_right_h.3.1</object-name>
+          <object-name>flap_right_h.4.1</object-name>
+          <object-name>winglet_right</object-name>
+          <object-name>LEinbR.1</object-name>
+          <object-name>LEinbR.2</object-name>
+          <object-name>LEinbR.3</object-name>
+          <object-name>fueldump.2</object-name>
+          <object-name>wing_left.1</object-name>
+          <object-name>wing_left.2</object-name>
+          <object-name>wing_left.3</object-name>
+          <object-name>RedLight</object-name>
+          <object-name>StrobeLight.L</object-name>
+          <object-name>engine.1</object-name>
+          <object-name>eng.1</object-name>
+          <object-name>eng.1_fan</object-name>
+          <object-name>eng.1_reverser</object-name>
+          <object-name>enginefire.1</object-name>
+          <object-name>enginesmoke.1</object-name>
+          <object-name>engineext.1</object-name>
+          <object-name>engine.2</object-name>
+          <object-name>eng.2</object-name>
+          <object-name>eng.2_fan</object-name>
+          <object-name>eng.2_reverser</object-name>
+          <object-name>enginefire.2</object-name>
+          <object-name>enginesmoke.2</object-name>
+          <object-name>engineext.2</object-name>
+          <object-name>aileron_left_inner</object-name>
+          <object-name>aileron_left_outer</object-name>
+          <object-name>speedbrake_left.1</object-name>
+          <object-name>speedbrake_left.2</object-name>
+          <object-name>speedbrake_left.3</object-name>
+          <object-name>speedbrake_left.4</object-name>
+          <object-name>speedbrake_left.5</object-name>
+          <object-name>speedbrake_left.6</object-name>
+          <object-name>flap_left_inner.1</object-name>
+          <object-name>flap_left_inner.2</object-name>
+          <object-name>flap_left_inner.3</object-name>
+          <object-name>flap_left_outer.1</object-name>
+          <object-name>flap_left_outer.2</object-name>
+          <object-name>flap_left_outer.3</object-name>
+          <object-name>flap_left_h.1</object-name>
+          <object-name>flap_left_h.2</object-name>
+          <object-name>flap_left_h.3</object-name>
+          <object-name>flap_left_h.4</object-name>
+          <object-name>flap_left_h.1.1</object-name>
+          <object-name>flap_left_h.2.1</object-name>
+          <object-name>flap_left_h.3.1</object-name>
+          <object-name>flap_left_h.4.1</object-name>
+          <object-name>winglet_left</object-name>
+          <object-name>LEinbL.1</object-name>
+          <object-name>LEinbL.2</object-name>
+          <object-name>LEinbL.3</object-name>
+          <object-name>fueldump.1</object-name>
+     </effect>
+
+     <!-- WING FLEX RIGHT -->
+
+     <!--<animation>
  <type>rotate</type>
  <object-name>wing_right.1</object-name>
  <object-name>wing_right.2</object-name>
@@ -477,72 +477,72 @@
  </axis>
 </animation>-->
 
-<animation>
- <type>rotate</type>
- <object-name>wing_right.2</object-name>
- <object-name>wing_right.3</object-name>
- <object-name>GreenLight</object-name>
- <object-name>StrobeLight.R</object-name>
- <object-name>engine.4</object-name>
- <object-name>eng.4</object-name>
- <object-name>eng.4_fan</object-name>
- <object-name>eng.4_reverser</object-name>
- <object-name>enginefire.4</object-name>
-  <object-name>enginesmoke.4</object-name>
-   <object-name>engineext.4</object-name>
- <object-name>aileron_right_outer</object-name>
- <object-name>speedbrake_right.3</object-name>
- <object-name>speedbrake_right.4</object-name>
- <object-name>speedbrake_right.5</object-name>
- <object-name>speedbrake_right.6</object-name>
- <object-name>flap_right_outer.1</object-name>
- <object-name>flap_right_outer.2</object-name>
- <object-name>flap_right_outer.3</object-name>
- <object-name>flap_right_h.3</object-name>
- <object-name>flap_right_h.4</object-name>
- <object-name>flap_right_h.3.1</object-name>
- <object-name>flap_right_h.4.1</object-name>
- <object-name>winglet_right</object-name>
- <object-name>fueldump.2</object-name>
- <property>fdm/jsbsim/forces/wing[3]</property>
- <factor>-0.0004</factor>
- <center>
-  <x-m>0</x-m>
-  <y-m>13.0</y-m>
-  <z-m>-1.25</z-m>
- </center>
- <axis>
-  <x>-1</x>
-  <y>0</y>
-  <z>0</z>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>wing_right.2</object-name>
+          <object-name>wing_right.3</object-name>
+          <object-name>GreenLight</object-name>
+          <object-name>StrobeLight.R</object-name>
+          <object-name>engine.4</object-name>
+          <object-name>eng.4</object-name>
+          <object-name>eng.4_fan</object-name>
+          <object-name>eng.4_reverser</object-name>
+          <object-name>enginefire.4</object-name>
+          <object-name>enginesmoke.4</object-name>
+          <object-name>engineext.4</object-name>
+          <object-name>aileron_right_outer</object-name>
+          <object-name>speedbrake_right.3</object-name>
+          <object-name>speedbrake_right.4</object-name>
+          <object-name>speedbrake_right.5</object-name>
+          <object-name>speedbrake_right.6</object-name>
+          <object-name>flap_right_outer.1</object-name>
+          <object-name>flap_right_outer.2</object-name>
+          <object-name>flap_right_outer.3</object-name>
+          <object-name>flap_right_h.3</object-name>
+          <object-name>flap_right_h.4</object-name>
+          <object-name>flap_right_h.3.1</object-name>
+          <object-name>flap_right_h.4.1</object-name>
+          <object-name>winglet_right</object-name>
+          <object-name>fueldump.2</object-name>
+          <property>fdm/jsbsim/forces/wing[3]</property>
+          <factor>-0.0004</factor>
+          <center>
+               <x-m>0</x-m>
+               <y-m>13.0</y-m>
+               <z-m>-1.25</z-m>
+          </center>
+          <axis>
+               <x>-1</x>
+               <y>0</y>
+               <z>0</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>wing_right.3</object-name>
- <object-name>GreenLight</object-name>
- <object-name>StrobeLight.R</object-name>
- <object-name>aileron_right_outer</object-name>
- <object-name>winglet_right</object-name>
- <object-name>fueldump.2</object-name>
- <property>fdm/jsbsim/forces/wing[4]</property>
- <factor>-0.0004</factor>
- <center>
-  <x-m>0</x-m>
-  <y-m>21.5</y-m>
-  <z-m>-1.25</z-m>
- </center>
- <axis>
-  <x>-1</x>
-  <y>0</y>
-  <z>0</z>
- </axis>
- </animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>wing_right.3</object-name>
+          <object-name>GreenLight</object-name>
+          <object-name>StrobeLight.R</object-name>
+          <object-name>aileron_right_outer</object-name>
+          <object-name>winglet_right</object-name>
+          <object-name>fueldump.2</object-name>
+          <property>fdm/jsbsim/forces/wing[4]</property>
+          <factor>-0.0004</factor>
+          <center>
+               <x-m>0</x-m>
+               <y-m>21.5</y-m>
+               <z-m>-1.25</z-m>
+          </center>
+          <axis>
+               <x>-1</x>
+               <y>0</y>
+               <z>0</z>
+          </axis>
+     </animation>
 
-<!-- WING FLEX LEFT -->
+     <!-- WING FLEX LEFT -->
 
-<!--<animation>
+     <!--<animation>
  <type>rotate</type>
  <object-name>wing_left.1</object-name>
  <object-name>wing_left.2</object-name>
@@ -601,1187 +601,1187 @@
  </axis>
 </animation>-->
 
-<animation>
- <type>rotate</type>
- <object-name>wing_left.2</object-name>
- <object-name>wing_left.3</object-name>
- <object-name>RedLight</object-name>
- <object-name>StrobeLight.L</object-name>
- <object-name>engine.1</object-name>
- <object-name>eng.1</object-name>
- <object-name>eng.1_fan</object-name>
- <object-name>eng.1_reverser</object-name>
-	<object-name>enginefire.1</object-name>
- <object-name>enginesmoke.1</object-name>
- <object-name>engineext.1</object-name>
- <object-name>aileron_left_outer</object-name>
- <object-name>speedbrake_left.3</object-name>
- <object-name>speedbrake_left.4</object-name>
- <object-name>speedbrake_left.5</object-name>
- <object-name>speedbrake_left.6</object-name>
- <object-name>flap_left_outer.1</object-name>
- <object-name>flap_left_outer.2</object-name>
- <object-name>flap_left_outer.3</object-name>
- <object-name>flap_left_h.3</object-name>
- <object-name>flap_left_h.4</object-name>
- <object-name>flap_left_h.3.1</object-name>
- <object-name>flap_left_h.4.1</object-name>
- <object-name>winglet_left</object-name>
- <object-name>fueldump.1</object-name>
- <property>fdm/jsbsim/forces/wing[2]</property>
- <factor>-0.0004</factor>
- <center>
-  <x-m>0</x-m>
-  <y-m>-13.0</y-m>
-  <z-m>-1.25</z-m>
- </center>
- <axis>
-  <x>1</x>
-  <y>0</y>
-  <z>0</z>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>wing_left.2</object-name>
+          <object-name>wing_left.3</object-name>
+          <object-name>RedLight</object-name>
+          <object-name>StrobeLight.L</object-name>
+          <object-name>engine.1</object-name>
+          <object-name>eng.1</object-name>
+          <object-name>eng.1_fan</object-name>
+          <object-name>eng.1_reverser</object-name>
+          <object-name>enginefire.1</object-name>
+          <object-name>enginesmoke.1</object-name>
+          <object-name>engineext.1</object-name>
+          <object-name>aileron_left_outer</object-name>
+          <object-name>speedbrake_left.3</object-name>
+          <object-name>speedbrake_left.4</object-name>
+          <object-name>speedbrake_left.5</object-name>
+          <object-name>speedbrake_left.6</object-name>
+          <object-name>flap_left_outer.1</object-name>
+          <object-name>flap_left_outer.2</object-name>
+          <object-name>flap_left_outer.3</object-name>
+          <object-name>flap_left_h.3</object-name>
+          <object-name>flap_left_h.4</object-name>
+          <object-name>flap_left_h.3.1</object-name>
+          <object-name>flap_left_h.4.1</object-name>
+          <object-name>winglet_left</object-name>
+          <object-name>fueldump.1</object-name>
+          <property>fdm/jsbsim/forces/wing[2]</property>
+          <factor>-0.0004</factor>
+          <center>
+               <x-m>0</x-m>
+               <y-m>-13.0</y-m>
+               <z-m>-1.25</z-m>
+          </center>
+          <axis>
+               <x>1</x>
+               <y>0</y>
+               <z>0</z>
+          </axis>
+     </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>wing_left.3</object-name>
-	<object-name>RedLight</object-name>
-	<object-name>StrobeLight.L</object-name>
-	<object-name>aileron_left_outer</object-name>
-	<object-name>winglet_left</object-name>
-	<object-name>fueldump.1</object-name>
-	<property>fdm/jsbsim/forces/wing[1]</property>
-	<factor>-0.0004</factor>
-	<center>
-		<x-m>0</x-m>
-		<y-m>-21.5</y-m>
-		<z-m>-1.25</z-m>
-	</center>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>wing_left.3</object-name>
+          <object-name>RedLight</object-name>
+          <object-name>StrobeLight.L</object-name>
+          <object-name>aileron_left_outer</object-name>
+          <object-name>winglet_left</object-name>
+          <object-name>fueldump.1</object-name>
+          <property>fdm/jsbsim/forces/wing[1]</property>
+          <factor>-0.0004</factor>
+          <center>
+               <x-m>0</x-m>
+               <y-m>-21.5</y-m>
+               <z-m>-1.25</z-m>
+          </center>
+          <axis>
+               <x>1</x>
+               <y>0</y>
+               <z>0</z>
+          </axis>
+     </animation>
 
-<!-- AILERON LEFT OUTER -->
+     <!-- AILERON LEFT OUTER -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>aileron_left_outer</object-name> 
-	<property>fdm/jsbsim/fcs/aileron[0]/pos-rad</property>
-	<factor>57.3</factor>   
-	<axis>
-		<x1-m>12.88</x1-m>
-		<y1-m>-21.6</y1-m>
-		<z1-m>0.20</z1-m>
-		<x2-m>17.11</x2-m>
-		<y2-m>-28.4</y2-m>
-		<z2-m>0.74</z2-m>
-	</axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>aileron_left_outer</object-name>
+          <property>fdm/jsbsim/fcs/aileron[0]/pos-rad</property>
+          <factor>57.3</factor>
+          <axis>
+               <x1-m>12.88</x1-m>
+               <y1-m>-21.6</y1-m>
+               <z1-m>0.20</z1-m>
+               <x2-m>17.11</x2-m>
+               <y2-m>-28.4</y2-m>
+               <z2-m>0.74</z2-m>
+          </axis>
+     </animation>
 
-<!-- AILERON LEFT INNER -->
+     <!-- AILERON LEFT INNER -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>aileron_left_inner</object-name> 
-	<property>fdm/jsbsim/fcs/aileron[1]/pos-rad</property>
-	<factor>57.3</factor>   
-	<axis>
-		<x1-m>7.23</x1-m>
-		<y1-m>-11.25</y1-m>
-		<z1-m>-1.14</z1-m>
-		<x2-m>7.23</x2-m>
-		<y2-m>-13.02</y2-m>
-		<z2-m>-0.99</z2-m>
-	</axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>aileron_left_inner</object-name>
+          <property>fdm/jsbsim/fcs/aileron[1]/pos-rad</property>
+          <factor>57.3</factor>
+          <axis>
+               <x1-m>7.23</x1-m>
+               <y1-m>-11.25</y1-m>
+               <z1-m>-1.14</z1-m>
+               <x2-m>7.23</x2-m>
+               <y2-m>-13.02</y2-m>
+               <z2-m>-0.99</z2-m>
+          </axis>
+     </animation>
 
-<!-- AILERON RIGHT INNER -->
+     <!-- AILERON RIGHT INNER -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>aileron_right_inner</object-name> 
-	<property>fdm/jsbsim/fcs/aileron[2]/pos-rad</property>
-	<factor>-57.3</factor>   
-	<axis>
-		<x1-m>7.23</x1-m>
-		<y1-m>11.25</y1-m>
-		<z1-m>-1.14</z1-m>
-		<x2-m>7.23</x2-m>
-		<y2-m>13.02</y2-m>
-		<z2-m>-0.99</z2-m>
-	</axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>aileron_right_inner</object-name>
+          <property>fdm/jsbsim/fcs/aileron[2]/pos-rad</property>
+          <factor>-57.3</factor>
+          <axis>
+               <x1-m>7.23</x1-m>
+               <y1-m>11.25</y1-m>
+               <z1-m>-1.14</z1-m>
+               <x2-m>7.23</x2-m>
+               <y2-m>13.02</y2-m>
+               <z2-m>-0.99</z2-m>
+          </axis>
+     </animation>
 
-<!-- AILERON RIGHT OUTER -->
+     <!-- AILERON RIGHT OUTER -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>aileron_right_outer</object-name> 
-	<property>fdm/jsbsim/fcs/aileron[3]/pos-rad</property>
-	<factor>-57.3</factor>   
-	<axis>
-		<x1-m>12.88</x1-m>
-		<y1-m>21.6</y1-m>
-		<z1-m>0.20</z1-m>
-		<x2-m>17.11</x2-m>
-		<y2-m>28.4</y2-m>
-		<z2-m>0.74</z2-m>
-	</axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>aileron_right_outer</object-name>
+          <property>fdm/jsbsim/fcs/aileron[3]/pos-rad</property>
+          <factor>-57.3</factor>
+          <axis>
+               <x1-m>12.88</x1-m>
+               <y1-m>21.6</y1-m>
+               <z1-m>0.20</z1-m>
+               <x2-m>17.11</x2-m>
+               <y2-m>28.4</y2-m>
+               <z2-m>0.74</z2-m>
+          </axis>
+     </animation>
 
-<!-- SPEEDBRAKES RIGHT INNER -->
+     <!-- SPEEDBRAKES RIGHT INNER -->
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_right.1</object-name>
- <property>fdm/jsbsim/fcs/spoiler[6]/pos-deg</property>
- <factor>-1</factor>
- <axis>   
-  <x1-m> 4.91</x1-m>
-  <y1-m> 7.11</y1-m>
-  <z1-m>-1.05</z1-m>
-  <x2-m> 5.90</x2-m>
-  <y2-m>11.21</y2-m>
-  <z2-m>-0.52</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_right.1</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[6]/pos-deg</property>
+          <factor>-1</factor>
+          <axis>
+               <x1-m> 4.91</x1-m>
+               <y1-m> 7.11</y1-m>
+               <z1-m>-1.05</z1-m>
+               <x2-m> 5.90</x2-m>
+               <y2-m>11.21</y2-m>
+               <z2-m>-0.52</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_right.2</object-name>
- <property>fdm/jsbsim/fcs/spoiler[7]/pos-deg</property>
- <factor>-1</factor>
- <axis>   
-  <x1-m> 4.91</x1-m>
-  <y1-m> 7.11</y1-m>
-  <z1-m>-1.05</z1-m>
-  <x2-m> 5.90</x2-m>
-  <y2-m>11.21</y2-m>
-  <z2-m>-0.52</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_right.2</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[7]/pos-deg</property>
+          <factor>-1</factor>
+          <axis>
+               <x1-m> 4.91</x1-m>
+               <y1-m> 7.11</y1-m>
+               <z1-m>-1.05</z1-m>
+               <x2-m> 5.90</x2-m>
+               <y2-m>11.21</y2-m>
+               <z2-m>-0.52</z2-m>
+          </axis>
+     </animation>
 
-<!-- SPEEDBRAKES RIGHT OUTER -->
+     <!-- SPEEDBRAKES RIGHT OUTER -->
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_right.3</object-name>
- <property>fdm/jsbsim/fcs/spoiler[8]/pos-deg</property>
- <factor>-1</factor>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m> 14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m> 20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_right.3</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[8]/pos-deg</property>
+          <factor>-1</factor>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m> 14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m> 20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_right.4</object-name>
- <property>fdm/jsbsim/fcs/spoiler[9]/pos-deg</property>
- <factor>-1</factor>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m> 14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m> 20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_right.4</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[9]/pos-deg</property>
+          <factor>-1</factor>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m> 14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m> 20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_right.5</object-name>
- <property>fdm/jsbsim/fcs/spoiler[10]/pos-deg</property>
- <factor>-1</factor>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m> 14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m> 20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_right.6</object-name>
- <property>fdm/jsbsim/fcs/spoiler[11]/pos-deg</property>
- <factor>-1</factor>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m> 14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m> 20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_right.5</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[10]/pos-deg</property>
+          <factor>-1</factor>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m> 14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m> 20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_right.6</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[11]/pos-deg</property>
+          <factor>-1</factor>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m> 14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m> 20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<!-- SPEEDBRAKES LEFT INNTER -->
+     <!-- SPEEDBRAKES LEFT INNTER -->
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_left.1</object-name>
- <property>fdm/jsbsim/fcs/spoiler[5]/pos-deg</property>
- <axis>   
-  <x1-m>  4.91</x1-m>
-  <y1-m> -7.11</y1-m>
-  <z1-m> -1.05</z1-m>
-  <x2-m>  5.90</x2-m>
-  <y2-m>-11.21</y2-m>
-  <z2-m> -0.52</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_left.1</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[5]/pos-deg</property>
+          <axis>
+               <x1-m>  4.91</x1-m>
+               <y1-m> -7.11</y1-m>
+               <z1-m> -1.05</z1-m>
+               <x2-m>  5.90</x2-m>
+               <y2-m>-11.21</y2-m>
+               <z2-m> -0.52</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_left.2</object-name>
- <property>fdm/jsbsim/fcs/spoiler[4]/pos-deg</property>
- <axis>   
-  <x1-m>  4.91</x1-m>
-  <y1-m> -7.11</y1-m>
-  <z1-m> -1.05</z1-m>
-  <x2-m>  5.90</x2-m>
-  <y2-m>-11.21</y2-m>
-  <z2-m> -0.52</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_left.2</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[4]/pos-deg</property>
+          <axis>
+               <x1-m>  4.91</x1-m>
+               <y1-m> -7.11</y1-m>
+               <z1-m> -1.05</z1-m>
+               <x2-m>  5.90</x2-m>
+               <y2-m>-11.21</y2-m>
+               <z2-m> -0.52</z2-m>
+          </axis>
+     </animation>
 
-<!-- SPEEDBRAKES LEFT OUTER -->
+     <!-- SPEEDBRAKES LEFT OUTER -->
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_left.3</object-name>
- <property>fdm/jsbsim/fcs/spoiler[3]/pos-deg</property>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m>-14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m>-20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_left.3</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[3]/pos-deg</property>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m>-14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m>-20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_left.4</object-name>
- <property>fdm/jsbsim/fcs/spoiler[2]/pos-deg</property>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m>-14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m>-20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_left.4</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[2]/pos-deg</property>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m>-14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m>-20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_left.5</object-name>
- <property>fdm/jsbsim/fcs/spoiler[1]/pos-deg</property>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m>-14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m>-20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_left.5</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[1]/pos-deg</property>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m>-14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m>-20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>speedbrake_left.6</object-name>
- <property>fdm/jsbsim/fcs/spoiler[0]/pos-deg</property>
- <axis>   
-  <x1-m>  8.02</x1-m>
-  <y1-m>-14.38</y1-m>
-  <z1-m> -0.34</z1-m>
-  <x2-m> 11.85</x2-m>
-  <y2-m>-20.58</y2-m>
-  <z2-m>  0.36</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>speedbrake_left.6</object-name>
+          <property>fdm/jsbsim/fcs/spoiler[0]/pos-deg</property>
+          <axis>
+               <x1-m>  8.02</x1-m>
+               <y1-m>-14.38</y1-m>
+               <z1-m> -0.34</z1-m>
+               <x2-m> 11.85</x2-m>
+               <y2-m>-20.58</y2-m>
+               <z2-m>  0.36</z2-m>
+          </axis>
+     </animation>
 
-<!-- FAN ENGINE #1 -->
+     <!-- FAN ENGINE #1 -->
 
-<model>
-	<path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path> 
-	<name>engine.1</name>
-	<offsets> 
-		<x-m>  4.83</x-m>
-		<y-m>-21.23</y-m>
-		<z-m> -1.99</z-m>
-	</offsets>
-	<overlay>
-		<params>
-			<n1>engines/engine[0]/n1</n1>
-			<reverser-pos-norm>engines/engine[0]/reverser-pos-norm</reverser-pos-norm>
-		</params>
-	</overlay>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path>
+          <name>engine.1</name>
+          <offsets>
+               <x-m>  4.83</x-m>
+               <y-m>-21.23</y-m>
+               <z-m> -1.99</z-m>
+          </offsets>
+          <overlay>
+               <params>
+                    <n1>engines/engine[0]/n1</n1>
+                    <reverser-pos-norm>engines/engine[0]/reverser-pos-norm</reverser-pos-norm>
+               </params>
+          </overlay>
+     </model>
 
-<!-- FAN ENGINE #2 -->
+     <!-- FAN ENGINE #2 -->
 
-<model>
-	<path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path> 
-	<name>engine.2</name>
-	<offsets> 
-		<x-m> -2.67</x-m>
-		<y-m>-13.46</y-m>
-		<z-m> -2.60</z-m>
-	</offsets>
- 	<overlay>
-		<params>
-			<n1>engines/engine[1]/n1</n1>
-			<reverser-pos-norm>engines/engine[1]/reverser-pos-norm</reverser-pos-norm>
-		</params>
-	</overlay>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path>
+          <name>engine.2</name>
+          <offsets>
+               <x-m> -2.67</x-m>
+               <y-m>-13.46</y-m>
+               <z-m> -2.60</z-m>
+          </offsets>
+          <overlay>
+               <params>
+                    <n1>engines/engine[1]/n1</n1>
+                    <reverser-pos-norm>engines/engine[1]/reverser-pos-norm</reverser-pos-norm>
+               </params>
+          </overlay>
+     </model>
 
-<!-- FAN ENGINE #3 -->
+     <!-- FAN ENGINE #3 -->
 
-<model>
-	<path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path> 
-	<name>engine.3</name>
-	<offsets> 
-		<x-m> -2.67</x-m>
-		<y-m> 13.46</y-m>
-		<z-m> -2.60</z-m>
-	</offsets>
- 	<overlay>
-		<params>
-			<n1>engines/engine[2]/n1</n1>
-			<reverser-pos-norm>engines/engine[2]/reverser-pos-norm</reverser-pos-norm>
-		</params>
-	</overlay>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path>
+          <name>engine.3</name>
+          <offsets>
+               <x-m> -2.67</x-m>
+               <y-m> 13.46</y-m>
+               <z-m> -2.60</z-m>
+          </offsets>
+          <overlay>
+               <params>
+                    <n1>engines/engine[2]/n1</n1>
+                    <reverser-pos-norm>engines/engine[2]/reverser-pos-norm</reverser-pos-norm>
+               </params>
+          </overlay>
+     </model>
 
-<!-- FAN ENGINE #4 -->
+     <!-- FAN ENGINE #4 -->
 
-<model>
-	<path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path> 
-	<name>engine.4</name>
-	<offsets> 
-		<x-m>  4.83</x-m>
-		<y-m> 21.23</y-m>
-		<z-m> -1.99</z-m>
-	</offsets>
- 	<overlay>
-		<params>
-			<n1>engines/engine[3]/n1</n1>
-			<reverser-pos-norm>engines/engine[3]/reverser-pos-norm</reverser-pos-norm>
-		</params>
-	</overlay>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/GE_CF6-80C2B1F.xml</path>
+          <name>engine.4</name>
+          <offsets>
+               <x-m>  4.83</x-m>
+               <y-m> 21.23</y-m>
+               <z-m> -1.99</z-m>
+          </offsets>
+          <overlay>
+               <params>
+                    <n1>engines/engine[3]/n1</n1>
+                    <reverser-pos-norm>engines/engine[3]/reverser-pos-norm</reverser-pos-norm>
+               </params>
+          </overlay>
+     </model>
 
-<!-- LEADING EDGE FLAPS
+     <!-- LEADING EDGE FLAPS
      LEFT INBOARD      -->
 
-<animation>
- <type>rotate</type>
- <object-name>LEinbL.1</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>-100</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>-100</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m> -4.920</x1-m>
-  <y1-m> -6.991</y1-m>
-  <z1-m> -1.118</z1-m>
-  <x2-m> -3.131</x2-m>
-  <y2-m> -8.985</y2-m>
-  <z2-m> -0.872</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>LEinbL.1</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>-100</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>-100</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m> -4.920</x1-m>
+               <y1-m> -6.991</y1-m>
+               <z1-m> -1.118</z1-m>
+               <x2-m> -3.131</x2-m>
+               <y2-m> -8.985</y2-m>
+               <z2-m> -0.872</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>LEinbL.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>-100</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>-100</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m> -3.131</x1-m>
-  <y1-m> -8.985</y1-m>
-  <z1-m> -0.872</z1-m>
-  <x2-m> -1.343</x2-m>
-  <y2-m>-10.979</y2-m>
-  <z2-m> -0.626</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>LEinbL.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>-100</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>-100</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m> -3.131</x1-m>
+               <y1-m> -8.985</y1-m>
+               <z1-m> -0.872</z1-m>
+               <x2-m> -1.343</x2-m>
+               <y2-m>-10.979</y2-m>
+               <z2-m> -0.626</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>LEinbL.3</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>-100</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>-100</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m> -1.343</x1-m>
-  <y1-m>-10.979</y1-m>
-  <z1-m> -0.626</z1-m>
-  <x2-m>  0.450</x2-m>
-  <y2-m>-13.028</y2-m>
-  <z2-m> -0.446</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>LEinbL.3</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>-100</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>-100</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m> -1.343</x1-m>
+               <y1-m>-10.979</y1-m>
+               <z1-m> -0.626</z1-m>
+               <x2-m>  0.450</x2-m>
+               <y2-m>-13.028</y2-m>
+               <z2-m> -0.446</z2-m>
+          </axis>
+     </animation>
 
-<!-- LEADING EDGE FLAPS
+     <!-- LEADING EDGE FLAPS
      RIGHTT INBOARD     -->
 
-<animation>
- <type>rotate</type>
- <object-name>LEinbR.1</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>100</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>100</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m> -4.920</x1-m>
-  <y1-m>  6.991</y1-m>
-  <z1-m> -1.118</z1-m>
-  <x2-m> -3.131</x2-m>
-  <y2-m>  8.985</y2-m>
-  <z2-m> -0.872</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>LEinbR.1</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>100</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>100</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m> -4.920</x1-m>
+               <y1-m>  6.991</y1-m>
+               <z1-m> -1.118</z1-m>
+               <x2-m> -3.131</x2-m>
+               <y2-m>  8.985</y2-m>
+               <z2-m> -0.872</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>LEinbR.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>100</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>100</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m> -3.131</x1-m>
-  <y1-m>  8.985</y1-m>
-  <z1-m> -0.872</z1-m>
-  <x2-m> -1.343</x2-m>
-  <y2-m> 10.979</y2-m>
-  <z2-m> -0.626</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>LEinbR.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>100</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>100</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m> -3.131</x1-m>
+               <y1-m>  8.985</y1-m>
+               <z1-m> -0.872</z1-m>
+               <x2-m> -1.343</x2-m>
+               <y2-m> 10.979</y2-m>
+               <z2-m> -0.626</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>LEinbR.3</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>100</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>100</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m> -1.343</x1-m>
-  <y1-m> 10.979</y1-m>
-  <z1-m> -0.626</z1-m>
-  <x2-m>  0.450</x2-m>
-  <y2-m> 13.028</y2-m>
-  <z2-m> -0.446</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>LEinbR.3</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>100</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>100</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m> -1.343</x1-m>
+               <y1-m> 10.979</y1-m>
+               <z1-m> -0.626</z1-m>
+               <x2-m>  0.450</x2-m>
+               <y2-m> 13.028</y2-m>
+               <z2-m> -0.446</z2-m>
+          </axis>
+     </animation>
 
-<!-- FLAPS LEFT INNER -->
+     <!-- FLAPS LEFT INNER -->
 
-<animation>
- <type>rotate</type>
- <object-name>flap_left_h.1</object-name>
- <object-name>flap_left_h.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.100</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>-35.0</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m>  5.772</x1-m>
-  <y1-m> -6.038</y1-m>
-  <z1-m> -1.807</z1-m>
-  <x2-m>  6.524</x2-m>
-  <y2-m> -8.958</y2-m>
-  <z2-m> -1.416</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_left_h.1</object-name>
+          <object-name>flap_left_h.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.100</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>-35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  5.772</x1-m>
+               <y1-m> -6.038</y1-m>
+               <z1-m> -1.807</z1-m>
+               <x2-m>  6.524</x2-m>
+               <y2-m> -8.958</y2-m>
+               <z2-m> -1.416</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_left_inner.1</object-name>
- <object-name>flap_left_inner.2</object-name>
- <object-name>flap_left_inner.3</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>1.0</dep>
-  </entry>
-  <entry>
-   <ind>1</ind>
-   <dep>1.0</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.05</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_left_inner.1</object-name>
+          <object-name>flap_left_inner.2</object-name>
+          <object-name>flap_left_inner.3</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>1.0</dep>
+               </entry>
+               <entry>
+                    <ind>1</ind>
+                    <dep>1.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.05</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_left_inner.1</object-name>
- <object-name>flap_left_inner.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>0.5</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>0.5</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.05</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_left_inner.1</object-name>
+          <object-name>flap_left_inner.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>0.5</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>0.5</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.05</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>flap_left_inner.1</object-name>
- <object-name>flap_left_inner.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>  0.0</ind>
-   <dep>  0.0</dep>
-  </entry>
-  <entry>
-   <ind>  0.167</ind>
-   <dep>  0.0</dep>
-  </entry>
-  <entry>
-   <ind>  1.0</ind>
-   <dep>-35.0</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m>  4.825</x1-m>
-  <y1-m> -3.661</y1-m>
-  <z1-m> -1.847</z1-m>
-  <x2-m>  6.834</x2-m>
-  <y2-m>-11.268</y2-m>
-  <z2-m> -0.777</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_left_inner.1</object-name>
+          <object-name>flap_left_inner.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>  0.0</ind>
+                    <dep>  0.0</dep>
+               </entry>
+               <entry>
+                    <ind>  0.167</ind>
+                    <dep>  0.0</dep>
+               </entry>
+               <entry>
+                    <ind>  1.0</ind>
+                    <dep>-35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  4.825</x1-m>
+               <y1-m> -3.661</y1-m>
+               <z1-m> -1.847</z1-m>
+               <x2-m>  6.834</x2-m>
+               <y2-m>-11.268</y2-m>
+               <z2-m> -0.777</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_left_inner.1</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.667</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1</ind>
-   <dep> 0.5</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z> 0.00</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_left_inner.1</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.667</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1</ind>
+                    <dep> 0.5</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z> 0.00</z>
+          </axis>
+     </animation>
 
-<!-- FLAPS RIGHT INNER -->
+     <!-- FLAPS RIGHT INNER -->
 
-<animation>
- <type>rotate</type>
- <object-name>flap_right_h.1</object-name>
- <object-name>flap_right_h.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.100</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>35.0</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m>  5.772</x1-m>
-  <y1-m>  6.038</y1-m>
-  <z1-m> -1.807</z1-m>
-  <x2-m>  6.524</x2-m>
-  <y2-m>  8.958</y2-m>
-  <z2-m> -1.416</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_right_h.1</object-name>
+          <object-name>flap_right_h.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.100</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  5.772</x1-m>
+               <y1-m>  6.038</y1-m>
+               <z1-m> -1.807</z1-m>
+               <x2-m>  6.524</x2-m>
+               <y2-m>  8.958</y2-m>
+               <z2-m> -1.416</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_right_inner.1</object-name>
- <object-name>flap_right_inner.2</object-name>
- <object-name>flap_right_inner.3</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>1.0</dep>
-  </entry>
-  <entry>
-   <ind>1</ind>
-   <dep>1.0</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.05</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_right_inner.1</object-name>
+          <object-name>flap_right_inner.2</object-name>
+          <object-name>flap_right_inner.3</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>1.0</dep>
+               </entry>
+               <entry>
+                    <ind>1</ind>
+                    <dep>1.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.05</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_right_inner.1</object-name>
- <object-name>flap_right_inner.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>0.5</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>0.5</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.05</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_right_inner.1</object-name>
+          <object-name>flap_right_inner.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>0.5</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>0.5</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.05</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>flap_right_inner.1</object-name>
- <object-name>flap_right_inner.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.167</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>35.0</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m>  4.825</x1-m>
-  <y1-m>  3.661</y1-m>
-  <z1-m> -1.847</z1-m>
-  <x2-m>  6.834</x2-m>
-  <y2-m> 11.268</y2-m>
-  <z2-m> -0.777</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_right_inner.1</object-name>
+          <object-name>flap_right_inner.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.167</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  4.825</x1-m>
+               <y1-m>  3.661</y1-m>
+               <z1-m> -1.847</z1-m>
+               <x2-m>  6.834</x2-m>
+               <y2-m> 11.268</y2-m>
+               <z2-m> -0.777</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_right_inner.1</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.667</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1</ind>
-   <dep> 0.5</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z> 0.00</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_right_inner.1</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.667</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1</ind>
+                    <dep> 0.5</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z> 0.00</z>
+          </axis>
+     </animation>
 
-<!-- FLAPS LEFT OUTER -->
+     <!-- FLAPS LEFT OUTER -->
 
-<animation>
- <type>rotate</type>
- <object-name>flap_left_h.3</object-name>
- <object-name>flap_left_h.4</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.100</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>-35.0</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m>  8.064</x1-m>
-  <y1-m>-14.866</y1-m>
-  <z1-m> -0.791</z1-m>
-  <x2-m> 10.343</x2-m>
-  <y2-m>-18.845</y2-m>
-  <z2-m> -0.336</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_left_h.3</object-name>
+          <object-name>flap_left_h.4</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.100</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>-35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  8.064</x1-m>
+               <y1-m>-14.866</y1-m>
+               <z1-m> -0.791</z1-m>
+               <x2-m> 10.343</x2-m>
+               <y2-m>-18.845</y2-m>
+               <z2-m> -0.336</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_left_outer.1</object-name>
- <object-name>flap_left_outer.2</object-name>
- <object-name>flap_left_outer.3</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>0.5</dep>
-  </entry>
-  <entry>
-   <ind>1</ind>
-   <dep>0.75</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.2</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_left_outer.1</object-name>
+          <object-name>flap_left_outer.2</object-name>
+          <object-name>flap_left_outer.3</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>0.5</dep>
+               </entry>
+               <entry>
+                    <ind>1</ind>
+                    <dep>0.75</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.2</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_left_outer.1</object-name>
- <object-name>flap_left_outer.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>0.25</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>0.25</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.05</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_left_outer.1</object-name>
+          <object-name>flap_left_outer.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>0.25</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>0.25</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.05</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>flap_left_outer.1</object-name>
- <object-name>flap_left_outer.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.100</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>-35.0</dep>
-  </entry>
- </interpolation>  
- <axis>   
-  <x1-m>  7.387</x1-m>
-  <y1-m>-13.28</y1-m>
-  <z1-m> -0.604</z1-m>
-  <x2-m> 12.273</x2-m>
-  <y2-m>-20.942</y2-m>
-  <z2-m> -0.277</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_left_outer.1</object-name>
+          <object-name>flap_left_outer.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.100</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>-35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  7.387</x1-m>
+               <y1-m>-13.28</y1-m>
+               <z1-m> -0.604</z1-m>
+               <x2-m> 12.273</x2-m>
+               <y2-m>-20.942</y2-m>
+               <z2-m> -0.277</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_left_outer.1</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.667</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1</ind>
-   <dep> 0.5</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z> 0.00</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_left_outer.1</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.667</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1</ind>
+                    <dep> 0.5</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z> 0.00</z>
+          </axis>
+     </animation>
 
-<!-- FLAPS RIGHT OUTER -->
+     <!-- FLAPS RIGHT OUTER -->
 
-<animation>
- <type>rotate</type>
- <object-name>flap_right_h.3</object-name>
- <object-name>flap_right_h.4</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.100</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>35.0</dep>
-  </entry>
- </interpolation>
- <axis>   
-  <x1-m>  8.064</x1-m>
-  <y1-m> 14.866</y1-m>
-  <z1-m> -0.791</z1-m>
-  <x2-m> 10.343</x2-m>
-  <y2-m> 18.845</y2-m>
-  <z2-m> -0.336</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_right_h.3</object-name>
+          <object-name>flap_right_h.4</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.100</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  8.064</x1-m>
+               <y1-m> 14.866</y1-m>
+               <z1-m> -0.791</z1-m>
+               <x2-m> 10.343</x2-m>
+               <y2-m> 18.845</y2-m>
+               <z2-m> -0.336</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_right_outer.1</object-name>
- <object-name>flap_right_outer.2</object-name>
- <object-name>flap_right_outer.3</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>0.5</dep>
-  </entry>
-  <entry>
-   <ind>1</ind>
-   <dep>0.75</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.2</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_right_outer.1</object-name>
+          <object-name>flap_right_outer.2</object-name>
+          <object-name>flap_right_outer.3</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>0.5</dep>
+               </entry>
+               <entry>
+                    <ind>1</ind>
+                    <dep>0.75</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.2</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_right_outer.1</object-name>
- <object-name>flap_right_outer.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.033</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.167</ind>
-   <dep>0.25</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>0.25</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z>-0.05</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_right_outer.1</object-name>
+          <object-name>flap_right_outer.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind>0.0</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.033</ind>
+                    <dep>0.0</dep>
+               </entry>
+               <entry>
+                    <ind>0.167</ind>
+                    <dep>0.25</dep>
+               </entry>
+               <entry>
+                    <ind>1.0</ind>
+                    <dep>0.25</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z>-0.05</z>
+          </axis>
+     </animation>
 
-<animation>
- <type>rotate</type>
- <object-name>flap_right_outer.1</object-name>
- <object-name>flap_right_outer.2</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.100</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1.0</ind>
-   <dep>35.0</dep>
-  </entry>
- </interpolation>  
- <axis>   
-  <x1-m>  7.387</x1-m>
-  <y1-m> 13.28</y1-m>
-  <z1-m> -0.604</z1-m>
-  <x2-m> 12.273</x2-m>
-  <y2-m> 20.942</y2-m>
-  <z2-m> -0.277</z2-m>
- </axis>
-</animation>
+     <animation>
+          <type>rotate</type>
+          <object-name>flap_right_outer.1</object-name>
+          <object-name>flap_right_outer.2</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.100</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1.0</ind>
+                    <dep>35.0</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x1-m>  7.387</x1-m>
+               <y1-m> 13.28</y1-m>
+               <z1-m> -0.604</z1-m>
+               <x2-m> 12.273</x2-m>
+               <y2-m> 20.942</y2-m>
+               <z2-m> -0.277</z2-m>
+          </axis>
+     </animation>
 
-<animation>
- <type>translate</type>
- <object-name>flap_right_outer.1</object-name>
- <property>fdm/jsbsim/fcs/flap-pos-norm</property>
- <interpolation>
-  <entry>
-   <ind> 0.0</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 0.667</ind>
-   <dep> 0.0</dep>
-  </entry>
-  <entry>
-   <ind> 1</ind>
-   <dep> 0.5</dep>
-  </entry>
- </interpolation>
- <axis>
-  <x> 1.00</x>
-  <y> 0.00</y>
-  <z> 0.00</z>
- </axis>
-</animation>
+     <animation>
+          <type>translate</type>
+          <object-name>flap_right_outer.1</object-name>
+          <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+          <interpolation>
+               <entry>
+                    <ind> 0.0</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 0.667</ind>
+                    <dep> 0.0</dep>
+               </entry>
+               <entry>
+                    <ind> 1</ind>
+                    <dep> 0.5</dep>
+               </entry>
+          </interpolation>
+          <axis>
+               <x> 1.00</x>
+               <y> 0.00</y>
+               <z> 0.00</z>
+          </axis>
+     </animation>
 
-<!-- LIGHTS -->
+     <!-- LIGHTS -->
 
-<model>
- <path>Aircraft/747-400/Models/Lights/light-green.xml</path>
- <name>GreenLight</name>
- <offsets>
-  <x-m>16.75</x-m>
-  <y-m>32</y-m>
-  <z-m>1.35</z-m>
- </offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Lights/light-green.xml</path>
+          <name>GreenLight</name>
+          <offsets>
+               <x-m>16.75</x-m>
+               <y-m>32</y-m>
+               <z-m>1.35</z-m>
+          </offsets>
+     </model>
 
-<model>
- <path>Aircraft/747-400/Models/Lights/light-red.xml</path>
- <name>RedLight</name>
- <offsets>
-  <x-m>16.75</x-m>
-  <y-m>-32</y-m>
-  <z-m>1.35</z-m>
- </offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Lights/light-red.xml</path>
+          <name>RedLight</name>
+          <offsets>
+               <x-m>16.75</x-m>
+               <y-m>-32</y-m>
+               <z-m>1.35</z-m>
+          </offsets>
+     </model>
 
-<model>
- <path>Aircraft/747-400/Models/Lights/strobe.xml</path>
- <name>StrobeLight.R</name>
- <offsets>
-  <x-m>18.6</x-m>
-  <y-m>32.2</y-m>
-  <z-m>1.35</z-m>
- </offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Lights/strobe.xml</path>
+          <name>StrobeLight.R</name>
+          <offsets>
+               <x-m>18.6</x-m>
+               <y-m>32.2</y-m>
+               <z-m>1.35</z-m>
+          </offsets>
+     </model>
 
-<model>
- <path>Aircraft/747-400/Models/Lights/strobe.xml</path>
- <name>StrobeLight.L</name>
- <offsets>
-  <x-m>18.6</x-m>
-  <y-m>-32.2</y-m>
-  <z-m>1.35</z-m>
- </offsets>
-</model>
+     <model>
+          <path>Aircraft/747-400/Models/Lights/strobe.xml</path>
+          <name>StrobeLight.L</name>
+          <offsets>
+               <x-m>18.6</x-m>
+               <y-m>-32.2</y-m>
+               <z-m>1.35</z-m>
+          </offsets>
+     </model>
 </PropertyList>
