@@ -1784,7 +1784,7 @@ var listenerApNav1GroundModeFunc = func {
 					# reverse-thrust
 					if (getprop("/gear/gear[0]/wow")) {
 						if (getprop("/velocities/airspeed-kt") > 100.0) {
-							if (getprop("/engines/engine/reversed") == 0) {
+							if (getprop("/engines/engine[0]/reversed") == 0) {
 								# start thrust-reversers
 								if (	getprop("/autopilot/locks/speed") == "speed-with-throttle" or
 									getprop("/autopilot/locks/speed") == "speed-with-pitch-trim") {

@@ -33,13 +33,13 @@
 			<z>-1.47222</z>
 		</position>
 		<volume>
-			<property>/engines/engine/n1</property>
+			<property>/engines/engine[0]/n1</property>
 			<factor type="double">0.0075</factor>
 			            <min>0.0</min>
 			            <max>1.0</max>
 		</volume>
 		<pitch>
-			<property>/engines/engine/n1</property>
+			<property>/engines/engine[0]/n1</property>
 			<type>log</type>
 			<factor>0.35</factor>
 			            <min>0.0</min>
@@ -139,13 +139,13 @@
 			<z>-1.47222</z>
 		</position>
 		<volume>
-			<property>/engines/engine/n2</property>
+			<property>/engines/engine[0]/n2</property>
 			<factor type="double">0.0055</factor>
 			            <min>0.0</min>
 			            <max>0.75</max>
 		</volume>
 		<pitch>
-			<property>/engines/engine/n2</property>
+			<property>/engines/engine[0]/n2</property>
 			<factor>0.35</factor>
 			            <min>0.0</min>
 			            <max>2.5</max>
@@ -246,13 +246,13 @@
 			<z>-1.47222</z>
 		</position>
 		<volume>
-			<property>/engines/engine/n1</property>
+			<property>/engines/engine[0]/n1</property>
 			<factor type="double">0.0065</factor>
 			            <min>0.0</min>
 			            <max>1.0</max>
 		</volume>
 		<pitch>
-			<property>/engines/engine/n1</property>
+			<property>/engines/engine[0]/n1</property>
 			<type>log</type>
 			<factor>0.35</factor>
 			            <min>0.0</min>
@@ -352,13 +352,13 @@
 			<z>-1.47222</z>
 		</position>
 		<volume>
-			<property>/engines/engine/n2</property>
+			<property>/engines/engine[0]/n2</property>
 			<factor type="double">0.0045</factor>
 			            <min>0.0</min>
 			            <max>0.75</max>
 		</volume>
 		<pitch>
-			<property>/engines/engine/n2</property>
+			<property>/engines/engine[0]/n2</property>
 			<factor>0.55</factor>
 			            <min>0.0</min>
 			            <max>2.5</max>

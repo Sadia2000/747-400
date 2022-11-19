@@ -36,7 +36,7 @@ eicas_msg_memo		= eicas.initNode("msg/memo"," ","STRING");
 setlistener("sim/signals/fdm-initialized", func() {
 	setlistener("controls/gear/gear-down",            func { update_listener_inputs() } );
 	setlistener("controls/gear/brake-parking",        func { update_listener_inputs() } );
-	setlistener("controls/engines/engine/reverser",   func { update_listener_inputs() } );
+	setlistener("controls/engines/engine[0]/reverser",   func { update_listener_inputs() } );
 	setlistener("engines/engine[0]/on-fire", func(n) { engfire[0] = n.getValue(); } );
 	setlistener("engines/engine[1]/on-fire", func(n) { engfire[1] = n.getValue(); } );
 	setlistener("engines/engine[2]/on-fire", func(n) { engfire[2] = n.getValue(); } );
@@ -53,7 +53,7 @@ setlistener("sim/signals/fdm-initialized", func() {
 	setlistener("/controls/pneumatic/pack-control[1]",func { pack[1] = (getprop("/controls/pneumatic/pack-control[1]")>0); } );
 	setlistener("/controls/pneumatic/pack-control[2]",func { pack[2] = (getprop("/controls/pneumatic/pack-control[2]")>0); } );
 	
-	setlistener("controls/engines/engine/throttle",   func { update_throttle_input() } );
+	setlistener("controls/engines/engine[0]/throttle",   func { update_throttle_input() } );
 
 	update_listener_inputs();
 	update_throttle_input();
@@ -297,7 +297,7 @@ var memo_messages = func {
 var update_listener_inputs = func() {
 	# be nice to sim: some inputs rarely change. use listeners.
 	enabled       = (getprop("sim/freeze/replay-state")!=1);
-	reverser      = getprop("controls/engines/engine/reverser");
+	reverser      = getprop("controls/engines/engine[0]/reverser");
 	gear_down     = getprop("controls/gear/gear-down");
 	parkbrake     = getprop("controls/gear/brake-parking");
 	apu_running   = getprop("engines/engine[4]/running");
@@ -306,7 +306,7 @@ var update_listener_inputs = func() {
 }
 
 var update_throttle_input = func() {
-	throttle = getprop("controls/engines/engine/throttle");
+	throttle = getprop("controls/engines/engine[0]/throttle");
 }
 	
 var update_system = func() {

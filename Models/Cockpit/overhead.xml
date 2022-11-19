@@ -1368,7 +1368,7 @@
 			</binding>
 		<binding>
 			<command>property-assign</command>
-			<property>/controls/pneumatic/engine/bleed</property>
+			<property>/controls/pneumatic/engine[0]/bleed</property>
 			<value>0</value>
 		</binding>
 	</action>
@@ -1525,17 +1525,17 @@
 <animation>
 	<type>knob</type>
 	<object-name>anti.ice.1</object-name>
-	<property>/controls/anti-ice/engine/inlet-heat</property>
+	<property>/controls/anti-ice/engine[0]/inlet-heat</property>
 	<factor>-25</factor>
 	<cursor>hand</cursor>
 	<action>
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/anti-ice/engine/carb-heat</property>
+			<property>/controls/anti-ice/engine[0]/carb-heat</property>
 		</binding>
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/anti-ice/engine/inlet-heat</property>
+			<property>/controls/anti-ice/engine[0]/inlet-heat</property>
 		</binding>
 		<binding>
 			<command>nasal</command>

@@ -45,8 +45,8 @@ var canvas_eng = {
 			me["eng"~i~"oilp"].setText(sprintf("%2.0f",getprop("engines/engine["~(i-1)~"]/oil-pressure-psi")));
 		}
 		
-		if (getprop("engines/engine/fuel-flow_pph") != nil) {
-			me["eng1ff"].setText(sprintf("%2.01f",getprop("engines/engine/fuel-flow_pph")*LB2KG/1000));
+		if (getprop("engines/engine[0]/fuel-flow_pph") != nil) {
+			me["eng1ff"].setText(sprintf("%2.01f",getprop("engines/engine[0]/fuel-flow_pph")*LB2KG/1000));
 			me["eng2ff"].setText(sprintf("%2.01f",getprop("engines/engine[1]/fuel-flow_pph")*LB2KG/1000));
 			me["eng3ff"].setText(sprintf("%2.01f",getprop("engines/engine[2]/fuel-flow_pph")*LB2KG/1000));
 			me["eng4ff"].setText(sprintf("%2.01f",getprop("engines/engine[3]/fuel-flow_pph")*LB2KG/1000));

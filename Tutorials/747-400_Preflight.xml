@@ -27,11 +27,11 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
 			<value>0.0</value>
 		</set>
 		<set>
-			<property>/controls/engines/engine/throttle</property>
+			<property>/controls/engines/engine[0]/throttle</property>
 			<value>0</value>
 		</set>
 		<set>
-			<property>/engines/engine/running</property>
+			<property>/engines/engine[0]/running</property>
 			<value>0</value>
 		</set>
     </init>

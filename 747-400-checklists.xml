@@ -612,7 +612,7 @@
             <value>70% N1</value>
             <condition>
                 <greater-than>
-                    <property>/controls/engines/engine/throttle</property>
+                    <property>/controls/engines/engine[0]/throttle</property>
                     <value>0.5</value>
                 </greater-than>
             </condition>

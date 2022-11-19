@@ -892,7 +892,7 @@
 		<repeatable>false</repeatable>  
 		<binding>
 			<command>property-toggle</command>
-			<property>/controls/engines/engine/cutoff</property>
+			<property>/controls/engines/engine[0]/cutoff</property>
 		</binding>
 	</action>
 </animation>
@@ -901,7 +901,7 @@
 	<type>rotate</type>
 	<object-name>Lcutoff.Lever</object-name>
 	<object-name>Lcutoff.Knob</object-name>
-	<property>/controls/engines/engine/cutoff</property>
+	<property>/controls/engines/engine[0]/cutoff</property>
 	<factor>40</factor>
 	<center>
 		<x-m>1.2325</x-m>
