@@ -10,9 +10,9 @@
     <name>LightSrcLeft</name>
     <object-name>Cone</object-name>
     <position>
-        <x>0</x>
-        <y>0</y>
-        <z>0</z>
+        
+        
+        
     </position>
     <direction>
         <x>-1</x>

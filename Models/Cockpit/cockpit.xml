@@ -126,9 +126,9 @@
             <z-m>0.40822</z-m>
         </center>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -396,9 +396,9 @@
 	<property>/controls/flight/rudder-trim</property>
 	<factor>0.0397</factor>
 	<axis>
-		<x>0</x>
+		
 		<y>1</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -538,7 +538,7 @@
 	<axis>
 		<x>0.0</x>
 		<y>1.0</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -615,7 +615,7 @@
 	<axis>
 		<x>0.0</x>
 		<y>1.0</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -692,7 +692,7 @@
 	<axis>
 		<x>0.0</x>
 		<y>1.0</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -769,7 +769,7 @@
 	<axis>
 		<x>0.0</x>
 		<y>1.0</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -909,9 +909,9 @@
 		<z-m>0.46458</z-m>
 	</center>
 	<axis>
-		<x>0</x>
+		
 		<y>1</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -941,9 +941,9 @@
 		<z-m>0.46229</z-m>
 	</center>
 	<axis>
-		<x>0</x>
+		
 		<y>1</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -973,9 +973,9 @@
 		<z-m>0.46458</z-m>
 	</center>
 	<axis>
-		<x>0</x>
+		
 		<y>1</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -1005,9 +1005,9 @@
 		<z-m>0.46229</z-m>
 	</center>
 	<axis>
-		<x>0</x>
+		
 		<y>1</y>
-		<z>0</z>
+		
 	</axis>
  </animation>
  
@@ -1386,8 +1386,8 @@
 	<factor>0.254</factor>
 	<axis>
 		<x>1</x>
-		<y>0</y>
-		<z>0</z>
+		
+		
 	</axis>
 </animation>
 
@@ -1450,8 +1450,8 @@
 	<factor>0.254</factor>
 	<axis>
 		<x>1</x>
-		<y>0</y>
-		<z>0</z>
+		
+		
 	</axis>
 </animation>
 
@@ -1474,9 +1474,9 @@
 		</entry>
 	</interpolation>
 	<axis>
-		<x>0</x>
+		
 		<y>1</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 

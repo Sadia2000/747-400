@@ -36,8 +36,8 @@
 	</center>
 	<axis>
 		<x>-1.0</x>
-		<y>0</y>
-		<z>0</z>
+		
+		
 	</axis>
 </animation>
 
@@ -48,8 +48,8 @@
 	<factor>0.6</factor>
 	<axis>
 		<x>1</x>
-		<y>0</y>
-		<z>0</z>
+		
+		
 	</axis>
 </animation>
 

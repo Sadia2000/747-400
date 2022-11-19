@@ -437,7 +437,7 @@
 	<axis>
 		<x>1</x>
 		<y>-1</y>
-		<z>0</z>
+		
 	</axis>
 </animation>
 
@@ -452,8 +452,8 @@
 		<z-m>  0.421</z-m>
 	</center>
 	<axis>
-		<x>0</x>
-		<y>0</y>
+		
+		
 		<z>1</z>
 	</axis>
 </animation>

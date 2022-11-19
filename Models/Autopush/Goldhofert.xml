@@ -75,9 +75,9 @@ Distribute under the terms of GPLv2.
      <z-m>0.5809</z-m>
    </center>
    <axis>
-     <x>0</x>
+     
      <y>1</y>
-     <z>0</z>
+     
    </axis>
  </animation>
 
@@ -93,9 +93,9 @@ Distribute under the terms of GPLv2.
      <z-m>0.5735</z-m>
    </center>
    <axis>
-     <x>0</x>
+     
      <y>1</y>
-     <z>0</z>
+     
    </axis>
  </animation>
 
@@ -116,8 +116,8 @@ Distribute under the terms of GPLv2.
      <z-m>0</z-m>
    </center>
    <axis>
-     <x>0</x>
-     <y>0</y>
+     
+     
      <z>-1</z>
    </axis>
  </animation>
@@ -127,8 +127,8 @@ Distribute under the terms of GPLv2.
    <property>&COMPRESSION-PROP;</property>
    <factor>0.3048</factor>
    <axis>
-     <x>0</x>
-     <y>0</y>
+     
+     
      <z>1</z>
    </axis>
  </animation>
@@ -144,9 +144,9 @@ Distribute under the terms of GPLv2.
      <z-m>0</z-m>
    </center>
    <axis>
-     <x>0</x>
+     
      <y>1</y>
-     <z>0</z>
+     
    </axis>
  </animation>
 </PropertyList>

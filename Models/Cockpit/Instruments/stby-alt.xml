@@ -31,8 +31,8 @@
  <factor>0.36</factor>
  <axis>
   <x>-1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -42,9 +42,9 @@
  <property>/instrumentation/altimeter/indicated-altitude-ft</property>
  <factor>0.01</factor>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -56,9 +56,9 @@
  <step>100</step>
  <scroll>20</scroll>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -70,9 +70,9 @@
  <step>1000</step>
  <scroll>20</scroll>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -84,9 +84,9 @@
  <step>10000</step>
  <scroll>20</scroll>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -97,9 +97,9 @@
  <factor>10.0</factor>
  <step>0.01</step>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -110,9 +110,9 @@
  <factor>1.0</factor>
  <step>0.1</step>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -123,9 +123,9 @@
  <factor>0.1</factor>
  <step>1</step>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -136,9 +136,9 @@
  <factor>0.01</factor>
  <step>10</step>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 

@@ -162,9 +162,9 @@
   <z-m>-2</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -189,8 +189,8 @@
   <z-m>-2</z-m>
  </center>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -203,8 +203,8 @@
  <property>gear/gear[0]/compression-norm</property>
  <factor>0.3048</factor>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -220,9 +220,9 @@
   <z-m> -5.517</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -238,9 +238,9 @@
   <z-m> -3.653</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -330,8 +330,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -341,8 +341,8 @@
  <property>gear/gear[1]/compression-norm</property>
  <factor>0.3048</factor>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -375,9 +375,9 @@
   <z-m>-4.515</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -408,8 +408,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -438,8 +438,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -468,8 +468,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -576,8 +576,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -587,8 +587,8 @@
  <property>gear/gear[4]/compression-norm</property>
  <factor>0.3048</factor>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -621,9 +621,9 @@
   <z-m>-4.515</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -654,8 +654,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -684,8 +684,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -714,8 +714,8 @@
  </center>
  <axis>
   <x>1</x>
-  <y>0</y>
-  <z>0</z>
+  
+  
  </axis>
 </animation>
 
@@ -814,9 +814,9 @@
   <z-m>-1.504</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -831,8 +831,8 @@
   <z-m>-4.532</z-m>
  </center>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -843,8 +843,8 @@
  <property>gear/gear[2]/compression-norm</property>
  <factor>0.3048</factor>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -877,9 +877,9 @@
   <z-m>-4.507</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -978,9 +978,9 @@
   <z-m>-1.504</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 
@@ -995,8 +995,8 @@
   <z-m>-1.9</z-m>
  </center>
  <axis>
-  <x>0</x>
-  <y>0</y>
+  
+  
   <z>1</z>
  </axis>
 </animation>
@@ -1007,8 +1007,8 @@
  <property>gear/gear[3]/compression-norm</property>
  <factor>0.3048</factor>
   <axis>
-   <x>0</x>
-   <y>0</y>
+   
+   
    <z>1</z>
   </axis>
  </animation>
@@ -1041,9 +1041,9 @@
   <z-m>-4.507</z-m>
  </center>
  <axis>
-  <x>0</x>
+  
   <y>1</y>
-  <z>0</z>
+  
  </axis>
 </animation>
 

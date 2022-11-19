@@ -18,8 +18,8 @@ Boeing style chronometer, by Syd Adams
         </center>
         <axis>
             <x>-1</x>
-            <y>0</y>
-            <z>0</z>
+            
+            
         </axis>
     </animation>
 
@@ -39,8 +39,8 @@ Boeing style chronometer, by Syd Adams
         </center>
         <axis>
             <x>-1</x>
-            <y>0</y>
-            <z>0</z>
+            
+            
         </axis>
     </animation>
 
@@ -61,8 +61,8 @@ Boeing style chronometer, by Syd Adams
         </center>
         <axis>
             <x>-1</x>
-            <y>0</y>
-            <z>0</z>
+            
+            
         </axis>
     </animation>
 
@@ -82,8 +82,8 @@ Boeing style chronometer, by Syd Adams
         </center>
         <axis>
             <x>-1</x>
-            <y>0</y>
-            <z>0</z>
+            
+            
         </axis>
     </animation>
 
@@ -96,9 +96,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.01</factor>
         <step>10</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -109,9 +109,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.1</factor>
         <step>1</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
  
@@ -122,9 +122,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.01</factor>
         <step>10</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -135,9 +135,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.1</factor>
         <step>1</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -148,9 +148,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.0001</factor>
         <step>1000</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -161,9 +161,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.001</factor>
         <step>100</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -174,9 +174,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.01</factor>
         <step>10</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
@@ -187,9 +187,9 @@ Boeing style chronometer, by Syd Adams
         <factor>0.1</factor>
         <step>1</step>
         <axis>
-            <x>0</x>
+            
             <y>1</y>
-            <z>0</z>
+            
         </axis>
     </animation>
 
