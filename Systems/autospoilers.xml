@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <PropertyList>
-    
+
     <logic>
         <name>Throttles at idle</name>
-         <input>
+        <input>
             <and>
                 <!-- engine 1 -->
                 <or>
@@ -25,10 +25,10 @@
         </input>
         <output>/autopilot/autospoilers/throttles-at-idle</output>
     </logic>
-    
+
     <logic>
         <name>RTO sensed</name>
-         <input>
+        <input>
             <or>
                 <and>
                     <less-than>
@@ -53,15 +53,23 @@
         <name>Airborne</name>
         <input>
             <or>
-                <not><property>/gear/gear[1]/wow</property></not>
-                <not><property>/gear/gear[2]/wow</property></not>
-                <not><property>/gear/gear[3]/wow</property></not>
-                <not><property>/gear/gear[4]/wow</property></not>
+                <not>
+                    <property>/gear/gear[1]/wow</property>
+                </not>
+                <not>
+                    <property>/gear/gear[2]/wow</property>
+                </not>
+                <not>
+                    <property>/gear/gear[3]/wow</property>
+                </not>
+                <not>
+                    <property>/gear/gear[4]/wow</property>
+                </not>
             </or>
         </input>
         <output>/autopilot/autospoilers/airborne</output>
     </logic>
-    
+
     <filter>
         <name>After takeoff</name>
         <type>gain</type>
@@ -77,7 +85,9 @@
             <condition>
                 <and>
                     <property>/autopilot/autospoilers/after-takeoff</property>
-                    <not><property>/autopilot/autospoilers/airborne</property></not>
+                    <not>
+                        <property>/autopilot/autospoilers/airborne</property>
+                    </not>
                 </and>
             </condition>
             <value>1</value>
@@ -85,15 +95,19 @@
         <input>
             <condition>
                 <and>
-                    <not><property>/autopilot/autospoilers/after-takeoff</property></not>
-                    <not><property>/autopilot/autospoilers/airborne</property></not>
+                    <not>
+                        <property>/autopilot/autospoilers/after-takeoff</property>
+                    </not>
+                    <not>
+                        <property>/autopilot/autospoilers/airborne</property>
+                    </not>
                 </and>
             </condition>
             <value>0</value>
         </input>
         <output>/autopilot/autospoilers/after-takeoff</output>
     </filter>
-    
+
     <filter>
         <name>Speedbrake lever</name>
         <type>gain</type>
@@ -121,7 +135,9 @@
                     </equals>
                     <property>/autopilot/autospoilers/throttles-at-idle</property>
                     <property>/autopilot/autospoilers/after-takeoff</property>
-                    <not><property>/autopilot/autospoilers/airborne</property></not>
+                    <not>
+                        <property>/autopilot/autospoilers/airborne</property>
+                    </not>
                 </and>
             </condition>
             <value>3</value>
@@ -135,7 +151,9 @@
                         <value>0</value>
                     </equals>
                     <property>/autopilot/autospoilers/rto-sensed</property>
-                    <not><property>/autopilot/autospoilers/airborne</property></not>
+                    <not>
+                        <property>/autopilot/autospoilers/airborne</property>
+                    </not>
                 </and>
             </condition>
             <value>3</value>
@@ -148,7 +166,9 @@
                         <property>/controls/flight/speedbrakes</property>
                         <value>2</value>
                     </equals>
-                    <not><property>/autopilot/autospoilers/throttles-at-idle</property></not>
+                    <not>
+                        <property>/autopilot/autospoilers/throttles-at-idle</property>
+                    </not>
                 </and>
             </condition>
             <value>0</value>
@@ -159,7 +179,7 @@
         </input>
         <output>/autopilot/autospoilers/step</output>
     </filter>
-    
+
     <!-- output summer -->
     <filter>
         <name>Output Summer</name>
@@ -198,5 +218,5 @@
         </input>
         <output>/controls/flight/speedbrakes</output>
     </filter>
-        
+
 </PropertyList>

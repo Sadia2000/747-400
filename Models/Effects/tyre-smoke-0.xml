@@ -15,8 +15,8 @@
         </offsets>
 
         <condition>
-                <property>gear/gear[0]/tyre-smoke</property>
-                <value>1</value>
+            <property>gear/gear[0]/tyre-smoke</property>
+            <value>1</value>
         </condition>
 
         <attach>world</attach>

@@ -307,7 +307,9 @@
                 <name>SEATBELTS selector</name>
                 <value>OFF</value>
                 <condition>
-                    <not><property>/controls/switches/seatbelt-sign</property></not>
+                    <not>
+                        <property>/controls/switches/seatbelt-sign</property>
+                    </not>
                 </condition>
             </item>
             <item>
@@ -442,7 +444,7 @@
             </item>
         </page>
     </checklist>
-    
+
     <checklist>
         <title>Before Start Procedure</title>
         <item>
@@ -506,8 +508,8 @@
             </condition>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Engine Start Procedure</title>
         <item>
             <name>Engine START switch</name>
@@ -518,8 +520,8 @@
             <value>RUN</value>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Before Taxi Procedure</title>
         <item>
             <name>APU selector</name>
@@ -572,16 +574,16 @@
             <value>Check</value>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Before Takeoff Procedure</title>
         <item>
             <name>Notify cabin crew</name>
             <value></value>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Takeoff Procedure</title>
         <item>
             <name>STROBE lights switch</name>
@@ -594,7 +596,9 @@
             <name>Brakes</name>
             <value>Released</value>
             <condition>
-                <not><property>/controls/gear/brake-parking</property></not>
+                <not>
+                    <property>/controls/gear/brake-parking</property>
+                </not>
             </condition>
         </item>
         <item>
@@ -625,12 +629,14 @@
             <name>Landing gear lever</name>
             <value>UP</value>
             <condition>
-                <not><property>/controls/gear/gear-down</property></not>
+                <not>
+                    <property>/controls/gear/gear-down</property>
+                </not>
             </condition>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Climb and Cruise Procedure</title>
         <item>
             <name>Above 10,000ft INBOARD landing lights switches</name>
@@ -645,8 +651,8 @@
             </condition>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>After Landing Procedure</title>
         <item>
             <name>Speedbrake lever</name>
@@ -710,8 +716,8 @@
             </condition>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Shutdown Procedure</title>
         <item>
             <name>Parking brake</name>
@@ -817,8 +823,8 @@
             </condition>
         </item>
     </checklist>
-    
-    <checklist>    
+
+    <checklist>
         <title>Secure Procedure</title>
         <item>
             <name>Pack control selectors</name>

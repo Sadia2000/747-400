@@ -1,144 +1,145 @@
-
 <PropertyList>
 
-<path>forward.ac</path>
-<effect>
-	<inherits-from>Effects/lightmap</inherits-from>
-	<parameters>
-		<texture n="1">
-			<image>Aircraft/747-400/Models/Cockpit/forward-switches-lit.png</image>
-		</texture>
-		<factor>1</factor>
-	</parameters>
-	<object-name>Plane.005</object-name>
-</effect>
+    <path>forward.ac</path>
+    <effect>
+        <inherits-from>Effects/lightmap</inherits-from>
+        <parameters>
+            <texture n="1">
+                <image>Aircraft/747-400/Models/Cockpit/forward-switches-lit.png</image>
+            </texture>
+            <factor>1</factor>
+        </parameters>
+        <object-name>Plane.005</object-name>
+    </effect>
 
-<effect>
-	<inherits-from>Effects/lightmap</inherits-from>
-	<parameters>
-		<texture n="1">
-			<image>Aircraft/747-400/Models/Cockpit/forward-lit.png</image>
-		</texture>
-		<factor><use>/controls/lighting/panel-norm</use></factor>
-	</parameters>
-	<object-name>Plane.001</object-name>
-</effect>
+    <effect>
+        <inherits-from>Effects/lightmap</inherits-from>
+        <parameters>
+            <texture n="1">
+                <image>Aircraft/747-400/Models/Cockpit/forward-lit.png</image>
+            </texture>
+            <factor>
+                <use>/controls/lighting/panel-norm</use>
+            </factor>
+        </parameters>
+        <object-name>Plane.001</object-name>
+    </effect>
 
-<model>
-	<path>Aircraft/747-400/Models/Cockpit/Instruments/brake-pressure.xml</path>
-	<offsets>
-		<x-m> 0.008</x-m>
-		<y-m>-0.345</y-m>
-		<z-m> 0.043</z-m>
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/brake-pressure.xml</path>
+        <offsets>
+            <x-m> 0.008</x-m>
+            <y-m>-0.345</y-m>
+            <z-m> 0.043</z-m>
+        </offsets>
+    </model>
 
-<model>
-	<name>STBY-AI</name>
-	<path>Aircraft/747-400/Models/Cockpit/Instruments/stby-ai.xml</path>
-	<offsets>
-		<x-m> 0.008</x-m>
-		<y-m>-0.165</y-m>
-		<z-m> 0.277</z-m>
-	</offsets>
-</model>
- 
-<model>
-	<name>STBY-ASI</name>
-	<path>Aircraft/747-400/Models/Cockpit/Instruments/stby-asi.xml</path>
-	<offsets>
-		<x-m> 0.008</x-m>
-		<y-m>-0.165</y-m>
-		<z-m> 0.188</z-m>
-	</offsets>
-</model>
- 
-<model>
-	<name>STBY-ALT</name>
-	<path>Aircraft/747-400/Models/Cockpit/Instruments/stby-alt.xml</path>
-	<offsets>
-		<x-m> 0.008</x-m>
-		<y-m>-0.165</y-m>
-		<z-m> 0.097</z-m>
-	</offsets>
-</model>
+    <model>
+        <name>STBY-AI</name>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/stby-ai.xml</path>
+        <offsets>
+            <x-m> 0.008</x-m>
+            <y-m>-0.165</y-m>
+            <z-m> 0.277</z-m>
+        </offsets>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Cockpit/Instruments/chronometer.xml</path>
-	<offsets>
-		<x-m> 0.008</x-m>
-		<y-m>-0.700</y-m>
-		<z-m> 0.236</z-m>
-	</offsets>
-</model>
-<model>
-	<path>Aircraft/747-400/Models/Cockpit/Instruments/chronometer.xml</path>
-	<offsets>
-		<x-m> 0.008</x-m>
-		<y-m> 0.700</y-m>
-		<z-m> 0.236</z-m>
-	</offsets>
-</model>
+    <model>
+        <name>STBY-ASI</name>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/stby-asi.xml</path>
+        <offsets>
+            <x-m> 0.008</x-m>
+            <y-m>-0.165</y-m>
+            <z-m> 0.188</z-m>
+        </offsets>
+    </model>
 
-<animation>
-	<type>pick</type>
-	<object-name>pfdScreen</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.showPfd();</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>ndScreenL</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.showNd();</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>ndScreenR</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.showNd('fo');</script>
-		</binding>
-	</action>
-</animation>
+    <model>
+        <name>STBY-ALT</name>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/stby-alt.xml</path>
+        <offsets>
+            <x-m> 0.008</x-m>
+            <y-m>-0.165</y-m>
+            <z-m> 0.097</z-m>
+        </offsets>
+    </model>
 
-<animation>
-	<type>material</type>
-	<object-name>lettering</object-name>
-	<emission>
-		<red>1.0</red>
-		<green>0.85</green>
-		<blue>1.0</blue>
-		<factor-prop>controls/lighting/panel-norm</factor-prop>
-	</emission>
-</animation>
+    <model>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/chronometer.xml</path>
+        <offsets>
+            <x-m> 0.008</x-m>
+            <y-m>-0.700</y-m>
+            <z-m> 0.236</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/chronometer.xml</path>
+        <offsets>
+            <x-m> 0.008</x-m>
+            <y-m> 0.700</y-m>
+            <z-m> 0.236</z-m>
+        </offsets>
+    </model>
 
-   <animation>
-    	<type>pick</type>
-    	<object-name>btn.at.arm</object-name>
-    	<visible>1</visible>
-    	<action>
-    		<name>AT Arm</name>
-    		<button>0</button>
-    		<repeatable>true</repeatable> 
-    		<binding>
-				<command>nasal</command>
-				<script>
+    <animation>
+        <type>pick</type>
+        <object-name>pfdScreen</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.showPfd();</script>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>ndScreenL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.showNd();</script>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>ndScreenR</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.showNd('fo');</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>lettering</object-name>
+        <emission>
+            <red>1.0</red>
+            <green>0.85</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/panel-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.at.arm</object-name>
+        <visible>1</visible>
+        <action>
+            <name>AT Arm</name>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>
 				if (getprop("/it-autoflight/custom/at-arm") == 0) {
 					setprop("/it-autoflight/custom/at-arm", 1);
 				} else if (getprop("/it-autoflight/custom/at-arm") == 1) {
@@ -146,567 +147,596 @@
 					setprop("/it-autoflight/input/athr", 0);
 				}
 				</script>
-    		</binding>
-    	</action>
-   </animation>
-   <animation>
-    	<type>rotate</type>
-		<object-name>btn.at.arm</object-name>
-    	<property>it-autoflight/custom/at-arm</property>
-		<factor>-50.0</factor>         
-    	<center>
-    		<x-m>0.325</x-m>
-    		<y-m>-0.213236</y-m>
-    		<z-m>0.404592</z-m>
-    	</center>
-    	<axis>
-    		
-    		<y>1</y>
-    		
-    	</axis>
-  </animation>  
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>btn.at.arm</object-name>
+        <property>it-autoflight/custom/at-arm</property>
+        <factor>-50.0</factor>
+        <center>
+            <x-m>0.325</x-m>
+            <y-m>-0.213236</y-m>
+            <z-m>0.404592</z-m>
+        </center>
+        <axis>
 
-<animation>
-	<type>rotate</type>
-	<object-name>dis.vertspd.1</object-name>
-	<property>it-autoflight/input/vs</property>
-	<interpolation>
-		<entry><ind>-1000</ind><dep>-33</dep></entry>
-		<entry><ind>-1</ind><dep>-33</dep></entry>
-		<entry><ind>0</ind><dep>0</dep></entry>
-		<entry><ind>1</ind><dep>0</dep></entry>
-	</interpolation>
-	<center>
-		<x-m> 0.302</x-m>
-		<y-m>-0.055</y-m>
-		<z-m> 0.398</z-m>
-	</center>
-	<axis>
-		<y>1</y>
-	</axis>
-</animation>
+            <y>1</y>
 
-<animation>
-    <type>textranslate</type>
-    <object-name>dis.vertspd.2</object-name>
-    <property>it-autoflight/input/vs-abs</property>
-    <factor>0.0001</factor>
-    <step>1000</step>
-    <axis>
-        
-        <y>1</y>
-        
-    </axis>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-    <type>textranslate</type>
-    <object-name>dis.vertspd.3</object-name>
-    <property>it-autoflight/input/vs-abs</property>
-    <factor>0.001</factor>
-    <step>100</step>
-    <axis>
-        
-        <y>1</y>
-        
-    </axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>dis.vertspd.1</object-name>
+        <property>it-autoflight/input/vs</property>
+        <interpolation>
+            <entry>
+                <ind>-1000</ind>
+                <dep>-33</dep>
+            </entry>
+            <entry>
+                <ind>-1</ind>
+                <dep>-33</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m> 0.302</x-m>
+            <y-m>-0.055</y-m>
+            <z-m> 0.398</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
 
-<animation>
-    <type>textranslate</type>
-    <object-name>dis.vertspd.4</object-name>
-    <property>it-autoflight/input/vs-abs</property>
-    <factor>0.01</factor>
-    <step>10</step>
-    <axis>
-        
-        <y>1</y>
-        
-    </axis>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.vertspd.2</object-name>
+        <property>it-autoflight/input/vs-abs</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <axis>
 
-<animation>
-    <type>textranslate</type>
-    <object-name>dis.vertspd.5</object-name>
-    <property>it-autoflight/input/vs-abs</property>
-    <factor>0.1</factor>
-    <step>1</step>
-    <axis>
-        
-        <y>1</y>
-        
-    </axis>
-</animation>
+            <y>1</y>
 
-<animation>
-	<type>knob</type>
-	<object-name>cpt.panel.light</object-name>
-	<property>/controls/lighting/panel-norm</property>
-	<action>
-		<repeatable>true</repeatable>  
-		<binding>
-			<command>property-adjust</command>
-			<property>/controls/lighting/panel-norm</property>
-			<step>0.05</step>
-			<min>0</min>
-			<max>1</max>
-		</binding>
-	</action>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-		<object-name>GearLever</object-name>
-		<object-name>GearLever.arm</object-name>
-	<property>/controls/gear/gear-state</property>
-	<interpolation>
-		<entry><ind>0</ind><dep>-35</dep></entry>
-		<entry><ind>1</ind><dep> 35</dep></entry>
-		<entry><ind>1</ind><dep>-35</dep></entry>
-		<entry><ind>-1</ind><dep> 35</dep></entry>
-		<entry><ind>0</ind><dep> 0</dep></entry>
-	</interpolation>
-	<center>
-		<x-m>-0.095</x-m><y-m> 0.131</y-m><z-m> 0.179</z-m>
-	</center>
-	<axis>
-		<y>1</y>
-	</axis>
-</animation>
-	
-<animation>
-<type>pick</type>
-<object-name>GearLever</object-name>
-<object-name>GearLever.arm</object-name>
-	<action> 
-	<button>0</button>
-	<repeatable>false</repeatable>
-<binding>
-<command>property-cycle</command>
-<property>controls/gear/gear-state</property>
-<value>-1</value>
-<value>1</value>
-<value>0</value>
-</binding>
-</action>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.vertspd.3</object-name>
+        <property>it-autoflight/input/vs-abs</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
 
-<animation>
-	<type>select</type>
-	<object-name>lt.althold</object-name>
-	<condition>
-		<equals>
-			<property>it-autoflight/output/vert</property>
-			<value>0</value>
-		</equals>
-	</condition>
-</animation>
+            <y>1</y>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.althold</object-name>
-	<action>            
-		<button>0</button>            
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/vert</property>
-			<value>0</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>fdcap</object-name>
-	<action>            
-		<button>0</button>            
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-toggle</command>
-			<property>/it-autoflight/input/fd1</property>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>fdfo</object-name>
-	<action>            
-		<button>0</button>            
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-toggle</command>
-			<property>/it-autoflight/input/fd2</property>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>rotate</type>
-	<object-name>fdcap</object-name>
-		<property>it-autoflight/input/fd1</property>
-		<equals>1</equals>
-		<factor>60</factor>
-	<center>
-		<x-m>0.32407</x-m>
-		<y-m>-0.24223</y-m>
-		<z-m>0.38504</z-m>
-	</center>
-	<axis>
-		
-		<y>-1</y>
-		
-	</axis>
-</animation>
-<animation>
-	<type>rotate</type>
-	<object-name>fdfo</object-name>
-		<property>it-autoflight/input/fd2</property>
-		<equals>1</equals>
-		<factor>60</factor>
-	<center>
-		<x-m>0.3251</x-m>
-		<z-m>0.38508</z-m>
-	</center>
-	<axis>
-		<y>-1</y>
-	</axis>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.banklimit</object-name>
-	<action> 
-		<binding>
-			<command>property-adjust</command>
-			<property>it-autoflight/input/bank-limit-sw</property>
-			<min>0</min>
-			<max>6</max>
-		</binding>
-	</action>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>select</type>
-	<object-name>lt.flch</object-name>
-	<condition>
-		<equals>
-			<property>it-autoflight/output/vert</property>
-			<value>4</value>
-		</equals>
-	</condition>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.vertspd.4</object-name>
+        <property>it-autoflight/input/vs-abs</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.flch</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/vert</property>
-			<value>4</value>
-		</binding>
-	</action>
-</animation>
+            <y>1</y>
 
-<animation>
-     <type>select</type>
-     <object-name>lt.hdghold</object-name>
-     <condition>
-		<equals>
-			<property>it-autoflight/output/lat</property>
-			<value>0</value>
-		</equals>
-     </condition>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.hdghold</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
- 		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/lat</property>
-			<value>3</value>
- 		</binding>
- 	</action>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.vertspd.5</object-name>
+        <property>it-autoflight/input/vs-abs</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
 
- <animation>
-	<type>pick</type>
-	<object-name>btn.hdgsel</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/lat</property>
-			<value>0</value>
-		</binding>
-	</action>
-</animation>
+            <y>1</y>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.hdgselector</object-name>
-	<action> 
-		<binding>
-			<command>property-adjust</command>
-			<property>/it-autoflight/input/hdg</property>
-			<factor>1</factor>
-			<min>000</min>
-			<max>360</max>
-			<wrap>true</wrap>
-		</binding>
-	</action>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.hdg.1</object-name>
-	<property>it-autoflight/input/hdg</property>
-	<factor>0.001</factor>
-	<step>100</step>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>cpt.panel.light</object-name>
+        <property>/controls/lighting/panel-norm</property>
+        <action>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>/controls/lighting/panel-norm</property>
+                <step>0.05</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.hdg.2</object-name>
-	<property>it-autoflight/input/hdg</property>
-	<factor>0.01</factor>
-	<step>10</step>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>GearLever</object-name>
+        <object-name>GearLever.arm</object-name>
+        <property>/controls/gear/gear-state</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>-35</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep> 35</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>-35</dep>
+            </entry>
+            <entry>
+                <ind>-1</ind>
+                <dep> 35</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep> 0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-0.095</x-m>
+            <y-m> 0.131</y-m>
+            <z-m> 0.179</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.hdg.3</object-name>
-	<property>it-autoflight/input/hdg</property>
-	<factor>0.1</factor>
-	<step>1</step>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>GearLever</object-name>
+        <object-name>GearLever.arm</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/gear/gear-state</property>
+                <value>-1</value>
+                <value>1</value>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-     <type>select</type>
-     <object-name>lt.lnav</object-name>
-     <condition>
-		<equals>
-			<property>it-autoflight/output/lat</property>
-			<value>1</value>
-		</equals>
-	</condition>
-</animation>
+    <animation>
+        <type>select</type>
+        <object-name>lt.althold</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/vert</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.lnav</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/lat</property>
-			<value>1</value>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.althold</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/vert</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>fdcap</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>/it-autoflight/input/fd1</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>fdfo</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>/it-autoflight/input/fd2</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>fdcap</object-name>
+        <property>it-autoflight/input/fd1</property>
+        <equals>1</equals>
+        <factor>60</factor>
+        <center>
+            <x-m>0.32407</x-m>
+            <y-m>-0.24223</y-m>
+            <z-m>0.38504</z-m>
+        </center>
+        <axis>
 
-<animation>
-	<type>select</type>
-	<object-name>lt.spd</object-name>
-	<condition>
-		<equals>
-			<property>it-autoflight/output/athr</property>
-			<value>true</value>
-		</equals>
-	</condition>
-</animation>
+            <y>-1</y>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.spd</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>fdfo</object-name>
+        <property>it-autoflight/input/fd2</property>
+        <equals>1</equals>
+        <factor>60</factor>
+        <center>
+            <x-m>0.3251</x-m>
+            <z-m>0.38508</z-m>
+        </center>
+        <axis>
+            <y>-1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.banklimit</object-name>
+        <action>
+            <binding>
+                <command>property-adjust</command>
+                <property>it-autoflight/input/bank-limit-sw</property>
+                <min>0</min>
+                <max>6</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.flch</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/vert</property>
+                <value>4</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.flch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/vert</property>
+                <value>4</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.hdghold</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/lat</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.hdghold</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/lat</property>
+                <value>3</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.hdgsel</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/lat</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>knob</type>
+        <object-name>btn.hdgselector</object-name>
+        <action>
+            <binding>
+                <command>property-adjust</command>
+                <property>/it-autoflight/input/hdg</property>
+                <factor>1</factor>
+                <min>000</min>
+                <max>360</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.hdg.1</object-name>
+        <property>it-autoflight/input/hdg</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+
+            <y>1</y>
+
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.hdg.2</object-name>
+        <property>it-autoflight/input/hdg</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+
+            <y>1</y>
+
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.hdg.3</object-name>
+        <property>it-autoflight/input/hdg</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+
+            <y>1</y>
+
+        </axis>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.lnav</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/lat</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.lnav</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/lat</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.spd</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/athr</property>
+                <value>true</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.spd</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>
 				if (getprop("/it-autoflight/custom/at-arm") == 0 or getprop("/it-autoflight/input/athr") == 1) {
 					setprop("/it-autoflight/input/athr", 0);
 				} else if (getprop("/it-autoflight/custom/at-arm") == 1) {
 					setprop("/it-autoflight/input/athr", 1);
 				}
 			</script>
-		</binding>
-	</action>
-</animation>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.spd.sel</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-cycle</command>
-			<property>/it-autoflight/input/kts-mach</property>
-			<value>1</value>
-			<value>0</value>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.spd.sel</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-cycle</command>
+                <property>/it-autoflight/input/kts-mach</property>
+                <value>1</value>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.speed</object-name>
-	<action> 
-		<repeatable>true</repeatable>
-		<binding>
-			<condition>
-				<not>
-					<equals>
-						<property>/it-autoflight/input/kts-mach</property>
-						<value>1</value>
-					</equals>
-				</not>
-			</condition>
-			<command>property-adjust</command>
-			<property>/it-autoflight/input/kts</property>
-			<factor>1</factor>
-			<min>100</min>
-			<max>399</max>
-		</binding>
-		<binding>
-			<condition>
-				<equals>
-					<property>/it-autoflight/input/kts-mach</property>
-					<value>1</value>
-				</equals>
-			</condition>
-			<command>property-adjust</command>
-			<property>/it-autoflight/input/mach</property>
-			<factor>0.01</factor>
-			<min>0.40</min>
-			<max>0.95</max>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.speed</object-name>
+        <action>
+            <repeatable>true</repeatable>
+            <binding>
+                <condition>
+                    <not>
+                        <equals>
+                            <property>/it-autoflight/input/kts-mach</property>
+                            <value>1</value>
+                        </equals>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>/it-autoflight/input/kts</property>
+                <factor>1</factor>
+                <min>100</min>
+                <max>399</max>
+            </binding>
+            <binding>
+                <condition>
+                    <equals>
+                        <property>/it-autoflight/input/kts-mach</property>
+                        <value>1</value>
+                    </equals>
+                </condition>
+                <command>property-adjust</command>
+                <property>/it-autoflight/input/mach</property>
+                <factor>0.01</factor>
+                <min>0.40</min>
+                <max>0.95</max>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.spd.1</object-name>
-	<property>it-autoflight/input/kts</property>
-	<factor>0.001</factor>
-	<step>100</step>
-	<condition>
-		<not>
-			<equals>
-				<property>/it-autoflight/input/kts-mach</property>
-				<value>1</value>
-			</equals>
-		</not>
-	</condition>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.spd.1</object-name>
+        <property>it-autoflight/input/kts</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <condition>
+            <not>
+                <equals>
+                    <property>/it-autoflight/input/kts-mach</property>
+                    <value>1</value>
+                </equals>
+            </not>
+        </condition>
+        <axis>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.spd.2</object-name>
-	<property>it-autoflight/input/kts</property>
-	<factor>0.01</factor>
-	<step>10</step>
-	<condition>
-		<not>
-			<equals>
-				<property>/it-autoflight/input/kts-mach</property>
-				<value>1</value>
-			</equals>
-		</not>
-	</condition>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+            <y>1</y>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.spd.3</object-name>
-	<property>it-autoflight/input/kts</property>
-	<factor>0.1</factor>
-	<step>1</step>
-	<condition>
-		<not>
-			<equals>
-				<property>/it-autoflight/input/kts-mach</property>
-				<value>1</value>
-			</equals>
-		</not>
-	</condition>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>select</type>
-	<object-name>lt.thr</object-name>
-	<condition>
-		<equals>
-			<property>it-autoflight/output/thr-mode</property>
-			<value>2</value>
-		</equals>
-	</condition>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.spd.2</object-name>
+        <property>it-autoflight/input/kts</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <condition>
+            <not>
+                <equals>
+                    <property>/it-autoflight/input/kts-mach</property>
+                    <value>1</value>
+                </equals>
+            </not>
+        </condition>
+        <axis>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.thr</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/toga</property>
-			<value>1</value>
-		</binding>
-	</action>
-</animation>
+            <y>1</y>
 
-<animation>
-     <type>select</type>
-     <object-name>lt.vnav</object-name>
-     <condition>
-		<equals>
-			<property>it-autoflight/output/vert</property>
-			<value>3</value> <!-- todo non-functional -->
-		</equals>
-	</condition>
-</animation>
+        </axis>
+    </animation>
 
-<!-- <animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.spd.3</object-name>
+        <property>it-autoflight/input/kts</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <condition>
+            <not>
+                <equals>
+                    <property>/it-autoflight/input/kts-mach</property>
+                    <value>1</value>
+                </equals>
+            </not>
+        </condition>
+        <axis>
+
+            <y>1</y>
+
+        </axis>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.thr</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/thr-mode</property>
+                <value>2</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.thr</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/toga</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.vnav</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/vert</property>
+                <value>3</value> <!-- todo non-functional -->
+            </equals>
+        </condition>
+    </animation>
+
+    <!-- <animation>
 	<type>pick</type>
 	<object-name>btn.vnav</object-name>
 	<action>
@@ -721,685 +751,685 @@
 	</action>
 </animation>-->
 
-<animation>
-	<type>select</type>
-	<object-name>lt.vs</object-name>
-	<condition>
-		<equals>
-			<property>it-autoflight/output/vert</property>
-			<value>1</value>
-		</equals>
-	</condition>
-</animation>
+    <animation>
+        <type>select</type>
+        <object-name>lt.vs</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/vert</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.vs</object-name>
-	<action>            
-		<button>0</button>            
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/vert</property>
-			<value>1</value>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.vs</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/vert</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.vs.dn</object-name>
-	<object-name>btn.vs.up</object-name>
-	<drag-direction>vertical</drag-direction>
-	<action>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>/it-autoflight/input/vs</property>
-			<factor>100</factor>
-			<min>-8000</min>
-			<max>6000</max>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.vs.dn</object-name>
+        <object-name>btn.vs.up</object-name>
+        <drag-direction>vertical</drag-direction>
+        <action>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>/it-autoflight/input/vs</property>
+                <factor>100</factor>
+                <min>-8000</min>
+                <max>6000</max>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.alt</object-name>
-	<action>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>/it-autoflight/input/alt</property>
-			<factor>100</factor>
-			<min>0</min>
-			<max>50000</max>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.alt</object-name>
+        <action>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>/it-autoflight/input/alt</property>
+                <factor>100</factor>
+                <min>0</min>
+                <max>50000</max>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.alt.1</object-name>
-	<property>it-autoflight/input/alt</property>
-	<factor>0.00001</factor>
-	<step>10000</step>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.alt.1</object-name>
+        <property>it-autoflight/input/alt</property>
+        <factor>0.00001</factor>
+        <step>10000</step>
+        <axis>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.alt.2</object-name>
-	<property>it-autoflight/input/alt</property>
-	<factor>0.0001</factor>
-	<step>1000</step>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+            <y>1</y>
 
-<animation>
-	<type>textranslate</type>
-	<object-name>dis.alt.3</object-name>
-	<property>it-autoflight/input/alt</property>
-	<factor>0.001</factor>
-	<step>100</step>
-	<axis>
-		
-		<y>1</y>
-		
-	</axis>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.loc</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/lat</property>
-			<value>2</value>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.alt.2</object-name>
+        <property>it-autoflight/input/alt</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <axis>
 
-<animation>
-	<type>select</type>
-	<object-name>lt.loc</object-name>
-	<condition>
-		<equals>
-			<property>it-autoflight/output/lat</property>
-			<value>2</value>
-		</equals>
-	</condition>
-</animation>
+            <y>1</y>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.app</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/vert</property>
-			<value>2</value>
-		</binding>
-		<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/input/lat</property>
-			<value>2</value>
-		</binding>
-	</action>
-</animation>
+        </axis>
+    </animation>
 
-<animation>
-	<type>select</type>
-	<object-name>lt.app</object-name>
-	<condition>
-		<or>
-			<equals>
-				<property>it-autoflight/output/vert</property>
-				<value>2</value>
-			</equals>
-			<equals>
-				<property>it-autoflight/output/vert</property>
-				<value>6</value>
-			</equals>
-		</or>
-	</condition>
-</animation>
-<animation>
-	<type>select</type>
-	<object-name>ap-cmd-lt</object-name>
-	<condition>
-		<equals>
-				<property>it-autoflight/input/ap1</property>
-				<value>1</value>
-		</equals>
-	</condition>
-</animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>dis.alt.3</object-name>
+        <property>it-autoflight/input/alt</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.ap.disengage</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-toggle</command>
-			<property>/autopilot/settings/disengaged</property>
-		</binding>
-		<binding>
-			<command>nasal</command>
-			<script>
+            <y>1</y>
+
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.loc</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/lat</property>
+                <value>2</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.loc</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/output/lat</property>
+                <value>2</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.app</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/vert</property>
+                <value>2</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>/it-autoflight/input/lat</property>
+                <value>2</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lt.app</object-name>
+        <condition>
+            <or>
+                <equals>
+                    <property>it-autoflight/output/vert</property>
+                    <value>2</value>
+                </equals>
+                <equals>
+                    <property>it-autoflight/output/vert</property>
+                    <value>6</value>
+                </equals>
+            </or>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap-cmd-lt</object-name>
+        <condition>
+            <equals>
+                <property>it-autoflight/input/ap1</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>btn.ap.disengage</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>/autopilot/settings/disengaged</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
 				setprop("it-autoflight/input/ap1", 0);
 				setprop("it-autoflight/input/athr", 0);
 			</script>
-		</binding>
-	</action>
-</animation>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>translate</type>
-	<object-name>btn.ap.disengage</object-name>
-	<property>/autopilot/settings/disengaged</property>
-	<factor>0.012</factor>
-	<axis>
-		<z>-1</z>
-	</axis>
-</animation>
+    <animation>
+        <type>translate</type>
+        <object-name>btn.ap.disengage</object-name>
+        <property>/autopilot/settings/disengaged</property>
+        <factor>0.012</factor>
+        <axis>
+            <z>-1</z>
+        </axis>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.cmd.l</object-name>
-	<object-name>btn.cmd.c</object-name>
-	<object-name>btn.cmd.r</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-toggle</command>
-			<property>it-autoflight/input/ap1</property>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.cmd.l</object-name>
+        <object-name>btn.cmd.c</object-name>
+        <object-name>btn.cmd.r</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>it-autoflight/input/ap1</property>
+            </binding>
+        </action>
+    </animation>
 
-<!-- EFIS PANELS -->
+    <!-- EFIS PANELS -->
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.nd.mode.L</object-name>
-	<action>
-		<binding>
-			<command>property-cycle</command>
-			<property>instrumentation/efis/mfd/display-mode</property>
-			<wrap>false</wrap>
-			<value type="string">APP</value>
-			<value type="string">VOR</value>
-			<value type="string">MAP</value>
-			<value type="string">PLAN</value>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>Mode: %s</label>
-			<tooltip-id>ndMode</tooltip-id>
-			<property>instrumentation/efis/mfd/display-mode</property>
-		</binding>
-	</hovered>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.nd.mode.L</object-name>
+        <action>
+            <binding>
+                <command>property-cycle</command>
+                <property>instrumentation/efis/mfd/display-mode</property>
+                <wrap>false</wrap>
+                <value type="string">APP</value>
+                <value type="string">VOR</value>
+                <value type="string">MAP</value>
+                <value type="string">PLAN</value>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>Mode: %s</label>
+                <tooltip-id>ndMode</tooltip-id>
+                <property>instrumentation/efis/mfd/display-mode</property>
+            </binding>
+        </hovered>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.nd.range.L</object-name>
-	<action>
-		<binding>
-			<command>property-cycle</command>
-			<property>instrumentation/efis/inputs/range-nm</property>
-			<wrap>false</wrap>
-			<value type="int">10</value>
-			<value type="int">20</value>
-			<value type="int">40</value>
-			<value type="int">80</value>
-			<value type="int">160</value>
-			<value type="int">320</value>
-			<value type="int">640</value>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>Range: %3d NM</label>
-			<tooltip-id>ndRange</tooltip-id>
-			<property>instrumentation/efis/inputs/range-nm</property>
-		</binding>
-	</hovered>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.nd.range.L</object-name>
+        <action>
+            <binding>
+                <command>property-cycle</command>
+                <property>instrumentation/efis/inputs/range-nm</property>
+                <wrap>false</wrap>
+                <value type="int">10</value>
+                <value type="int">20</value>
+                <value type="int">40</value>
+                <value type="int">80</value>
+                <value type="int">160</value>
+                <value type="int">320</value>
+                <value type="int">640</value>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>Range: %3d NM</label>
+                <tooltip-id>ndRange</tooltip-id>
+                <property>instrumentation/efis/inputs/range-nm</property>
+            </binding>
+        </hovered>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.wxr.L</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis/inputs/wxr</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>WXR: %s</label>
-			<tooltip-id>wxr</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis/inputs/wxr</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.sta.L</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis/inputs/sta</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>STA: %s</label>
-			<tooltip-id>sta</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis/inputs/sta</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.wpt.L</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis/inputs/wpt</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>WPT: %s</label>
-			<tooltip-id>wpt</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis/inputs/wpt</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.arpt.L</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis/inputs/arpt</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>ARPT: %s</label>
-			<tooltip-id>arpt</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis/inputs/arpt</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.data.L</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis/inputs/data</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>DATA: %s</label>
-			<tooltip-id>data</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis/inputs/data</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.pos.L</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis/inputs/pos</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>POS: %s</label>
-			<tooltip-id>pos</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis/inputs/pos</property>
-		</binding>
-	</hovered>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.wxr.L</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis/inputs/wxr</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>WXR: %s</label>
+                <tooltip-id>wxr</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis/inputs/wxr</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.sta.L</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis/inputs/sta</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>STA: %s</label>
+                <tooltip-id>sta</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis/inputs/sta</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.wpt.L</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis/inputs/wpt</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>WPT: %s</label>
+                <tooltip-id>wpt</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis/inputs/wpt</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.arpt.L</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis/inputs/arpt</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>ARPT: %s</label>
+                <tooltip-id>arpt</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis/inputs/arpt</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.data.L</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis/inputs/data</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>DATA: %s</label>
+                <tooltip-id>data</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis/inputs/data</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.pos.L</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis/inputs/pos</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>POS: %s</label>
+                <tooltip-id>pos</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis/inputs/pos</property>
+            </binding>
+        </hovered>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.nd.mode.R</object-name>
-	<action>
-		<binding>
-			<command>property-cycle</command>
-			<property>instrumentation/efis[1]/mfd/display-mode</property>
-			<wrap>false</wrap>
-			<value type="string">APP</value>
-			<value type="string">VOR</value>
-			<value type="string">MAP</value>
-			<value type="string">PLAN</value>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>Mode: %s</label>
-			<tooltip-id>ndMode</tooltip-id>
-			<property>instrumentation/efis[1]/mfd/display-mode</property>
-		</binding>
-	</hovered>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.nd.mode.R</object-name>
+        <action>
+            <binding>
+                <command>property-cycle</command>
+                <property>instrumentation/efis[1]/mfd/display-mode</property>
+                <wrap>false</wrap>
+                <value type="string">APP</value>
+                <value type="string">VOR</value>
+                <value type="string">MAP</value>
+                <value type="string">PLAN</value>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>Mode: %s</label>
+                <tooltip-id>ndMode</tooltip-id>
+                <property>instrumentation/efis[1]/mfd/display-mode</property>
+            </binding>
+        </hovered>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.nd.range.R</object-name>
-	<action>
-		<binding>
-			<command>property-cycle</command>
-			<property>instrumentation/efis[1]/inputs/range-nm</property>
-			<wrap>false</wrap>
-			<value type="int">10</value>
-			<value type="int">20</value>
-			<value type="int">40</value>
-			<value type="int">80</value>
-			<value type="int">160</value>
-			<value type="int">320</value>
-			<value type="int">640</value>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>Range: %3d NM</label>
-			<tooltip-id>ndRange</tooltip-id>
-			<property>instrumentation/efis[1]/inputs/range-nm</property>
-		</binding>
-	</hovered>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.nd.range.R</object-name>
+        <action>
+            <binding>
+                <command>property-cycle</command>
+                <property>instrumentation/efis[1]/inputs/range-nm</property>
+                <wrap>false</wrap>
+                <value type="int">10</value>
+                <value type="int">20</value>
+                <value type="int">40</value>
+                <value type="int">80</value>
+                <value type="int">160</value>
+                <value type="int">320</value>
+                <value type="int">640</value>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>Range: %3d NM</label>
+                <tooltip-id>ndRange</tooltip-id>
+                <property>instrumentation/efis[1]/inputs/range-nm</property>
+            </binding>
+        </hovered>
+    </animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>btn.wxr.R</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis[1]/inputs/wxr</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>WXR: %s</label>
-			<tooltip-id>wxr</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis[1]/inputs/wxr</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.sta.R</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis[1]/inputs/sta</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>STA: %s</label>
-			<tooltip-id>sta</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis[1]/inputs/sta</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.wpt.R</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis[1]/inputs/wpt</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>WPT: %s</label>
-			<tooltip-id>wpt</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis[1]/inputs/wpt</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.arpt.R</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis[1]/inputs/arpt</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>ARPT: %s</label>
-			<tooltip-id>arpt</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis[1]/inputs/arpt</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.data.R</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis[1]/inputs/data</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>DATA: %s</label>
-			<tooltip-id>data</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis[1]/inputs/data</property>
-		</binding>
-	</hovered>
-</animation>
-<animation>
-	<type>knob</type>
-	<object-name>btn.pos.R</object-name>
-	<action>
-		<binding>
-			<command>property-toggle</command>
-			<property>instrumentation/efis[1]/inputs/pos</property>
-		</binding>
-	</action>
-	<hovered>
-		<binding>
-			<command>set-tooltip</command>
-			<label>POS: %s</label>
-			<tooltip-id>pos</tooltip-id>
-			<mapping>on-off</mapping>
-			<property>instrumentation/efis[1]/inputs/pos</property>
-		</binding>
-	</hovered>
-</animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.wxr.R</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[1]/inputs/wxr</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>WXR: %s</label>
+                <tooltip-id>wxr</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis[1]/inputs/wxr</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.sta.R</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[1]/inputs/sta</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>STA: %s</label>
+                <tooltip-id>sta</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis[1]/inputs/sta</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.wpt.R</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[1]/inputs/wpt</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>WPT: %s</label>
+                <tooltip-id>wpt</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis[1]/inputs/wpt</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.arpt.R</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[1]/inputs/arpt</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>ARPT: %s</label>
+                <tooltip-id>arpt</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis[1]/inputs/arpt</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.data.R</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[1]/inputs/data</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>DATA: %s</label>
+                <tooltip-id>data</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis[1]/inputs/data</property>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>knob</type>
+        <object-name>btn.pos.R</object-name>
+        <action>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[1]/inputs/pos</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <label>POS: %s</label>
+                <tooltip-id>pos</tooltip-id>
+                <mapping>on-off</mapping>
+                <property>instrumentation/efis[1]/inputs/pos</property>
+            </binding>
+        </hovered>
+    </animation>
 
-<!-- EICAS PANEL -->
+    <!-- EICAS PANEL -->
 
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.eng</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">ENG</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.stat</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">STAT</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.elec</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">ELEC</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.fuel</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">FUEL</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.ecs</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">ECS</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.hyd</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">HYD</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.drs</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">DRS</value>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>btn.eicas.gear</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-assign</command>
-			<property>/instrumentation/eicas/display</property>
-			<value type="string">GEAR</value>
-		</binding>
-	</action>
-</animation>
-<animation>
- <type>material</type> 
- <object-name>btn.hdgsel.001</object-name>
- <object-name>cpt.panel.light</object-name>
- <object-name>btn.spd.sel.001</object-name>
- <object-name>GearLever.arm</object-name>
- <object-name>btn.wxr.L</object-name>
- <object-name>btn.sta.L</object-name>
- <object-name>btn.wpt.L</object-name>
- <object-name>btn.arpt.L</object-name>
- <object-name>btn.wxr.R</object-name>
- <object-name>btn.sta.R</object-name>
- <object-name>btn.wpt.R</object-name>
- <object-name>btn.arpt.R</object-name>
- <object-name>btn.nd.mode.L</object-name>
- <object-name>btn.nd.range.L</object-name>
- <object-name>btn.nd.mode.R</object-name>
- <object-name>btn.nd.range.R</object-name>
- <object-name>btn.pos.L</object-name>
- <object-name>btn.pos.R</object-name>
- <object-name>fdcap</object-name>
- <object-name>fdfo</object-name>
-<emission>
-<red>0.5</red>
-<green>0.5</green>
-<blue>0.5</blue>
-	<factor-prop>/controls/lighting/panel-overhead-norm</factor-prop>
-</emission>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.eng</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">ENG</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.stat</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">STAT</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.elec</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">ELEC</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.fuel</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">FUEL</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.ecs</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">ECS</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.hyd</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">HYD</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.drs</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">DRS</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>btn.eicas.gear</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>/instrumentation/eicas/display</property>
+                <value type="string">GEAR</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>btn.hdgsel.001</object-name>
+        <object-name>cpt.panel.light</object-name>
+        <object-name>btn.spd.sel.001</object-name>
+        <object-name>GearLever.arm</object-name>
+        <object-name>btn.wxr.L</object-name>
+        <object-name>btn.sta.L</object-name>
+        <object-name>btn.wpt.L</object-name>
+        <object-name>btn.arpt.L</object-name>
+        <object-name>btn.wxr.R</object-name>
+        <object-name>btn.sta.R</object-name>
+        <object-name>btn.wpt.R</object-name>
+        <object-name>btn.arpt.R</object-name>
+        <object-name>btn.nd.mode.L</object-name>
+        <object-name>btn.nd.range.L</object-name>
+        <object-name>btn.nd.mode.R</object-name>
+        <object-name>btn.nd.range.R</object-name>
+        <object-name>btn.pos.L</object-name>
+        <object-name>btn.pos.R</object-name>
+        <object-name>fdcap</object-name>
+        <object-name>fdfo</object-name>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>/controls/lighting/panel-overhead-norm</factor-prop>
+        </emission>
+    </animation>
 </PropertyList>

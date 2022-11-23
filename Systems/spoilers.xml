@@ -4,29 +4,29 @@
      # by Gijs de Rooy			          # -->
 
 <system name="spoilers">
-    
+
     <channel name="spoilers">
 
         <switch name="fcs/speedbrake-pos-norm">
-          <default value="0"/>
-            <test  logic="AND" value="0">
+            <default value="0" />
+            <test logic="AND" value="0">
                 /controls/flight/speedbrake == 0
             </test>
-			<test  logic="AND" value="1">
+            <test logic="AND" value="1">
                 /controls/flight/speedbrake == 1
                 /controls/engines/engine[0]/throttle == 1
                 /controls/engines/engine[2]/throttle == 1
 				/gear/gear/wow == 1
             </test>
-			<test  logic="AND" value="0.5">
+            <test logic="AND" value="0.5">
                 /controls/flight/speedbrake == 2
             </test>
-            <test  logic="AND" value="1">
+            <test logic="AND" value="1">
                 /controls/flight/speedbrake == 3
 				/gear/gear/wow == 1
             </test>
-			<output>controls/speedbrake-test</output>
-       </switch>
+            <output>controls/speedbrake-test</output>
+        </switch>
 
     </channel>
 

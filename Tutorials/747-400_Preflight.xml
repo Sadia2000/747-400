@@ -4,147 +4,147 @@
     <description>
 You just stepped through the cockpit door of the cold and dark 747-400, the most magnificent passenger aircraft on the planet. You are the captain on this flight and will direct all flight operations.
     </description>
-	
+
     <audio-dir>Aircraft/747-400/tutorial</audio-dir>
-	
-	<presets>
-		<airport-id>EHAM</airport-id>
-		<on-ground>1</on-ground>
-		<parkpos>E20</parkpos>
-	</presets>
-	
+
+    <presets>
+        <airport-id>EHAM</airport-id>
+        <on-ground>1</on-ground>
+        <parkpos>E20</parkpos>
+    </presets>
+
     <init>
-		<set>
-			<property>/controls/gear/brake-parking</property>
-			<value>1</value>
-		</set>
-		<set>
-			<property>/controls/flight/flaps</property>
-			<value>0.0</value>
-		</set>
-		<set>
-			<property>/controls/electric/battery-switch</property>
-			<value>0.0</value>
-		</set>
-		<set>
-			<property>/controls/engines/engine[0]/throttle</property>
-			<value>0</value>
-		</set>
-		<set>
-			<property>/engines/engine[0]/running</property>
-			<value>0</value>
-		</set>
+        <set>
+            <property>/controls/gear/brake-parking</property>
+            <value>1</value>
+        </set>
+        <set>
+            <property>/controls/flight/flaps</property>
+            <value>0.0</value>
+        </set>
+        <set>
+            <property>/controls/electric/battery-switch</property>
+            <value>0.0</value>
+        </set>
+        <set>
+            <property>/controls/engines/engine[0]/throttle</property>
+            <value>0</value>
+        </set>
+        <set>
+            <property>/engines/engine[0]/running</property>
+            <value>0</value>
+        </set>
     </init>
 
     <step>
-		<message>Turn ON the BATTERY switch at the overhead panel.</message>
-		<marker>
-			<x-m> 1.31</x-m>
-			<y-m>-0.26</y-m>
-			<z-m> 1.40</z-m>
-			<scale>0.9174</scale>
-		</marker>
-		<exit>
-			<condition>
-				<property>/controls/electric/battery</property>
-			</condition>
-		</exit>
+        <message>Turn ON the BATTERY switch at the overhead panel.</message>
+        <marker>
+            <x-m> 1.31</x-m>
+            <y-m>-0.26</y-m>
+            <z-m> 1.40</z-m>
+            <scale>0.9174</scale>
+        </marker>
+        <exit>
+            <condition>
+                <property>/controls/electric/battery</property>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Set all four ELEC ENG CONTROL switches to NORM.</message>
     </step>
 	-->
 
     <step>
-		<message>Set the BUS TIE switches to AUTO.</message>
-		<exit>
-			<condition>
-				<property>/controls/electric/bus-tie[0]</property>
-				<property>/controls/electric/bus-tie[1]</property>
-				<property>/controls/electric/bus-tie[2]</property>
-				<property>/controls/electric/bus-tie[3]</property>
-			</condition>
-		</exit>
+        <message>Set the BUS TIE switches to AUTO.</message>
+        <exit>
+            <condition>
+                <property>/controls/electric/bus-tie[0]</property>
+                <property>/controls/electric/bus-tie[1]</property>
+                <property>/controls/electric/bus-tie[2]</property>
+                <property>/controls/electric/bus-tie[3]</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Set the GEN CONT (generator control) switches ON.</message>
-		<exit>
-			<condition>
-				<property>/controls/electric/generator-control[0]</property>
-				<property>/controls/electric/generator-control[1]</property>
-				<property>/controls/electric/generator-control[2]</property>
-				<property>/controls/electric/generator-control[3]</property>
-			</condition>
-		</exit>
+        <message>Set the GEN CONT (generator control) switches ON.</message>
+        <exit>
+            <condition>
+                <property>/controls/electric/generator-control[0]</property>
+                <property>/controls/electric/generator-control[1]</property>
+                <property>/controls/electric/generator-control[2]</property>
+                <property>/controls/electric/generator-control[3]</property>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Ensure that the Hydraulic DEMAND pump switches are set to OFF.</message>
     </step>
 	-->
 
     <step>
-		<message>Turn the ENGINE hydraulic pump selectors ON.</message>
-		<exit>
-			<condition>
-				<property>/controls/hydraulic/engine-pump</property>
-				<property>/controls/hydraulic/engine-pump[1]</property>
-				<property>/controls/hydraulic/engine-pump[2]</property>
-				<property>/controls/hydraulic/engine-pump[3]</property>
-			</condition>
-		</exit>
+        <message>Turn the ENGINE hydraulic pump selectors ON.</message>
+        <exit>
+            <condition>
+                <property>/controls/hydraulic/engine-pump</property>
+                <property>/controls/hydraulic/engine-pump[1]</property>
+                <property>/controls/hydraulic/engine-pump[2]</property>
+                <property>/controls/hydraulic/engine-pump[3]</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn on EXT PWR 1 and, if available, EXT PWR 2.</message>
-		<marker>
-			<x-m>-24.285</x-m>
-			<y-m>-0.338</y-m>
-			<z-m>4.112</z-m>
-			<scale>2.4</scale>
-		</marker>
-		<exit>
-			<condition>
-				<equals>
-					<property>/systems/electrical/external-power[0]</property>
-					<value>2</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Turn on EXT PWR 1 and, if available, EXT PWR 2.</message>
+        <marker>
+            <x-m>-24.285</x-m>
+            <y-m>-0.338</y-m>
+            <z-m>4.112</z-m>
+            <scale>2.4</scale>
+        </marker>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/systems/electrical/external-power[0]</property>
+                    <value>2</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn ON UTILITY L and R.</message>
-		<exit>
-			<condition>            
-				<property>/controls/electric/utility[0]</property>
-				<property>/controls/electric/utility[1]</property>
-			</condition>
-		</exit>
+        <message>Turn ON UTILITY L and R.</message>
+        <exit>
+            <condition>
+                <property>/controls/electric/utility[0]</property>
+                <property>/controls/electric/utility[1]</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn on the NAV lights.</message>
-		<exit>
-			<condition> 
-				<property>/controls/lighting/nav</property> 
-			</condition>
-		</exit>
+        <message>Turn on the NAV lights.</message>
+        <exit>
+            <condition>
+                <property>/controls/lighting/nav</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn on the LOGO lights.</message>
-		<exit>
-			<condition>
-				<property>/controls/lighting/logo</property>             
-			</condition>
-		</exit>
+        <message>Turn on the LOGO lights.</message>
+        <exit>
+            <condition>
+                <property>/controls/lighting/logo</property>
+            </condition>
+        </exit>
     </step>
-	<!--
+    <!--
     <step>
 		<message>Turn on the WING lights.</message>
     </step>
@@ -155,36 +155,36 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
 	-->
 
     <step>
-		<message>Ensure all control surfaces are properly positioned (centered).</message>
-		<exit>
-			<condition>    
-				<equals>    
-					<property>/controls/flight/flaps</property>    
-					<value>0</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Ensure all control surfaces are properly positioned (centered).</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/flight/flaps</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Set each of the three IRS switches from OFF to NAV to ALIGN.</message>
     </step>
 	-->
 
     <step>
-		<message>Turn on all fuel XFEED (crossfeed) switches.</message>
-		<exit>
-			<condition>          
-				<property>/controls/fuel/tank[1]/x-feed</property>
-				<property>/controls/fuel/tank[2]/x-feed</property>
-				<property>/controls/fuel/tank[3]/x-feed</property>
-				<property>/controls/fuel/tank[4]/x-feed</property>
-			</condition>
-		</exit>
+        <message>Turn on all fuel XFEED (crossfeed) switches.</message>
+        <exit>
+            <condition>
+                <property>/controls/fuel/tank[1]/x-feed</property>
+                <property>/controls/fuel/tank[2]/x-feed</property>
+                <property>/controls/fuel/tank[3]/x-feed</property>
+                <property>/controls/fuel/tank[4]/x-feed</property>
+            </condition>
+        </exit>
     </step>
 
-                                        <!--
+    <!--
     <step>
 		<message>Ensure all fuel pumps are OFF.</message>
 		<exit>
@@ -233,36 +233,36 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
                                         -->
 
     <step>
-		<message>Disable NACELLE and WING ANTI-ICE.</message>
-		<exit>
-			<condition>    
-				<and>
-					<equals>       
-						<property>/controls/anti-ice/engine[0]/inlet-heat</property>
-						<value>0</value>
-					</equals>
-					<equals>       
-						<property>/controls/anti-ice/engine[1]/inlet-heat</property>
-						<value>0</value>
-					</equals>
-					<equals>       
-						<property>/controls/anti-ice/engine[2]/inlet-heat</property>
-						<value>0</value>
-					</equals>
-					<equals>       
-						<property>/controls/anti-ice/engine[3]/inlet-heat</property>
-						<value>0</value>
-					</equals>
-					<equals>       
-						<property>/controls/anti-ice/wing-heat</property>
-						<value>0</value>
-					</equals>
-				</and>
-			</condition>
-		</exit>
+        <message>Disable NACELLE and WING ANTI-ICE.</message>
+        <exit>
+            <condition>
+                <and>
+                    <equals>
+                        <property>/controls/anti-ice/engine[0]/inlet-heat</property>
+                        <value>0</value>
+                    </equals>
+                    <equals>
+                        <property>/controls/anti-ice/engine[1]/inlet-heat</property>
+                        <value>0</value>
+                    </equals>
+                    <equals>
+                        <property>/controls/anti-ice/engine[2]/inlet-heat</property>
+                        <value>0</value>
+                    </equals>
+                    <equals>
+                        <property>/controls/anti-ice/engine[3]/inlet-heat</property>
+                        <value>0</value>
+                    </equals>
+                    <equals>
+                        <property>/controls/anti-ice/wing-heat</property>
+                        <value>0</value>
+                    </equals>
+                </and>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Enable WINDOW HEAT.</message>
     </step>
@@ -273,42 +273,42 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
 	-->
 
     <step>
-		<message>Rotate the APU switch to START.</message>
-		<marker>
-			<x-m>-24.240</x-m>
-			<y-m>-0.188</y-m>
-			<z-m>4.126</z-m>
-			<scale>3.0</scale>
-		</marker>
-		<exit>
-			<condition> 
-				<equals> 
-					<property>/controls/electric/apu</property>
-					<value>2</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Rotate the APU switch to START.</message>
+        <marker>
+            <x-m>-24.240</x-m>
+            <y-m>-0.188</y-m>
+            <z-m>4.126</z-m>
+            <scale>3.0</scale>
+        </marker>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/electric/apu</property>
+                    <value>2</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn ON APU GEN 1 and APU GEN 2.</message>
-		<exit>
-			<condition> 
-				<and>
-					<equals> 
-						<property>/systems/electrical/apu-generator[0]</property>
-						<value>2</value>
-					</equals>
-					<equals> 
-						<property>/systems/electrical/apu-generator[1]</property>
-						<value>2</value>
-					</equals>
-				</and>
-			</condition>
-		</exit>
+        <message>Turn ON APU GEN 1 and APU GEN 2.</message>
+        <exit>
+            <condition>
+                <and>
+                    <equals>
+                        <property>/systems/electrical/apu-generator[0]</property>
+                        <value>2</value>
+                    </equals>
+                    <equals>
+                        <property>/systems/electrical/apu-generator[1]</property>
+                        <value>2</value>
+                    </equals>
+                </and>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Ensure that PASS TEMP and FLT DECK temperature controls are set to AUTO.</message>
     </step>
@@ -327,143 +327,143 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
 	-->
 
     <step>
-		<message>Turn all three PACK switches to NORM.</message>
-		<exit>
-			<condition> 
-				<property>/controls/pneumatic/pack-control[0]</property>
-				<property>/controls/pneumatic/pack-control[1]</property>
-				<property>/controls/pneumatic/pack-control[2]</property>
-			</condition>
-		</exit>
+        <message>Turn all three PACK switches to NORM.</message>
+        <exit>
+            <condition>
+                <property>/controls/pneumatic/pack-control[0]</property>
+                <property>/controls/pneumatic/pack-control[1]</property>
+                <property>/controls/pneumatic/pack-control[2]</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Ensure the ISLN switches are open.</message>
-		<exit>
-			<condition> 
-				<property>/controls/pneumatic/isolation-valve[0]</property>
-				<property>/controls/pneumatic/isolation-valve[1]</property>
-			</condition>
-		</exit>
+        <message>Ensure the ISLN switches are open.</message>
+        <exit>
+            <condition>
+                <property>/controls/pneumatic/isolation-valve[0]</property>
+                <property>/controls/pneumatic/isolation-valve[1]</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn ON APU Bleed.</message>
-		<exit>
-			<condition>  
-				<property>/controls/pneumatic/APU-bleed</property>
-			</condition>
-		</exit>
+        <message>Turn ON APU Bleed.</message>
+        <exit>
+            <condition>
+                <property>/controls/pneumatic/APU-bleed</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn ENGINE BLEED ON for all four engines.</message>
-		<exit>
-			<condition>     
-				<property>/controls/pneumatic/engine-bleed[0]</property> 
-				<property>/controls/pneumatic/engine-bleed[1]</property>
-				<property>/controls/pneumatic/engine-bleed[2]</property>
-				<property>/controls/pneumatic/engine-bleed[3]</property>
-			</condition>
-		</exit>
+        <message>Turn ENGINE BLEED ON for all four engines.</message>
+        <exit>
+            <condition>
+                <property>/controls/pneumatic/engine-bleed[0]</property>
+                <property>/controls/pneumatic/engine-bleed[1]</property>
+                <property>/controls/pneumatic/engine-bleed[2]</property>
+                <property>/controls/pneumatic/engine-bleed[3]</property>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Turn the F/D (Flight Director) ON.</message>
     </step>
 	-->
-	
-	<step>
-		<message>Press the INIT REF button on one of the CDUs on the pedestal.</message>
-		<exit>
-			<condition>  
-				<equals>
-					<property>/instrumentation/cdu/display</property>
-					<value>INIT_REF</value>
-				</equals>
-			</condition>
-		</exit>
-    </step>
-	
-	<step>
-		<message>Then click the button next to TAKEOFF.</message>
-		<exit>
-			<condition>  
-				<equals>
-					<property>/instrumentation/cdu/display</property>
-					<value>TO_REF</value>
-				</equals>
-			</condition>
-		</exit>
-    </step>
-	
-	<step>
-		<message>Type the flap setting you will be using on takeoff, making use of the digits pad, then press the button next to the flap setting (upper left side button).</message>
+
+    <step>
+        <message>Press the INIT REF button on one of the CDUs on the pedestal.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/instrumentation/cdu/display</property>
+                    <value>INIT_REF</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Enter V2 speed (as seen on the CDU) into the IAS/MACH indicator.</message>
-		<exit>
-			<condition>  
-				<equals>
-					<property>/instrumentation/fmc/vspeeds/V2</property>
-					<property>/it-autoflight/input/kts</property>
-				</equals>
-			</condition>
-		</exit>
+        <message>Then click the button next to TAKEOFF.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/instrumentation/cdu/display</property>
+                    <value>TO_REF</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <step>
+        <message>Type the flap setting you will be using on takeoff, making use of the digits pad, then press the button next to the flap setting (upper left side button).</message>
+    </step>
+
+    <step>
+        <message>Enter V2 speed (as seen on the CDU) into the IAS/MACH indicator.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/instrumentation/fmc/vspeeds/V2</property>
+                    <property>/it-autoflight/input/kts</property>
+                </equals>
+            </condition>
+        </exit>
+    </step>
+
+    <!--
     <step>
 		<message>Set HDG to 249.</message>
     </step>
 	-->
 
     <step>
-		<message>Set ALT to 10000.</message>
-		<exit>
-			<condition>  
-				<equals>
-					<property>/it-autoflight/input/alt</property>
-					<value>10000</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Set ALT to 10000.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/it-autoflight/input/alt</property>
+                    <value>10000</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Ensure the autopilot DISENGAGE bar is UP.</message>
+        <message>Ensure the autopilot DISENGAGE bar is UP.</message>
     </step>
 
     <step>
-		<message>Ensure that fuel control switches are set at CUTOFF</message>
-		<exit>
-			<condition> 
-				<property>/controls/engines/engine[0]/cutoff</property> 
-				<property>/controls/engines/engine[1]/cutoff</property>
-				<property>/controls/engines/engine[2]/cutoff</property>
-				<property>/controls/engines/engine[3]/cutoff</property>
-			</condition>
-		</exit>
+        <message>Ensure that fuel control switches are set at CUTOFF</message>
+        <exit>
+            <condition>
+                <property>/controls/engines/engine[0]/cutoff</property>
+                <property>/controls/engines/engine[1]/cutoff</property>
+                <property>/controls/engines/engine[2]/cutoff</property>
+                <property>/controls/engines/engine[3]/cutoff</property>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Set trim</message>
     </step>
 	-->
 
     <step>
-		<message>Set AUTOBRAKES to RTO.</message>
-		<exit>
-			<condition>  
-                                <property>/autopilot/autobrake/rto-selected</property>
-			</condition>
-		</exit>
+        <message>Set AUTOBRAKES to RTO.</message>
+        <exit>
+            <condition>
+                <property>/autopilot/autobrake/rto-selected</property>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Turn the TCAS switch from XPDR to STBY/TEST.</message>
     </step>
@@ -478,16 +478,16 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
 	-->
 
     <step>
-		<message>Ensure that NO SMOKING and SEATBELTS selectors are set to AUTO.</message>
-		<exit>
-			<condition>  
-				<property>/controls/switches/seatbelt-sign</property>
-				<property>/controls/switches/smoking-sign</property>
-			</condition>
-		</exit>
+        <message>Ensure that NO SMOKING and SEATBELTS selectors are set to AUTO.</message>
+        <exit>
+            <condition>
+                <property>/controls/switches/seatbelt-sign</property>
+                <property>/controls/switches/smoking-sign</property>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Lock the FLT DK DOOR.</message>
     </step>
@@ -498,26 +498,26 @@ You just stepped through the cockpit door of the cold and dark 747-400, the most
 	-->
 
     <step>
-		<message>Turn ON MAIN and OVRD fuel pumps for each tank that contains fuel.</message>
-		<exit>
-			<condition>  
-				<and>
-					<property>/controls/fuel/tank[1]/pump-aft</property>
-					<property>/controls/fuel/tank[1]/pump-fwd</property>
-					<property>/controls/fuel/tank[2]/pump-aft</property>
-					<property>/controls/fuel/tank[2]/pump-fwd</property>
-					<property>/controls/fuel/tank[3]/pump-aft</property>
-					<property>/controls/fuel/tank[3]/pump-fwd</property>
-					<property>/controls/fuel/tank[4]/pump-aft</property>
-					<property>/controls/fuel/tank[4]/pump-fwd</property>
-					<property>/controls/fuel/tank[7]/pump</property>
-				</and>
-			</condition>
-		</exit>
+        <message>Turn ON MAIN and OVRD fuel pumps for each tank that contains fuel.</message>
+        <exit>
+            <condition>
+                <and>
+                    <property>/controls/fuel/tank[1]/pump-aft</property>
+                    <property>/controls/fuel/tank[1]/pump-fwd</property>
+                    <property>/controls/fuel/tank[2]/pump-aft</property>
+                    <property>/controls/fuel/tank[2]/pump-fwd</property>
+                    <property>/controls/fuel/tank[3]/pump-aft</property>
+                    <property>/controls/fuel/tank[3]/pump-fwd</property>
+                    <property>/controls/fuel/tank[4]/pump-aft</property>
+                    <property>/controls/fuel/tank[4]/pump-fwd</property>
+                    <property>/controls/fuel/tank[7]/pump</property>
+                </and>
+            </condition>
+        </exit>
     </step>
 
     <end>
-		<message>Continue with the Pushback and Start tutorial.</message>
+        <message>Continue with the Pushback and Start tutorial.</message>
     </end>
 
 </PropertyList>

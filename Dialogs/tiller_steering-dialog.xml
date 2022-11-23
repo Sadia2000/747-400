@@ -1,121 +1,128 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-	<name>tiller_steering</name>
-	<layout>vbox</layout>
-	<draggable>true</draggable>
-	<resizable>true</resizable>
+    <name>tiller_steering</name>
+    <layout>vbox</layout>
+    <draggable>true</draggable>
+    <resizable>true</resizable>
 
-	<nasal>
-		<open>
+    <nasal>
+        <open>
 			props.globals.initNode("/sim/gui/dialogs/tiller_steering/value", 0.0);
 			setprop("/controls/gear/tiller-cmd-norm", 0.0);
 		</open>
-		<close>
+        <close>
 			setprop("/sim/gui/dialogs/tiller_steering/value", 0.0);
 			setprop("/controls/gear/tiller-cmd-norm", 0.0);
 		</close>
-	</nasal>
+    </nasal>
 
-	<group>
-		<layout>hbox</layout>
-		<text>
-			<label>Tiller Steering</label>
-		</text>
+    <group>
+        <layout>hbox</layout>
+        <text>
+            <label>Tiller Steering</label>
+        </text>
 
-		<empty>
-			<stretch>true</stretch>
-		</empty>
+        <empty>
+            <stretch>true</stretch>
+        </empty>
 
-		<button>
-			<legend/>
-			<key>Esc</key>
-			<pref-width>16</pref-width>
-			<pref-height>16</pref-height>
-			<border>2</border>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
-	</group>
+        <button>
+            <legend />
+            <key>Esc</key>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <border>2</border>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
 
-	<hrule/>
+    <hrule />
 
-	<group>
-		<stretch>true</stretch>
-		<layout>vbox</layout>
-		<halign>left</halign>
-		<valign>top</valign>
-		<padding>5</padding>
-		<pref-width>300</pref-width>
-	
-		<checkbox>
-			<halign>left</halign>
-			<label>Enable tiller steering</label>
-			<property>/controls/gear/tiller-enabled</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</checkbox>
+    <group>
+        <stretch>true</stretch>
+        <layout>vbox</layout>
+        <halign>left</halign>
+        <valign>top</valign>
+        <padding>5</padding>
+        <pref-width>300</pref-width>
 
-		<group>
-			<layout>hbox</layout>
-			<halign>center</halign>
-			
-			<dial>
-				<min>-70</min>
-				<max>70</max>
-				<wrap>false</wrap>
-				<property>/sim/gui/dialogs/tiller_steering/value</property>
-				<enable><property>/controls/gear/tiller-enabled</property></enable>
-				<binding>
-					<command>dialog-apply</command>
-				</binding>
-				<binding>
-					<command>nasal</command>
-					<script><![CDATA[
+        <checkbox>
+            <halign>left</halign>
+            <label>Enable tiller steering</label>
+            <property>/controls/gear/tiller-enabled</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </checkbox>
+
+        <group>
+            <layout>hbox</layout>
+            <halign>center</halign>
+
+            <dial>
+                <min>-70</min>
+                <max>70</max>
+                <wrap>false</wrap>
+                <property>/sim/gui/dialogs/tiller_steering/value</property>
+                <enable>
+                    <property>/controls/gear/tiller-enabled</property>
+                </enable>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        <![CDATA[
 						setprop("/controls/gear/tiller-cmd-norm",
 						getprop("/sim/gui/dialogs/tiller_steering/value") / 70.0);
 						]]>
-					</script>
-				</binding>
-			</dial>
-			
-			<group>
-				<layout>vbox</layout>
-				<halign>left</halign>
-				
-				<text>
-					<halign>left</halign>
-					<property>/sim/gui/dialogs/tiller_steering/value</property>
-					<format>%2.0f degrees</format>
-					<live>true</live>
-					<enable><property>/controls/gear/tiller-enabled</property></enable>
-				</text>
-				<button>
-					<legend>Center</legend>
-					<border>2</border>
-					<enable><property>/controls/gear/tiller-enabled</property></enable>
-					<binding>
-						<command>nasal</command>
-						<script>
+                    </script>
+                </binding>
+            </dial>
+
+            <group>
+                <layout>vbox</layout>
+                <halign>left</halign>
+
+                <text>
+                    <halign>left</halign>
+                    <property>/sim/gui/dialogs/tiller_steering/value</property>
+                    <format>%2.0f degrees</format>
+                    <live>true</live>
+                    <enable>
+                        <property>/controls/gear/tiller-enabled</property>
+                    </enable>
+                </text>
+                <button>
+                    <legend>Center</legend>
+                    <border>2</border>
+                    <enable>
+                        <property>/controls/gear/tiller-enabled</property>
+                    </enable>
+                    <binding>
+                        <command>nasal</command>
+                        <script>
 							setprop("/sim/gui/dialogs/tiller_steering/value", 0.0);
 							setprop("/controls/gear/tiller-cmd-norm", 0.0);
 						</script>
-					</binding>
-					<binding>
-						<command>dialog-update</command>
-					</binding>
-				</button>
-				
-			</group>
-		</group>
-	</group>
+                    </binding>
+                    <binding>
+                        <command>dialog-update</command>
+                    </binding>
+                </button>
 
-	<hrule/>
-	
-	<text>
-		<label>Tiller is controlled via rudder when disabled here.</label>
-	</text>
+            </group>
+        </group>
+    </group>
+
+    <hrule />
+
+    <text>
+        <label>Tiller is controlled via rudder when disabled here.</label>
+    </text>
 
 </PropertyList>

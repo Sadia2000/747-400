@@ -7,63 +7,63 @@
 
     <property value="1">ap/thrust-mode/toga</property>
     <property value="0">ap/thrust-mode/crz</property>
-    
+
     <channel name="propulsion">
-        
+
         <switch name="Reversed Engine 1">
-            <default value="propulsion/engine[0]/reversed"/>
-            <test  logic="AND" value="1">
+            <default value="propulsion/engine[0]/reversed" />
+            <test logic="AND" value="1">
                 /controls/engines/engine[0]/reverser == 1
                 /gear/gear[1]/wow == 1
                 /controls/engines/engine[0]/throttle lt 0.1
             </test>
-            <test  logic="AND" value="0">
+            <test logic="AND" value="0">
                 /controls/engines/engine[0]/reverser == 0
                 /controls/engines/engine[0]/throttle lt 0.1
             </test>
             <output>propulsion/engine[0]/reversed</output>
         </switch>
         <switch name="Reversed Engine 2">
-            <default value="propulsion/engine[0]/reversed"/>
-            <test  logic="AND" value="1">
+            <default value="propulsion/engine[0]/reversed" />
+            <test logic="AND" value="1">
                 /controls/engines/engine[1]/reverser == 1
                 /gear/gear[1]/wow == 1
                 /controls/engines/engine[1]/throttle lt 0.1
             </test>
-            <test  logic="AND" value="0">
+            <test logic="AND" value="0">
                 /controls/engines/engine[1]/reverser == 0
                 /controls/engines/engine[1]/throttle lt 0.1
             </test>
             <output>propulsion/engine[1]/reversed</output>
         </switch>
         <switch name="Reversed Engine 3">
-            <default value="propulsion/engine[0]/reversed"/>
-            <test  logic="AND" value="1">
+            <default value="propulsion/engine[0]/reversed" />
+            <test logic="AND" value="1">
                 /controls/engines/engine[2]/reverser == 1
                 /gear/gear[1]/wow == 1
                 /controls/engines/engine[2]/throttle lt 0.1
             </test>
-            <test  logic="AND" value="0">
+            <test logic="AND" value="0">
                 /controls/engines/engine[2]/reverser == 0
                 /controls/engines/engine[2]/throttle lt 0.1
             </test>
             <output>propulsion/engine[2]/reversed</output>
         </switch>
         <switch name="Reversed Engine 4">
-            <default value="propulsion/engine[0]/reversed"/>
-            <test  logic="AND" value="1">
+            <default value="propulsion/engine[0]/reversed" />
+            <test logic="AND" value="1">
                 /controls/engines/engine[3]/reverser == 1
                 /gear/gear[1]/wow == 1
                 /controls/engines/engine[3]/throttle lt 0.1
             </test>
-            <test  logic="AND" value="0">
+            <test logic="AND" value="0">
                 /controls/engines/engine[3]/reverser == 0
                 /controls/engines/engine[3]/throttle lt 0.1
             </test>
             <output>propulsion/engine[3]/reversed</output>
         </switch>
-        
-		<!--
+
+        <!--
         <switch name="Engine 1 Throttle">
             <default value="/controls/engines/engine[0]/throttle"/>
             <test  logic="AND" value="0">
@@ -92,7 +92,7 @@
             </test>
             <output>/controls/engines/engine[3]/throttle</output>
         </switch>-->
-        
+
         <!-- throttle controls reverse thrust when in reverse -->
         <!--<switch name="Engine 1 Reverse Throttle">
             <default value="fcs/throttle-cmd-norm[0]"/>
@@ -126,40 +126,40 @@
             <output>fcs/throttle-cmd-norm[3]</output>
             <output>fcs/throttle-pos-norm[3]</output>
         </switch>-->
-        
+
         <!-- reverse force -->
-        
+
         <switch name="Engine 1 Reverse">
-            <default value="0"/>
-            <test  logic="AND" value="3.14159265">
+            <default value="0" />
+            <test logic="AND" value="3.14159265">
                 propulsion/engine[0]/reversed == 1
             </test>
             <output>propulsion/engine[0]/reverser-angle-rad</output>
         </switch>
         <switch name="Engine 2 Reverse">
-            <default value="0"/>
-            <test  logic="AND" value="3.14159265">
+            <default value="0" />
+            <test logic="AND" value="3.14159265">
                 propulsion/engine[1]/reversed == 1
             </test>
             <output>propulsion/engine[1]/reverser-angle-rad</output>
         </switch>
         <switch name="Engine 3 Reverse">
-            <default value="0"/>
-            <test  logic="AND" value="3.14159265">
+            <default value="0" />
+            <test logic="AND" value="3.14159265">
                 propulsion/engine[2]/reversed == 1
             </test>
             <output>propulsion/engine[2]/reverser-angle-rad</output>
         </switch>
         <switch name="Engine 4 Reverse">
-            <default value="0"/>
-            <test  logic="AND" value="3.14159265">
+            <default value="0" />
+            <test logic="AND" value="3.14159265">
                 propulsion/engine[3]/reversed == 1
             </test>
             <output>propulsion/engine[3]/reverser-angle-rad</output>
         </switch>
-        
+
         <!-- animations -->
-        
+
         <kinematic name="Engine 1 Reverser Pos">
             <input>propulsion/engine[0]/reversed</input>
             <traverse>
@@ -218,7 +218,7 @@
         </kinematic>
 
     </channel>
-    
+
     <channel name="EEC">
         <fcs_function name="atmosphere/temperature-degc">
             <function>
@@ -231,7 +231,7 @@
                 </sum>
             </function>
         </fcs_function>
-        
+
         <fcs_function name="fmc/refence-thrust/to">
             <function>
                 <table>
@@ -267,17 +267,17 @@
                 </table>
             </function>
         </fcs_function>
-        
+
         <switch name="eec/throttle-min-cmd-norm">
             <description>Flight idle</description>
-            <default value="25"/>
+            <default value="25" />
             <test value="33">
                 gear/unit[1]/WOW != 0
             </test>
         </switch>
-        
+
         <switch name="eec/refence-thrust">
-            <default value="0"/>
+            <default value="0" />
             <test value="fmc/refence-thrust/to">
                 ap/thrust-mode/toga == 1
             </test>
@@ -285,7 +285,7 @@
                 ap/thrust-mode/crz == 1
             </test>
         </switch>
-        
+
         <aerosurface_scale name="eec/throttle-max-cmd-norm">
             <input>eec/refence-thrust</input>
             <domain>
@@ -298,13 +298,13 @@
             </range>
             <zero_centered>0</zero_centered>
         </aerosurface_scale>
-        
+
         <pure_gain name="EEC Throttle Pos Norm 0">
             <input> fcs/throttle-cmd-norm[0] </input>
             <gain> eec/throttle-max-cmd-norm </gain>
             <clipto>
-              <min> 0</min>
-              <max> 1</max>
+                <min> 0</min>
+                <max> 1</max>
             </clipto>
             <output>fcs/throttle-pos-norm[0]</output>
         </pure_gain>
@@ -312,8 +312,9 @@
             <input> fcs/throttle-cmd-norm[1] </input>
             <gain> eec/throttle-max-cmd-norm </gain>
             <clipto>
-              <min> 0</min>]]
-              <max> 1</max>
+                <min> 0</min>
+                ]]
+                <max> 1</max>
             </clipto>
             <output>fcs/throttle-pos-norm[1]</output>
         </pure_gain>
@@ -321,8 +322,8 @@
             <input> fcs/throttle-cmd-norm[2] </input>
             <gain> eec/throttle-max-cmd-norm </gain>
             <clipto>
-              <min> 0</min>
-              <max> 1</max>
+                <min> 0</min>
+                <max> 1</max>
             </clipto>
             <output>fcs/throttle-pos-norm[2]</output>
         </pure_gain>
@@ -330,20 +331,20 @@
             <input> fcs/throttle-cmd-norm[3] </input>
             <gain> eec/throttle-max-cmd-norm </gain>
             <clipto>
-              <min> 0</min>
-              <max> 1</max>
+                <min> 0</min>
+                <max> 1</max>
             </clipto>
             <output>fcs/throttle-pos-norm[3]</output>
         </pure_gain>
-        
+
         <switch name="eec/engine-trimming-range">
             <description>Engine trimming range</description>
-            <default value="1.5"/>
+            <default value="1.5" />
             <test value="2.5">
                 atmosphere/density-altitude gt 19500
             </test>
         </switch>
-        
+
     </channel>
 
 </system>

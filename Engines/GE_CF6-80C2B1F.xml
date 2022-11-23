@@ -18,23 +18,23 @@
 -->
 
 <turbine_engine name="GE CF6-80C2B1F">
-  <milthrust>   57160.0   </milthrust>
-  <bypassratio>     5.15  </bypassratio>
-  <tsfc>            0.337 </tsfc>
-  <bleed>           0.03  </bleed>
-  <idlen1>         25.0   </idlen1>
-  <idlen2>         65.9   </idlen2>
-  <maxn1>         117.5   </maxn1>
-  <maxn2>         112.5   </maxn2>
-  <n1spinup>          0.3 </n1spinup>
-  <n2spinup>          1.2 </n2spinup>
-  <augmented>         0   </augmented>
-  <injected>          0   </injected>
+    <milthrust>   57160.0   </milthrust>
+    <bypassratio>     5.15  </bypassratio>
+    <tsfc>            0.337 </tsfc>
+    <bleed>           0.03  </bleed>
+    <idlen1>         25.0   </idlen1>
+    <idlen2>         65.9   </idlen2>
+    <maxn1>         117.5   </maxn1>
+    <maxn2>         112.5   </maxn2>
+    <n1spinup>          0.3 </n1spinup>
+    <n2spinup>          1.2 </n2spinup>
+    <augmented>         0   </augmented>
+    <injected>          0   </injected>
 
-  <function name="N1SpoolUp">
-	<table>
-	  <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
-	  <tableData>
+    <function name="N1SpoolUp">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
 		 24   1.1
 		 28   2.9
 		 46   9.7
@@ -43,13 +43,13 @@
 		 94  21.4
 		103  23.6
 	  </tableData>
-    </table>
-   </function>
-    
-   <function name="N1SpoolDown">
-    <table>
-      <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
-      <tableData>
+        </table>
+    </function>
+
+    <function name="N1SpoolDown">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
 		 24   1.1
 		 28   2.9
 		 46   9.7
@@ -58,13 +58,13 @@
 		 94  21.4
 		103  23.6
      </tableData>
-    </table>
-   </function>
-    
-   <function name="N2SpoolUp">
-	<table>
-	  <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
-	  <tableData>
+        </table>
+    </function>
+
+    <function name="N2SpoolUp">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
 		 24   1.1
 		 28   2.9
 		 46   9.7
@@ -73,13 +73,13 @@
 		 94  21.4
 		103  23.6
 	  </tableData>
-    </table>
-   </function>
-    
-   <function name="N2SpoolDown">
-    <table>
-      <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
-      <tableData>
+        </table>
+    </function>
+
+    <function name="N2SpoolDown">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
 		 24   1.1
 		 28   2.9
 		 46   9.7
@@ -88,14 +88,14 @@
 		 94  21.4
 		103  23.6
      </tableData>
-   </table>
-  </function>
-    
-  <function name="IdleThrust">
-   <table>
-    <independentVar lookup="row">velocities/mach</independentVar>
-    <independentVar lookup="column">atmosphere/density-altitude</independentVar>
-    <tableData>
+        </table>
+    </function>
+
+    <function name="IdleThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
         -10000   0       10000   20000   30000   43000   50000
 	0.0  0.0430  0.0458  0.0378  0.0684  0.0819  0.0793  0.0000
 	0.2  0.0500  0.0291  0.0205  0.0514  0.0727  0.0729  0.0000
@@ -104,14 +104,14 @@
 	0.8  0.0000  0.0000  0.0000  0.0000  0.0354  0.0468  0.0000
 	1.0  0.0000  0.0000  0.0000  0.0000  0.0000  0.0352  0.0000
     </tableData>
-   </table>
-  </function>
+        </table>
+    </function>
 
-  <function name="MilThrust">
-   <table>
-    <independentVar lookup="row">velocities/mach</independentVar>
-    <independentVar lookup="column">atmosphere/density-altitude</independentVar>
-    <tableData>
+    <function name="MilThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
          -10000   0       10000   20000   30000   43000   50000
 	0.0   1.2600  1.0000  0.7600  0.5840  0.4120  0.2910  0.0000
 	0.2   1.1710  0.9740  0.7170  0.5560  0.4050  0.2810  0.0000
@@ -123,7 +123,7 @@
 	1.2   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
 	1.4   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
     </tableData>
-   </table>
-  </function>
+        </table>
+    </function>
 
 </turbine_engine>

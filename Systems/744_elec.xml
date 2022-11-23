@@ -15,103 +15,103 @@ drive-disconnect[4]
 
 <PropertyList>
 
-  <!-- Supplier list -->
+    <!-- Supplier list -->
 
-  <supplier>
-    <name>APU Battery</name>
-    <prop>/systems/electrical/suppliers/apu-battery</prop>
-    <kind>battery</kind>
-    <volts>28</volts>
-    <amps>20</amps>
-  </supplier>
+    <supplier>
+        <name>APU Battery</name>
+        <prop>/systems/electrical/suppliers/apu-battery</prop>
+        <kind>battery</kind>
+        <volts>28</volts>
+        <amps>20</amps>
+    </supplier>
 
-  <supplier>
-    <name>Main Battery</name>
-    <prop>/systems/electrical/suppliers/battery[0]</prop>
-    <kind>battery</kind>
-    <volts>28</volts>
-    <amps>20</amps>
-  </supplier>
+    <supplier>
+        <name>Main Battery</name>
+        <prop>/systems/electrical/suppliers/battery[0]</prop>
+        <kind>battery</kind>
+        <volts>28</volts>
+        <amps>20</amps>
+    </supplier>
 
-  <supplier>
-    <name>APU 1</name>
-    <prop>/systems/electrical/suppliers/apu-v[0]</prop>
-    <kind>alternator</kind>
-    <rpm-source>/engines/apu/n2</rpm-source>
-    <rpm-threshold>90</rpm-threshold>
-    <volts>115</volts>
-    <amps>250</amps>
-  </supplier>
+    <supplier>
+        <name>APU 1</name>
+        <prop>/systems/electrical/suppliers/apu-v[0]</prop>
+        <kind>alternator</kind>
+        <rpm-source>/engines/apu/n2</rpm-source>
+        <rpm-threshold>90</rpm-threshold>
+        <volts>115</volts>
+        <amps>250</amps>
+    </supplier>
 
-  <supplier>
-    <name>APU 2</name>
-    <prop>/systems/electrical/suppliers/apu-v[1]</prop>
-    <kind>alternator</kind>
-    <rpm-source>/engines/apu/n2</rpm-source>
-    <rpm-threshold>90</rpm-threshold>
-    <volts>115</volts>
-    <amps>250</amps>
-  </supplier>
+    <supplier>
+        <name>APU 2</name>
+        <prop>/systems/electrical/suppliers/apu-v[1]</prop>
+        <kind>alternator</kind>
+        <rpm-source>/engines/apu/n2</rpm-source>
+        <rpm-threshold>90</rpm-threshold>
+        <volts>115</volts>
+        <amps>250</amps>
+    </supplier>
 
-  <supplier>
-    <name>Eng 1 IDG</name>
-    <prop>/systems/electrical/suppliers/idg-v[0]</prop>
-    <kind>alternator</kind>
-    <rpm-source>/engines/engine[0]/n2</rpm-source>
-    <rpm-threshold>30</rpm-threshold>
-    <volts>115</volts>
-    <amps>90</amps>
-  </supplier>
+    <supplier>
+        <name>Eng 1 IDG</name>
+        <prop>/systems/electrical/suppliers/idg-v[0]</prop>
+        <kind>alternator</kind>
+        <rpm-source>/engines/engine[0]/n2</rpm-source>
+        <rpm-threshold>30</rpm-threshold>
+        <volts>115</volts>
+        <amps>90</amps>
+    </supplier>
 
-  <supplier>
-    <name>Eng 2 IDG</name>
-    <prop>/systems/electrical/suppliers/idg-v[1]</prop>
-    <kind>alternator</kind>
-    <rpm-source>/engines/engine[1]/n2</rpm-source>
-    <rpm-threshold>30</rpm-threshold>
-    <volts>115</volts>
-    <amps>90</amps>
-  </supplier>
+    <supplier>
+        <name>Eng 2 IDG</name>
+        <prop>/systems/electrical/suppliers/idg-v[1]</prop>
+        <kind>alternator</kind>
+        <rpm-source>/engines/engine[1]/n2</rpm-source>
+        <rpm-threshold>30</rpm-threshold>
+        <volts>115</volts>
+        <amps>90</amps>
+    </supplier>
 
-  <supplier>
-    <name>Eng 3 IDG</name>
-    <prop>/systems/electrical/suppliers/idg-v[2]</prop>
-    <kind>alternator</kind>
-    <rpm-source>/engines/engine[2]/n2</rpm-source>
-    <rpm-threshold>30</rpm-threshold>
-    <volts>115</volts>
-    <amps>90</amps>
-  </supplier>
+    <supplier>
+        <name>Eng 3 IDG</name>
+        <prop>/systems/electrical/suppliers/idg-v[2]</prop>
+        <kind>alternator</kind>
+        <rpm-source>/engines/engine[2]/n2</rpm-source>
+        <rpm-threshold>30</rpm-threshold>
+        <volts>115</volts>
+        <amps>90</amps>
+    </supplier>
 
-  <supplier>
-    <name>Eng 4 IDG</name>
-    <prop>/systems/electrical/suppliers/idg-v[3]</prop>
-    <kind>alternator</kind>
-    <rpm-source>/engines/engine[3]/n2</rpm-source>
-    <rpm-threshold>30</rpm-threshold>
-    <volts>115</volts>
-    <amps>90</amps>
-  </supplier>
+    <supplier>
+        <name>Eng 4 IDG</name>
+        <prop>/systems/electrical/suppliers/idg-v[3]</prop>
+        <kind>alternator</kind>
+        <rpm-source>/engines/engine[3]/n2</rpm-source>
+        <rpm-threshold>30</rpm-threshold>
+        <volts>115</volts>
+        <amps>90</amps>
+    </supplier>
 
-  <supplier>
-    <name>External 1</name>
-    <prop>/systems/electrical/suppliers/external-v[0]</prop>
-    <kind>external</kind>
-    <volts>115</volts> <!-- by default not connected -->
-    <amps>90</amps>
-  </supplier>
+    <supplier>
+        <name>External 1</name>
+        <prop>/systems/electrical/suppliers/external-v[0]</prop>
+        <kind>external</kind>
+        <volts>115</volts> <!-- by default not connected -->
+        <amps>90</amps>
+    </supplier>
 
-  <supplier>
-    <name>External 2</name>
-    <prop>/systems/electrical/suppliers/external-v[1]</prop>
-    <kind>external</kind>
-    <volts>115</volts> <!-- by default not connected -->
-    <amps>90</amps>
-  </supplier>
+    <supplier>
+        <name>External 2</name>
+        <prop>/systems/electrical/suppliers/external-v[1]</prop>
+        <kind>external</kind>
+        <volts>115</volts> <!-- by default not connected -->
+        <amps>90</amps>
+    </supplier>
 
-  <!-- Bus list -->
+    <!-- Bus list -->
 
-<!-- /systems/electrical/outputs/
+    <!-- /systems/electrical/outputs/
 ground-service-bus
 ground-handling-bus
 apu-standby-bus
@@ -126,94 +126,94 @@ ac-bus[4]
 dc-bus[4]
   -->
 
-  <bus>
-    <name>Ground Service Bus</name>
-    <prop>systems/electrical/outputs/ground-service-bus-v</prop>
-  </bus>
+    <bus>
+        <name>Ground Service Bus</name>
+        <prop>systems/electrical/outputs/ground-service-bus-v</prop>
+    </bus>
 
-  <bus>
-    <name>AC Sync Bus</name>
-    <prop>/systems/electrical/outputs/ac-bus-v[0]</prop>
-    <prop>/systems/electrical/outputs/ac-bus-v[1]</prop>
-    <prop>/systems/electrical/outputs/ac-bus-v[2]</prop>
-    <prop>/systems/electrical/outputs/ac-bus-v[3]</prop>
-  </bus>
+    <bus>
+        <name>AC Sync Bus</name>
+        <prop>/systems/electrical/outputs/ac-bus-v[0]</prop>
+        <prop>/systems/electrical/outputs/ac-bus-v[1]</prop>
+        <prop>/systems/electrical/outputs/ac-bus-v[2]</prop>
+        <prop>/systems/electrical/outputs/ac-bus-v[3]</prop>
+    </bus>
 
-  <bus>
-    <name>DC Sync Bus</name>
-    <prop>/systems/electrical/outputs/dc-bus-v[0]</prop>
-    <prop>/systems/electrical/outputs/dc-bus-v[1]</prop>
-    <prop>/systems/electrical/outputs/dc-bus-v[2]</prop>
-    <prop>/systems/electrical/outputs/dc-bus-v[3]</prop>
-    <prop>/systems/electrical/outputs/adf</prop>
-    <prop>/systems/electrical/outputs/nav[0]</prop>
-  </bus>
+    <bus>
+        <name>DC Sync Bus</name>
+        <prop>/systems/electrical/outputs/dc-bus-v[0]</prop>
+        <prop>/systems/electrical/outputs/dc-bus-v[1]</prop>
+        <prop>/systems/electrical/outputs/dc-bus-v[2]</prop>
+        <prop>/systems/electrical/outputs/dc-bus-v[3]</prop>
+        <prop>/systems/electrical/outputs/adf</prop>
+        <prop>/systems/electrical/outputs/nav[0]</prop>
+    </bus>
 
-  <!-- Generic Outputs -->
+    <!-- Generic Outputs -->
 
-  <!--
+    <!--
   <output>
     <name>Ground Service Bus</name>
     <prop>systems/electrical/output/ground-service-bus-v</prop>
   </output>
   -->
 
-  <!-- connect in power sources -->
+    <!-- connect in power sources -->
 
-  <connector>
-    <input>Eng 1 IDG</input>
-    <output>AC Sync Bus</output>
-    <switch>
-      <prop>controls/electric/bus-tie[0]</prop>
-      <prop>controls/electric/generator-control[0]</prop>
-    </switch>
-  </connector>
+    <connector>
+        <input>Eng 1 IDG</input>
+        <output>AC Sync Bus</output>
+        <switch>
+            <prop>controls/electric/bus-tie[0]</prop>
+            <prop>controls/electric/generator-control[0]</prop>
+        </switch>
+    </connector>
 
-  <connector>
-    <input>Eng 2 IDG</input>
-    <output>AC Sync Bus</output>
-    <switch>
-      <prop>controls/electric/bus-tie[1]</prop>
-      <prop>controls/electric/generator-control[1]</prop>
-    </switch>
-  </connector>
+    <connector>
+        <input>Eng 2 IDG</input>
+        <output>AC Sync Bus</output>
+        <switch>
+            <prop>controls/electric/bus-tie[1]</prop>
+            <prop>controls/electric/generator-control[1]</prop>
+        </switch>
+    </connector>
 
-  <connector>
-    <input>Eng 3 IDG</input>
-    <output>AC Sync Bus</output>
-    <switch>
-      <prop>controls/electric/bus-tie[2]</prop>
-      <prop>controls/electric/generator-control[2]</prop>
-    </switch>
-  </connector>
+    <connector>
+        <input>Eng 3 IDG</input>
+        <output>AC Sync Bus</output>
+        <switch>
+            <prop>controls/electric/bus-tie[2]</prop>
+            <prop>controls/electric/generator-control[2]</prop>
+        </switch>
+    </connector>
 
-  <connector>
-    <input>Eng 4 IDG</input>
-    <output>AC Sync Bus</output>
-    <switch>
-      <prop>controls/electric/bus-tie[3]</prop>
-      <prop>controls/electric/generator-control[3]</prop>
-    </switch>
-  </connector>
+    <connector>
+        <input>Eng 4 IDG</input>
+        <output>AC Sync Bus</output>
+        <switch>
+            <prop>controls/electric/bus-tie[3]</prop>
+            <prop>controls/electric/generator-control[3]</prop>
+        </switch>
+    </connector>
 
-  <connector>
-    <input>External 1</input>
-    <output>AC Sync Bus</output>
-  </connector>
+    <connector>
+        <input>External 1</input>
+        <output>AC Sync Bus</output>
+    </connector>
 
-  <connector>
-    <input>Main Battery</input>
-    <output>DC Sync Bus</output>
-    <switch>
-      <prop>controls/electric/battery</prop>
-    </switch>
-  </connector>
+    <connector>
+        <input>Main Battery</input>
+        <output>DC Sync Bus</output>
+        <switch>
+            <prop>controls/electric/battery</prop>
+        </switch>
+    </connector>
 
-  <!-- connect bus outputs -->
+    <!-- connect bus outputs -->
 
-  <connector>
-    <input>AC Sync Bus</input>
-    <output>Ground Service Bus</output>
-  </connector>
+    <connector>
+        <input>AC Sync Bus</input>
+        <output>Ground Service Bus</output>
+    </connector>
 
 </PropertyList>

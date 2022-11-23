@@ -2,47 +2,47 @@
 
 <PropertyList>
 
-	<predict-simple>
-		<update-interval-secs type="double">0.1</update-interval-secs>
-		<input>position/latitude-deg</input>
-		<output>instrumentation/pfd/position-30-sec/latitude-deg</output>
-		<seconds>30.0</seconds>
-		<filter-gain>0.05</filter-gain>
-	</predict-simple>
-	<predict-simple>
-		<update-interval-secs type="double">0.1</update-interval-secs>
-		<input>position/longitude-deg</input>
-		<output>instrumentation/pfd/position-30-sec/longitude-deg</output>
-		<seconds>30.0</seconds>
-		<filter-gain>0.05</filter-gain>
-	</predict-simple>
-	<predict-simple>
-		<update-interval-secs type="double">0.1</update-interval-secs>
-		<input>position/latitude-deg</input>
-		<output>instrumentation/pfd/position-60-sec/latitude-deg</output>
-		<seconds>60.0</seconds>
-		<filter-gain>0.05</filter-gain>
-	</predict-simple>
-	<predict-simple>
-		<update-interval-secs type="double">0.1</update-interval-secs>
-		<input>position/longitude-deg</input>
-		<output>instrumentation/pfd/position-60-sec/longitude-deg</output>
-		<seconds>60.0</seconds>
-		<filter-gain>0.05</filter-gain>
-	</predict-simple>
-	<predict-simple>
-		<update-interval-secs type="double">0.1</update-interval-secs>
-		<input>position/latitude-deg</input>
-		<output>instrumentation/pfd/position-90-sec/latitude-deg</output>
-		<seconds>90.0</seconds>
-		<filter-gain>0.05</filter-gain>
-	</predict-simple>
-	<predict-simple>
-		<update-interval-secs type="double">0.1</update-interval-secs>
-		<input>position/longitude-deg</input>
-		<output>instrumentation/pfd/position-90-sec/longitude-deg</output>
-		<seconds>90.0</seconds>
-		<filter-gain>0.05</filter-gain>
-	</predict-simple>
+    <predict-simple>
+        <update-interval-secs type="double">0.1</update-interval-secs>
+        <input>position/latitude-deg</input>
+        <output>instrumentation/pfd/position-30-sec/latitude-deg</output>
+        <seconds>30.0</seconds>
+        <filter-gain>0.05</filter-gain>
+    </predict-simple>
+    <predict-simple>
+        <update-interval-secs type="double">0.1</update-interval-secs>
+        <input>position/longitude-deg</input>
+        <output>instrumentation/pfd/position-30-sec/longitude-deg</output>
+        <seconds>30.0</seconds>
+        <filter-gain>0.05</filter-gain>
+    </predict-simple>
+    <predict-simple>
+        <update-interval-secs type="double">0.1</update-interval-secs>
+        <input>position/latitude-deg</input>
+        <output>instrumentation/pfd/position-60-sec/latitude-deg</output>
+        <seconds>60.0</seconds>
+        <filter-gain>0.05</filter-gain>
+    </predict-simple>
+    <predict-simple>
+        <update-interval-secs type="double">0.1</update-interval-secs>
+        <input>position/longitude-deg</input>
+        <output>instrumentation/pfd/position-60-sec/longitude-deg</output>
+        <seconds>60.0</seconds>
+        <filter-gain>0.05</filter-gain>
+    </predict-simple>
+    <predict-simple>
+        <update-interval-secs type="double">0.1</update-interval-secs>
+        <input>position/latitude-deg</input>
+        <output>instrumentation/pfd/position-90-sec/latitude-deg</output>
+        <seconds>90.0</seconds>
+        <filter-gain>0.05</filter-gain>
+    </predict-simple>
+    <predict-simple>
+        <update-interval-secs type="double">0.1</update-interval-secs>
+        <input>position/longitude-deg</input>
+        <output>instrumentation/pfd/position-90-sec/longitude-deg</output>
+        <seconds>90.0</seconds>
+        <filter-gain>0.05</filter-gain>
+    </predict-simple>
 
 </PropertyList>

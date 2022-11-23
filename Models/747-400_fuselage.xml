@@ -1,780 +1,790 @@
 <PropertyList>
 
-<path>747-400_fuselage.ac</path>
-	
-  <model>
-    <name>Ground-Services</name>
-    <path>Aircraft/747-400/Models/Services/Services.xml</path>
-  </model>
-	
-	
+    <path>747-400_fuselage.ac</path>
+
+    <model>
+        <name>Ground-Services</name>
+        <path>Aircraft/747-400/Models/Services/Services.xml</path>
+    </model>
+
+
     <animation>
-	<type>select</type>
-	<object-name>hstab</object-name>
-    	<object-name>elevator_left</object-name>
-    	<object-name>elevator_right</object-name>
-    	<object-name>vstab</object-name>
-    	<object-name>rudder</object-name>
-	<condition>
-		<equals>
-			<property>sim/current-view/internal</property>
-				<value>0</value>
-		</equals>
-	</condition>
+        <type>select</type>
+        <object-name>hstab</object-name>
+        <object-name>elevator_left</object-name>
+        <object-name>elevator_right</object-name>
+        <object-name>vstab</object-name>
+        <object-name>rudder</object-name>
+        <condition>
+            <equals>
+                <property>sim/current-view/internal</property>
+                <value>0</value>
+            </equals>
+        </condition>
     </animation>
-	
-	
-<animation> 
-	<type>material</type> 
-	<object-name>cargodoor1</object-name> 
-	<object-name>fuselage</object-name> 
-	<object-name>nosecone</object-name> 
-	<object-name>rudder</object-name> 
-	<object-name>vstab</object-name> 
-	<object-name>nlg_small_door.left</object-name> 
-	<object-name>nlg_large_door.left</object-name> 
-	<object-name>nlg_large_door.right</object-name> 
-	<object-name>nlg_small_door.right</object-name> 
-	<object-name>wlg_inner_door.left</object-name>
-	<object-name>wlg_outer_door.left</object-name>
-	<object-name>wlg_inner_door.right</object-name>
-	<object-name>wlg_outer_door.right</object-name>
-	<property-base>sim/model/livery</property-base> 
-	<texture-prop>texture</texture-prop> 
-	<texture>BOE.png</texture> 
-</animation>
 
-<effect>
-	<inherits-from>Effects/747-400</inherits-from>
-	<parameters>
-		<lightmap-factor n="0">1.0</lightmap-factor>
-		<lightmap-factor n="1"><use>/sim/model/lights/beacon/state</use></lightmap-factor>
-		<lightmap-factor n="2"><use>controls/lighting/landing-light-inbd</use></lightmap-factor>
-		<texture n="3">
-			<image>Aircraft/747-400/Models/Effects/lightmap.png</image>
-		</texture>
-	</parameters>
-	<object-name>cargodoor1</object-name> 
-	<object-name>fuselage</object-name> 
-	<object-name>nlg_small_door.left</object-name> 
-	<object-name>nlg_large_door.left</object-name> 
-	<object-name>nlg_large_door.right</object-name> 
-	<object-name>nlg_small_door.right</object-name> 
-	<object-name>nosecone</object-name> 
-	<object-name>wlg_inner_door.left</object-name>
-	<object-name>wlg_outer_door.left</object-name>
-	<object-name>wlg_inner_door.right</object-name>
-	<object-name>wlg_outer_door.right</object-name>
-</effect>
 
-<effect>
-	<inherits-from>Effects/747-400</inherits-from>
-	<parameters>
-		<lightmap-factor n="2"><use>controls/lighting/logo</use></lightmap-factor>
-		<texture n="3">
-			<image>Aircraft/747-400/Models/Effects/lightmap.png</image>
-		</texture>
-	</parameters>
-	<object-name>rudder</object-name> 
-	<object-name>vstab</object-name> 
-</effect>
+    <animation>
+        <type>material</type>
+        <object-name>cargodoor1</object-name>
+        <object-name>fuselage</object-name>
+        <object-name>nosecone</object-name>
+        <object-name>rudder</object-name>
+        <object-name>vstab</object-name>
+        <object-name>nlg_small_door.left</object-name>
+        <object-name>nlg_large_door.left</object-name>
+        <object-name>nlg_large_door.right</object-name>
+        <object-name>nlg_small_door.right</object-name>
+        <object-name>wlg_inner_door.left</object-name>
+        <object-name>wlg_outer_door.left</object-name>
+        <object-name>wlg_inner_door.right</object-name>
+        <object-name>wlg_outer_door.right</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>texture</texture-prop>
+        <texture>BOE.png</texture>
+    </animation>
 
-<effect>
-	<inherits-from>Effects/model-transparent</inherits-from>
-	<object-name>cockpit.windows</object-name> 
-</effect>
+    <effect>
+        <inherits-from>Effects/747-400</inherits-from>
+        <parameters>
+            <lightmap-factor n="0">1.0</lightmap-factor>
+            <lightmap-factor n="1">
+                <use>/sim/model/lights/beacon/state</use>
+            </lightmap-factor>
+            <lightmap-factor n="2">
+                <use>controls/lighting/landing-light-inbd</use>
+            </lightmap-factor>
+            <texture n="3">
+                <image>Aircraft/747-400/Models/Effects/lightmap.png</image>
+            </texture>
+        </parameters>
+        <object-name>cargodoor1</object-name>
+        <object-name>fuselage</object-name>
+        <object-name>nlg_small_door.left</object-name>
+        <object-name>nlg_large_door.left</object-name>
+        <object-name>nlg_large_door.right</object-name>
+        <object-name>nlg_small_door.right</object-name>
+        <object-name>nosecone</object-name>
+        <object-name>wlg_inner_door.left</object-name>
+        <object-name>wlg_outer_door.left</object-name>
+        <object-name>wlg_inner_door.right</object-name>
+        <object-name>wlg_outer_door.right</object-name>
+    </effect>
 
-<animation>
-	<type>pick</type>
-	<object-name>lav1door1</object-name>
-	<object-name>lav1door2</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.lav1_door.toggle();</script>
-		</binding>
-	</action>
-</animation>
+    <effect>
+        <inherits-from>Effects/747-400</inherits-from>
+        <parameters>
+            <lightmap-factor n="2">
+                <use>controls/lighting/logo</use>
+            </lightmap-factor>
+            <texture n="3">
+                <image>Aircraft/747-400/Models/Effects/lightmap.png</image>
+            </texture>
+        </parameters>
+        <object-name>rudder</object-name>
+        <object-name>vstab</object-name>
+    </effect>
 
-<animation>
-	<type>rotate</type>
-	<object-name>lav1door1</object-name>
-	<object-name>lav1door2</object-name>
-	<property>controls/doors/lav1/position-norm</property>
-	<factor>-85</factor>
-	<axis>
-		<x1-m>-21.720</x1-m>
-		<y1-m>  0.362</y1-m>
-		<z1-m>  2.322</z1-m>
-		<x2-m>-21.720</x2-m>
-		<y2-m>  0.362</y2-m>
-		<z2-m>  4.322</z2-m>
-	</axis>
-</animation>
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>cockpit.windows</object-name>
+    </effect>
 
-<animation>
-	<type>rotate</type>
-	<object-name>lav1door1</object-name>
-	<property>controls/doors/lav1/position-norm</property>
-	<factor>170</factor>
-	<axis>
-		<x1-m>-21.956</x1-m>
-		<y1-m>  0.362</y1-m>
-		<z1-m>  2.322</z1-m>
-		<x2-m>-21.956</x2-m>
-		<y2-m>  0.362</y2-m>
-		<z2-m>  4.322</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>lav1door1</object-name>
+        <object-name>lav1door2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.lav1_door.toggle();</script>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>lav2door1</object-name>
-	<object-name>lav2door2</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>Boeing747.lav2_door.toggle();</script>
-		</binding>
-	</action>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>lav1door1</object-name>
+        <object-name>lav1door2</object-name>
+        <property>controls/doors/lav1/position-norm</property>
+        <factor>-85</factor>
+        <axis>
+            <x1-m>-21.720</x1-m>
+            <y1-m>  0.362</y1-m>
+            <z1-m>  2.322</z1-m>
+            <x2-m>-21.720</x2-m>
+            <y2-m>  0.362</y2-m>
+            <z2-m>  4.322</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>lav2door1</object-name>
-	<object-name>lav2door2</object-name>
-	<property>controls/doors/lav2/position-norm</property>
-	<factor>85</factor>
-	<axis>
-		<x1-m>-21.690</x1-m>
-		<y1-m>  0.362</y1-m>
-		<z1-m>  2.322</z1-m>
-		<x2-m>-21.690</x2-m>
-		<y2-m>  0.362</y2-m>
-		<z2-m>  4.322</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>lav1door1</object-name>
+        <property>controls/doors/lav1/position-norm</property>
+        <factor>170</factor>
+        <axis>
+            <x1-m>-21.956</x1-m>
+            <y1-m>  0.362</y1-m>
+            <z1-m>  2.322</z1-m>
+            <x2-m>-21.956</x2-m>
+            <y2-m>  0.362</y2-m>
+            <z2-m>  4.322</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>lav2door1</object-name>
-	<property>controls/doors/lav2/position-norm</property>
-	<factor>-170</factor>
-	<axis>
-		<x1-m>-21.455</x1-m>
-		<y1-m>  0.362</y1-m>
-		<z1-m>  2.322</z1-m>
-		<x2-m>-21.455</x2-m>
-		<y2-m>  0.362</y2-m>
-		<z2-m>  4.322</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>lav2door1</object-name>
+        <object-name>lav2door2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.lav2_door.toggle();</script>
+            </binding>
+        </action>
+    </animation>
 
-<!-- wipers -->
+    <animation>
+        <type>rotate</type>
+        <object-name>lav2door1</object-name>
+        <object-name>lav2door2</object-name>
+        <property>controls/doors/lav2/position-norm</property>
+        <factor>85</factor>
+        <axis>
+            <x1-m>-21.690</x1-m>
+            <y1-m>  0.362</y1-m>
+            <z1-m>  2.322</z1-m>
+            <x2-m>-21.690</x2-m>
+            <y2-m>  0.362</y2-m>
+            <z2-m>  4.322</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>RHwiper</object-name>
-	<object-name>RHwiper.blade</object-name>
-	<property>controls/electric/wiperr/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>25</dep>
-		</entry>
-	</interpolation>
-	<center>
-		<x-m>-25.664</x-m>
-		<y-m>  0.400</y-m>
-		<z-m>  3.223</z-m>
-	</center>
-	<axis>
-		<x>-0.688</x>
-		<y>0.335</y>
-		<z>0.687</z>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>lav2door1</object-name>
+        <property>controls/doors/lav2/position-norm</property>
+        <factor>-170</factor>
+        <axis>
+            <x1-m>-21.455</x1-m>
+            <y1-m>  0.362</y1-m>
+            <z1-m>  2.322</z1-m>
+            <x2-m>-21.455</x2-m>
+            <y2-m>  0.362</y2-m>
+            <z2-m>  4.322</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>RHwiper.arm</object-name>
-	<property>controls/electric/wiperr/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>25</dep>
-		</entry>
-	</interpolation>
-	<center>
-		<x-m>-25.699</x-m>
-		<y-m>  0.321</y-m>
-		<z-m>  3.253</z-m>
-	</center>
-	<axis>
-		<x>-0.688</x>
-		<y>0.335</y>
-		<z>0.687</z>
-	</axis>
-</animation>
+    <!-- wipers -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>RHwiper.blade</object-name>
-	<property>controls/electric/wiperr/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>-45</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>-25</dep>
-		</entry>
-	</interpolation>
-	<center>
-		<x-m>-25.289</x-m>
-		<y-m>  0.059</y-m>
-		<z-m>  3.637</z-m>
-	</center>
-	<axis>
-		<x>-0.688</x>
-		<y>0.235</y>
-		<z>0.687</z>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHwiper</object-name>
+        <object-name>RHwiper.blade</object-name>
+        <property>controls/electric/wiperr/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-25.664</x-m>
+            <y-m>  0.400</y-m>
+            <z-m>  3.223</z-m>
+        </center>
+        <axis>
+            <x>-0.688</x>
+            <y>0.335</y>
+            <z>0.687</z>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>LHwiper</object-name>
-	<object-name>LHwiper.blade</object-name>
-	<property>controls/electric/wiperl/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>-100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>-25</dep>
-		</entry>
-	</interpolation>
-	<center>	
-		<x-m>-25.664</x-m>
-		<y-m> -0.400</y-m>
-		<z-m>  3.223</z-m>
-	</center>
-	<axis>
-		<x>-0.688</x>
-		<y>-0.235</y>
-		<z>0.687</z>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHwiper.arm</object-name>
+        <property>controls/electric/wiperr/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-25.699</x-m>
+            <y-m>  0.321</y-m>
+            <z-m>  3.253</z-m>
+        </center>
+        <axis>
+            <x>-0.688</x>
+            <y>0.335</y>
+            <z>0.687</z>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>LHwiper.arm</object-name>
-	<property>controls/electric/wiperl/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>-100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>-25</dep>
-		</entry>
-	</interpolation>
-	<center>
-		<x-m>-25.699</x-m>
-		<y-m> -0.321</y-m>
-		<z-m>  3.253</z-m>
-	</center>
-	<axis>
-		<x>-0.688</x>
-		<y>-0.235</y>
-		<z>0.687</z>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHwiper.blade</object-name>
+        <property>controls/electric/wiperr/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>-45</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>-25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-25.289</x-m>
+            <y-m>  0.059</y-m>
+            <z-m>  3.637</z-m>
+        </center>
+        <axis>
+            <x>-0.688</x>
+            <y>0.235</y>
+            <z>0.687</z>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>LHwiper.blade</object-name>
-	<property>controls/electric/wiperl/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>45</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>25</dep>
-		</entry>
-	</interpolation>
-	<center>
-		<x-m>-25.289</x-m>
-		<y-m> -0.059</y-m>
-		<z-m>  3.637</z-m>
-	</center>
-	<axis>
-		<x>-0.688</x>
-		<y>-0.235</y>
-		<z>0.687</z>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHwiper</object-name>
+        <object-name>LHwiper.blade</object-name>
+        <property>controls/electric/wiperl/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>-100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>-25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-25.664</x-m>
+            <y-m> -0.400</y-m>
+            <z-m>  3.223</z-m>
+        </center>
+        <axis>
+            <x>-0.688</x>
+            <y>-0.235</y>
+            <z>0.687</z>
+        </axis>
+    </animation>
 
-<!-- RUDDER -->
- 
-<animation>
-	<type>rotate</type>
-	<object-name>rudder</object-name> 
-	<property>fdm/jsbsim/fcs/rudder-pos-rad</property>
-	<factor>-57.3</factor>
-	<axis>
-		<x1-m>33</x1-m>
-		<y1-m>0.0</y1-m>
-		<z1-m>3.86</z1-m>
-		<x2-m>39.5</x2-m>
-		<y2-m>0.0</y2-m>
-		<z2-m>13.24</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHwiper.arm</object-name>
+        <property>controls/electric/wiperl/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>-100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>-25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-25.699</x-m>
+            <y-m> -0.321</y-m>
+            <z-m>  3.253</z-m>
+        </center>
+        <axis>
+            <x>-0.688</x>
+            <y>-0.235</y>
+            <z>0.687</z>
+        </axis>
+    </animation>
 
-<!-- STABILIZER -->
-<animation>
-	<type>rotate</type>
-	<object-name>elevator_right</object-name>
-	<object-name>elevator_left</object-name>
-	<object-name>hstab</object-name>
-	<property>fdm/jsbsim/fcs/stabilizer/pos-rad</property>
-	<factor>57.3</factor>
-	<axis>
-		<x1-m>32.926</x1-m>
-		<y1-m>-0.887</y1-m>
-		<z1-m> 2.331</z1-m>
-		<x2-m>32.926</x2-m>
-		<y2-m> 0.887</y2-m>
-		<z2-m> 2.331</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHwiper.blade</object-name>
+        <property>controls/electric/wiperl/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>45</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>25</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-25.289</x-m>
+            <y-m> -0.059</y-m>
+            <z-m>  3.637</z-m>
+        </center>
+        <axis>
+            <x>-0.688</x>
+            <y>-0.235</y>
+            <z>0.687</z>
+        </axis>
+    </animation>
 
-<!-- RIGHT ELEVATOR (inboard and outboard) -->
-<animation>
-	<type>rotate</type>
-	<object-name>elevator_right</object-name>
-	<property>fdm/jsbsim/fcs/elevator[0]/pos-rad</property>
-	<factor>57.3</factor>
-	<axis>
-		<x1-m>34.90</x1-m>
-		<y1-m>0.95</y1-m>
-		<z1-m>2.35</z1-m>
-		<x2-m>38.95</x2-m>
-		<y2-m>9.3</y2-m>
-		<z2-m>3.5</z2-m>
-	</axis>
-</animation>
+    <!-- RUDDER -->
 
-<!-- LEFT ELEVATOR (inboard and outboard) -->
-<animation>
-	<type>rotate</type>
-	<object-name>elevator_left</object-name>
-	<property>fdm/jsbsim/fcs/elevator[0]/pos-rad</property>
-	<factor>-57.3</factor>
-	<axis>
-		<x1-m>34.90</x1-m>
-		<y1-m>-0.95</y1-m>
-		<z1-m>2.35</z1-m>
-		<x2-m>38.95</x2-m>
-		<y2-m>-9.3</y2-m>
-		<z2-m>3.5</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>rudder</object-name>
+        <property>fdm/jsbsim/fcs/rudder-pos-rad</property>
+        <factor>-57.3</factor>
+        <axis>
+            <x1-m>33</x1-m>
+            <y1-m>0.0</y1-m>
+            <z1-m>3.86</z1-m>
+            <x2-m>39.5</x2-m>
+            <y2-m>0.0</y2-m>
+            <z2-m>13.24</z2-m>
+        </axis>
+    </animation>
 
-<!-- DOORS-->
+    <!-- STABILIZER -->
+    <animation>
+        <type>rotate</type>
+        <object-name>elevator_right</object-name>
+        <object-name>elevator_left</object-name>
+        <object-name>hstab</object-name>
+        <property>fdm/jsbsim/fcs/stabilizer/pos-rad</property>
+        <factor>57.3</factor>
+        <axis>
+            <x1-m>32.926</x1-m>
+            <y1-m>-0.887</y1-m>
+            <z1-m> 2.331</z1-m>
+            <x2-m>32.926</x2-m>
+            <y2-m> 0.887</y2-m>
+            <z2-m> 2.331</z2-m>
+        </axis>
+    </animation>
 
-<!-- NOSE CONE -->
+    <!-- RIGHT ELEVATOR (inboard and outboard) -->
+    <animation>
+        <type>rotate</type>
+        <object-name>elevator_right</object-name>
+        <property>fdm/jsbsim/fcs/elevator[0]/pos-rad</property>
+        <factor>57.3</factor>
+        <axis>
+            <x1-m>34.90</x1-m>
+            <y1-m>0.95</y1-m>
+            <z1-m>2.35</z1-m>
+            <x2-m>38.95</x2-m>
+            <y2-m>9.3</y2-m>
+            <z2-m>3.5</z2-m>
+        </axis>
+    </animation>
 
-<animation>
- <type>pick</type>
- <object-name>nosecone</object-name>
- <action>
-  <button>0</button>
-  <repeatable>false</repeatable>
-  <binding>
-   <condition>
-    <and>
-     <property>/gear/gear/wow</property>
-     <not><property>/sim/current-view/internal</property></not>
-	</and>
-   </condition>
-   <command>nasal</command>
-   <script>Boeing747.nosecone_door.toggle();</script>
-  </binding>
- </action>
-</animation>
+    <!-- LEFT ELEVATOR (inboard and outboard) -->
+    <animation>
+        <type>rotate</type>
+        <object-name>elevator_left</object-name>
+        <property>fdm/jsbsim/fcs/elevator[0]/pos-rad</property>
+        <factor>-57.3</factor>
+        <axis>
+            <x1-m>34.90</x1-m>
+            <y1-m>-0.95</y1-m>
+            <z1-m>2.35</z1-m>
+            <x2-m>38.95</x2-m>
+            <y2-m>-9.3</y2-m>
+            <z2-m>3.5</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>translate</type>
-	<object-name>nosecone</object-name>
-	<property>controls/doors/nosecone/position-norm</property>
-	<factor>0.20</factor>
-	<center>
-		<x-m>-28.701</x-m>
-		<y-m> -1.002</y-m>
-		<z-m>  1.075</z-m>
-	</center>
-	<axis>
-		<x>1</x>
-		<y>-1</y>
-		
-	</axis>
-</animation>
+    <!-- DOORS-->
 
-<animation>
-	<type>rotate</type>
-	<object-name>nosecone</object-name>
-	<property>controls/doors/nosecone/position-norm</property>
-	<factor>90</factor>
-	<center>
-		<x-m>-28.700</x-m>
-		<y-m> -1.205</y-m>
-		<z-m>  0.421</z-m>
-	</center>
-	<axis>
-		
-		
-		<z>1</z>
-	</axis>
-</animation>
+    <!-- NOSE CONE -->
 
-<!-- CARGO 1 DOOR -->
+    <animation>
+        <type>pick</type>
+        <object-name>nosecone</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <condition>
+                    <and>
+                        <property>/gear/gear/wow</property>
+                        <not>
+                            <property>/sim/current-view/internal</property>
+                        </not>
+                    </and>
+                </condition>
+                <command>nasal</command>
+                <script>Boeing747.nosecone_door.toggle();</script>
+            </binding>
+        </action>
+    </animation>
 
-<animation>
- <type>pick</type>
- <object-name>cargodoor1</object-name>
- <action>
-  <button>0</button>
-  <repeatable>false</repeatable>
-  <binding>
-   <condition>
-    <and>
-     <property>/gear/gear/wow</property>
-     <not><property>/sim/current-view/internal</property></not>
-	</and>
-   </condition>
-   <command>nasal</command>
-   <script>Boeing747.cargo1_door.toggle();</script>
-  </binding>
- </action>
-</animation>
+    <animation>
+        <type>translate</type>
+        <object-name>nosecone</object-name>
+        <property>controls/doors/nosecone/position-norm</property>
+        <factor>0.20</factor>
+        <center>
+            <x-m>-28.701</x-m>
+            <y-m> -1.002</y-m>
+            <z-m>  1.075</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>-1</y>
 
-<animation>
- <type>rotate</type>
- <object-name>cargodoor1</object-name>
- <property>controls/doors/cargo1/position-norm</property>
- <factor>-130</factor>
- <axis>
-  <x1-m>-15.275</x1-m>
-  <y1-m>  3.182</y1-m>
-  <z1-m> -0.371</z1-m>
-  <x2-m>-17.667</x2-m>
-  <y2-m>  3.074</y2-m>
-  <z2-m> -0.371</z2-m>
- </axis>
-</animation>
+        </axis>
+    </animation>
 
-<!-- NOSE GEAR DOORS -->
+    <animation>
+        <type>rotate</type>
+        <object-name>nosecone</object-name>
+        <property>controls/doors/nosecone/position-norm</property>
+        <factor>90</factor>
+        <center>
+            <x-m>-28.700</x-m>
+            <y-m> -1.205</y-m>
+            <z-m>  0.421</z-m>
+        </center>
+        <axis>
 
-<animation>
-	<type>rotate</type>
-	<object-name>nlg_large_door.left</object-name>
-	<property>gear/gear[0]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.1</ind>
-			<dep>-80</dep>
-		</entry>
-		<entry>
-			<ind>0.9</ind>
-			<dep>-80</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>0</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-26.350</x1-m>
-		<y1-m> -0.880</y1-m>
-		<z1-m> -1.497</z1-m>
-		<x2-m>-23.460</x2-m>
-		<y2-m> -0.880</y2-m>
-		<z2-m> -2.225</z2-m>
-	</axis>
-</animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>nlg_large_door.right</object-name>
-	<property>gear/gear[0]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.1</ind>
-			<dep>80</dep>
-		</entry>
-		<entry>
-			<ind>0.9</ind>
-			<dep>80</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>0</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-26.350</x1-m>
-		<y1-m>  0.880</y1-m>
-		<z1-m> -1.497</z1-m>
-		<x2-m>-23.460</x2-m>
-		<y2-m>  0.880</y2-m>
-		<z2-m> -2.225</z2-m>
-	</axis>
-</animation>	
+            <z>1</z>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>nlg_small_door.left</object-name>
-	<property>gear/gear[0]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.1</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.9</ind>
-			<dep>-100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>-100</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-22.780</x1-m>
-		<y1-m> -0.575</y1-m>
-		<z1-m> -2.388</z1-m>
-		<x2-m>-21.731</x2-m>
-		<y2-m> -0.575</y2-m>
-		<z2-m> -2.523</z2-m>
-	</axis>
-</animation>
+    <!-- CARGO 1 DOOR -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>nlg_small_door.right</object-name>
-	<property>gear/gear[0]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.1</ind>
-			<dep>0</dep>
-		</entry>	
-		<entry>
-			<ind>0.9</ind>
-			<dep>100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>100</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-22.780</x1-m>
-		<y1-m>  0.575</y1-m>
-		<z1-m> -2.388</z1-m>
-		<x2-m>-21.731</x2-m>
-		<y2-m>  0.575</y2-m>
-		<z2-m> -2.523</z2-m>
-	 </axis>
-</animation>
+    <animation>
+        <type>pick</type>
+        <object-name>cargodoor1</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <condition>
+                    <and>
+                        <property>/gear/gear/wow</property>
+                        <not>
+                            <property>/sim/current-view/internal</property>
+                        </not>
+                    </and>
+                </condition>
+                <command>nasal</command>
+                <script>Boeing747.cargo1_door.toggle();</script>
+            </binding>
+        </action>
+    </animation>
 
-<!-- WING GEAR DOORS -->
+    <animation>
+        <type>rotate</type>
+        <object-name>cargodoor1</object-name>
+        <property>controls/doors/cargo1/position-norm</property>
+        <factor>-130</factor>
+        <axis>
+            <x1-m>-15.275</x1-m>
+            <y1-m>  3.182</y1-m>
+            <z1-m> -0.371</z1-m>
+            <x2-m>-17.667</x2-m>
+            <y2-m>  3.074</y2-m>
+            <z2-m> -0.371</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>wlg_inner_door.left</object-name>
-	<object-name>wlg_outer_door.left</object-name>
-	<property>gear/gear[2]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.15</ind>
-			<dep>100</dep>
-		</entry>
-		<entry>
-			<ind>0.65</ind>
-			<dep>100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>0</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-0.008</x1-m>
-		<y1-m>-0.300</y1-m>
-		<z1-m>-2.919</z1-m>
-		<x2-m> 3.994</x2-m>
-		<y2-m>-0.300</y2-m>
-		<z2-m>-2.919</z2-m>
-	</axis>
-</animation>
+    <!-- NOSE GEAR DOORS -->
 
-<animation>
-	<type>rotate</type>
-	<object-name>wlg_inner_door.right</object-name>
-	<object-name>wlg_outer_door.right</object-name>
-	<property>gear/gear[3]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.15</ind>
-			<dep>-100</dep>
-		</entry>
-		<entry>
-			<ind>0.65</ind>
-			<dep>-100</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>0</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-0.008</x1-m>
-		<y1-m> 0.300</y1-m>
-		<z1-m>-2.919</z1-m>
-		<x2-m> 3.994</x2-m>
-		<y2-m> 0.300</y2-m>
-		<z2-m>-2.919</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>nlg_large_door.left</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.1</ind>
+                <dep>-80</dep>
+            </entry>
+            <entry>
+                <ind>0.9</ind>
+                <dep>-80</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-26.350</x1-m>
+            <y1-m> -0.880</y1-m>
+            <z1-m> -1.497</z1-m>
+            <x2-m>-23.460</x2-m>
+            <y2-m> -0.880</y2-m>
+            <z2-m> -2.225</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>wlg_outer_door.left</object-name>
-	<property>gear/gear[2]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.15</ind>
-			<dep>-190</dep>
-		</entry>
-		<entry>
-			<ind>0.65</ind>
-			<dep>-190</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>0</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-0.008</x1-m>
-		<y1-m>-1.918</y1-m>
-		<z1-m>-2.792</z1-m>
-		<x2-m> 3.994</x2-m>
-		<y2-m>-1.918</y2-m>
-		<z2-m>-2.792</z2-m>
-	</axis>
-</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>nlg_large_door.right</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.1</ind>
+                <dep>80</dep>
+            </entry>
+            <entry>
+                <ind>0.9</ind>
+                <dep>80</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-26.350</x1-m>
+            <y1-m>  0.880</y1-m>
+            <z1-m> -1.497</z1-m>
+            <x2-m>-23.460</x2-m>
+            <y2-m>  0.880</y2-m>
+            <z2-m> -2.225</z2-m>
+        </axis>
+    </animation>
 
-<animation>
-	<type>rotate</type>
-	<object-name>wlg_outer_door.right</object-name>
-	<property>gear/gear[3]/position-norm</property>
-	<interpolation>
-		<entry>
-			<ind>0.0</ind>
-			<dep>0</dep>
-		</entry>
-		<entry>
-			<ind>0.15</ind>
-			<dep>190</dep>
-		</entry>
-		<entry>
-			<ind>0.65</ind>
-			<dep>190</dep>
-		</entry>
-		<entry>
-			<ind>1.0</ind>
-			<dep>0</dep>
-		</entry>
-	</interpolation>
-	<axis>
-		<x1-m>-0.008</x1-m>
-		<y1-m> 1.918</y1-m>
-		<z1-m>-2.792</z1-m>
-		<x2-m> 3.994</x2-m>
-		<y2-m> 1.918</y2-m>
-		<z2-m>-2.792</z2-m>
-	</axis>
-</animation>
-	
-	<!-- EFB-->
+    <animation>
+        <type>rotate</type>
+        <object-name>nlg_small_door.left</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.1</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.9</ind>
+                <dep>-100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>-100</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-22.780</x1-m>
+            <y1-m> -0.575</y1-m>
+            <z1-m> -2.388</z1-m>
+            <x2-m>-21.731</x2-m>
+            <y2-m> -0.575</y2-m>
+            <z2-m> -2.523</z2-m>
+        </axis>
+    </animation>
 
-  <model>
-    <name>F/O_Electronic-FB</name>
-    <path>Aircraft/747-400/Models/Cockpit/Instruments/EFB-DB/EFB.xml</path>
-<offsets>
-  <x-m>-24.59794</x-m>
-  <y-m>1.09147</y-m>
-  <z-m>2.95769</z-m>
-</offsets>
-  </model>
-  <model>
-    <name>CAP_Electronic-FB</name>
-    <path>Aircraft/747-400/Models/Cockpit/Instruments/EFB-DB/EFB.xml</path>
-<offsets>
-  <x-m>-24.59794</x-m>
-  <y-m>-1.03124</y-m>
-  <z-m>2.95769</z-m>
-</offsets>
-  </model>
-	
+    <animation>
+        <type>rotate</type>
+        <object-name>nlg_small_door.right</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.1</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.9</ind>
+                <dep>100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>100</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-22.780</x1-m>
+            <y1-m>  0.575</y1-m>
+            <z1-m> -2.388</z1-m>
+            <x2-m>-21.731</x2-m>
+            <y2-m>  0.575</y2-m>
+            <z2-m> -2.523</z2-m>
+        </axis>
+    </animation>
+
+    <!-- WING GEAR DOORS -->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>wlg_inner_door.left</object-name>
+        <object-name>wlg_outer_door.left</object-name>
+        <property>gear/gear[2]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.15</ind>
+                <dep>100</dep>
+            </entry>
+            <entry>
+                <ind>0.65</ind>
+                <dep>100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-0.008</x1-m>
+            <y1-m>-0.300</y1-m>
+            <z1-m>-2.919</z1-m>
+            <x2-m> 3.994</x2-m>
+            <y2-m>-0.300</y2-m>
+            <z2-m>-2.919</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>wlg_inner_door.right</object-name>
+        <object-name>wlg_outer_door.right</object-name>
+        <property>gear/gear[3]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.15</ind>
+                <dep>-100</dep>
+            </entry>
+            <entry>
+                <ind>0.65</ind>
+                <dep>-100</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-0.008</x1-m>
+            <y1-m> 0.300</y1-m>
+            <z1-m>-2.919</z1-m>
+            <x2-m> 3.994</x2-m>
+            <y2-m> 0.300</y2-m>
+            <z2-m>-2.919</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>wlg_outer_door.left</object-name>
+        <property>gear/gear[2]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.15</ind>
+                <dep>-190</dep>
+            </entry>
+            <entry>
+                <ind>0.65</ind>
+                <dep>-190</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-0.008</x1-m>
+            <y1-m>-1.918</y1-m>
+            <z1-m>-2.792</z1-m>
+            <x2-m> 3.994</x2-m>
+            <y2-m>-1.918</y2-m>
+            <z2-m>-2.792</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>wlg_outer_door.right</object-name>
+        <property>gear/gear[3]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.15</ind>
+                <dep>190</dep>
+            </entry>
+            <entry>
+                <ind>0.65</ind>
+                <dep>190</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>-0.008</x1-m>
+            <y1-m> 1.918</y1-m>
+            <z1-m>-2.792</z1-m>
+            <x2-m> 3.994</x2-m>
+            <y2-m> 1.918</y2-m>
+            <z2-m>-2.792</z2-m>
+        </axis>
+    </animation>
+
+    <!-- EFB-->
+
+    <model>
+        <name>F/O_Electronic-FB</name>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/EFB-DB/EFB.xml</path>
+        <offsets>
+            <x-m>-24.59794</x-m>
+            <y-m>1.09147</y-m>
+            <z-m>2.95769</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>CAP_Electronic-FB</name>
+        <path>Aircraft/747-400/Models/Cockpit/Instruments/EFB-DB/EFB.xml</path>
+        <offsets>
+            <x-m>-24.59794</x-m>
+            <y-m>-1.03124</y-m>
+            <z-m>2.95769</z-m>
+        </offsets>
+    </model>
+
 </PropertyList>

@@ -1,169 +1,174 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <name>Boeing 747-400 malfunctions</name>
-  <layout>vbox</layout>
+    <name>Boeing 747-400 malfunctions</name>
+    <layout>vbox</layout>
 
-  <group>
-    <layout>hbox</layout>
-	
-	<text>
-		<label>Malfunctions</label>
-	</text>
-  
-    <empty>
-      <stretch>true</stretch>
-    </empty>
+    <group>
+        <layout>hbox</layout>
 
-    <button>
-      <legend/>
-      <key>Esc</key>
-      <pref-width>16</pref-width>
-      <pref-height>16</pref-height>
-      <border>2</border>
-      <binding>
-        <command>dialog-close</command>
-      </binding>
-    </button>
-  </group>
+        <text>
+            <label>Malfunctions</label>
+        </text>
 
-  <hrule/>
-	
-	<text>
-		<label>Engine fire</label>
-	</text>
+        <empty>
+            <stretch>true</stretch>
+        </empty>
 
-	<group>
-		<layout>vbox</layout>
+        <button>
+            <legend />
+            <key>Esc</key>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <border>2</border>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
 
-					<button>
-						<legend>Engine 1 Fire</legend>
-						<padding>1</padding>
-						<binding>
-							<command>nasal</command>
-							<script>
+    <hrule />
+
+    <text>
+        <label>Engine fire</label>
+    </text>
+
+    <group>
+        <layout>vbox</layout>
+
+        <button>
+            <legend>Engine 1 Fire</legend>
+            <padding>1</padding>
+            <binding>
+                <command>nasal</command>
+                <script>
 								setprop("engines/engine[0]/on-fire", 1);							
 							</script>
-						</binding>
-					</button>				
+            </binding>
+        </button>
 
-					<button>
-						<legend>Engine 2 Fire</legend>
-						<padding>1</padding>
-						<binding>
-							<command>nasal</command>
-							<script>
+        <button>
+            <legend>Engine 2 Fire</legend>
+            <padding>1</padding>
+            <binding>
+                <command>nasal</command>
+                <script>
 								setprop("engines/engine[1]/on-fire", 1);							
 							</script>
-						</binding>
-					</button>
-		
-		
-					<button>
-						<legend>Engine 3 Fire</legend>
-						<padding>1</padding>
-						<binding>
-							<command>nasal</command>
-							<script>
+            </binding>
+        </button>
+
+
+        <button>
+            <legend>Engine 3 Fire</legend>
+            <padding>1</padding>
+            <binding>
+                <command>nasal</command>
+                <script>
 								setprop("engines/engine[2]/on-fire", 1);							
 							</script>
-						</binding>
-					</button>
-		
-		
-					<button>
-						<legend>Engine 4 Fire</legend>
-						<padding>1</padding>
-						<binding>
-							<command>nasal</command>
-							<script>
+            </binding>
+        </button>
+
+
+        <button>
+            <legend>Engine 4 Fire</legend>
+            <padding>1</padding>
+            <binding>
+                <command>nasal</command>
+                <script>
 								setprop("engines/engine[3]/on-fire", 1);							
 							</script>
-						</binding>
-					</button>
-	</group>
-	
-	<hrule/>
-	
-  <text>
-    <label>Gear failure</label>
-  </text>
-  
-  <group>
-    <stretch>true</stretch>
-    <layout>table</layout>
-  
-		<checkbox>
-		  <row>0</row><col>3</col>
-		  <halign>left</halign>
-		  <live>true</live>
-		  <property>/controls/failures/gear[0]/stuck</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/failures/gear[0]/stuck</property>
-		  </binding>
-		</checkbox>
+            </binding>
+        </button>
+    </group>
 
-		<checkbox>
-		  <row>1</row><col>0</col>
-		  <halign>left</halign>
-		  <live>true</live>
-		  <property>/controls/failures/gear[1]/stuck</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/failures/gear[1]/stuck</property>
-		  </binding>
-		</checkbox>
-		
-		<checkbox>
-		  <row>1</row><col>2</col>
-		  <halign>left</halign>
-		  <live>true</live>
-		  <property>/controls/failures/gear[2]/stuck</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/failures/gear[2]/stuck</property>
-		  </binding>
-		</checkbox>
-		
-		<checkbox>
-		  <row>1</row><col>4</col>
-		  <halign>left</halign>
-		  <live>true</live>
-		  <property>/controls/failures/gear[3]/stuck</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/failures/gear[3]/stuck</property>
-		  </binding>
-		</checkbox>
-		
-		<checkbox>
-		  <row>1</row><col>6</col>
-		  <halign>left</halign>
-		  <live>true</live>
-		  <property>/controls/failures/gear[4]/stuck</property>
-		  <binding>
-			<command>property-toggle</command>
-			<property>/controls/failures/gear[4]/stuck</property>
-		  </binding>
-		</checkbox>
+    <hrule />
 
-	</group>
+    <text>
+        <label>Gear failure</label>
+    </text>
 
- 	<hrule/>
+    <group>
+        <stretch>true</stretch>
+        <layout>table</layout>
 
-  
-  <group>
-  				<layout>vbox</layout>
-					<button>
-						<legend>Reset Engine fire</legend>
-						<padding>1</padding>
-						<binding>
-							<command>nasal</command>
-							<script>					
+        <checkbox>
+            <row>0</row>
+            <col>3</col>
+            <halign>left</halign>
+            <live>true</live>
+            <property>/controls/failures/gear[0]/stuck</property>
+            <binding>
+                <command>property-toggle</command>
+                <property>/controls/failures/gear[0]/stuck</property>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <row>1</row>
+            <col>0</col>
+            <halign>left</halign>
+            <live>true</live>
+            <property>/controls/failures/gear[1]/stuck</property>
+            <binding>
+                <command>property-toggle</command>
+                <property>/controls/failures/gear[1]/stuck</property>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <row>1</row>
+            <col>2</col>
+            <halign>left</halign>
+            <live>true</live>
+            <property>/controls/failures/gear[2]/stuck</property>
+            <binding>
+                <command>property-toggle</command>
+                <property>/controls/failures/gear[2]/stuck</property>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <row>1</row>
+            <col>4</col>
+            <halign>left</halign>
+            <live>true</live>
+            <property>/controls/failures/gear[3]/stuck</property>
+            <binding>
+                <command>property-toggle</command>
+                <property>/controls/failures/gear[3]/stuck</property>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <row>1</row>
+            <col>6</col>
+            <halign>left</halign>
+            <live>true</live>
+            <property>/controls/failures/gear[4]/stuck</property>
+            <binding>
+                <command>property-toggle</command>
+                <property>/controls/failures/gear[4]/stuck</property>
+            </binding>
+        </checkbox>
+
+    </group>
+
+    <hrule />
+
+
+    <group>
+        <layout>vbox</layout>
+        <button>
+            <legend>Reset Engine fire</legend>
+            <padding>1</padding>
+            <binding>
+                <command>nasal</command>
+                <script>					
                                                         resetfail.enginefirereset();			   						   							
 							</script>
-						</binding>
-					</button>				
-	</group>	
-	
+            </binding>
+        </button>
+    </group>
+
 </PropertyList>

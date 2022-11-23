@@ -4,113 +4,113 @@
 	 # by Gijs de Rooy				 # -->
 
 <system name="failures">
-	
-	<channel name="gear">
-		
-		<!-- 	gear should get stuck on retraction/extension above 
+
+    <channel name="gear">
+
+        <!-- 	gear should get stuck on retraction/extension above 
 				maximum extension speed -->
-		<switch name="fcs/failures-gear-stuck[0]">
-			<default value="/controls/failures/gear[0]/stuck"/>
-			<test  logic="AND" value="1">
+        <switch name="fcs/failures-gear-stuck[0]">
+            <default value="/controls/failures/gear[0]/stuck" />
+            <test logic="AND" value="1">
 				velocities/vc-kts GT 270
 				/controls/gear/gear-down == 1
 			</test>
-			<output>/controls/failures/gear[0]/stuck</output>
-		</switch>
-		<switch name="fcs/failures-gear-stuck[1]">
-			<default value="/controls/failures/gear[1]/stuck"/>
-			<test  logic="AND" value="1">
+            <output>/controls/failures/gear[0]/stuck</output>
+        </switch>
+        <switch name="fcs/failures-gear-stuck[1]">
+            <default value="/controls/failures/gear[1]/stuck" />
+            <test logic="AND" value="1">
 				velocities/vc-kts GT 270
 				/controls/gear/gear-down == 1
 			</test>
-			<output>/controls/failures/gear[1]/stuck</output>
-		</switch>
-		<switch name="fcs/failures-gear-stuck[2]">
-			<default value="/controls/failures/gear[2]/stuck"/>
-			<test  logic="AND" value="1">
+            <output>/controls/failures/gear[1]/stuck</output>
+        </switch>
+        <switch name="fcs/failures-gear-stuck[2]">
+            <default value="/controls/failures/gear[2]/stuck" />
+            <test logic="AND" value="1">
 				velocities/vc-kts GT 270
 				/controls/gear/gear-down == 1
 			</test>
-			<output>/controls/failures/gear[2]/stuck</output>
-		</switch>
-		<switch name="fcs/failures-gear-stuck[3]">
-			<default value="/controls/failures/gear[3]/stuck"/>
-			<test  logic="AND" value="1">
+            <output>/controls/failures/gear[2]/stuck</output>
+        </switch>
+        <switch name="fcs/failures-gear-stuck[3]">
+            <default value="/controls/failures/gear[3]/stuck" />
+            <test logic="AND" value="1">
 				velocities/vc-kts GT 270
 				/controls/gear/gear-down == 1
 			</test>
-			<output>/controls/failures/gear[3]/stuck</output>
-		</switch>
-		<switch name="fcs/failures-gear-stuck[4]">
-			<default value="/controls/failures/gear[4]/stuck"/>
-			<test  logic="AND" value="1">
+            <output>/controls/failures/gear[3]/stuck</output>
+        </switch>
+        <switch name="fcs/failures-gear-stuck[4]">
+            <default value="/controls/failures/gear[4]/stuck" />
+            <test logic="AND" value="1">
 				velocities/vc-kts GT 270
 				/controls/gear/gear-down == 1
 			</test>
-			<output>/controls/failures/gear[4]/stuck</output>
-		</switch>
-		
-		<!-- gear is stuck at current position -->
-		<switch name="gear/unit[0]/pos-cmd-norm">
-			<test  logic="AND" value="gear/gear-cmd-norm">
+            <output>/controls/failures/gear[4]/stuck</output>
+        </switch>
+
+        <!-- gear is stuck at current position -->
+        <switch name="gear/unit[0]/pos-cmd-norm">
+            <test logic="AND" value="gear/gear-cmd-norm">
 				/controls/failures/gear[0]/stuck == 0
 			</test>
-			<test  logic="AND" value="gear/unit[0]/pos-cmd-norm">
+            <test logic="AND" value="gear/unit[0]/pos-cmd-norm">
 				/controls/failures/gear[0]/stuck == 1
 			</test>
-		</switch>
-		<switch name="gear/unit[1]/pos-cmd-norm">
-			<test  logic="AND" value="gear/gear-cmd-norm">
+        </switch>
+        <switch name="gear/unit[1]/pos-cmd-norm">
+            <test logic="AND" value="gear/gear-cmd-norm">
 				/controls/failures/gear[1]/stuck == 0
 			</test>
-			<test  logic="AND" value="gear/unit[1]/pos-cmd-norm">
+            <test logic="AND" value="gear/unit[1]/pos-cmd-norm">
 				/controls/failures/gear[1]/stuck == 1
 			</test>
-		</switch>
-		<switch name="gear/unit[2]/pos-cmd-norm">
-			<test  logic="AND" value="gear/gear-cmd-norm">
+        </switch>
+        <switch name="gear/unit[2]/pos-cmd-norm">
+            <test logic="AND" value="gear/gear-cmd-norm">
 				/controls/failures/gear[2]/stuck == 0
 			</test>
-			<test  logic="AND" value="gear/unit[2]/pos-cmd-norm">
+            <test logic="AND" value="gear/unit[2]/pos-cmd-norm">
 				/controls/failures/gear[2]/stuck == 1
 			</test>
-		</switch>
-		<switch name="gear/unit[3]/pos-cmd-norm">
-			<test  logic="AND" value="gear/gear-cmd-norm">
+        </switch>
+        <switch name="gear/unit[3]/pos-cmd-norm">
+            <test logic="AND" value="gear/gear-cmd-norm">
 				/controls/failures/gear[3]/stuck == 0
 			</test>
-			<test  logic="AND" value="gear/unit[3]/pos-cmd-norm">
+            <test logic="AND" value="gear/unit[3]/pos-cmd-norm">
 				/controls/failures/gear[3]/stuck == 1
 			</test>
-		</switch>
-		<switch name="gear/unit[4]/pos-cmd-norm">
-			<test  logic="AND" value="gear/gear-cmd-norm">
+        </switch>
+        <switch name="gear/unit[4]/pos-cmd-norm">
+            <test logic="AND" value="gear/gear-cmd-norm">
 				/controls/failures/gear[4]/stuck == 0
 			</test>
-			<test  logic="AND" value="gear/unit[4]/pos-cmd-norm">
+            <test logic="AND" value="gear/unit[4]/pos-cmd-norm">
 				/controls/failures/gear[4]/stuck == 1
 			</test>
-		</switch>
+        </switch>
 
-	</channel>
+    </channel>
 
-	<channel name="wings">
+    <channel name="wings">
 
-		<!-- wings break of at large g-forces -->
-		<switch name="fcs/failures-wings-broken">
-			<default value="/controls/failures/wings/broken"/>
-			<test  logic="AND" value="1">
+        <!-- wings break of at large g-forces -->
+        <switch name="fcs/failures-wings-broken">
+            <default value="/controls/failures/wings/broken" />
+            <test logic="AND" value="1">
 				/accelerations/pilot-gdamped GT 5
 			</test>
-			<output>/controls/failures/wings/broken</output>
-		</switch>
-		<switch name="fcs/failures-wings-lift">
-			<default value="1"/>
-			<test  logic="AND" value="0">
+            <output>/controls/failures/wings/broken</output>
+        </switch>
+        <switch name="fcs/failures-wings-lift">
+            <default value="1" />
+            <test logic="AND" value="0">
 				/controls/failures/wings/broken == 1
 			</test>
-		</switch>
+        </switch>
 
-	</channel>
+    </channel>
 
 </system>

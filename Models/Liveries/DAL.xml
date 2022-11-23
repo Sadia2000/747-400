@@ -1,13 +1,13 @@
-<?xml version="1.0"?> 
-<PropertyList> 
+<?xml version="1.0"?>
+<PropertyList>
 
-<sim> 
- <model> 
-  <livery> 
-   <name type="string">Delta Air Lines</name> 
-   <texture>Liveries/DAL.png</texture>
-  </livery> 
- </model> 
-</sim> 
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Delta Air Lines</name>
+                <texture>Liveries/DAL.png</texture>
+            </livery>
+        </model>
+    </sim>
 
 </PropertyList> 

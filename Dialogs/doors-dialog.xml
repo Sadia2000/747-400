@@ -1,118 +1,118 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <name>Boeing 747-400 doors</name>
-  <layout>vbox</layout>
-
-  <group>
-    <layout>hbox</layout>
-	
-	<text>
-		<label>Doors</label>
-	</text>
-  
-    <empty>
-      <stretch>true</stretch>
-    </empty>
-
-    <button>
-      <legend/>
-      <key>Esc</key>
-      <pref-width>16</pref-width>
-      <pref-height>16</pref-height>
-      <border>2</border>
-      <binding>
-        <command>dialog-close</command>
-      </binding>
-    </button>
-	
-  </group>
-
-  <hrule/>
-  
-  <group>
+    <name>Boeing 747-400 doors</name>
     <layout>vbox</layout>
-    <halign>center</halign>
-	  
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Upperdeck Left</label>
-	  <property>/controls/doors/upperdeckleft/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.upperdeckleft_door.toggle()</script>
-	  </binding>
-	</checkbox>
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Upperdeck Right</label>
-	  <property>/controls/doors/upperdeckright/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.upperdeckright_door.toggle()</script>
-	  </binding>
-	</checkbox>
+    <group>
+        <layout>hbox</layout>
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Entry 1 Left</label>
-	  <property>/controls/doors/entry1left/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.entry1left_door.toggle()</script>
-	  </binding>
-	</checkbox>
+        <text>
+            <label>Doors</label>
+        </text>
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Entry 2 Left</label>
-	  <property>/controls/doors/entry2left/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.entry2left_door.toggle()</script>
-	  </binding>
-	</checkbox>
+        <empty>
+            <stretch>true</stretch>
+        </empty>
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Entry 3 Left</label>
-	  <property>/controls/doors/entry3left/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.entry3left_door.toggle()</script>
-	  </binding>
-	</checkbox>
+        <button>
+            <legend />
+            <key>Esc</key>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <border>2</border>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Entry 4 Left</label>
-	  <property>/controls/doors/entry4left/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.entry4left_door.toggle()</script>
-	  </binding>
-	</checkbox>
+    </group>
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Entry 5 Left</label>
-	  <property>/controls/doors/entry5left/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.entry5left_door.toggle()</script>
-	  </binding>
-	</checkbox>
+    <hrule />
 
-	<checkbox>
-	  <halign>left</halign>
-	  <label>Nosecone</label>
-	  <property>/controls/doors/nosecone/position-norm</property>
-	  <binding>
-		<command>nasal</command>
-		<script>Boeing747.nosecone_door.toggle()</script>
-	  </binding>
-	</checkbox>
+    <group>
+        <layout>vbox</layout>
+        <halign>center</halign>
 
-	</group>
+        <checkbox>
+            <halign>left</halign>
+            <label>Upperdeck Left</label>
+            <property>/controls/doors/upperdeckleft/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.upperdeckleft_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Upperdeck Right</label>
+            <property>/controls/doors/upperdeckright/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.upperdeckright_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Entry 1 Left</label>
+            <property>/controls/doors/entry1left/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.entry1left_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Entry 2 Left</label>
+            <property>/controls/doors/entry2left/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.entry2left_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Entry 3 Left</label>
+            <property>/controls/doors/entry3left/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.entry3left_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Entry 4 Left</label>
+            <property>/controls/doors/entry4left/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.entry4left_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Entry 5 Left</label>
+            <property>/controls/doors/entry5left/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.entry5left_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+        <checkbox>
+            <halign>left</halign>
+            <label>Nosecone</label>
+            <property>/controls/doors/nosecone/position-norm</property>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.nosecone_door.toggle()</script>
+            </binding>
+        </checkbox>
+
+    </group>
 
 </PropertyList>

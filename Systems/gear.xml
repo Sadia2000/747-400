@@ -4,10 +4,10 @@
      # by Gijs de Rooy			   # -->
 
 <system name="gear">
-    
+
     <channel name="gear">
 
-	<!-- GEAR 1 -->
+        <!-- GEAR 1 -->
 
         <summer name="gear/unit[0]/tyre-speed-dif-switch">
             <input>-velocities/vg-fps</input>
@@ -16,15 +16,15 @@
         </summer>
 
         <switch name="/gear/gear[0]/tyre-smoke-switch">
-			<default value="0"/>
-            <test  logic="AND" value="1">
+            <default value="0" />
+            <test logic="AND" value="1">
                 gear/unit[0]/tyre-speed-dif lt -2
                 gear/unit[0]/WOW == 1
             </test>
-			<output>/gear/gear[0]/tyre-smoke</output>
-		</switch>
+            <output>/gear/gear[0]/tyre-smoke</output>
+        </switch>
 
-	<!-- GEAR 2 -->
+        <!-- GEAR 2 -->
 
         <summer name="gear/unit[1]/tyre-speed-dif-switch">
             <input>-velocities/vg-fps</input>
@@ -33,15 +33,15 @@
         </summer>
 
         <switch name="/gear/gear[1]/tyre-smoke-switch">
-			<default value="0"/>
-            <test  logic="AND" value="1">
+            <default value="0" />
+            <test logic="AND" value="1">
                 gear/unit[1]/tyre-speed-dif lt -2
                 gear/unit[1]/WOW == 1
             </test>
-			<output>/gear/gear[1]/tyre-smoke</output>
-		</switch>
+            <output>/gear/gear[1]/tyre-smoke</output>
+        </switch>
 
-	<!-- GEAR 3 -->
+        <!-- GEAR 3 -->
 
         <summer name="gear/unit[2]/tyre-speed-dif-switch">
             <input>-velocities/vg-fps</input>
@@ -50,15 +50,15 @@
         </summer>
 
         <switch name="/gear/gear[2]/tyre-smoke-switch">
-			<default value="0"/>
-            <test  logic="AND" value="1">
+            <default value="0" />
+            <test logic="AND" value="1">
                 gear/unit[2]/tyre-speed-dif lt -2
                 gear/unit[2]/WOW == 1
             </test>
-			<output>/gear/gear[2]/tyre-smoke</output>
-		</switch>
+            <output>/gear/gear[2]/tyre-smoke</output>
+        </switch>
 
-	<!-- GEAR 4 -->
+        <!-- GEAR 4 -->
 
         <summer name="gear/unit[3]/tyre-speed-dif-switch">
             <input>-velocities/vg-fps</input>
@@ -67,15 +67,15 @@
         </summer>
 
         <switch name="/gear/gear[3]/tyre-smoke-switch">
-			<default value="0"/>
-            <test  logic="AND" value="1">
+            <default value="0" />
+            <test logic="AND" value="1">
                 gear/unit[3]/tyre-speed-dif lt -2
                 gear/unit[3]/WOW == 1
             </test>
-			<output>/gear/gear[3]/tyre-smoke</output>
-		</switch>
+            <output>/gear/gear[3]/tyre-smoke</output>
+        </switch>
 
-	<!-- GEAR 5 -->
+        <!-- GEAR 5 -->
 
         <summer name="gear/unit[4]/tyre-speed-dif-switch">
             <input>-velocities/vg-fps</input>
@@ -84,13 +84,13 @@
         </summer>
 
         <switch name="/gear/gear[4]/tyre-smoke-switch">
-          <default value="0"/>
-            <test  logic="AND" value="1">
+            <default value="0" />
+            <test logic="AND" value="1">
                 gear/unit[4]/tyre-speed-dif lt -2
                 gear/unit[4]/WOW == 1
             </test>
-			<output>/gear/gear[4]/tyre-smoke</output>
-		</switch>
+            <output>/gear/gear[4]/tyre-smoke</output>
+        </switch>
 
     </channel>
 

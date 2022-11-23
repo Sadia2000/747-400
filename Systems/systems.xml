@@ -4,14 +4,14 @@
      # by Gijs de Rooy                    # -->
 
 <system name="systems">
-    
+
     <channel name="systems">
 
         <fcs_function name="systems/stick-shaker-alpha-deg">
             <function>
                 <table>
                     <independentVar>fcs/flap-pos-deg</independentVar>
-					<tableData>
+                    <tableData>
                         0.0   12.1
 						1.0   12.4
                         5.0   17.6
@@ -31,16 +31,16 @@
                 </table>
             </function>
         </fcs_function>
-        
+
         <switch name="systems/stick-shaker">
-            <default value="0"/>
-            <test  logic="AND" value="1">
+            <default value="0" />
+            <test logic="AND" value="1">
 				aero/ground-switch eq 1
                 aero/alpha-deg GT systems/stick-shaker-alpha-deg
             </test>
             <output>systems/stick-shaker</output>
         </switch>
-        
+
         <fcs_function name="systems/stick-shaker-norm">
             <function>
                 <sin>
@@ -55,11 +55,11 @@
                 </sin>
             </function>
         </fcs_function>
-		
-		<!-- switch to disable beta effect on ground -->
-		<switch name="aero/ground-switch">
+
+        <!-- switch to disable beta effect on ground -->
+        <switch name="aero/ground-switch">
             <description>Aircraft on ground</description>
-            <default value="1"/>
+            <default value="1" />
             <test value="0" logic="OR">
                 gear/unit[0]/WOW ne 0
             </test>

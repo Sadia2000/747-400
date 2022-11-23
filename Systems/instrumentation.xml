@@ -41,27 +41,27 @@ This file selects the instrumentation modules that should be available.
         <name>clock</name>
         <number>0</number>
     </clock>
-	
+
     <clock>
         <name>clock</name>
         <number>1</number>
     </clock>
-	
-	<comm-radio>
-		<name>comm</name>
-		<number>0</number>
-	</comm-radio>
 
-	<comm-radio>
-		<name>comm</name>
-		<number>1</number>
-	</comm-radio>
+    <comm-radio>
+        <name>comm</name>
+        <number>0</number>
+    </comm-radio>
 
-	<comm-radio>
-		<name>comm</name>
-		<number>2</number>
-	</comm-radio>
-	
+    <comm-radio>
+        <name>comm</name>
+        <number>1</number>
+    </comm-radio>
+
+    <comm-radio>
+        <name>comm</name>
+        <number>2</number>
+    </comm-radio>
+
     <dme>
         <name>dme</name>
         <number>0</number>
@@ -71,7 +71,7 @@ This file selects the instrumentation modules that should be available.
         <name>dme</name>
         <number>1</number>
     </dme>
-    
+
     <groundradar>
         <name>groundradar</name>
         <airport-id-source>instrumentation/groundradar/id</airport-id-source>
@@ -93,12 +93,12 @@ This file selects the instrumentation modules that should be available.
         <name>magnetic-compass</name>
         <number>0</number>
     </magnetic-compass>
-	
+
     <marker-beacon>
         <name>marker-beacon</name>
         <number>0</number>
     </marker-beacon>
-    
+
     <mk-viii>
         <name>mk-viii</name>
         <number>0</number>
@@ -118,17 +118,17 @@ This file selects the instrumentation modules that should be available.
         <name>radar</name>
         <number>0</number>
     </radar>
-    
+
     <slip-skid-ball>
         <name>slip-skid-ball</name>
         <number>0</number>
     </slip-skid-ball>
-    
+
     <tcas>
         <name>tcas</name>
         <number>0</number>
     </tcas>
-    
+
     <transponder>
         <name type="string">transponder</name>
         <number type="int">0</number>

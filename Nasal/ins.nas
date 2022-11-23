@@ -157,7 +157,8 @@ ins.align = func {
 	} else setprop("/ins/"~me.name~"/attwork", "false");
 	setprop("/ins/"~me.name~"/heading-rate", me.dhdg);
 	setprop("/ins/"~me.name~"/pitch-rate", me.dpitch);
-	setprop("/ins/"~me.name~"/roll-rate", me.droll);
+	setprop("/ins/"~me.name~"/roll-rate", me.droll);
+
 }
 ins.run = func {
 	if (me.delete == nil) settimer(func me.run(), 0);

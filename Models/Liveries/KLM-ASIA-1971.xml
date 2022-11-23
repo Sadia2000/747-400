@@ -1,13 +1,13 @@
-<?xml version="1.0"?> 
-<PropertyList> 
+<?xml version="1.0"?>
+<PropertyList>
 
-<sim> 
- <model> 
-  <livery> 
-   <name type="string">KLM Asia (1971)</name> 
-   <texture>Liveries/KLM-ASIA-1971.png</texture>
-  </livery> 
- </model> 
-</sim> 
+    <sim>
+        <model>
+            <livery>
+                <name type="string">KLM Asia (1971)</name>
+                <texture>Liveries/KLM-ASIA-1971.png</texture>
+            </livery>
+        </model>
+    </sim>
 
 </PropertyList> 

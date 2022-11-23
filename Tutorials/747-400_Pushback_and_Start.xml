@@ -4,98 +4,98 @@
     <description>
 We're now fully configured to begin our pushback and engine start. The passengers are on board and you've just been given your clearance. As things start to happen very quickly from here on out, don't be afraid to pause your sim between steps.
     </description>
-	
+
     <audio-dir>Aircraft/747-400/tutorial</audio-dir>
 
     <init>
-		<set>
-			<property>/controls/gear/brake-parking</property>
-			<value>1</value>
-		</set>
-		<set>
-			<property>/controls/flight/flaps</property>
-			<value>0.0</value>
-		</set>
-		<set>
-			<property>/engines/engine[0]/running</property>
-			<value>false</value>
-		</set>
-		<set>
-			<property>/engines/engine[1]/running</property>
-			<value>false</value>
-		</set>
-		<set>
-			<property>/engines/engine[2]/running</property>
-			<value>false</value>
-		</set>
-		<set>
-			<property>/engines/engine[3]/running</property>
-			<value>false</value>
-		</set>
+        <set>
+            <property>/controls/gear/brake-parking</property>
+            <value>1</value>
+        </set>
+        <set>
+            <property>/controls/flight/flaps</property>
+            <value>0.0</value>
+        </set>
+        <set>
+            <property>/engines/engine[0]/running</property>
+            <value>false</value>
+        </set>
+        <set>
+            <property>/engines/engine[1]/running</property>
+            <value>false</value>
+        </set>
+        <set>
+            <property>/engines/engine[2]/running</property>
+            <value>false</value>
+        </set>
+        <set>
+            <property>/engines/engine[3]/running</property>
+            <value>false</value>
+        </set>
     </init>
 
     <step>
-		<message>Close all doors.</message>
-		<exit>
-			<condition>
-				<not>
-					<property>/controls/doors/cargo1/position-norm</property>
-				</not>
-			</condition>
-		</exit>
+        <message>Close all doors.</message>
+        <exit>
+            <condition>
+                <not>
+                    <property>/controls/doors/cargo1/position-norm</property>
+                </not>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn ON the BEACON lights.</message>
-		<exit>
-			<condition>
-				<property>/controls/lighting/beacon</property>
-			</condition>
-		</exit>
-    </step>
-	
-	<step>
-		<message>Open the 747-400 > Pushback dialog and connect the pushback.</message>
-		<exit>
-			<condition>
-				<property>/sim/model/pushback/position-norm</property>
-			</condition>
-		</exit>
-    </step>
-	
-	<step>
-		<message>Release the parking brake.</message>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/gear/brake-parking</property>
-					<value>0</value>		
-				</equals>
-			</condition>
-		</exit>
-	</step>
-	
-	<step>
-		<message>Use the slider to control the pushback speed. Steer with the rudder pedals.
-		You want to turn the tail to your left, so your nose ends up pointing right of your current position.</message>
-    </step>
-	
-	<step>
-		<message>Disconnect the pushback.</message>
-		<exit>
-			<condition>
-				<not>
-					<property>/sim/model/pushback/position-norm</property>
-				</not>
-			</condition>
-		</exit>
+        <message>Turn ON the BEACON lights.</message>
+        <exit>
+            <condition>
+                <property>/controls/lighting/beacon</property>
+            </condition>
+        </exit>
     </step>
 
-	<step>
-		<message>We will now start the engines.</message>
-	</step>
-	
-	<!--
+    <step>
+        <message>Open the 747-400 > Pushback dialog and connect the pushback.</message>
+        <exit>
+            <condition>
+                <property>/sim/model/pushback/position-norm</property>
+            </condition>
+        </exit>
+    </step>
+
+    <step>
+        <message>Release the parking brake.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/gear/brake-parking</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
+    </step>
+
+    <step>
+        <message>Use the slider to control the pushback speed. Steer with the rudder pedals.
+		You want to turn the tail to your left, so your nose ends up pointing right of your current position.</message>
+    </step>
+
+    <step>
+        <message>Disconnect the pushback.</message>
+        <exit>
+            <condition>
+                <not>
+                    <property>/sim/model/pushback/position-norm</property>
+                </not>
+            </condition>
+        </exit>
+    </step>
+
+    <step>
+        <message>We will now start the engines.</message>
+    </step>
+
+    <!--
     <step>
 		<message>Set Hydraulid DEMAND Pump selector 4 to AUX.</message>
     </step>
@@ -114,139 +114,139 @@ We're now fully configured to begin our pushback and engine start. The passenger
 	-->
 
     <step>
-		<message>Turn ON continuous ignition.</message>
-		<marker>
-			<x-m> 0.0198</x-m>
-			<y-m>-0.0835</y-m>
-			<z-m>-0.0033</z-m>
-			<scale>1.6777</scale>
-		</marker>
-		<exit>
-			<condition>
-				<property>/controls/engines/con-ignition</property>
-			</condition>
-		</exit>
+        <message>Turn ON continuous ignition.</message>
+        <marker>
+            <x-m> 0.0198</x-m>
+            <y-m>-0.0835</y-m>
+            <z-m>-0.0033</z-m>
+            <scale>1.6777</scale>
+        </marker>
+        <exit>
+            <condition>
+                <property>/controls/engines/con-ignition</property>
+            </condition>
+        </exit>
     </step>
 
     <step>
-      <message>Ensure all throttles are at idle</message>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/engines/engine[0]/throttle</property>
-					<value>0</value>
-				</equals>
-				<equals>
-					<property>/controls/engines/engine[1]/throttle</property>
-					<value>0</value>
-				</equals>
-				<equals>
-					<property>/controls/engines/engine[2]/throttle</property>
-					<value>0</value>
-				</equals>
-				<equals>
-					<property>/controls/engines/engine[3]/throttle</property>
-					<value>0</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Ensure all throttles are at idle</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/engines/engine[0]/throttle</property>
+                    <value>0</value>
+                </equals>
+                <equals>
+                    <property>/controls/engines/engine[1]/throttle</property>
+                    <value>0</value>
+                </equals>
+                <equals>
+                    <property>/controls/engines/engine[2]/throttle</property>
+                    <value>0</value>
+                </equals>
+                <equals>
+                    <property>/controls/engines/engine[3]/throttle</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>ARM the emergency lights.</message>
     </step>
 	-->
 
     <step>
-		<message>Press the ENG button on the EICAS MCP.</message>
-		<marker>
-			<x-m>0.4174</x-m>
-			<y-m>0.2041</y-m>
-			<z-m>0.2595</z-m>
-			<scale>0.9174</scale>
-		</marker>
-		<exit>
-			<condition>
-				<equals>
-					<property>/instrumentation/eicas/display</property>
-					<value>ENG</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Press the ENG button on the EICAS MCP.</message>
+        <marker>
+            <x-m>0.4174</x-m>
+            <y-m>0.2041</y-m>
+            <z-m>0.2595</z-m>
+            <scale>0.9174</scale>
+        </marker>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/instrumentation/eicas/display</property>
+                    <value>ENG</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Pull the Engine Start Selector for Engine 4.</message>
-		<marker>
-			<x-m>-0.0207</x-m>
-			<y-m>0.0116</y-m>
-			<z-m>-0.0033</z-m>
-			<scale>1.2810</scale>
-		</marker>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/engines/engine[3]/starter</property>
-					<value>1</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Pull the Engine Start Selector for Engine 4.</message>
+        <marker>
+            <x-m>-0.0207</x-m>
+            <y-m>0.0116</y-m>
+            <z-m>-0.0033</z-m>
+            <scale>1.2810</scale>
+        </marker>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/engines/engine[3]/starter</property>
+                    <value>1</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>When the N2% RPM indicator on the EICAS reaches the magenta line (around 14%), switch the Fuel Control Switch for Engine 4 to RUN.</message>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/engines/engine[3]/cutoff</property>
-					<value>0</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>When the N2% RPM indicator on the EICAS reaches the magenta line (around 14%), switch the Fuel Control Switch for Engine 4 to RUN.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/engines/engine[3]/cutoff</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Repeat this process for engine 1. Pull the Start Selector, wait for N2 to reach the magenta line, set Fuel Control to RUN.</message>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/engines/engine[0]/cutoff</property>
-					<value>0</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Repeat this process for engine 1. Pull the Start Selector, wait for N2 to reach the magenta line, set Fuel Control to RUN.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/engines/engine[0]/cutoff</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Now do the same thing for engines 2 and 3.</message>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/engines/engine[1]/cutoff</property>
-					<value>0</value>
-				</equals>
-				<equals>
-					<property>/controls/engines/engine[2]/cutoff</property>
-					<value>0</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Now do the same thing for engines 2 and 3.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/engines/engine[1]/cutoff</property>
+                    <value>0</value>
+                </equals>
+                <equals>
+                    <property>/controls/engines/engine[2]/cutoff</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
     <step>
-		<message>Turn OFF the APU.</message>
-		<exit>
-			<condition>
-				<equals>
-					<property>/controls/electric/apu</property>
-					<value>0</value>
-				</equals>
-			</condition>
-		</exit>
+        <message>Turn OFF the APU.</message>
+        <exit>
+            <condition>
+                <equals>
+                    <property>/controls/electric/apu</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+        </exit>
     </step>
 
-	<!--
+    <!--
     <step>
 		<message>Turn OFF APU Bleed Air.</message>
     </step>
@@ -261,11 +261,11 @@ We're now fully configured to begin our pushback and engine start. The passenger
 	-->
 
     <step>
-		<message>Check the main display for any warnings.</message>
+        <message>Check the main display for any warnings.</message>
     </step>
-	
-	<end>
-		<message>Continue with the Taxi and Takeoff tutorial.</message>
+
+    <end>
+        <message>Continue with the Taxi and Takeoff tutorial.</message>
     </end>
 
 </PropertyList>

@@ -1,13 +1,13 @@
-<?xml version="1.0"?> 
-<PropertyList> 
+<?xml version="1.0"?>
+<PropertyList>
 
-<sim> 
-   <model>
-      <livery> 
-       <name type="string">General Electic</name>  <!-- livery name -->
-       <texture>Liveries/GE.png</texture>		<!-- livery image -->
-      </livery> 
-   </model> 
-</sim> 
+    <sim>
+        <model>
+            <livery>
+                <name type="string">General Electic</name> <!-- livery name -->
+                <texture>Liveries/GE.png</texture> <!-- livery image -->
+            </livery>
+        </model>
+    </sim>
 
 </PropertyList> 

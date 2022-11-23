@@ -5,166 +5,174 @@
 
 
 <system name="hydraulics">
-	
-	<property>/systems/hydraulic/pressure[0]</property>
-	<property>/systems/hydraulic/pressure[1]</property>
-	<property>/systems/hydraulic/pressure[2]</property>
-	<property>/systems/hydraulic/pressure[3]</property>
-		
-	<channel name="gear">
-		
-		<switch name="failures/hydraulics[0]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
+
+    <property>/systems/hydraulic/pressure[0]</property>
+    <property>/systems/hydraulic/pressure[1]</property>
+    <property>/systems/hydraulic/pressure[2]</property>
+    <property>/systems/hydraulic/pressure[3]</property>
+
+    <channel name="gear">
+
+        <switch name="failures/hydraulics[0]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[0] LT 1000
 			</test>
-			<output>fcs/gear-nose-actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[1]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
+            <output>fcs/gear-nose-actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[1]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[1] LT 1000
 			</test>
-			<output>fcs/spoiler[1]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[2]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[9]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[10]/actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[2]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
+            <output>fcs/spoiler[1]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[2]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[9]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[10]/actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[2]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[2] LT 1000
 			</test>
-			<output>fcs/spoiler[0]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[3]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[8]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[11]/actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[3]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
+            <output>fcs/spoiler[0]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[3]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[8]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[11]/actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[3]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[3] LT 1000
 			</test>
-			<output>fcs/spoiler[4]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[5]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[6]/actuator/malfunction/fail_stuck</output>
-			<output>fcs/spoiler[7]/actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[4]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
+            <output>fcs/spoiler[4]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[5]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[6]/actuator/malfunction/fail_stuck</output>
+            <output>fcs/spoiler[7]/actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[4]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[0] LT 1000
 				/systems/hydraulic/pressure[1] LT 1000
 			</test>
-			<output>fcs/aileron[0]/actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[5]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
+            <output>fcs/aileron[0]/actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[5]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[0] LT 1000
 				/systems/hydraulic/pressure[2] LT 1000
 			</test>
-			<output>fcs/aileron[1]/actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[6]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
-				/systems/hydraulic/pressure[1] LT 1000
-				/systems/hydraulic/pressure[3] LT 1000
-			</test>
-			<output>fcs/aileron[2]/actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[7]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
-				/systems/hydraulic/pressure[2] LT 1000
-				/systems/hydraulic/pressure[3] LT 1000
-			</test>
-			<output>fcs/aileron[3]/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[8]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
-				/systems/hydraulic/pressure[0] LT 1000
-				/systems/hydraulic/pressure[1] LT 1000
-				/systems/hydraulic/pressure[2] LT 1000
-				/systems/hydraulic/pressure[3] LT 1000
-			</test>
-			<output>fcs/rudder-actuator/malfunction/fail_stuck</output>
-		</switch>
-		<switch name="failures/hydraulics[11]">
-			<default value="0"/>
-			<test  logic="AND" value="1">
-				/systems/hydraulic/pressure[1] LT 1000
-				/systems/hydraulic/pressure[2] LT 1000
-			</test>
-			<output>fcs/stabilizer/actuator/malfunction/fail_stuck</output>
-		</switch>
-		
-		<!-- Control surface deflection rates -->
-		<switch name="systems/hydraulic/left-outboard-aileron/range-limit-up-rad_sec">
-			<default value="0.960"/> <!-- 55 deg/sec -->
-			<test  logic="OR" value="0.785"> <!-- 45 deg/sec -->
-				/systems/hydraulic/pressure[0] LT 1000
-				/systems/hydraulic/pressure[1] LT 1000
-			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/right-outboard-aileron/range-limit-up-rad_sec">
-			<default value="0.960"/> <!-- 55 deg/sec -->
-			<test  logic="OR" value="0.785"> <!-- 45 deg/sec -->
-				/systems/hydraulic/pressure[2] LT 1000
-				/systems/hydraulic/pressure[3] LT 1000
-			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/left-inboard-aileron/range-limit-up-rad_sec">
-			<default value="0.785"/> <!-- 45 deg/sec -->
-			<test  logic="OR" value="0.611"> <!-- 35 deg/sec -->
-				/systems/hydraulic/pressure[0] LT 1000
-				/systems/hydraulic/pressure[2] LT 1000
-			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/right-inboard-aileron/range-limit-up-rad_sec">
-			<default value="0.785"/> <!-- 45 deg/sec -->
-			<test  logic="OR" value="0.611"> <!-- 35 deg/sec -->
+            <output>fcs/aileron[1]/actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[6]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[1] LT 1000
 				/systems/hydraulic/pressure[3] LT 1000
 			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/left-outboard-aileron/range-limit-down-rad_sec">
-			<default value="0.785"/> <!-- 45 deg/sec -->
-			<test  logic="OR" value="0.384"> <!-- 22 deg/sec -->
-				/systems/hydraulic/pressure[0] LT 1000
-				/systems/hydraulic/pressure[1] LT 1000
-			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/right-outboard-aileron/range-limit-down-rad_sec">
-			<default value="0.785"/> <!-- 45 deg/sec -->
-			<test  logic="OR" value="0.384"> <!-- 22 deg/sec -->
+            <output>fcs/aileron[2]/actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[7]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[2] LT 1000
 				/systems/hydraulic/pressure[3] LT 1000
 			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/left-inboard-aileron/range-limit-down-rad_sec">
-			<default value="0.698"/> <!-- 40 deg/sec -->
-			<test  logic="OR" value="0.471"> <!-- 27 deg/sec -->
+            <output>fcs/aileron[3]/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[8]">
+            <default value="0" />
+            <test logic="AND" value="1">
 				/systems/hydraulic/pressure[0] LT 1000
+				/systems/hydraulic/pressure[1] LT 1000
+				/systems/hydraulic/pressure[2] LT 1000
+				/systems/hydraulic/pressure[3] LT 1000
+			</test>
+            <output>fcs/rudder-actuator/malfunction/fail_stuck</output>
+        </switch>
+        <switch name="failures/hydraulics[11]">
+            <default value="0" />
+            <test logic="AND" value="1">
+				/systems/hydraulic/pressure[1] LT 1000
 				/systems/hydraulic/pressure[2] LT 1000
 			</test>
-		</switch>
-		
-		<switch name="systems/hydraulic/right-inboard-aileron/range-limit-down-rad_sec">
-			<default value="0.698"/> <!-- 40 deg/sec -->
-			<test  logic="OR" value="0.471"> <!-- 27 deg/sec -->
-				/systems/hydraulic/pressure[1] LT 100
+            <output>fcs/stabilizer/actuator/malfunction/fail_stuck</output>
+        </switch>
+
+        <!-- Control surface deflection rates -->
+        <switch name="systems/hydraulic/left-outboard-aileron/range-limit-up-rad_sec">
+            <default value="0.960" /> <!-- 55 deg/sec -->
+            <test logic="OR" value="0.785">
+                <!-- 45 deg/sec -->
+                /systems/hydraulic/pressure[0] LT 1000
+				/systems/hydraulic/pressure[1] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/right-outboard-aileron/range-limit-up-rad_sec">
+            <default value="0.960" /> <!-- 55 deg/sec -->
+            <test logic="OR" value="0.785">
+                <!-- 45 deg/sec -->
+                /systems/hydraulic/pressure[2] LT 1000
+				/systems/hydraulic/pressure[3] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/left-inboard-aileron/range-limit-up-rad_sec">
+            <default value="0.785" /> <!-- 45 deg/sec -->
+            <test logic="OR" value="0.611">
+                <!-- 35 deg/sec -->
+                /systems/hydraulic/pressure[0] LT 1000
+				/systems/hydraulic/pressure[2] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/right-inboard-aileron/range-limit-up-rad_sec">
+            <default value="0.785" /> <!-- 45 deg/sec -->
+            <test logic="OR" value="0.611">
+                <!-- 35 deg/sec -->
+                /systems/hydraulic/pressure[1] LT 1000
+				/systems/hydraulic/pressure[3] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/left-outboard-aileron/range-limit-down-rad_sec">
+            <default value="0.785" /> <!-- 45 deg/sec -->
+            <test logic="OR" value="0.384">
+                <!-- 22 deg/sec -->
+                /systems/hydraulic/pressure[0] LT 1000
+				/systems/hydraulic/pressure[1] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/right-outboard-aileron/range-limit-down-rad_sec">
+            <default value="0.785" /> <!-- 45 deg/sec -->
+            <test logic="OR" value="0.384">
+                <!-- 22 deg/sec -->
+                /systems/hydraulic/pressure[2] LT 1000
+				/systems/hydraulic/pressure[3] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/left-inboard-aileron/range-limit-down-rad_sec">
+            <default value="0.698" /> <!-- 40 deg/sec -->
+            <test logic="OR" value="0.471">
+                <!-- 27 deg/sec -->
+                /systems/hydraulic/pressure[0] LT 1000
+				/systems/hydraulic/pressure[2] LT 1000
+            </test>
+        </switch>
+
+        <switch name="systems/hydraulic/right-inboard-aileron/range-limit-down-rad_sec">
+            <default value="0.698" /> <!-- 40 deg/sec -->
+            <test logic="OR" value="0.471">
+                <!-- 27 deg/sec -->
+                /systems/hydraulic/pressure[1] LT 100
 				/systems/hydraulic/pressure[3] LT 100
-			</test>
-		</switch>
-	</channel>
+            </test>
+        </switch>
+    </channel>
 
 </system>

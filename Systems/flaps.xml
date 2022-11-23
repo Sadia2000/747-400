@@ -4,11 +4,11 @@
      # by Gijs de Rooy			       # -->
 
 <system name="flaps">
-    
+
     <channel name="flaps">
 
         <!-- still slightly simplified, ignore (small) difference between inboard and outboard -->
-        
+
         <fcs_function name="fcs/flaps/cmd-deg">
             <function>
                 <product>
@@ -17,9 +17,9 @@
                 </product>
             </function>
         </fcs_function>
-        
+
         <switch name="fcs/flaps/cmd-detent-deg">
-            <default value="fcs/flaps/cmd-detent-deg"/>
+            <default value="fcs/flaps/cmd-detent-deg" />
             <test logic="AND" value="0">
                 fcs/flaps/cmd-deg GT -0.15
                 fcs/flaps/cmd-deg LT  0.16
@@ -49,9 +49,9 @@
                 fcs/flaps/cmd-deg LT 31.32
             </test>
         </switch>
-       
+
         <switch name="fcs/flaps/int-cmd-deg">
-            <default value="fcs/flaps/cmd-detent-deg"/>
+            <default value="fcs/flaps/cmd-detent-deg" />
             <test logic="AND" value="20">
                 velocities/vc-kts GT 203
                 <test logic="OR">

@@ -1,7 +1,7 @@
 <PropertyList>
 
-<nasal>
-	<load>
+    <nasal>
+        <load>
 		var livery_update = aircraft.livery_update.new("Aircraft/747-400/Models/Liveries");
 		
 		var rplayer = cmdarg();  
@@ -9,294 +9,294 @@
 		rplayer.getNode("controls/failures/wings/broken", 1).alias(rplayer.getNode("sim/multiplay/generic/int[0]")); 
 	</load>
 
-	<unload>
+        <unload>
 		livery_update.stop();
 	</unload>
-</nasal> 
-	
-<model>
-	<name>Pushback</name>
-	<path>Aircraft/747-400/Models/Autopush/Goldhofert.xml</path>
-	<offsets>
-		<x-m>-21.993</x-m>
-		<y-m>  0.000</y-m>
-		<z-m> -5.625</z-m>
-	</offsets>
-</model>
+    </nasal>
 
-<animation>
-	<object-name>Pushback</object-name>
-	<type>range</type>
-	<min-m>0</min-m>
-	<max-m>5000</max-m>
-</animation>
+    <model>
+        <name>Pushback</name>
+        <path>Aircraft/747-400/Models/Autopush/Goldhofert.xml</path>
+        <offsets>
+            <x-m>-21.993</x-m>
+            <y-m>  0.000</y-m>
+            <z-m> -5.625</z-m>
+        </offsets>
+    </model>
 
-<model>
-	<name>cockpit</name>
-	<path>Aircraft/747-400/Models/Cockpit/cockpit.xml</path> 
-</model>
+    <animation>
+        <object-name>Pushback</object-name>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>5000</max-m>
+    </animation>
 
-<animation>
-	<object-name>cockpit</object-name>
-	<type>range</type>
-	<min-m>0</min-m>
-	<max-m>500</max-m>
-</animation>
+    <model>
+        <name>cockpit</name>
+        <path>Aircraft/747-400/Models/Cockpit/cockpit.xml</path>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/747-400_fuselage.xml</path> 
-</model>
+    <animation>
+        <object-name>cockpit</object-name>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>500</max-m>
+    </animation>
 
-<model>
-	<name>gear</name>
-	<path>Aircraft/747-400/Models/747-400_gear.xml</path> 
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/747-400_fuselage.xml</path>
+    </model>
 
-<animation>
-	<object-name>gear</object-name>
-	<type>range</type>
-	<min-m>0</min-m>
-	<max-m>5000</max-m>
-</animation>
+    <model>
+        <name>gear</name>
+        <path>Aircraft/747-400/Models/747-400_gear.xml</path>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/747-400_wings.xml</path>
-	<name>Wings</name>
-</model>
-	
-<animation>
-	<type>select</type>
-	<object-name>Wings</object-name>
-	<object-name>gear</object-name>
-	<condition>
-		<equals>
-			<property>sim/current-view/internal</property>
-				<value>0</value>
-		</equals>
-	</condition>
-</animation>
+    <animation>
+        <object-name>gear</object-name>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>5000</max-m>
+    </animation>
 
-<!-- LANDING LIGHTS WINGS -->
+    <model>
+        <path>Aircraft/747-400/Models/747-400_wings.xml</path>
+        <name>Wings</name>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Outbd.Left</name>
-	<offsets>
-		<x-m>-6.5</x-m>
-		<y-m>-6</y-m>
-		<z-m>-1</z-m>
-	</offsets>
-</model>
+    <animation>
+        <type>select</type>
+        <object-name>Wings</object-name>
+        <object-name>gear</object-name>
+        <condition>
+            <equals>
+                <property>sim/current-view/internal</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
 
-<animation>
-	<type>select</type>
-	<object-name>LandingLight.Outbd.Left</object-name>
-	<condition>
-		<property>controls/lighting/landing-light-outbdl</property>
-	</condition>
-</animation>
+    <!-- LANDING LIGHTS WINGS -->
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Inbd.Left</name>
-	<offsets>
-		<x-m>-7.5</x-m>
-		<y-m>-4.9</y-m>
-		<z-m>-1</z-m>
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Outbd.Left</name>
+        <offsets>
+            <x-m>-6.5</x-m>
+            <y-m>-6</y-m>
+            <z-m>-1</z-m>
+        </offsets>
+    </model>
 
-<animation>
-	<type>select</type>
-	<object-name>LandingLight.Inbd.Left</object-name>
-	<condition>
-		<property>controls/lighting/landing-light-inbdl</property>
-	</condition>
-</animation>
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Outbd.Left</object-name>
+        <condition>
+            <property>controls/lighting/landing-light-outbdl</property>
+        </condition>
+    </animation>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Inbd.Right</name>
-	<offsets>
-		<x-m>-7.5</x-m>
-		<y-m>4.9</y-m>
-		<z-m>-1</z-m>
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Inbd.Left</name>
+        <offsets>
+            <x-m>-7.5</x-m>
+            <y-m>-4.9</y-m>
+            <z-m>-1</z-m>
+        </offsets>
+    </model>
 
-<animation>
-	<type>select</type>
-	<object-name>LandingLight.Inbd.Right</object-name>
-	<condition>
-		<property>controls/lighting/landing-light-inbdr</property>
-	</condition>
-</animation>
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Inbd.Left</object-name>
+        <condition>
+            <property>controls/lighting/landing-light-inbdl</property>
+        </condition>
+    </animation>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Outbd.Right</name>
-	<offsets>
-		<x-m>-6.5</x-m>
-		<y-m>6</y-m>
-		<z-m>-1</z-m>
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Inbd.Right</name>
+        <offsets>
+            <x-m>-7.5</x-m>
+            <y-m>4.9</y-m>
+            <z-m>-1</z-m>
+        </offsets>
+    </model>
 
-<animation>
-	<type>select</type>
-	<object-name>LandingLight.Outbd.Right</object-name>
-	<condition>
-		<property>controls/lighting/landing-light-outbdr</property>
-	</condition>
-</animation>
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Inbd.Right</object-name>
+        <condition>
+            <property>controls/lighting/landing-light-inbdr</property>
+        </condition>
+    </animation>
 
-<!-- LANDING LIGHTS NOSE -->
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Outbd.Right</name>
+        <offsets>
+            <x-m>-6.5</x-m>
+            <y-m>6</y-m>
+            <z-m>-1</z-m>
+        </offsets>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Taxi</name>
-	<offsets>
-		<x-m>-21.995</x-m>
-		<y-m> -0.220</y-m>
-		<z-m> -2.650</z-m>
-	</offsets>
-</model>
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Outbd.Right</object-name>
+        <condition>
+            <property>controls/lighting/landing-light-outbdr</property>
+        </condition>
+    </animation>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Taxi</name>
-	<offsets>
-		<x-m>-21.995</x-m>
-		<y-m>  0.220</y-m>
-		<z-m> -2.650</z-m>
-	</offsets>
-</model>
+    <!-- LANDING LIGHTS NOSE -->
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Turnoff.Left</name>
-	<offsets>
-		<x-m>-22.349</x-m>
-		<y-m> -0.190</y-m>
-		<z-m> -3.221</z-m>
-		<heading-deg>65</heading-deg>       
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Taxi</name>
+        <offsets>
+            <x-m>-21.995</x-m>
+            <y-m> -0.220</y-m>
+            <z-m> -2.650</z-m>
+        </offsets>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
-	<name>LandingLight.Turnoff.Right</name>
-	<offsets>
-		<x-m>-22.349</x-m>
-		<y-m>  0.190</y-m>
-		<z-m> -3.221</z-m>
-		<heading-deg>-65</heading-deg>       
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Taxi</name>
+        <offsets>
+            <x-m>-21.995</x-m>
+            <y-m>  0.220</y-m>
+            <z-m> -2.650</z-m>
+        </offsets>
+    </model>
 
-<animation> 
-	<type>select</type> 
-	<object-name>LandingLight.Taxi</object-name>
-	<condition>
-		<equals>
-			<property>/controls/lighting/taxi-lights</property> 
-			<value>1</value>
-		</equals>
-	</condition>
-</animation> 
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Turnoff.Left</name>
+        <offsets>
+            <x-m>-22.349</x-m>
+            <y-m> -0.190</y-m>
+            <z-m> -3.221</z-m>
+            <heading-deg>65</heading-deg>
+        </offsets>
+    </model>
 
-<animation> 
-	<type>select</type> 
-	<object-name>LandingLight.Turnoff.Left</object-name>
-	<condition>
-		<equals>
-			<property>/controls/lighting/turnoff-light-l</property> 
-			<value>1</value>
-		</equals>
-	</condition>
-</animation> 
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
+        <name>LandingLight.Turnoff.Right</name>
+        <offsets>
+            <x-m>-22.349</x-m>
+            <y-m>  0.190</y-m>
+            <z-m> -3.221</z-m>
+            <heading-deg>-65</heading-deg>
+        </offsets>
+    </model>
 
-<animation> 
-	<type>select</type> 
-	<object-name>LandingLight.Turnoff.Right</object-name>
-	<condition>
-		<equals>
-			<property>/controls/lighting/turnoff-light-r</property> 
-			<value>1</value>
-		</equals>
-	</condition>
-</animation> 
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Taxi</object-name>
+        <condition>
+            <equals>
+                <property>/controls/lighting/taxi-lights</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
 
-<animation> 
-	<type>select</type> 
-	<object-name>LandingLight.Turnoff.Left</object-name>
-	<object-name>LandingLight.Turnoff.Right</object-name>
-	<object-name>LandingLight.Taxi</object-name>
-	<condition>
-		<and>
-			<equals>
-				<property>/gear/gear/position-norm</property> 
-				<value>1</value>
-			</equals>
-			<equals>
-				<property>/gear/gear/wow</property> 
-				<value>1</value>
-			</equals>
-		</and>
-	</condition>
-</animation> 
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Turnoff.Left</object-name>
+        <condition>
+            <equals>
+                <property>/controls/lighting/turnoff-light-l</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
 
-<!-- ANTI-COLLISION LIGHTS -->
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Turnoff.Right</object-name>
+        <condition>
+            <equals>
+                <property>/controls/lighting/turnoff-light-r</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/strobe.xml</path>
-	<name>StrobeLight.Tail</name>
-	<offsets>
-		<x-m>38.65</x-m>
-		<y-m>0</y-m>
-		<z-m>2.55</z-m>
-	</offsets>
-</model>
+    <animation>
+        <type>select</type>
+        <object-name>LandingLight.Turnoff.Left</object-name>
+        <object-name>LandingLight.Turnoff.Right</object-name>
+        <object-name>LandingLight.Taxi</object-name>
+        <condition>
+            <and>
+                <equals>
+                    <property>/gear/gear/position-norm</property>
+                    <value>1</value>
+                </equals>
+                <equals>
+                    <property>/gear/gear/wow</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/beacon.xml</path>
-	<name>Beacon.Lower</name>
-	<offsets>
-		<x-m>-5.6</x-m>
-		<y-m>0</y-m>
-		<z-m>-3.2</z-m>
-		<pitch-deg>180</pitch-deg>
-	</offsets>
-</model>
+    <!-- ANTI-COLLISION LIGHTS -->
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/beacon.xml</path>
-	<name>Beacon.Upper</name>
-	<offsets>
-		<x-m>-15.75</x-m>
-		<y-m>0</y-m>
-		<z-m>5.15</z-m>
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/strobe.xml</path>
+        <name>StrobeLight.Tail</name>
+        <offsets>
+            <x-m>38.65</x-m>
+            <y-m>0</y-m>
+            <z-m>2.55</z-m>
+        </offsets>
+    </model>
 
-<!-- tail logo lights -->
+    <model>
+        <path>Aircraft/747-400/Models/Lights/beacon.xml</path>
+        <name>Beacon.Lower</name>
+        <offsets>
+            <x-m>-5.6</x-m>
+            <y-m>0</y-m>
+            <z-m>-3.2</z-m>
+            <pitch-deg>180</pitch-deg>
+        </offsets>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-logo.xml</path>
-	<offsets>
-		<x-m>36.94</x-m>
-		<y-m> 8.72</y-m>
-		<z-m> 3.61</z-m>
-	</offsets>
-</model>
+    <model>
+        <path>Aircraft/747-400/Models/Lights/beacon.xml</path>
+        <name>Beacon.Upper</name>
+        <offsets>
+            <x-m>-15.75</x-m>
+            <y-m>0</y-m>
+            <z-m>5.15</z-m>
+        </offsets>
+    </model>
 
-<model>
-	<path>Aircraft/747-400/Models/Lights/light-logo.xml</path>
-	<offsets>
-		<x-m>36.94</x-m>
-		<y-m>-8.72</y-m>
-		<z-m> 3.61</z-m>
-	</offsets>
-</model>
+    <!-- tail logo lights -->
+
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-logo.xml</path>
+        <offsets>
+            <x-m>36.94</x-m>
+            <y-m> 8.72</y-m>
+            <z-m> 3.61</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Lights/light-logo.xml</path>
+        <offsets>
+            <x-m>36.94</x-m>
+            <y-m>-8.72</y-m>
+            <z-m> 3.61</z-m>
+        </offsets>
+    </model>
 
 </PropertyList>

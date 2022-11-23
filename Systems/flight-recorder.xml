@@ -11,7 +11,7 @@
         <!-- include generic stuff -->
         <signals include="/Aircraft/Generic/flightrecorder/components/position.xml" />
         <signals include="/Aircraft/Generic/flightrecorder/components/controls.xml" />
-        <signals include="/Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+        <signals include="/Aircraft/Generic/flightrecorder/components/surfaces.xml" />
         <signals include="/Aircraft/Generic/flightrecorder/components/engine-jet.xml">
             <count type="int">4</count>
         </signals>
@@ -22,60 +22,77 @@
             <count type="int">8</count>
         </signals>
 
-        <signals>  <!-- now the custom properties -->
+        <signals>
+            <!-- now the custom properties -->
 
             <signals>
                 <!--  engine related signals -->
                 <count type="int">4</count>
                 <signal>
-                    <type>bool</type><property type="string">/controls/engines/engine[%i]/cutoff</property>
+                    <type>bool</type>
+                    <property type="string">/controls/engines/engine[%i]/cutoff</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property type="string">/controls/electric/engine[%i]/generator</property>
+                    <type>bool</type>
+                    <property type="string">/controls/electric/engine[%i]/generator</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property type="string">/controls/electric/bus-tie[%i]</property>
+                    <type>bool</type>
+                    <property type="string">/controls/electric/bus-tie[%i]</property>
                 </signal>
                 <signal>
-                    <type>float</type><property type="string">/engines/engine[%i]/reverser-pos-norm</property>
+                    <type>float</type>
+                    <property type="string">/engines/engine[%i]/reverser-pos-norm</property>
                 </signal>
             </signals>
 
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/instruments-norm</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/instruments-norm</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/nav-lights</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/nav-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/beacon</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/beacon</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/strobe</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/strobe</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/logo-lights</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/logo-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/landing-light-inbdl</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/landing-light-inbdl</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/landing-light-inbdr</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/landing-light-inbdr</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/landing-light-outbdl</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/landing-light-outbdl</property>
             </signal>
             <signal>
-                <type>bool</type><property type="string">/controls/lighting/landing-light-outbdr</property>
+                <type>bool</type>
+                <property type="string">/controls/lighting/landing-light-outbdr</property>
             </signal>
             <signal>
-                <type>int16</type><property type="string">/it-autoflight/input/kts</property>
+                <type>int16</type>
+                <property type="string">/it-autoflight/input/kts</property>
             </signal>
             <signal>
-                <type>int</type><property type="string">/it-autoflight/input/alt</property>
+                <type>int</type>
+                <property type="string">/it-autoflight/input/alt</property>
             </signal>
             <signal>
-                <type>int16</type><property type="string">/it-autoflight/input/hdg</property>
+                <type>int16</type>
+                <property type="string">/it-autoflight/input/hdg</property>
             </signal>
 
             <signals>

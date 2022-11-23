@@ -6,141 +6,141 @@
 
 <PropertyList>
 
- <nasal>
-	<Boeing747>
-		<file>Aircraft/747-400/Nasal/autopilot.nas</file>
-		<file>Aircraft/747-400/Nasal/autopilot-routemanager.nas</file>
-		<file>Aircraft/747-400/Nasal/copilot.nas</file>
-		<file>Aircraft/747-400/Nasal/doors.nas</file>
-		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/elec.nas</file>
-		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/eng.nas</file>
-		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/fuel.nas</file>
-		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/gear.nas</file>
-		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/primary.nas</file>
-		<file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/stat.nas</file>
-		<file>Aircraft/747-400/Nasal/eicas.nas</file> <!-- must load after EICAS -->
-		<file>Aircraft/747-400/Nasal/system.nas</file>
-		<file>Aircraft/747-400/Nasal/vspeeds.nas</file>
-		<file>Aircraft/747-400/Nasal/wipers.nas</file>
-		<file>Aircraft/Generic/limits.nas</file>
-	</Boeing747>
-	<cdu>
-		<file>Aircraft/Instruments-3d/cdu/boeing.nas</file>
-	</cdu>
-	<dual_control_tools>
-		<file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
-	</dual_control_tools>
-	<aircraft_dual_control>
-		<file>Aircraft/747-400/DualControl/747-400-dual-control.nas</file>
-	</aircraft_dual_control>
-	<dual_control>
-		<file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
-	</dual_control>
-	<electrical>
-		<file>Aircraft/747-400/Nasal/744_elec.nas</file>
-	</electrical>
-	<hydraulic>
-		<file>Aircraft/747-400/Nasal/744_hyd.nas</file>
-	</hydraulic>
-	<tyresmoke>
-		<file>Aircraft/747-400/Nasal/tyresmoke.nas</file>
-	</tyresmoke>
-	<walk>
-		<file>Aircraft/747-400/Nasal/walk.nas</file>
-	</walk>
- </nasal>
+    <nasal>
+        <Boeing747>
+            <file>Aircraft/747-400/Nasal/autopilot.nas</file>
+            <file>Aircraft/747-400/Nasal/autopilot-routemanager.nas</file>
+            <file>Aircraft/747-400/Nasal/copilot.nas</file>
+            <file>Aircraft/747-400/Nasal/doors.nas</file>
+            <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/elec.nas</file>
+            <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/eng.nas</file>
+            <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/fuel.nas</file>
+            <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/gear.nas</file>
+            <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/primary.nas</file>
+            <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/stat.nas</file>
+            <file>Aircraft/747-400/Nasal/eicas.nas</file> <!-- must load after EICAS -->
+            <file>Aircraft/747-400/Nasal/system.nas</file>
+            <file>Aircraft/747-400/Nasal/vspeeds.nas</file>
+            <file>Aircraft/747-400/Nasal/wipers.nas</file>
+            <file>Aircraft/Generic/limits.nas</file>
+        </Boeing747>
+        <cdu>
+            <file>Aircraft/Instruments-3d/cdu/boeing.nas</file>
+        </cdu>
+        <dual_control_tools>
+            <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+        </dual_control_tools>
+        <aircraft_dual_control>
+            <file>Aircraft/747-400/DualControl/747-400-dual-control.nas</file>
+        </aircraft_dual_control>
+        <dual_control>
+            <file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
+        </dual_control>
+        <electrical>
+            <file>Aircraft/747-400/Nasal/744_elec.nas</file>
+        </electrical>
+        <hydraulic>
+            <file>Aircraft/747-400/Nasal/744_hyd.nas</file>
+        </hydraulic>
+        <tyresmoke>
+            <file>Aircraft/747-400/Nasal/tyresmoke.nas</file>
+        </tyresmoke>
+        <walk>
+            <file>Aircraft/747-400/Nasal/walk.nas</file>
+        </walk>
+    </nasal>
 
- <sim>
+    <sim>
 
-  <description>Boeing 747-400 (First Officer)</description>
-  <author>Gijs de Rooy, Ivan Ngeow, Markus Bulik</author>
-  <status>early production</status>
-  <rating>
-   <FDM type="int">3</FDM>
-   <systems type="int">3</systems>
-   <cockpit type="int">3</cockpit>
-   <model type="int">3</model>
-  </rating>
-  <variant-of>747-400</variant-of>
-  <version>20111002</version>
+        <description>Boeing 747-400 (First Officer)</description>
+        <author>Gijs de Rooy, Ivan Ngeow, Markus Bulik</author>
+        <status>early production</status>
+        <rating>
+            <FDM type="int">3</FDM>
+            <systems type="int">3</systems>
+            <cockpit type="int">3</cockpit>
+            <model type="int">3</model>
+        </rating>
+        <variant-of>747-400</variant-of>
+        <version>20111002</version>
 
-  <flight-model>null</flight-model>
+        <flight-model>null</flight-model>
 
-  <sound>
-   <path>Aircraft/747-400/Sounds/747-sound.xml</path>
-   <switch type = "bool"></switch>
-  </sound>
+        <sound>
+            <path>Aircraft/747-400/Sounds/747-sound.xml</path>
+            <switch type="bool"></switch>
+        </sound>
 
-  <startup>
-   <splash-texture>Aircraft/747-400/splash.png</splash-texture>
-  </startup>
+        <startup>
+            <splash-texture>Aircraft/747-400/splash.png</splash-texture>
+        </startup>
 
-  <airport>
-   <runways>
-    <start-offset-m>50</start-offset-m>
-   </runways>
-  </airport>
+        <airport>
+            <runways>
+                <start-offset-m>50</start-offset-m>
+            </runways>
+        </airport>
 
-  <model>
-   <path>Aircraft/747-400/Models/747-400-fo.xml</path>
-  </model>
+        <model>
+            <path>Aircraft/747-400/Models/747-400-fo.xml</path>
+        </model>
 
-  <hud>
-   <enable3d n="1">false</enable3d>
-  </hud>
+        <hud>
+            <enable3d n="1">false</enable3d>
+        </hud>
 
-  <!-- VIEWS -->
+        <!-- VIEWS -->
 
-  <view n="0">
-   <name>First Officer</name>
-   <type>lookfrom</type>
-   <internal type="bool">false</internal>
-   <config>
-    <from-model type="bool">false</from-model>
-    <from-model-idx type="int">0</from-model-idx>
-    <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
-    <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
-    <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
-    <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
-    <eye-pitch-deg-path>/orientation/pitch-deg</eye-pitch-deg-path>
-    <eye-roll-deg-path>/orientation/roll-deg</eye-roll-deg-path>
-    <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
-    <x-offset-m type="double">0.55</x-offset-m>
-    <y-offset-m type="double">3.8</y-offset-m>
-    <z-offset-m type="double">-24.05</z-offset-m>
-    <pitch-offset-deg>-10</pitch-offset-deg>
-    <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
-   </config>
-   <dynamic>
-    <enabled type="bool">false</enabled>
-   </dynamic>
-  </view>
+        <view n="0">
+            <name>First Officer</name>
+            <type>lookfrom</type>
+            <internal type="bool">false</internal>
+            <config>
+                <from-model type="bool">false</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+                <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+                <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+                <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+                <eye-pitch-deg-path>/orientation/pitch-deg</eye-pitch-deg-path>
+                <eye-roll-deg-path>/orientation/roll-deg</eye-roll-deg-path>
+                <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+                <x-offset-m type="double">0.55</x-offset-m>
+                <y-offset-m type="double">3.8</y-offset-m>
+                <z-offset-m type="double">-24.05</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
+            </config>
+            <dynamic>
+                <enabled type="bool">false</enabled>
+            </dynamic>
+        </view>
 
-  <view n="101">
-   <name>Captain</name>
-   <type>lookfrom</type>
-   <internal type="bool">true</internal>
-   <config>
-    <from-model type="bool">true</from-model>
-    <from-model-idx type="int">0</from-model-idx>
-    <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
-    <x-offset-m type="double">-0.55</x-offset-m>
-    <y-offset-m type="double">3.7</y-offset-m>
-    <z-offset-m type="double">-24.05</z-offset-m>
-    <pitch-offset-deg>-10</pitch-offset-deg>
-    <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
-   </config>
-   <dynamic>
-    <enabled type="bool">false</enabled>
-   </dynamic>
-  </view>
+        <view n="101">
+            <name>Captain</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+                <x-offset-m type="double">-0.55</x-offset-m>
+                <y-offset-m type="double">3.7</y-offset-m>
+                <z-offset-m type="double">-24.05</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
+            </config>
+            <dynamic>
+                <enabled type="bool">false</enabled>
+            </dynamic>
+        </view>
 
-  <chase-distance-m type="double" archive="y">-90.0</chase-distance-m>
+        <chase-distance-m type="double" archive="y">-90.0</chase-distance-m>
 
-  <help>
-   <title>Boeing 747-400</title>
+        <help>
+            <title>Boeing 747-400</title>
 
-   <text>
+            <text>
 ===Startup======
 1. Press the continuous ignition switch on the overhead panel.
 2. Pull the start select switch for engine #4.
@@ -160,35 +160,35 @@
 2. Turn continuous ignition OFF.
    </text>
 
-  </help>
+        </help>
 
-  <menubar>
-   <default>
+        <menubar>
+            <default>
 
-    <menu n="10">
-     <label>Boeing 747-400</label>
-     <enabled type="bool">true</enabled>
+                <menu n="10">
+                    <label>Boeing 747-400</label>
+                    <enabled type="bool">true</enabled>
 
-     <item>
-      <label>Select MP-pilot</label>
-      <binding>
-	 <command>nasal</command>
-	 <script>
+                    <item>
+                        <label>Select MP-pilot</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
        dual_control_tools.copilot_dialog.show(aircraft_dual_control.pilot_type);
 	 </script>
-      </binding>
-     </item>
+                        </binding>
+                    </item>
 
-    </menu>
-   </default>
-  </menubar>
+                </menu>
+            </default>
+        </menubar>
 
- </sim>
+    </sim>
 
- <controls>
-  <flight>
-   <flaps type="double"/>
-  </flight>
- </controls>
+    <controls>
+        <flight>
+            <flaps type="double" />
+        </flight>
+    </controls>
 
 </PropertyList>

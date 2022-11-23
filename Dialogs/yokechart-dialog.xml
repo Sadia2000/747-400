@@ -1,70 +1,70 @@
 <?xml version="1.0"?>
 <PropertyList>
 
-  <name>yokechart-dialog</name>
-  <layout>vbox</layout>
-
-  <group>
-    <layout>hbox</layout>
-
-	<text>
-		<label>Yoke Chart</label>
-	</text>
-
-    <empty>
-      <stretch>true</stretch>
-    </empty>
-
-    <button>
-      <legend/>
-      <key>Esc</key>
-      <pref-width>16</pref-width>
-      <pref-height>16</pref-height>
-      <border>2</border>
-      <binding>
-        <command>dialog-apply</command>
-      </binding>
-      <binding>
-        <command>dialog-close</command>
-      </binding>
-    </button>
-  </group>
-
-  <hrule/>
-
-  <group>
+    <name>yokechart-dialog</name>
     <layout>vbox</layout>
-	
-	<text>
-		<label>ICAO code</label>
-	</text>
 
-    <input>
-      <legend>ICAO</legend>
-      <width>70</width>
-      <height>25</height>
-      <border>2</border>
-      <property>/instrumentation/groundradar/id</property>
-      <live>true</live>
-      <binding>
-        <command>dialog-apply</command>
-      </binding>
-    </input>
-	
-	<text>
-		<label>Zoom level</label>
-	</text>
+    <group>
+        <layout>hbox</layout>
 
-    <slider>
-      <min>0.2</min>
-      <max>3</max>
-      <property>/instrumentation/groundradar/range</property>
-      <binding>
-        <command>dialog-apply</command>
-      </binding>
-    </slider>
+        <text>
+            <label>Yoke Chart</label>
+        </text>
 
-  </group>
+        <empty>
+            <stretch>true</stretch>
+        </empty>
+
+        <button>
+            <legend />
+            <key>Esc</key>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <border>2</border>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+
+    <hrule />
+
+    <group>
+        <layout>vbox</layout>
+
+        <text>
+            <label>ICAO code</label>
+        </text>
+
+        <input>
+            <legend>ICAO</legend>
+            <width>70</width>
+            <height>25</height>
+            <border>2</border>
+            <property>/instrumentation/groundradar/id</property>
+            <live>true</live>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+
+        <text>
+            <label>Zoom level</label>
+        </text>
+
+        <slider>
+            <min>0.2</min>
+            <max>3</max>
+            <property>/instrumentation/groundradar/range</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </slider>
+
+    </group>
 
 </PropertyList>
  
