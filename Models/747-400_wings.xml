@@ -466,7 +466,7 @@
  <factor>-0.0000040</factor>
  <offset-deg>0</offset-deg>
  <center>
-  <x-m>0</x-m>
+  
   <y-m>3.66</y-m>
   <z-m>-1.25</z-m>
  </center>
@@ -507,7 +507,7 @@
         <property>fdm/jsbsim/forces/wing[3]</property>
         <factor>-0.0004</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>13.0</y-m>
             <z-m>-1.25</z-m>
         </center>
@@ -529,7 +529,7 @@
         <property>fdm/jsbsim/forces/wing[4]</property>
         <factor>-0.0004</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>21.5</y-m>
             <z-m>-1.25</z-m>
         </center>
@@ -590,7 +590,7 @@
  <factor>-0.0000040</factor>
  <offset-deg>0</offset-deg>
  <center>
-  <x-m>0</x-m>
+  
   <y-m>-3.66</y-m>
   <z-m>-1.25</z-m>
  </center>
@@ -631,7 +631,7 @@
         <property>fdm/jsbsim/forces/wing[2]</property>
         <factor>-0.0004</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-13.0</y-m>
             <z-m>-1.25</z-m>
         </center>
@@ -653,7 +653,7 @@
         <property>fdm/jsbsim/forces/wing[1]</property>
         <factor>-0.0004</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-21.5</y-m>
             <z-m>-1.25</z-m>
         </center>

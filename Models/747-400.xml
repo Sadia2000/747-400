@@ -253,7 +253,7 @@
         <name>StrobeLight.Tail</name>
         <offsets>
             <x-m>38.65</x-m>
-            <y-m>0</y-m>
+            
             <z-m>2.55</z-m>
         </offsets>
     </model>
@@ -263,7 +263,7 @@
         <name>Beacon.Lower</name>
         <offsets>
             <x-m>-5.6</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-3.2</z-m>
             <pitch-deg>180</pitch-deg>
         </offsets>
@@ -274,7 +274,7 @@
         <name>Beacon.Upper</name>
         <offsets>
             <x-m>-15.75</x-m>
-            <y-m>0</y-m>
+            
             <z-m>5.15</z-m>
         </offsets>
     </model>

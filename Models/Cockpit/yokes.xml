@@ -144,7 +144,7 @@
         </axis>
         <center>
             <x-m>0.757</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.057</z-m>
         </center>
     </animation>
@@ -161,7 +161,7 @@
         </axis>
         <center>
             <x-m>0.757</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.057</z-m>
         </center>
     </animation>

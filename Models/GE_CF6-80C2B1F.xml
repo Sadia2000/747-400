@@ -30,9 +30,9 @@
         <property alias="../../params/n1" />
         <factor>38.54</factor>
         <center>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
+            
         </center>
         <axis>
             <x>-1.0</x>

@@ -66,8 +66,8 @@ Link: https://github.com/YV3399/737-800YV
         </condition>
         <offsets>
             <x-m>-10.5</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
         </offsets>
     </model>
 
@@ -87,9 +87,9 @@ Link: https://github.com/YV3399/737-800YV
             </less-than>
         </condition>
         <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
+            
         </offsets>
     </model>
 
@@ -108,9 +108,9 @@ Link: https://github.com/YV3399/737-800YV
             </and>
         </condition>
         <offsets>
-            <x-m>0</x-m>
+            
             <y-m>-10</y-m>
-            <z-m>0</z-m>
+            
         </offsets>
     </model>
 
@@ -130,8 +130,8 @@ Link: https://github.com/YV3399/737-800YV
         </condition>
         <offsets>
             <x-m>-11</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
         </offsets>
     </model>
 
@@ -151,8 +151,8 @@ Link: https://github.com/YV3399/737-800YV
         </condition>
         <offsets>
             <x-m>-5.5</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
         </offsets>
     </model>
 

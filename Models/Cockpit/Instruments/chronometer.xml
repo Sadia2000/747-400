@@ -13,7 +13,7 @@ Boeing style chronometer, by Syd Adams
         <factor>6</factor>
         <center>
             <x-m>0.0</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.0</z-m>
         </center>
         <axis>
@@ -33,7 +33,7 @@ Boeing style chronometer, by Syd Adams
             <entry><ind>1</ind><dep>35</dep></entry>
         </interpolation>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.032</y-m>
             <z-m>-0.033</z-m>
         </center>
@@ -55,7 +55,7 @@ Boeing style chronometer, by Syd Adams
             <entry><ind>3</ind><dep>90</dep></entry>
         </interpolation>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.029</y-m>
             <z-m>-0.033</z-m>
         </center>
@@ -76,7 +76,7 @@ Boeing style chronometer, by Syd Adams
             <entry><ind>1</ind><dep>35</dep></entry>
         </interpolation>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.032</y-m>
             <z-m>0.034</z-m>
         </center>
