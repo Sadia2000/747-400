@@ -12,7 +12,7 @@ Boeing style chronometer, by Syd Adams
         <property>instrumentation/clock/ET-sec</property>
         <factor>6</factor>
         <center>
-            <x-m>0.0</x-m>
+            
             
             <z-m>0.0</z-m>
         </center>

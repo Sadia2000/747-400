@@ -158,7 +158,7 @@
         </interpolation>
         <center>
             <x-m>-21.991</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-2</z-m>
         </center>
         <axis>
@@ -185,7 +185,7 @@
         <factor>-70</factor>
         <center>
             <x-m>-21.991</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-2</z-m>
         </center>
         <axis>

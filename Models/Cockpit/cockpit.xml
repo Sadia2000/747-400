@@ -553,8 +553,8 @@
             <z-m>0.530</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
 
         </axis>
     </animation>
@@ -630,8 +630,8 @@
             <z-m>0.530</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
 
         </axis>
     </animation>
@@ -707,8 +707,8 @@
             <z-m>0.530</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
 
         </axis>
     </animation>
@@ -784,8 +784,8 @@
             <z-m>0.530</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
 
         </axis>
     </animation>
@@ -1612,9 +1612,9 @@
         <property>controls/flight/rudder</property>
         <factor>0.06</factor>
         <axis>
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
+            <x>1</x>
+            
+            
         </axis>
     </animation>
 
@@ -1624,9 +1624,9 @@
         <property>controls/flight/rudder</property>
         <factor>-0.06</factor>
         <axis>
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
+            <x>1</x>
+            
+            
         </axis>
     </animation>
 
@@ -1636,9 +1636,9 @@
         <property>controls/gear/brake-left</property>
         <factor>-10</factor>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
-            <z>0.0</z>
+            
+            <y>1</y>
+            
         </axis>
         <center>
             <x-m>0.757</x-m>
@@ -1653,9 +1653,9 @@
         <property>controls/gear/brake-right</property>
         <factor>-10</factor>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
-            <z>0.0</z>
+            
+            <y>1</y>
+            
         </axis>
         <center>
             <x-m>0.757</x-m>
