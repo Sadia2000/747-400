@@ -1,18 +1,6 @@
 <PropertyList>
 
-    <nasal>
-        <load>
-		var livery_update = aircraft.livery_update.new("Aircraft/747-400/Models/Liveries");
-		
-		var rplayer = cmdarg();  
-		rplayer.getNode("controls/doors/cargo1/position-norm", 1).alias(rplayer.getNode("sim/multiplay/generic/float[0]")); 
-		rplayer.getNode("controls/failures/wings/broken", 1).alias(rplayer.getNode("sim/multiplay/generic/int[0]")); 
-	</load>
-
-        <unload>
-		livery_update.stop();
-	</unload>
-    </nasal>
+    2
 
     <model>
         <name>Pushback</name>
