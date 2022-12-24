@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Delta Air Lines</name>
                 <texture>Liveries/DAL.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

@@ -3,15 +3,6 @@
     <path>747-400_wings.ac</path>
 
     <animation>
-        <type>material</type>
-        <object-name>winglet_left</object-name>
-        <object-name>winglet_right</object-name>
-        <property-base>sim/model/livery</property-base>
-        <texture-prop>texture</texture-prop>
-        <texture>BOE.png</texture>
-    </animation>
-
-    <animation>
         <type>select</type>
         <condition>
             <not>

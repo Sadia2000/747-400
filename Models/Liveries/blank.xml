@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Blank livery</name> <!-- livery name -->
                 <texture>Liveries/blank.png</texture> <!-- livery image -->
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Lufthansa</name>
                 <texture>Liveries/DLH.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

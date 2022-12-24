@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Air Canada (1994)</name>
                 <texture>Liveries/ACA-1994.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

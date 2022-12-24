@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">KLM Royal Dutch Airlines (2002)</name>
                 <texture>Liveries/KLM-2002.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">British Airways(Negus, 1974)</name>
                 <texture>Liveries/BAW-NEGUS.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

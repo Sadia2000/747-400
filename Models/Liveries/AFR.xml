@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Air France</name>
                 <texture>Liveries/AFR.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

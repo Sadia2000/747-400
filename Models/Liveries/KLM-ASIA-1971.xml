@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">KLM Asia (1971)</name>
                 <texture>Liveries/KLM-ASIA-1971.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

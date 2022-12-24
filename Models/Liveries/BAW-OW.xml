@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">British Airways(oneworld)</name>
                 <texture>Liveries/BAW-OW.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Lufthansa (FC Bayern)</name>
                 <texture>Liveries/DLH-BAYERN.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

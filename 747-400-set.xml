@@ -91,6 +91,9 @@
             <hide-yoke type="bool">0</hide-yoke>
             <autopush include="autopush-config.xml" />
             <fallback-model-index>352</fallback-model-index>
+			<livery>
+				<livery-change type="int">0</livery-change>
+			</livery>
         </model>
 
         <systems>
@@ -1024,6 +1027,7 @@ left mouse button and counter clockwise using the middle mouse button.
             <file>Aircraft/747-400/Nasal/vspeeds.nas</file>
             <file>Aircraft/747-400/Nasal/wipers.nas</file>
             <file>Aircraft/Generic/limits.nas</file>
+			<file>Aircraft/747-400/Nasal/CanvasLiverySystem.nas</file>
         </Boeing747>
         <cdu>
             <file>Aircraft/747-400/Nasal/CDU/displays.nas</file>

@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Lufthansa (Boeing Partnership)</name>
                 <texture>Liveries/DLH-BOEING.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>

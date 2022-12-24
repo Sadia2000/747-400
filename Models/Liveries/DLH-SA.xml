@@ -6,6 +6,7 @@
             <livery>
                 <name type="string">Lufthansa (Star Alliance)</name>
                 <texture>Liveries/DLH-SA.png</texture>
+				<livery-change>1</livery-change>
             </livery>
         </model>
     </sim>
