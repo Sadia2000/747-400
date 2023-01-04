@@ -7,7 +7,7 @@ To install this Add-On, one MUST have a <a href=https://www.flightgear.org/downl
 Extract the file like you would've done with any other Addon Aircraft.
 Move the unpacked directory to your custom addon aircraft directory you've specified.
 
-Rename the directory to <b>747-400</b>.
-Make sure that the <b>747-400</b> directory does not contain another one (this can happen with WinRAR). If so, move the inner <b>747-400</b> directory outside.
+Rename the extracted directory/folder to <b>747-400</b>.
+Make sure that the <b>747-400</b> directory does not contain another subdirectory/sub-folder (this can happen with WinRAR). If so, move the inner <b>747-400</b> directory/folder outside.
 
 To update, delete the <b>747-400</b> directory and install the latest version.
