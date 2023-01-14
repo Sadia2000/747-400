@@ -280,6 +280,10 @@
                 <name>w/W</name>
                 <desc>Walk for-/backwards</desc>
             </key>
+            <key>
+                <name>E</name>
+                <desc>Idle Thrust</desc>
+            </key>
 
             <text>
 All buttons/switches in the cockpit can be controlled using the mouse. Most buttons exist of a
@@ -735,6 +739,20 @@ left mouse button and counter clockwise using the middle mouse button.
                     <property>/controls/engines/engine[3]/reverser</property>
                 </binding>
             </key>
+		<key n="102">
+			<name>f</name>
+			<desc>Thrust Lever Full</desc>
+                	<binding>
+                    		<command>property-assign</command>
+                    		<property>/it-autoflight/input/athr</property>
+                    		<value type="int">1</value>
+                	</binding>
+                	<binding>
+                    		<command>property-assign</command>
+                    		<property>/it-autoflight/input/toga</property>
+                    		<value type="int">1</value>
+                	</binding>
+		</key>
             <key n='356'>
                 <name>Ctrl-Left</name>
                 <desc>Previous 2D panel</desc>
