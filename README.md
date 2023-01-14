@@ -30,6 +30,9 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 </ul><br>
 <br>
 
+For more detailed information, visit the Wiki page:
+https://github.com/Sadia2000/747-400/wiki
+
 # Installation
 
 For the installation process, <a href=https://github.com/Sadia2000/747-400/blob/master/INSTALL.md><b>CLICK ME</b></a>
