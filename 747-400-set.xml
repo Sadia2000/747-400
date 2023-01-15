@@ -284,6 +284,10 @@
                 <name>E</name>
                 <desc>Idle Thrust</desc>
             </key>
+            <key>
+                <name>f</name>
+                <desc>TOGA (Takeoff/Go Around) Switch</desc>
+            </key>
 
             <text>
 All buttons/switches in the cockpit can be controlled using the mouse. Most buttons exist of a
@@ -741,7 +745,7 @@ left mouse button and counter clockwise using the middle mouse button.
             </key>
 		<key n="102">
 			<name>f</name>
-			<desc>Thrust Lever Full</desc>
+			<desc>TOGA Switch</desc>
                 	<binding>
                     		<command>property-assign</command>
                     		<property>/it-autoflight/input/athr</property>
