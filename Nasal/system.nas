@@ -189,7 +189,7 @@ var autostart = func {
 	setprop("/controls/pneumatic/pack-control[3]",1);
 	#setprop("/controls/engines/auto-ignition",1);
 	var autostartCutoff = func {
-		if (getprop("/engines/engine[0]/n2") > 25) {
+		if (getprop("/engines/engine[0]/n2") > 17) {
 			setprop("/controls/engines/engine[0]/cutoff",0);
 			setprop("/controls/engines/engine[1]/cutoff",0);
 			setprop("/controls/engines/engine[2]/cutoff",0);
