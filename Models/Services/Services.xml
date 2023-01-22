@@ -13,12 +13,14 @@ Link: https://github.com/YV3399/737-800YV
             <and>
                 <property>controls/switches/cargo_ramp</property>
                 <less-than>
-                    <property>velocities/airspeed-kt</property>
+                    <property>velocities/groundspeed-kt</property>
                     <value>1</value>
                 </less-than>
             </and>
         </condition>
     </model>
+    
+ 
     <!-- Fuel truck -->
 
     <model>
@@ -28,7 +30,7 @@ Link: https://github.com/YV3399/737-800YV
             <and>
                 <property>controls/switches/Fuel</property>
                 <less-than>
-                    <property>velocities/airspeed-kt</property>
+                    <property>velocities/groundspeed-kt</property>
                     <value>1</value>
                 </less-than>
             </and>
@@ -42,14 +44,14 @@ Link: https://github.com/YV3399/737-800YV
             <and>
                 <property>controls/switches/Fuel-pipe</property>
                 <less-than>
-                    <property>velocities/airspeed-kt</property>
+                    <property>velocities/groundspeed-kt</property>
                     <value>1</value>
                 </less-than>
             </and>
         </condition>
     </model>
 
-    <!-- Catering Vehicle Front -->
+    <!-- Catering Vehicle Front
 
     <model>
         <name>Cateringback Vehicle</name>
@@ -60,7 +62,7 @@ Link: https://github.com/YV3399/737-800YV
                 <value type="bool">true</value>
             </equals>
             <less-than>
-                <property>velocities/airspeed-kt</property>
+                <property>velocities/groundspeed-kt</property>
                 <value>2</value>
             </less-than>
         </condition>
@@ -69,9 +71,9 @@ Link: https://github.com/YV3399/737-800YV
             
             
         </offsets>
-    </model>
+    </model>-->
 
-    <!-- Catering Vehicle Rear -->
+    <!-- Catering Vehicle Rear
 
     <model>
         <name>Cateringback Vehicle</name>
@@ -82,7 +84,7 @@ Link: https://github.com/YV3399/737-800YV
                 <value type="bool">true</value>
             </equals>
             <less-than>
-                <property>velocities/airspeed-kt</property>
+                <property>velocities/groundspeed-kt</property>
                 <value>2</value>
             </less-than>
         </condition>
@@ -91,9 +93,9 @@ Link: https://github.com/YV3399/737-800YV
             
             
         </offsets>
-    </model>
+    </model>-->
 
-    <!-- Bus -->
+    <!-- Bus
 
     <model>
         <name>Bus</name>
@@ -112,9 +114,9 @@ Link: https://github.com/YV3399/737-800YV
             <y-m>-10</y-m>
             
         </offsets>
-    </model>
+    </model>-->
 
-    <!-- Passenger Stairway (Front)-->
+    <!-- Passenger Stairway (Front)
 
     <model>
         <name>Cone</name>
@@ -133,9 +135,9 @@ Link: https://github.com/YV3399/737-800YV
             
             
         </offsets>
-    </model>
+    </model>-->
 
-    <!-- Passenger Stairway (Rear)-->
+    <!-- Passenger Stairway (Rear)
 
     <model>
         <name>Cone</name>
@@ -154,7 +156,7 @@ Link: https://github.com/YV3399/737-800YV
             
             
         </offsets>
-    </model>
+    </model>-->
 
     <!-- GPU-->
 
@@ -165,7 +167,7 @@ Link: https://github.com/YV3399/737-800YV
             <and>
                 <property>controls/switches/gpu</property>
                 <less-than>
-                    <property>velocities/airspeed-kt</property>
+                    <property>velocities/groundspeed-kt</property>
                     <value>1</value>
                 </less-than>
             </and>
