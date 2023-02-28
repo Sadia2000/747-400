@@ -1,20 +1,16 @@
 var latdeg2dmm = func(deglatpos) {
 var deg_int = int(deglatpos);
-var min = int((deglatpos - deg_int) * 60);
-var dotmin_int = int((((deglatpos - deg_int) * 60) - min) * 10);
-if(abs(min) < 10){
-var outputmin = "0"~abs(dotmin_int);
-}else{
-var outputmin = abs(dotmin_int);
-}
-outputlatmin = outputmin~"."~abs(dotmin_int);
+var decimal = int((deglatpos - deg_int) * 60);
+outputlatmin = decimal;
 if(deglatpos < 0){
 var nordsud = "S";
+outputlatmin = -1 * (outputlatmin);
+deg_int = -1 * (deg_int);
 }else{
 var nordsud = "N";
 }
 			var outputlatdeg = sprintf("%02.f",abs(deg_int));
-var outputlat = nordsud~outputlatdeg~"g"~outputlatmin;
+var outputlat = nordsud~outputlatdeg~"g"~sprintf("%02.1f",outputlatmin);
 return outputlat;
 }
 
@@ -22,22 +18,18 @@ return outputlat;
 
 var londeg2dmm = func(deglonpos) {
 var deg_int = int(deglonpos);
-var min = int((deglonpos - deg_int) * 60);
-var dotmin_int = int((((deglonpos - deg_int) * 60) - min) * 10);
-if(abs(min) < 10){
-var outputmin = "0"~abs(dotmin_int);
-}else{
-var outputmin = abs(dotmin_int);
-}
-outputlonmin = outputmin~"."~abs(dotmin_int);
+var decimal = int((deglonpos - deg_int) * 60);
+outputlonmin = decimal;
 if(deglonpos < 0){
 var estwest = "W";
+outputlonmin = -1 * (outputlonmin);
+deg_int = -1 * (deg_int);
 }else{
 var estwest = "E";
 }
-			var outputlondeg = sprintf("%03.f",abs(deg_int));
-
-var outputlon = estwest~outputlondeg~"g"~outputlonmin;
+			var outputlondeg = sprintf("%02.f",abs(deg_int));
+			
+var outputlon = estwest~outputlondeg~"g"~sprintf("%02.1f",outputlonmin);
 return outputlon;
 }
 
