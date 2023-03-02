@@ -1,6 +1,6 @@
 var latdeg2dmm = func(deglatpos) {
 var deg_int = int(deglatpos);
-var decimal = int((deglatpos - deg_int) * 60);
+var decimal = (deglatpos - deg_int) * 60;
 outputlatmin = decimal;
 if(deglatpos < 0){
 var nordsud = "S";
@@ -18,7 +18,7 @@ return outputlat;
 
 var londeg2dmm = func(deglonpos) {
 var deg_int = int(deglonpos);
-var decimal = int((deglonpos - deg_int) * 60);
+var decimal = (deglonpos - deg_int) * 60;
 outputlonmin = decimal;
 if(deglonpos < 0){
 var estwest = "W";
