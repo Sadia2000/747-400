@@ -88,6 +88,7 @@ var Input = {
 	ap2Avail: props.globals.initNode("/it-autoflight/input/ap2-avail", 1, "BOOL"),
 	athr: props.globals.initNode("/it-autoflight/input/athr", 0, "BOOL"),
 	athrAvail: props.globals.initNode("/it-autoflight/input/athr-avail", 1, "BOOL"),
+	athrArm: props.globals.initNode("/it-autoflight/custom/at-arm", 0, "BOOL"),
 	altDiff: 0,
 	bankLimitSw: props.globals.initNode("/it-autoflight/input/bank-limit-sw", 0, "INT"),
 	bankLimitSwTemp: 0,
@@ -574,9 +575,11 @@ var ITAF = {
 	},
 	athrMaster: func(s) {
 		if (s == 1) {
+		if (Input.athrArm.getBoolValue() == 1){
 			if (Input.athrAvail.getBoolValue()) {
 				Output.athr.setBoolValue(1);
 			}
+		}
 		} else {
 			Output.athr.setBoolValue(0);
 		}
