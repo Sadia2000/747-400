@@ -312,12 +312,6 @@ update();
 clear();
 }
 }
-if(button == "L6"){
-if(deletekey == 0){
-fp.activate();
-update();
-}
-}
 if(button == "R1"){
 if(deletekey == 0){
 fp.destination = findinput(input, "airport");
@@ -376,6 +370,18 @@ if(deletekey == 0){
 insertinroute(input, 4);
 }else{
 deletewayp(4);
+}
+}
+}
+}
+else{
+if(currentpage == 1){
+if(button == "R6"){
+if(getprop("autopilot/route-manager/active") != 1){
+setprop("/autopilot/route-manager/input","@ACTIVATE");
+}
+else{
+newpage("PERF INIT");
 }
 }
 }
