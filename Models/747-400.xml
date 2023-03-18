@@ -67,6 +67,26 @@
         <object-name>wing.edgeR</object-name>
     </effect>
 
+    <!-- Wingtip Vortices -->
+    <model>
+        <path>Aircraft/747-400/Models/Effects/tiptrail.xml</path>
+        <name>vortex.L</name>
+        <offsets>
+            <x-m>20.674</x-m>
+            <y-m>32.9404</y-m>
+            <z-m>2.09761</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Aircraft/747-400/Models/Effects/tiptrail.xml</path>
+        <name>vortex.R</name>
+        <offsets>
+            <x-m>20.674</x-m>
+            <y-m>-32.9404</y-m>
+            <z-m>2.09761</z-m>
+        </offsets>
+    </model>
+
     <!-- Wing Flex -->
     <!-- when wing[1] or wing[4] = -4450 or wing[2] and wing[3] = -4180, do not rotate -->
     <!-- otherwise, rotate as normal -->
@@ -106,6 +126,7 @@
         <object-name>fueldump.L</object-name>
         <object-name>winglet.L</object-name>
         <object-name>winglet.chromeL</object-name>
+        <object-name>vortex.L</object-name>
         <property>fdm/jsbsim/forces/wing[1]</property>
         <interpolation>
             <entry>
@@ -149,6 +170,7 @@
         <object-name>fueldump.L</object-name>
         <object-name>winglet.L</object-name>
         <object-name>winglet.chromeL</object-name>
+        <object-name>vortex.L</object-name>
         <property>fdm/jsbsim/forces/wing[0]</property>
         <interpolation>
             <entry>
@@ -210,6 +232,7 @@
         <object-name>fueldump.R</object-name>
         <object-name>winglet.R</object-name>
         <object-name>winglet.chromeR</object-name>
+        <object-name>vortex.R</object-name>
         <property>fdm/jsbsim/forces/wing[3]</property>
         <interpolation>
             <entry>
@@ -253,6 +276,7 @@
         <object-name>fueldump.R</object-name>
         <object-name>winglet.R</object-name>
         <object-name>winglet.chromeR</object-name>
+        <object-name>vortex.R</object-name>
         <property>fdm/jsbsim/forces/wing[4]</property>
         <interpolation>
             <entry>
