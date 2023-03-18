@@ -409,65 +409,6 @@
 
     <!-- WING FLEX RIGHT -->
 
-    <!--<animation>
- <type>rotate</type>
- <object-name>wing_right.1</object-name>
- <object-name>wing_right.2</object-name>
- <object-name>wing_right.3</object-name>
- <object-name>GreenLight</object-name>
- <object-name>StrobeLight.R</object-name>
- <object-name>engine.3</object-name>
- <object-name>eng.3</object-name>
- <object-name>eng.3_fan</object-name>
- <object-name>eng.3_reverser</object-name>
- <object-name>enginefire.3</object-name>
- <object-name>engine.4</object-name>
- <object-name>eng.4</object-name>
- <object-name>eng.4_fan</object-name>
- <object-name>eng.4_reverser</object-name>
- <object-name>enginefire.4</object-name>
- <object-name>aileron_right_inner</object-name>
- <object-name>aileron_right_outer</object-name>
- <object-name>speedbrake_right.1</object-name>
- <object-name>speedbrake_right.2</object-name>
- <object-name>speedbrake_right.3</object-name>
- <object-name>speedbrake_right.4</object-name>
- <object-name>speedbrake_right.5</object-name>
- <object-name>speedbrake_right.6</object-name>
- <object-name>flap_right_inner.1</object-name>
- <object-name>flap_right_inner.2</object-name>
- <object-name>flap_right_inner.3</object-name>
- <object-name>flap_right_outer.1</object-name>
- <object-name>flap_right_outer.2</object-name>
- <object-name>flap_right_outer.3</object-name>
- <object-name>flap_right_h.1</object-name>
- <object-name>flap_right_h.2</object-name>
- <object-name>flap_right_h.3</object-name>
- <object-name>flap_right_h.4</object-name>
- <object-name>flap_right_h.1.1</object-name>
- <object-name>flap_right_h.2.1</object-name>
- <object-name>flap_right_h.3.1</object-name>
- <object-name>flap_right_h.4.1</object-name>
- <object-name>winglet_right</object-name>
- <object-name>LEinbR.1</object-name>
- <object-name>LEinbR.2</object-name>
- <object-name>LEinbR.3</object-name>
- <object-name>fueldump.2</object-name>
- <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
- <factor>-0.0000040</factor>
- <offset-deg>0</offset-deg>
- <center>
-  
-  <y-m>3.66</y-m>
-  <z-m>-1.25</z-m>
- </center>
- <axis>
-  <x>-1</x>
-  
-  
- </axis>
-</animation>-->
-
     <animation>
         <type>rotate</type>
         <object-name>wing_right.2</object-name>
@@ -498,7 +439,6 @@
         <property>fdm/jsbsim/forces/wing[3]</property>
         <factor>-0.0004</factor>
         <center>
-            
             <y-m>13.0</y-m>
             <z-m>-1.25</z-m>
         </center>
@@ -520,78 +460,15 @@
         <property>fdm/jsbsim/forces/wing[4]</property>
         <factor>-0.0004</factor>
         <center>
-            
             <y-m>21.5</y-m>
             <z-m>-1.25</z-m>
         </center>
         <axis>
             <x>-1</x>
-
-
         </axis>
     </animation>
 
     <!-- WING FLEX LEFT -->
-
-    <!--<animation>
- <type>rotate</type>
- <object-name>wing_left.1</object-name>
- <object-name>wing_left.2</object-name>
- <object-name>wing_left.3</object-name>
- <object-name>RedLight</object-name>
- <object-name>StrobeLight.L</object-name>
- <object-name>engine.1</object-name>
- <object-name>eng.1</object-name>
- <object-name>eng.1_fan</object-name>
- <object-name>eng.1_reverser</object-name>
- <object-name>enginefire.1</object-name>
- <object-name>engine.2</object-name>
- <object-name>eng.2</object-name>
- <object-name>eng.2_fan</object-name>
- <object-name>eng.2_reverser</object-name>
- <object-name>enginefire.2</object-name>
- <object-name>aileron_left_inner</object-name>
- <object-name>aileron_left_outer</object-name>
- <object-name>speedbrake_left.1</object-name>
- <object-name>speedbrake_left.2</object-name>
- <object-name>speedbrake_left.3</object-name>
- <object-name>speedbrake_left.4</object-name>
- <object-name>speedbrake_left.5</object-name>
- <object-name>speedbrake_left.6</object-name>
- <object-name>flap_left_inner.1</object-name>
- <object-name>flap_left_inner.2</object-name>
- <object-name>flap_left_inner.3</object-name>
- <object-name>flap_left_outer.1</object-name>
- <object-name>flap_left_outer.2</object-name>
- <object-name>flap_left_outer.3</object-name>
- <object-name>flap_left_h.1</object-name>
- <object-name>flap_left_h.2</object-name>
- <object-name>flap_left_h.3</object-name>
- <object-name>flap_left_h.4</object-name>
- <object-name>flap_left_h.1.1</object-name>
- <object-name>flap_left_h.2.1</object-name>
- <object-name>flap_left_h.3.1</object-name>
- <object-name>flap_left_h.4.1</object-name>
- <object-name>winglet_left</object-name>
- <object-name>LEinbL.1</object-name>
- <object-name>LEinbL.2</object-name>
- <object-name>LEinbL.3</object-name>
- <object-name>fueldump.1</object-name>
- <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
- <factor>-0.0000040</factor>
- <offset-deg>0</offset-deg>
- <center>
-  
-  <y-m>-3.66</y-m>
-  <z-m>-1.25</z-m>
- </center>
- <axis>
-  <x>1</x>
-  
-  
- </axis>
-</animation>-->
-
     <animation>
         <type>rotate</type>
         <object-name>wing_left.2</object-name>
@@ -622,14 +499,11 @@
         <property>fdm/jsbsim/forces/wing[2]</property>
         <factor>-0.0004</factor>
         <center>
-            
             <y-m>-13.0</y-m>
             <z-m>-1.25</z-m>
         </center>
         <axis>
             <x>1</x>
-
-
         </axis>
     </animation>
 

@@ -158,13 +158,10 @@
         </interpolation>
         <center>
             <x-m>-21.991</x-m>
-            
             <z-m>-2</z-m>
         </center>
         <axis>
-
             <y>1</y>
-
         </axis>
     </animation>
 
@@ -843,8 +840,6 @@
         <property>gear/gear[2]/compression-norm</property>
         <factor>0.3048</factor>
         <axis>
-
-
             <z>1</z>
         </axis>
     </animation>

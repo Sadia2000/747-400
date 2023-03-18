@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<turbine_engine name="GE CF6-80C2B1F">
+    <milthrust>   59450   </milthrust>
+    <bypassratio>     5.2  </bypassratio>
+	<ignitionn1>0</ignitionn1><!-- No n1 spin up before ignition-->
+	<ignitionn2>17.4</ignitionn2><!--According to youtube video-->
+    	<tsfc>            0.337 </tsfc>
+	<bleed>           0.03  </bleed>
+	<idlen1>         25.0   </idlen1>
+	<idlen2>         65.9   </idlen2>
+	<maxn1>         117.5   </maxn1>
+	<maxn2>         112.5   </maxn2>
+	<n1spinup>0</n1spinup> <!-- No N1 spin during cranking -->
+	<n2spinup>0.958</n2spinup> <!-- ~12 seconds -->
+	<n1startrate>0.735</n1startrate> <!-- ~34 seconds -->
+	<n2startrate>1.4264</n2startrate> <!-- ~34 seconds -->
+	<augmented>         0   </augmented>
+	<injected>          0   </injected>
+	
+
+    <function name="N1SpoolUp">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
+			24   1.1
+			28   2.9
+			46   9.7
+			68  15.4
+			80  19.6
+			94  21.4
+			118  23.6
+	  </tableData>
+        </table>
+    </function>
+
+    <function name="N1SpoolDown">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
+		 24   1.1
+		 28   2.9
+		 46   9.7
+		 68  15.4
+		 80  19.6
+		 94  21.4
+		118  23.6
+     </tableData>
+        </table>
+    </function>
+
+    <function name="N2SpoolUp">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
+		 24   0.6
+		 28   1.5
+		 46   5.1
+		 68   8.1
+		 80  10.4
+		 94  11.3
+		113  12.5
+	  </tableData>
+        </table>
+    </function>
+
+    <function name="N2SpoolDown">
+        <table>
+            <independentVar lookup="row">/engines/engine[0]/n1</independentVar>
+            <tableData>
+		 24   0.6
+		 28   1.5
+		 46   5.1
+		 68   8.1
+		 80  10.4
+		 94  11.3
+		113  12.5
+     </tableData>
+        </table>
+    </function>
+
+    <function name="IdleThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
+        -10000   0       10000   20000   30000   43000   50000
+	0.0  0.0430  0.0458  0.0378  0.0684  0.0819  0.0793  0.0000
+	0.2  0.0500  0.0291  0.0205  0.0514  0.0727  0.0729  0.0000
+	0.4  0.0040  0.0047  0.0012  0.0412  0.0585  0.0671  0.0000
+	0.6  0.0000  0.0000  0.0000  0.0000  0.0416  0.0518  0.0000
+	0.8  0.0000  0.0000  0.0000  0.0000  0.0354  0.0468  0.0000
+	1.0  0.0000  0.0000  0.0000  0.0000  0.0000  0.0352  0.0000
+    </tableData>
+        </table>
+    </function>
+
+    <function name="MilThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
+         -10000   0       10000   20000   30000   43000   50000
+	0.0   1.2600  1.0000  0.7600  0.5840  0.4120  0.2910  0.0000
+	0.2   1.1710  0.9740  0.7170  0.5560  0.4050  0.2810  0.0000
+	0.4   1.1500  0.9570  0.7120  0.5660  0.4070  0.2730  0.0000
+	0.6   1.1810  0.9410  0.7410  0.5860  0.3780  0.2380  0.0000
+	0.8   1.2290  1.0200  0.8020  0.5770  0.3240  0.2130  0.0000
+	0.9   1.2580  1.0200  0.8020  0.5420  0.2910  0.1340  0.0000
+	1.0   1.1810  0.9510  0.7410  0.4610  0.1940  0.0650  0.0000
+	1.2   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+	1.4   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+    </tableData>
+        </table>
+    </function>
+
+</turbine_engine>
