@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<turbine_engine name="GE CF6-80C2B1F">
+<turbine_engine name="RR RB211-524G">
     <milthrust>   59450   </milthrust>
     <bypassratio>     5.2  </bypassratio>
 	<ignitionn1>0</ignitionn1><!-- No n1 spin up before ignition-->

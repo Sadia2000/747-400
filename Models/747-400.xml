@@ -8,7 +8,7 @@
     </model>
     <model>
         <name>engines-rr</name>
-        <path>Aircraft/747-400/Models/RR-RB211.ac</path>
+        <path>Aircraft/747-400/Models/RR-RB211.xml</path>
     </model>
     <animation>
         <type>select</type>
