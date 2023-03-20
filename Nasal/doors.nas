@@ -1,16 +1,20 @@
 ## exterior
 
-var entry1left_door = aircraft.door.new("/controls/doors/entry1left", 6);
-var entry2left_door = aircraft.door.new("/controls/doors/entry2left", 6);
-var entry3left_door = aircraft.door.new("/controls/doors/entry3left", 6);
-var entry4left_door = aircraft.door.new("/controls/doors/entry4left", 6);
-var entry5left_door = aircraft.door.new("/controls/doors/entry5left", 6);
-var entry1right_door = aircraft.door.new("/controls/doors/entry1right", 6);
-var entry2right_door = aircraft.door.new("/controls/doors/entry2right", 6);
-var entry3right_door = aircraft.door.new("/controls/doors/entry3right", 6);
-var entry4right_door = aircraft.door.new("/controls/doors/entry4right", 6);
-var entry5right_door = aircraft.door.new("/controls/doors/entry5right", 6);
-var cargo1_door = aircraft.door.new("/controls/doors/cargo1", 6);
+var doorL1 = aircraft.door.new("/controls/doors/l1", 6);
+var doorL2 = aircraft.door.new("/controls/doors/l2", 6);
+var doorL3 = aircraft.door.new("/controls/doors/l3", 6);
+var doorL4 = aircraft.door.new("/controls/doors/l4", 6);
+var doorL5 = aircraft.door.new("/controls/doors/l5", 6);
+var doorL6 = aircraft.door.new("/controls/doors/l6", 6);
+var doorR1 = aircraft.door.new("/controls/doors/r1", 6);
+var doorR2 = aircraft.door.new("/controls/doors/r2", 6);
+var doorR3 = aircraft.door.new("/controls/doors/r3", 6);
+var doorR4 = aircraft.door.new("/controls/doors/r4", 6);
+var doorR5 = aircraft.door.new("/controls/doors/r5", 6);
+var doorR6 = aircraft.door.new("/controls/doors/r6", 6);
+var doorC1 = aircraft.door.new("/controls/doors/c1", 6);
+var doorC2 = aircraft.door.new("/controls/doors/c2", 6);
+var doorC3 = aircraft.door.new("/controls/doors/c3", 6);
 var upperdeckleft_door = aircraft.door.new("/controls/doors/upperdeckleft", 6);
 var upperdeckright_door = aircraft.door.new("/controls/doors/upperdeckright", 6);
 var nosecone_door = aircraft.door.new("/controls/doors/nosecone", 4);
