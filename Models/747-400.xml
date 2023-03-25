@@ -1,7 +1,8 @@
 <PropertyList>
     <path>747-400.ac</path>
+    <main include="doors.xml" omit-node="y" />
 
-    <!-- Submodels -->
+    <!-- Engine variants -->
     <model>
         <name>engines-ge</name>
         <path>Aircraft/747-400/Models/GE-CF6.xml</path>
@@ -9,6 +10,10 @@
     <model>
         <name>engines-rr</name>
         <path>Aircraft/747-400/Models/RR-RB211.xml</path>
+    </model>
+    <model>
+        <name>engines-pw</name>
+        <path>Aircraft/747-400/Model/PW4000.xml</path>
     </model>
     <animation>
         <type>select</type>
@@ -27,6 +32,16 @@
             <equals>
                 <property>sim/aircraft-id</property>
                 <value>747-400-GE</value>
+            </equals>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>engines-pw</object-name>
+        <condition>
+            <equals>
+                <property>sim/aircraft-id</property>
+                <value>747-400-PW</value>
             </equals>
         </condition>
     </animation>
@@ -86,95 +101,6 @@
             <z-m>2.09761</z-m>
         </offsets>
     </model>
-
-    <!-- Cargo Door Animations -->
-    <animation>
-        <type>pick</type>
-        <object-name>cargo.door1</object-name>
-        <object-name>overlay.cdoor1</object-name>
-        <action>
-            <button>0</button>
-            <condition>
-                <property>gear/gear/wow</property>
-            </condition>
-            <binding>
-                <command>nasal</command>
-                <script>Boeing747.doorC1.toggle();</script>
-            </binding>
-        </action>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>cargo.door1</object-name>
-        <object-name>overlay.cdoor1</object-name>
-        <property>controls/doors/c1/position-norm</property>
-        <factor>120</factor>
-        <axis>
-            <x1-m>-17.9471</x1-m>
-            <y1-m>3.04002</y1-m>
-            <z1-m>-0.333379</z1-m>
-            <x2-m>-15.6203</x2-m>
-            <y2-m>3.09648</y2-m>
-            <z2-m>-0.333379</z2-m>
-        </axis>
-    </animation>
-
-
-    <animation>
-        <type>pick</type>
-        <object-name>cargo.door2</object-name>
-        <object-name>overlay.cdoor2</object-name>
-        <action>
-            <button>0</button>
-            <binding>
-                <command>nasal</command>
-                <script>Boeing747.doorC2.toggle();</script>
-            </binding>
-        </action>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>cargo.door2</object-name>
-        <object-name>overlay.cdoor2</object-name>
-        <property>controls/doors/c2/position-norm</property>
-        <factor>120</factor>
-        <axis>
-            <x1-m>13.9408</x1-m>
-            <y1-m>3.12869</y1-m>
-            <z1-m>-0.33338</z1-m>
-            <x2-m>16.2675</x2-m>
-            <y2-m>3.124</y2-m>
-            <z2-m>-0.33338</z2-m>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>cargo.door3</object-name>
-        <object-name>overlay.cdoor3</object-name>
-        <action>
-            <button>0</button>
-            <binding>
-                <command>nasal</command>
-                <script>Boeing747.doorC3.toggle();</script>
-            </binding>
-        </action>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>cargo.door3</object-name>
-        <object-name>overlay.cdoor3</object-name>
-        <property>controls/doors/c3/position-norm</property>
-        <factor>55</factor>
-        <axis>
-            <x1-m>19.166</x1-m>
-            <y1-m>2.95622</y1-m>
-            <z1-m>-0.71783</z1-m>
-            <x2-m>18.2924</x2-m>
-            <y2-m>2.99775</y2-m>
-            <z2-m>-0.71783</z2-m>
-        </axis>
-    </animation>
 
     <!-- Wing Flex -->
     <!-- when wing[1] or wing[4] = -4450 or wing[2] and wing[3] = -4180, do not rotate -->
