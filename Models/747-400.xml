@@ -1014,6 +1014,21 @@
             <y>1</y>
         </axis>
     </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>cover.L8</object-name>
+        <object-name>cover.R8</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <factor>5</factor>
+        <center>
+            <x-m>9.65487</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.578688</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
 
     <!-- Control Surfaces -->
     <animation>
