@@ -14,12 +14,20 @@
         <inherits-from>Effects/747-400</inherits-from>
         <object-name>n1.cowl</object-name>
         <object-name>n1.rev</object-name>
+        <object-name>n1.warn-cowl</object-name>
+        <object-name>n1.warn-intake</object-name>
         <object-name>n2.cowl</object-name>
         <object-name>n2.rev</object-name>
+        <object-name>n2.warn-cowl</object-name>
+        <object-name>n2.warn-intake</object-name>
         <object-name>n3.cowl</object-name>
         <object-name>n3.rev</object-name>
+        <object-name>n3.warn-cowl</object-name>
+        <object-name>n3.warn-intake</object-name>
         <object-name>n4.cowl</object-name>
         <object-name>n4.rev</object-name>
+        <object-name>n4.warn-cowl</object-name>
+        <object-name>n4.warn-intake</object-name>
     </effect>
     <!-- Wing Flex -->
     <!-- when wing[1] or wing[4] = -4450 or wing[2] and wing[3] = -4180, do not rotate -->
@@ -34,6 +42,8 @@
         <object-name>n1.interior</object-name>
         <object-name>n1.pylon</object-name>
         <object-name>n1.rev</object-name>
+        <object-name>n1.warn-cowl</object-name>
+        <object-name>n1.warn-intake</object-name>
         <object-name>n2.cone</object-name>
         <object-name>n2.cowl</object-name>
         <object-name>n2.exhaust</object-name>
@@ -42,6 +52,8 @@
         <object-name>n2.interior</object-name>
         <object-name>n2.pylon</object-name>
         <object-name>n2.rev</object-name>
+        <object-name>n2.warn-cowl</object-name>
+        <object-name>n2.warn-intake</object-name>
         <property>fdm/jsbsim/forces/wing[1]</property>
         <interpolation>
             <entry>
@@ -76,6 +88,8 @@
         <object-name>n1.interior</object-name>
         <object-name>n1.pylon</object-name>
         <object-name>n1.rev</object-name>
+        <object-name>n1.warn-cowl</object-name>
+        <object-name>n1.warn-intake</object-name>
         <property>fdm/jsbsim/forces/wing[0]</property>
         <interpolation>
             <entry>
@@ -111,6 +125,8 @@
         <object-name>n3.interior</object-name>
         <object-name>n3.pylon</object-name>
         <object-name>n3.rev</object-name>
+        <object-name>n3.warn-cowl</object-name>
+        <object-name>n3.warn-intake</object-name>
         <object-name>n4.cone</object-name>
         <object-name>n4.cowl</object-name>
         <object-name>n4.exhaust</object-name>
@@ -119,6 +135,8 @@
         <object-name>n4.interior</object-name>
         <object-name>n4.pylon</object-name>
         <object-name>n4.rev</object-name>
+        <object-name>n4.warn-cowl</object-name>
+        <object-name>n4.warn-intake</object-name>
         <property>fdm/jsbsim/forces/wing[3]</property>
         <interpolation>
             <entry>
@@ -154,6 +172,8 @@
         <object-name>n4.interior</object-name>
         <object-name>n4.pylon</object-name>
         <object-name>n4.rev</object-name>
+        <object-name>n4.warn-cowl</object-name>
+        <object-name>n4.warn-intake</object-name>
         <interpolation>
             <entry>
                 <ind>-6950</ind>
@@ -196,6 +216,7 @@
     <animation>
         <type>translate</type>
         <object-name>n1.rev</object-name>
+        <object-name>n1.warn-intake</object-name>
         <property>engines/engine[0]/reverser-pos-norm</property>
         <factor>0.6</factor>
         <axis>
@@ -226,6 +247,7 @@
     <animation>
         <type>translate</type>
         <object-name>n2.rev</object-name>
+        <object-name>n2.warn-intake</object-name>
         <property>engines/engine[1]/reverser-pos-norm</property>
         <factor>0.6</factor>
         <axis>
@@ -251,6 +273,7 @@
     <animation>
         <type>translate</type>
         <object-name>n3.rev</object-name>
+        <object-name>n3.warn-intake</object-name>
         <property>engines/engine[2]/reverser-pos-norm</property>
         <factor>0.6</factor>
         <axis>
@@ -276,6 +299,7 @@
     <animation>
         <type>translate</type>
         <object-name>n4.rev</object-name>
+        <object-name>n4.warn-intake</object-name>
         <property>engines/engine[3]/reverser-pos-norm</property>
         <factor>0.6</factor>
         <axis>
