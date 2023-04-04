@@ -134,6 +134,7 @@
         <object-name>slat.boxL3</object-name>
         <object-name>nav.caseL</object-name>
         <object-name>light.strobeL</object-name>
+        <object-name>strobe-left</object-name>
         <object-name>light.navL</object-name>
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
@@ -178,6 +179,7 @@
         <object-name>slat.boxL3</object-name>
         <object-name>nav.caseL</object-name>
         <object-name>light.strobeL</object-name>
+        <object-name>strobe-left</object-name>
         <object-name>light.navL</object-name>
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
@@ -240,6 +242,7 @@
         <object-name>slat.boxR3</object-name>
         <object-name>nav.caseR</object-name>
         <object-name>light.strobeR</object-name>
+        <object-name>strobe-right</object-name>
         <object-name>light.navR</object-name>
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
@@ -284,6 +287,7 @@
         <object-name>slat.boxR3</object-name>
         <object-name>nav.caseR</object-name>
         <object-name>light.strobeR</object-name>
+        <object-name>strobe-right</object-name>
         <object-name>light.navR</object-name>
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
@@ -1867,8 +1871,8 @@
 
     <animation>
         <type>rotate</type>
-        <object-name>mlg.doorLLM</object-name>
-        <object-name>mlg.doorLRM</object-name>
+        <object-name>mlg.doorRRM</object-name>
+        <object-name>mlg.doorRLM</object-name>
         <property>gear/gear[4]/position-norm</property>
         <interpolation>
             <entry>
@@ -1899,7 +1903,7 @@
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>mlg.doorLRM</object-name>
+        <object-name>mlg.doorRLM</object-name>
         <property>gear/gear[4]/position-norm</property>
         <interpolation>
             <entry>
@@ -1966,6 +1970,329 @@
         <factor></factor>
     </animation>
 
+    <!-- Compositor Lights -->
+    <light>
+        <name>upper-beacon</name>
+        <type>point</type>
+        <position>
+            <x-m>-17.9936</x-m>
+            <y-m>0.112536</y-m>
+            <z-m>4.93486</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>0.7</l>
+            <q>1.8</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>lower-beacon</name>
+        <type>point</type>
+        <position>
+            <x-m>-3.11237</x-m>
+            <y-m>0.000001</y-m>
+            <z-m>-3.31135</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>0.7</l>
+            <q>1.8</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>strobe-aft</name>
+        <type>point</type>
+        <position>
+            <x-m>38.3693</x-m>
+            <y-m>0</y-m>
+            <z-m>2.06735</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>0.7</l>
+            <q>1.8</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>strobe-left</name>
+        <type>point</type>
+        <position>
+            <x-m>15.7482</x-m>
+            <y-m>-31.937</y-m>
+            <z-m>0.492658</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>0.7</l>
+            <q>1.8</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>strobe-right</name>
+        <type>point</type>
+        <position>
+            <x-m>15.7482</x-m>
+            <y-m>31.937</y-m>
+            <z-m>0.492658</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>0.7</l>
+            <q>1.8</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    
+    <!-- Light Conditions -->
+    <animation>
+        <type>material</type>
+        <object-name>light.beacon</object-name>
+        <object-name>upper-beacon</object-name>
+        <object-name>lower-beacon</object-name>
+        <emission>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </emission>
+        <condition>
+            <property>sim/model/lights/beacon/state</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.strobeL</object-name>
+        <object-name>light.strobeR</object-name>
+        <object-name>light.strobeaft</object-name>
+        <object-name>strobe-aft</object-name>
+        <object-name>strobe-right</object-name>
+        <object-name>strobe-left</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>sim/model/lights/strobe/state</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.navR</object-name>
+        <emission>
+            <red>0</red>
+            <green>1</green>
+            <blue>0</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/nav-lights</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.navL</object-name>
+        <emission>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/nav-lights</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.landingLO</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/landing-light-outbdl</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.landingLI</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/landing-light-inbdl</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.landingRO</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/landing-light-outbdr</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.landingRI</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/landing-light-inbdr</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.taxi</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <or>
+                <property>controls/lighting/taxi-light</property>
+                <property>controls/lighting/landing-lights</property>
+            </or>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.turnoffL</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/turnoff-light-l</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.turnoffR</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/turnoff-light-r</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>light.logoR</object-name>
+        <object-name>light.logoL</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property>controls/lighting/logo-lights</property>
+        </condition>
+    </animation>
     <!-- LANDING LIGHTS WINGS -->
     <model>
         <path>Aircraft/747-400/Models/Lights/light-cone.xml</path>
@@ -2126,7 +2453,6 @@
         <name>StrobeLight.Tail</name>
         <offsets>
             <x-m>38.65</x-m>
-
             <z-m>2.55</z-m>
         </offsets>
     </model>
@@ -2135,7 +2461,6 @@
         <name>Beacon.Lower</name>
         <offsets>
             <x-m>-5.6</x-m>
-
             <z-m>-3.2</z-m>
             <pitch-deg>180</pitch-deg>
         </offsets>
@@ -2145,7 +2470,6 @@
         <name>Beacon.Upper</name>
         <offsets>
             <x-m>-15.75</x-m>
-
             <z-m>5.15</z-m>
         </offsets>
     </model>
