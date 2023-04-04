@@ -384,7 +384,7 @@
 
     <propulsion>
 
-        <engine file="RR RB211-524G">
+        <engine file="RR-RB211">
             <location unit="IN">
                 <x> 1400 </x>
                 <y> -834 </y>
@@ -410,7 +410,7 @@
             </thruster>
         </engine>
 
-        <engine file="RR RB211-524G">
+        <engine file="RR-RB211">
             <location unit="IN">
                 <x>  900 </x>
                 <y> -470 </y>
@@ -436,7 +436,7 @@
             </thruster>
         </engine>
 
-        <engine file="RR RB211-524G">
+        <engine file="RR-RB211">
             <location unit="IN">
                 <x>  900 </x>
                 <y>  470 </y>
@@ -462,7 +462,7 @@
             </thruster>
         </engine>
 
-        <engine file="RR RB211-524G">
+        <engine file="RR-RB211">
             <location unit="IN">
                 <x> 1400 </x>
                 <y>  834 </y>
