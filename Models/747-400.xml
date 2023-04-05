@@ -136,6 +136,8 @@
         <object-name>light.strobeL</object-name>
         <object-name>strobe-left</object-name>
         <object-name>light.navL</object-name>
+        <object-name>nav-green1</object-name>
+        <object-name>nav-green2</object-name>
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
         <object-name>lightning.wingL</object-name>
@@ -181,6 +183,8 @@
         <object-name>light.strobeL</object-name>
         <object-name>strobe-left</object-name>
         <object-name>light.navL</object-name>
+        <object-name>nav-green1</object-name>
+        <object-name>nav-green2</object-name>
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
         <object-name>lightning.wingL</object-name>
@@ -244,6 +248,8 @@
         <object-name>light.strobeR</object-name>
         <object-name>strobe-right</object-name>
         <object-name>light.navR</object-name>
+        <object-name>nav-red1</object-name>
+        <object-name>nav-red2</object-name>
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
         <object-name>lightning.wingR</object-name>
@@ -289,6 +295,8 @@
         <object-name>light.strobeR</object-name>
         <object-name>strobe-right</object-name>
         <object-name>light.navR</object-name>
+        <object-name>nav-red1</object-name>
+        <object-name>nav-red2</object-name>
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
         <object-name>lightning.wingR</object-name>
@@ -1999,8 +2007,8 @@
         </specular>
         <attenuation>
             <c>1</c>
-            <l>0.7</l>
-            <q>1.8</q>
+            <l>2</l>
+            <q>20</q>
         </attenuation>
         <range-m>1</range-m>
     </light>
@@ -2032,8 +2040,8 @@
         </specular>
         <attenuation>
             <c>1</c>
-            <l>0.7</l>
-            <q>1.8</q>
+            <l>2</l>
+            <q>20</q>
         </attenuation>
         <range-m>1</range-m>
     </light>
@@ -2065,8 +2073,8 @@
         </specular>
         <attenuation>
             <c>1</c>
-            <l>0.7</l>
-            <q>1.8</q>
+            <l>2</l>
+            <q>20</q>
         </attenuation>
         <range-m>1</range-m>
     </light>
@@ -2098,8 +2106,8 @@
         </specular>
         <attenuation>
             <c>1</c>
-            <l>0.7</l>
-            <q>1.8</q>
+            <l>2</l>
+            <q>20</q>
         </attenuation>
         <range-m>1</range-m>
     </light>
@@ -2131,18 +2139,695 @@
         </specular>
         <attenuation>
             <c>1</c>
-            <l>0.7</l>
-            <q>1.8</q>
+            <l>2</l>
+            <q>20</q>
         </attenuation>
         <range-m>1</range-m>
+    </light>
+    <light>
+        <name>nav-red1</name>
+        <type>point</type>
+        <position>
+            <x-m>15.8561</x-m>
+            <y-m>-32.0078</y-m>
+            <z-m>0.490955</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>2</l>
+            <q>20</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>nav-red2</name>
+        <type>point</type>
+        <position>
+            <x-m>15.9413</x-m>
+            <y-m>-32.0492</y-m>
+            <z-m>0.488425</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>0</g>
+            <b>0</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>2</l>
+            <q>20</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>nav-green1</name>
+        <type>point</type>
+        <position>
+            <x-m>15.8561</x-m>
+            <y-m>32.0078</y-m>
+            <z-m>0.490955</z-m>
+        </position>
+        <ambient>
+            <r>0</r>
+            <g>1</g>
+            <b>0</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>0</r>
+            <g>1</g>
+            <b>0</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>0</r>
+            <g>1</g>
+            <b>0</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>2</l>
+            <q>20</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>nav-green2</name>
+        <type>point</type>
+        <position>
+            <x-m>15.9413</x-m>
+            <y-m>32.0492</y-m>
+            <z-m>0.488425</z-m>
+        </position>
+        <ambient>
+            <r>0</r>
+            <g>1</g>
+            <b>0</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>0</r>
+            <g>1</g>
+            <b>0</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>0</r>
+            <g>1</g>
+            <b>0</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>2</l>
+            <q>20</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>nav-rear-left</name>
+        <type>point</type>
+        <position>
+            <x-m>38.6027</x-m>
+            <y-m>0.03911</y-m>
+            <z-m>2.28036</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>2</l>
+            <q>20</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+    <light>
+        <name>nav-rear-right</name>
+        <type>point</type>
+        <position>
+            <x-m>38.6027</x-m>
+            <y-m>-0.039115</y-m>
+            <z-m>2.28036</z-m>
+        </position>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1</c>
+            <l>2</l>
+            <q>20</q>
+        </attenuation>
+        <range-m>1</range-m>
+    </light>
+
+    <light>
+        <name>landing-outboard-left</name>
+        <type>spot</type>
+        <position>
+            <x-m>-6.91644</x-m>
+            <y-m>-5.96012</y-m>
+            <z-m>-0.970061</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>landing-inboard-left</name>
+        <type>spot</type>
+        <position>
+            <x-m>-7.38739</x-m>
+            <y-m>-5.44462</y-m>
+            <z-m>-1.0162</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>landing-outboard-right</name>
+        <type>spot</type>
+        <position>
+            <x-m>-6.91644</x-m>
+            <y-m>5.96012</y-m>
+            <z-m>-0.970061</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>-10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>landing-inboard-right</name>
+        <type>spot</type>
+        <position>
+            <x-m>-7.38739</x-m>
+            <y-m>5.44462</y-m>
+            <z-m>-1.0162</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>-10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>taxi-left</name>
+        <type>spot</type>
+        <position>
+            <x-m>-22.6697</x-m>
+            <y-m>-0.157149</y-m>
+            <z-m>-3.10566</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>0</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>taxi-right</name>
+        <type>spot</type>
+        <position>
+            <x-m>-22.6697</x-m>
+            <y-m>0.134943</y-m>
+            <z-m>-3.10566</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>0</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>turnoff-left</name>
+        <type>spot</type>
+        <position>
+            <x-m>-22.9009</x-m>
+            <y-m>-0.180267</y-m>
+            <z-m>-3.53236</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>67</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>turnoff-right</name>
+        <type>spot</type>
+        <position>
+            <x-m>-22.9009</x-m>
+            <y-m>0.130536</y-m>
+            <z-m>-3.53236</z-m>
+        </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>-67</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>325</range-m>
+    </light>
+    <light>
+        <name>logo-left1</name>
+        <type>spot</type>
+        <position>
+            <x-m>37.4145</x-m>
+            <y-m>-8.79873</y-m>
+            <z-m>2.99609</z-m>
+        </position>
+        <direction>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>140</roll-deg>
+            <heading-deg>10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>32</range-m>
+    </light>
+    <light>
+        <name>logo-left2</name>
+        <type>spot</type>
+        <position>
+            <x-m>37.2487</x-m>
+            <y-m>-8.48495</y-m>
+            <z-m>2.97134</z-m>
+        </position>
+        <direction>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>140</roll-deg>
+            <heading-deg>10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>32</range-m>
+    </light>
+    <light>
+        <name>logo-right1</name>
+        <type>spot</type>
+        <position>
+            <x-m>37.4145</x-m>
+            <y-m>8.79873</y-m>
+            <z-m>2.99609</z-m>
+        </position>
+        <direction>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>-140</roll-deg>
+            <heading-deg>-10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>32</range-m>
+    </light>
+    <light>
+        <name>logo-right2</name>
+        <type>spot</type>
+        <position>
+            <x-m>37.2487</x-m>
+            <y-m>8.48495</y-m>
+            <z-m>2.97134</z-m>
+        </position>
+        <direction>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>-140</roll-deg>
+            <heading-deg>-10</heading-deg>
+        </direction>
+        <ambient>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </ambient>
+        <diffuse>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </diffuse>
+        <specular>
+            <r>1</r>
+            <g>1</g>
+            <b>1</b>
+            <a>1</a>
+        </specular>
+        <attenuation>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
+        </attenuation>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>75</spot-cutoff>
+        <range-m>32</range-m>
     </light>
     
     <!-- Light Conditions -->
     <animation>
         <type>material</type>
         <object-name>light.beacon</object-name>
-        <object-name>upper-beacon</object-name>
-        <object-name>lower-beacon</object-name>
         <emission>
             <red>1</red>
             <green>0</green>
@@ -2153,18 +2838,32 @@
         </condition>
     </animation>
     <animation>
+        <type>select</type>
+        <object-name>upper-beacon</object-name>
+        <object-name>lower-beacon</object-name>
+        <condition>
+            <property>sim/model/lights/beacon/state</property>
+        </condition>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>light.strobeL</object-name>
         <object-name>light.strobeR</object-name>
         <object-name>light.strobeaft</object-name>
-        <object-name>strobe-aft</object-name>
-        <object-name>strobe-right</object-name>
-        <object-name>strobe-left</object-name>
         <emission>
             <red>1</red>
             <green>1</green>
             <blue>1</blue>
         </emission>
+        <condition>
+            <property>sim/model/lights/strobe/state</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>strobe-aft</object-name>
+        <object-name>strobe-right</object-name>
+        <object-name>strobe-left</object-name>
         <condition>
             <property>sim/model/lights/strobe/state</property>
         </condition>
@@ -2194,6 +2893,18 @@
         </condition>
     </animation>
     <animation>
+        <type>select</type>
+        <object-name>nav-green1</object-name>
+        <object-name>nav-green2</object-name>
+        <object-name>nav-red1</object-name>
+        <object-name>nav-red2</object-name>
+        <object-name>nav-rear-left</object-name>
+        <object-name>nav-rear-right</object-name>
+        <condition>
+            <property>controls/lighting/nav-lights</property>
+        </condition>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>light.landingLO</object-name>
         <emission>
@@ -2201,6 +2912,13 @@
             <green>1</green>
             <blue>1</blue>
         </emission>
+        <condition>
+            <property>controls/lighting/landing-light-outbdl</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>landing-outboard-left</object-name>
         <condition>
             <property>controls/lighting/landing-light-outbdl</property>
         </condition>
@@ -2218,6 +2936,13 @@
         </condition>
     </animation>
     <animation>
+        <type>select</type>
+        <object-name>landing-inboard-left</object-name>
+        <condition>
+            <property>controls/lighting/landing-light-inbdl</property>
+        </condition>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>light.landingRO</object-name>
         <emission>
@@ -2230,6 +2955,13 @@
         </condition>
     </animation>
     <animation>
+        <type>select</type>
+        <object-name>landing-outboard-right</object-name>
+        <condition>
+            <property>controls/lighting/landing-light-outbdr</property>
+        </condition>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>light.landingRI</object-name>
         <emission>
@@ -2237,6 +2969,13 @@
             <green>1</green>
             <blue>1</blue>
         </emission>
+        <condition>
+            <property>controls/lighting/landing-light-inbdr</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>landing-inboard-right</object-name>
         <condition>
             <property>controls/lighting/landing-light-inbdr</property>
         </condition>
@@ -2257,6 +2996,17 @@
         </condition>
     </animation>
     <animation>
+        <type>select</type>
+        <object-name>taxi-left</object-name>
+        <object-name>taxi-right</object-name>
+        <condition>
+            <or>
+                <property>controls/lighting/taxi-light</property>
+                <property>controls/lighting/landing-lights</property>
+            </or>
+        </condition>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>light.turnoffL</object-name>
         <emission>
@@ -2264,6 +3014,13 @@
             <green>1</green>
             <blue>1</blue>
         </emission>
+        <condition>
+            <property>controls/lighting/turnoff-light-l</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>turnoff-left</object-name>
         <condition>
             <property>controls/lighting/turnoff-light-l</property>
         </condition>
@@ -2281,6 +3038,13 @@
         </condition>
     </animation>
     <animation>
+        <type>select</type>
+        <object-name>turnoff-right</object-name>
+        <condition>
+            <property>controls/lighting/turnoff-light-r</property>
+        </condition>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>light.logoR</object-name>
         <object-name>light.logoL</object-name>
@@ -2289,6 +3053,16 @@
             <green>1</green>
             <blue>1</blue>
         </emission>
+        <condition>
+            <property>controls/lighting/logo-lights</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>logo-left1</object-name>
+        <object-name>logo-left2</object-name>
+        <object-name>logo-right1</object-name>
+        <object-name>logo-right2</object-name>
         <condition>
             <property>controls/lighting/logo-lights</property>
         </condition>
