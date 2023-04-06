@@ -2989,10 +2989,16 @@
             <blue>1</blue>
         </emission>
         <condition>
-            <or>
-                <property>controls/lighting/taxi-light</property>
-                <property>controls/lighting/landing-lights</property>
-            </or>
+            <and>
+                <or>
+                    <property>controls/lighting/taxi-light</property>
+                    <property>controls/lighting/landing-lights</property>
+                </or>
+                <equals>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                </equals>
+            </and>
         </condition>
     </animation>
     <animation>
@@ -3000,10 +3006,17 @@
         <object-name>taxi-left</object-name>
         <object-name>taxi-right</object-name>
         <condition>
-            <or>
-                <property>controls/lighting/taxi-light</property>
-                <property>controls/lighting/landing-lights</property>
-            </or>
+            <and>
+                <or>
+                    <property>controls/lighting/taxi-light</property>
+                    <property>controls/lighting/landing-lights</property>
+                </or>
+                <equals>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                </equals>
+            </and>
+            
         </condition>
     </animation>
     <animation>
@@ -3015,14 +3028,26 @@
             <blue>1</blue>
         </emission>
         <condition>
-            <property>controls/lighting/turnoff-light-l</property>
+            <and>
+                <property>controls/lighting/turnoff-light-l</property>
+                <equals>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                </equals>
+            </and>
         </condition>
     </animation>
     <animation>
         <type>select</type>
         <object-name>turnoff-left</object-name>
         <condition>
-            <property>controls/lighting/turnoff-light-l</property>
+            <and>
+                <property>controls/lighting/turnoff-light-l</property>
+                <equals>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                </equals>
+            </and>
         </condition>
     </animation>
     <animation>
@@ -3034,14 +3059,27 @@
             <blue>1</blue>
         </emission>
         <condition>
-            <property>controls/lighting/turnoff-light-r</property>
+            <and>
+                <property>controls/lighting/turnoff-light-r</property>
+                <equals>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                </equals>
+            </and>
         </condition>
     </animation>
     <animation>
         <type>select</type>
         <object-name>turnoff-right</object-name>
         <condition>
-            <property>controls/lighting/turnoff-light-r</property>
+            <and>
+                <property>controls/lighting/turnoff-light-r</property>
+                <equals>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                </equals>
+            </and>
+            
         </condition>
     </animation>
     <animation>
