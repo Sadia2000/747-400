@@ -1,24 +1,47 @@
 <?xml version="1.0"?>
 
-<!-- Copyright (c) 2023 Josh Davidson (Octal450) -->
+
+<!--
+	File:     PW4056.xml
+	Author:   ###
+	License:    GNU GPL V2
+
+	name:               Pratt and Whitney PW4056
+	type:               turbine
+	thrust:             56870 lb
+	augmented?          no
+	injected?           yes
+	bypass ratio:          5.2
+
+	n1 max-safe speed:     109.8
+	n2 max-safe speed:     97.1
+Sources:
+https://drs.faa.gov/browse/excelExternalWindow/2A822313BEA2157886257F060055BEB1.0001
+https://www.youtube.com/watch?v=P6mvYyyMHV0
+
+-->
 
 <turbine_engine name="PW4056">
-	
-	<milthrust>60000</milthrust>
-	<tsfc>0.552</tsfc>
-	<bleed>0</bleed> <!-- Set by pneumatic system -->
-	<ignitionn1>2.9</ignitionn1>
-	<ignitionn2>29.7</ignitionn2>
-	<n1spinup>0.091</n1spinup>
-	<n2spinup>0.958</n2spinup>
-	<n1startrate>0.58</n1startrate>
-	<n2startrate>1.249</n2startrate>
-	<idlen1>23.8</idlen1>
-	<idlen2>65.2</idlen2>
-	<maxn1>111.4</maxn1>
-	<maxn2>105.6</maxn2>
-	<augmented>0</augmented>
-	<injected>0</injected>
+    <milthrust>   56750   </milthrust>
+    <bypassratio>     4.9  </bypassratio>
+<!--	<idleepr>1.602</idleepr>
+	<minepr>1.01</minepr>-->
+	<ignitionn1>4.0</ignitionn1><!-- According to youtube video-->
+	<ignitionn2>25</ignitionn2><!--According to youtube video-->
+    <tsfc>            0.3651 </tsfc>
+	<bleed>           0.03  </bleed>
+	<idlen1>         25.93   </idlen1>
+	<idlen2>         66.0   </idlen2>
+	<maxn1>         109.8   </maxn1><!--Maximum Continious-->
+	<maxn2>         97.1   </maxn2><!--Maximum Continious-->
+	<n1spinup>0.108</n1spinup> <!-- ~37 seconds -->
+	<n2spinup>0.675</n2spinup> <!-- ~37 seconds -->
+	<n1startrate>0.353</n1startrate> <!-- ~62 seconds -->
+	<n2startrate>0.66</n2startrate> <!-- ~62 seconds -->
+	<augmented>         0   </augmented>
+	<injected>          0   </injected>
+
+<!--Spool up and Spool Down data taken from MD-11 (File 1)-->	
 	
 	<function name="N1SpoolUp">
 		<table>
@@ -92,13 +115,11 @@
 				0.6  0.0000  0.0000  0.0000  0.0000  0.0181  0.0362  0.0000
 				0.8  0.0000  0.0000  0.0000  0.0000  0.0158  0.0315  0.0000
 				1.0  0.0000  0.0000  0.0000  0.0000  0.0000  0.0204  0.0000
-				1.2  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
 			</tableData>
 		</table>
 	</function>
 	
 	<function name="MilThrust"> <!-- If you change this, make sure you update the table in the engine system file -->
-		<product>
 			<table>
 				<independentVar lookup="row">velocities/mach</independentVar>
 				<independentVar lookup="column">atmosphere/density-altitude</independentVar>
@@ -112,17 +133,9 @@
 					0.9  1.2580  1.0200  0.7820  0.5220  0.2710  0.1270  0.0000
 					1.0  1.1810  0.9510  0.7210  0.4410  0.1740  0.0580  0.0000
 					1.2  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+					1.4  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
 				</tableData>
 			</table>
-			<property>fadec/limit/rated-thrust-factor</property>
-			<table> <!-- Thrust loss due to reverser angle -->
-				<independentVar lookup="row">/engines/engine[0]/reverser-pos-norm</independentVar>
-				<tableData>
-					0.01  1.00
-					1.00  0.65
-				</tableData>
-			</table>
-		</product>
 	</function>
 
 </turbine_engine>
