@@ -36,8 +36,8 @@ https://www.youtube.com/watch?v=P6mvYyyMHV0
 	<maxn2>         97.1   </maxn2><!--Maximum Continious-->
 	<n1spinup>0.108</n1spinup> <!-- ~37 seconds -->
 	<n2spinup>0.675</n2spinup> <!-- ~37 seconds -->
-	<n1startrate>0.353</n1startrate> <!-- ~62 seconds -->
-	<n2startrate>0.66</n2startrate> <!-- ~62 seconds -->
+	<n1startrate>0.56</n1startrate> <!-- ~39 seconds -->
+	<n2startrate>1.05</n2startrate> <!-- ~39 seconds -->
 	<augmented>         0   </augmented>
 	<injected>          0   </injected>
 
