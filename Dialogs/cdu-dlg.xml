@@ -1,871 +1,865 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Copyright (c) 2022 Josh Davidson (Octal450) -->
 
 <PropertyList>
 
-	<name>747cdu</name>
-	<layout>table</layout>
-	<x>0</x>
-	<y>0</y>
-	
-	<group>
-		<row>0</row>
-		<col>0</col>
-		<layout>hbox</layout>
-		<text>
-			<halign>left</halign>
-			<label>747-400 CDU V1.0</label>
-		</text>
-		<button>
-			<halign>right</halign>
-			<pref-width>20</pref-width>
-			<pref-height>20</pref-height>
-			<legend>X</legend>
-			<key>Esc</key>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
-	</group>
-	
-	<hrule>
-		<row>1</row>
-		<col>0</col>
-	</hrule>
-	
-	<group>
-		<row>2</row>
-		<col>0</col>
-		<layout>hbox</layout>
-		
-		<group>
-			<layout>vbox</layout>
-			
-			<text>
-				<label></label>
-			</text>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("L1");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("L2");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("L3");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("L4");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("L5");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("L6");</script>
-				</binding>
-			</button>
-			
-			<text>
-				<label></label>
-			</text>
-		</group>
-		
-		<canvas>
-			<name>mcdu</name>
-			<valign>fill</valign>
-			<halign>fill</halign>
-			<stretch>false</stretch>
-			<pref-width>291</pref-width>
-			<pref-height>180</pref-height>
-			<nasal>
-				<load>
-					<![CDATA[
+    <name>747cdu</name>
+    <layout>table</layout>
+
+
+    <group>
+        <row>0</row>
+        <col>0</col>
+        <layout>hbox</layout>
+        <text>
+            <halign>left</halign>
+            <label>747-400 CDU V1.0</label>
+        </text>
+        <button>
+            <halign>right</halign>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <legend>X</legend>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+
+    <hrule>
+        <row>1</row>
+        <col>0</col>
+    </hrule>
+
+    <group>
+        <row>2</row>
+        <col>0</col>
+        <layout>hbox</layout>
+
+        <group>
+            <layout>vbox</layout>
+
+            <text>
+                <label></label>
+            </text>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("L1");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("L2");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("L3");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("L4");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("L5");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("L6");</script>
+                </binding>
+            </button>
+
+            <text>
+                <label></label>
+            </text>
+        </group>
+
+        <canvas>
+            <name>mcdu</name>
+            <valign>fill</valign>
+            <halign>fill</halign>
+            <stretch>false</stretch>
+            <pref-width>251</pref-width>
+            <pref-height>180</pref-height>
+            <nasal>
+                <load>
+                    <![CDATA[
 						var cdu_canvas_dlg = canvas.get(cmdarg());
 						var root = cdu_canvas_dlg.createGroup();
 						root.setScale(0.287, 0.257);
 						cdu_canvas_dlg.setColorBackground(0, 0, 0, 1.0);
 						root.createChild("image").set("src", "canvas://by-index/texture[6]");
 					]]>
-				</load>
-				<unload>
-					<![CDATA[
+                </load>
+                <unload>
+                    <![CDATA[
 						cdu_canvas_dlg.del();
 						cdu_canvas_dlg = nil;
 						root = nil;
 					]]>
-				</unload>
-			</nasal>
-		</canvas>
-		
-		<group>
-			<layout>vbox</layout>
-			
-			<text>
-				<label></label>
-			</text>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("R1");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("R2");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("R3");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("R4");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("R5");</script>
-				</binding>
-			</button>
-			
-			<button>
-				<legend>-</legend>
-				<pref-height>21</pref-height>
-				<pref-width>30</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.sidebuttons("R6");</script>
-				</binding>
-			</button>
-			
-			<text>
-				<label></label>
-			</text>
-		</group>
-	</group>
-	
-	<group>
-		<row>3</row>
-		<col>0</col>
-		<layout>hbox</layout>
-		
-		<button>
-			<legend>INIT</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-			<binding>
-				<command>nasal</command>
-				<script>cdu.newpage("INIT/REF INDEX");</script>
-			</binding>
-		</button>
-		
-		<button>
-			<legend>RTE</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-			<binding>
-				<command>nasal</command>
-				<script>cdu.newpage("RTE 1");</script>
-			</binding>
-		</button>
-		
-		<button>
-			<legend>D/A</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-			<binding>
-				<command>nasal</command>
-				<script>cdu.newpage("DEP/ARR INDEX");</script>
-			</binding>
-		</button>
-		
-		<button>
-			<legend>ATC</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-		
-		<button>
-			<legend>VNAV</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-	</group>
-	
-	<group>
-		<row>4</row>
-		<col>0</col>
-		<layout>hbox</layout>
-		
-		<button>
-			<legend>FIX</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-		
-		<button>
-			<legend>LEGS</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-		
-		<button>
-			<legend>HOLD</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-		
-		<button>
-			<legend>COMM</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-		
-		<button>
-			<legend>PROG</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-		<button>
-			<legend>EXEC</legend>
-			<pref-height>25</pref-height>
-			<pref-width>40</pref-width>
-		</button>
-	</group>
-	
-	<group>
-		<row>5</row>
-		<col>0</col>
-		<layout>hbox</layout>
-		
-		<group>
-			<layout>vbox</layout>
-			
-			<group>
-				<layout>table</layout>
-				
-				<button>
-					<row>0</row>
-					<col>0</col>
-					<legend>MENU</legend>
-					<pref-height>25</pref-height>
-					<pref-width>40</pref-width>
-					<binding>
-						<command>nasal</command>
-				<script>cdu.newpage("MENU");</script>
-					</binding>
-				</button>
-				
-				<button>
-					<row>1</row>
-					<col>0</col>
-					<legend>--></legend>
-					<pref-height>25</pref-height>
-					<pref-width>40</pref-width>
-					<binding>
-						<command>nasal</command>
-				<script>cdu.nextpage();</script>
-					</binding>
-				</button>
-				
-				
-				<button>
-					<row>0</row>
-					<col>1</col>
-					<legend>NAV</legend>
-					<pref-height>25</pref-height>
-					<pref-width>40</pref-width>
-				</button>
-				
-				<button>
-					<row>1</row>
-					<col>1</col>
-					<legend>&lt;--</legend>
-					<pref-height>25</pref-height>
-					<pref-width>40</pref-width>
-										<binding>
-						<command>nasal</command>
-				<script>cdu.prevpage();</script>
-					</binding>
-				</button>
-				
-			</group>
-			
-			<group>
-				<layout>table</layout>
-				
-				<button>
-					<row>0</row>
-					<col>0</col>
-					<legend>1</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('1');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>1</row>
-					<col>0</col>
-					<legend>4</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('4');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>2</row>
-					<col>0</col>
-					<legend>7</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('7');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>3</row>
-					<col>0</col>
-					<legend>.</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('.');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>0</row>
-					<col>1</col>
-					<legend>2</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('2');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>1</row>
-					<col>1</col>
-					<legend>5</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('5');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>2</row>
-					<col>1</col>
-					<legend>8</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('8');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>3</row>
-					<col>1</col>
-					<legend>0</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('0');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>0</row>
-					<col>2</col>
-					<legend>3</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('3');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>1</row>
-					<col>2</col>
-					<legend>6</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('6');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>2</row>
-					<col>2</col>
-					<legend>9</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('9');</script>
-		</binding>
-				</button>
-				
-				<button>
-					<row>3</row>
-					<col>2</col>
-					<legend>+/-</legend>
-					<pref-height>25</pref-height>
-					<pref-width>25</pref-width>
-				</button>
-			</group>
-		</group>
-		
-		<group>
-			<layout>table</layout>
-			
-			<button>
-				<row>0</row>
-				<col>0</col>
-				<legend>A</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('A');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>1</row>
-				<col>0</col>
-				<legend>F</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('F');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>2</row>
-				<col>0</col>
-				<legend>K</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('K');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>3</row>
-				<col>0</col>
-				<legend>P</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('P');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>4</row>
-				<col>0</col>
-				<legend>U</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('U');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>5</row>
-				<col>0</col>
-				<legend>Z</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('Z');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>0</row>
-				<col>1</col>
-				<legend>B</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('B');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>1</row>
-				<col>1</col>
-				<legend>G</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('G');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>2</row>
-				<col>1</col>
-				<legend>L</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('L');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>3</row>
-				<col>1</col>
-				<legend>Q</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('Q');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>4</row>
-				<col>1</col>
-				<legend>V</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('V');</script>
-		</binding>
-			</button>
-			
-						<button>
-				<row>5</row>
-				<col>2</col>
-				<legend>SP</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-			</button>
-			
-			<button>
-				<row>0</row>
-				<col>2</col>
-				<legend>C</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('C');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>1</row>
-				<col>2</col>
-				<legend>H</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('H');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>2</row>
-				<col>2</col>
-				<legend>M</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('M');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>3</row>
-				<col>2</col>
-				<legend>R</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('R');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>4</row>
-				<col>2</col>
-				<legend>W</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('W');</script>
-		</binding>
-			</button>
-	
-			<button>
-				<row>5</row>
-				<col>3</col>
-				<legend>DEL</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>
+                </unload>
+            </nasal>
+        </canvas>
+
+        <group>
+            <layout>vbox</layout>
+
+            <text>
+                <label></label>
+            </text>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("R1");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("R2");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("R3");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("R4");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("R5");</script>
+                </binding>
+            </button>
+
+            <button>
+                <legend>-</legend>
+                <pref-height>21</pref-height>
+                <pref-width>30</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.sidebuttons("R6");</script>
+                </binding>
+            </button>
+
+            <text>
+                <label></label>
+            </text>
+        </group>
+    </group>
+
+    <group>
+        <row>3</row>
+        <col>0</col>
+        <layout>hbox</layout>
+
+        <button>
+            <legend>INIT</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+            <binding>
+                <command>nasal</command>
+                <script>cdu.newpage("INIT/REF INDEX");</script>
+            </binding>
+        </button>
+
+        <button>
+            <legend>RTE</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+            <binding>
+                <command>nasal</command>
+                <script>cdu.newpage("RTE 1");</script>
+            </binding>
+        </button>
+
+        <button>
+            <legend>D/A</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+            <binding>
+                <command>nasal</command>
+                <script>cdu.newpage("DEP/ARR INDEX");</script>
+            </binding>
+        </button>
+
+        <button>
+            <legend>ATC</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+
+        <button>
+            <legend>VNAV</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+    </group>
+
+    <group>
+        <row>4</row>
+        <col>0</col>
+        <layout>hbox</layout>
+
+        <button>
+            <legend>FIX</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+
+        <button>
+            <legend>LEGS</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+
+        <button>
+            <legend>HOLD</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+
+        <button>
+            <legend>COMM</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+
+        <button>
+            <legend>PROG</legend>
+            <pref-height>25</pref-height>
+            <pref-width>40</pref-width>
+        </button>
+    </group>
+
+    <group>
+        <row>5</row>
+        <col>0</col>
+        <layout>hbox</layout>
+
+        <group>
+            <layout>vbox</layout>
+
+            <group>
+                <layout>table</layout>
+
+                <button>
+                    <row>0</row>
+                    <col>0</col>
+                    <legend>MENU</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>40</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.newpage("MENU");</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>1</row>
+                    <col>0</col>
+                    <legend>--></legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>40</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.nextpage();</script>
+                    </binding>
+                </button>
+
+
+                <button>
+                    <row>0</row>
+                    <col>1</col>
+                    <legend>NAV</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>40</pref-width>
+                </button>
+
+                <button>
+                    <row>1</row>
+                    <col>1</col>
+                    <legend>&lt;--</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>40</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.prevpage();</script>
+                    </binding>
+                </button>
+
+            </group>
+
+            <group>
+                <layout>table</layout>
+
+                <button>
+                    <row>0</row>
+                    <col>0</col>
+                    <legend>1</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('1');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>1</row>
+                    <col>0</col>
+                    <legend>4</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('4');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>2</row>
+                    <col>0</col>
+                    <legend>7</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('7');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>3</row>
+                    <col>0</col>
+                    <legend>.</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('.');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>0</row>
+                    <col>1</col>
+                    <legend>2</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('2');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>1</row>
+                    <col>1</col>
+                    <legend>5</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('5');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>2</row>
+                    <col>1</col>
+                    <legend>8</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('8');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>3</row>
+                    <col>1</col>
+                    <legend>0</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('0');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>0</row>
+                    <col>2</col>
+                    <legend>3</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('3');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>1</row>
+                    <col>2</col>
+                    <legend>6</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('6');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>2</row>
+                    <col>2</col>
+                    <legend>9</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                    <binding>
+                        <command>nasal</command>
+                        <script>cdu.scratchpad('9');</script>
+                    </binding>
+                </button>
+
+                <button>
+                    <row>3</row>
+                    <col>2</col>
+                    <legend>+/-</legend>
+                    <pref-height>25</pref-height>
+                    <pref-width>25</pref-width>
+                </button>
+            </group>
+        </group>
+
+        <group>
+            <layout>table</layout>
+
+            <button>
+                <row>0</row>
+                <col>0</col>
+                <legend>A</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('A');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>1</row>
+                <col>0</col>
+                <legend>F</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('F');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>2</row>
+                <col>0</col>
+                <legend>K</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('K');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>3</row>
+                <col>0</col>
+                <legend>P</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('P');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>4</row>
+                <col>0</col>
+                <legend>U</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('U');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>5</row>
+                <col>0</col>
+                <legend>Z</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('Z');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>0</row>
+                <col>1</col>
+                <legend>B</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('B');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>1</row>
+                <col>1</col>
+                <legend>G</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('G');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>2</row>
+                <col>1</col>
+                <legend>L</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('L');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>3</row>
+                <col>1</col>
+                <legend>Q</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('Q');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>4</row>
+                <col>1</col>
+                <legend>V</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('V');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>5</row>
+                <col>2</col>
+                <legend>SP</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+            </button>
+
+            <button>
+                <row>0</row>
+                <col>2</col>
+                <legend>C</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('C');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>1</row>
+                <col>2</col>
+                <legend>H</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('H');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>2</row>
+                <col>2</col>
+                <legend>M</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('M');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>3</row>
+                <col>2</col>
+                <legend>R</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('R');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>4</row>
+                <col>2</col>
+                <legend>W</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('W');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>5</row>
+                <col>3</col>
+                <legend>DEL</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>
 			if(getprop("instrumentation/cdu/deletekey") == 0){
 			cdu.deletekeypress();
 			}
 			</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>0</row>
-				<col>3</col>
-				<legend>D</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('D');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>1</row>
-				<col>3</col>
-				<legend>I</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('I');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>2</row>
-				<col>3</col>
-				<legend>N</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('N');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>3</row>
-				<col>3</col>
-				<legend>S</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('S');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>4</row>
-				<col>3</col>
-				<legend>X</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('X');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>5</row>
-				<col>1</col>
-				<legend>/</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('/');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>0</row>
-				<col>4</col>
-				<legend>E</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('E');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>1</row>
-				<col>4</col>
-				<legend>J</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('J');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>2</row>
-				<col>4</col>
-				<legend>O</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('O');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>3</row>
-				<col>4</col>
-				<legend>T</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('T');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>4</row>
-				<col>4</col>
-				<legend>Y</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('Y');</script>
-		</binding>
-			</button>
-			
-			<button>
-				<row>5</row>
-				<col>4</col>
-				<legend>CL</legend>
-				<pref-height>25</pref-height>
-				<pref-width>25</pref-width>
-				<binding>
-					<command>nasal</command>
-					<script>cdu.clear();</script>
-				</binding>
-			</button>
-		</group>
-	</group>
+                </binding>
+            </button>
+
+            <button>
+                <row>0</row>
+                <col>3</col>
+                <legend>D</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('D');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>1</row>
+                <col>3</col>
+                <legend>I</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('I');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>2</row>
+                <col>3</col>
+                <legend>N</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('N');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>3</row>
+                <col>3</col>
+                <legend>S</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('S');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>4</row>
+                <col>3</col>
+                <legend>X</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('X');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>5</row>
+                <col>1</col>
+                <legend>/</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('/');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>0</row>
+                <col>4</col>
+                <legend>E</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('E');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>1</row>
+                <col>4</col>
+                <legend>J</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('J');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>2</row>
+                <col>4</col>
+                <legend>O</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('O');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>3</row>
+                <col>4</col>
+                <legend>T</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('T');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>4</row>
+                <col>4</col>
+                <legend>Y</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.scratchpad('Y');</script>
+                </binding>
+            </button>
+
+            <button>
+                <row>5</row>
+                <col>4</col>
+                <legend>CL</legend>
+                <pref-height>25</pref-height>
+                <pref-width>25</pref-width>
+                <binding>
+                    <command>nasal</command>
+                    <script>cdu.clear();</script>
+                </binding>
+            </button>
+        </group>
+    </group>
 
 </PropertyList>
