@@ -99,11 +99,6 @@ r3 = "EICAS CP";
 r4 = "SELECT>";
 }
 
-if (title == "Options"){
-titre = "OPTIONS";
-
-
-}
 
 
 if (title == "INIT/REF INDEX"){
@@ -153,7 +148,7 @@ r12 = "POS INIT>";
 if (title == "EFIS CONTROL"){
 titre = title;
  pagenum = "";
-tiret = "        -----------";
+tiret = "             -----------";
 l1 = "BARO SET";
 if(getprop("instrumentation/altimeter/mode") == "IN-HG"){
 l2 = sprintf("%2.2f",getprop("instrumentation/altimeter/setting-inhg"));
@@ -197,13 +192,61 @@ r8 = "<SEL> VOR>";
 r8 = "VOR>";
 }
 
-if (getprop("instrumentation/efis/mfd/display-type") == "CRT"){
-r10 = "<SEL> CTR>";
-}else{
+
+if (getprop("instrumentation/efis[0]/inputs/nd-centered") == 0){
 r10 = "CTR>";
+}
+else{
+r10 = "<SEL> CTR>";
 }
 
 r12 = "OPTIONS>";
+}
+
+if (title == "EFIS OPTIONS"){
+titre = title;
+tiret = "------------------------";
+if (getprop("instrumentation/efis[0]/inputs/wxr") == 1){
+l2 = "<WXR <SEL>";
+}
+else{
+l2 = "<WXR";	
+}
+if (getprop("instrumentation/efis[0]/inputs/pos") == 1){
+l4 = "<POS <SEL>";
+}
+else{
+l4 = "<POS";	
+}
+l6 = "<MTRS <SEL>";
+l10 = "<VOR";
+
+if (getprop("instrumentation/efis[0]/inputs/wpt") == 1){
+r2 = "<SEL> WPT>";
+}
+else{
+r2 = "WPT>";	
+}
+if (getprop("instrumentation/efis[0]/inputs/sta") == 1){
+r4 = "<SEL> STA>";
+}
+else{
+r4 = "STA>";	
+}
+if (getprop("instrumentation/efis[0]/inputs/arpt") == 1){
+r6 = "<SEL> ARPT>";
+}
+else{
+r6 = "ARPT>";	
+}
+if (getprop("instrumentation/efis[0]/inputs/data") == 1){
+r8 = "<SEL> DATA>";
+}
+else{
+r8 = "DATA>";	
+}
+r10 = "ADF>";
+r12 = "CONTROL>";
 }
 
 if (title == "PERF INIT"){
