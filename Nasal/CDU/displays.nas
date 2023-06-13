@@ -100,7 +100,6 @@ r4 = "SELECT>";
 }
 
 
-
 if (title == "INIT/REF INDEX"){
 titre = title;
  pagenum = "";
@@ -129,15 +128,7 @@ l9 = "DRAG/FF";
 l10 = "+0.0/+0.0";
 l12 = "<INDEX";
 r1 = "ENGINES";
-if (getprop("sim/aero") = "747-400-GE"){
 r2 = "-80C2B1F";
-}
-else if (getprop("sim/aero") = "747-400-PW"){
-r2 = "PW4056";
-}
-else {
-r2 = "211-524G";
-}
 r3 = "ACTIVE";
 r4 = "SEP29OCT17/13";
 r9 = "CO DATA";
