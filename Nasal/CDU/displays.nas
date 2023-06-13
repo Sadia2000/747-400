@@ -99,6 +99,13 @@ r3 = "EICAS CP";
 r4 = "SELECT>";
 }
 
+if (title == "Options"){
+titre = "OPTIONS";
+
+
+}
+
+
 if (title == "INIT/REF INDEX"){
 titre = title;
  pagenum = "";
@@ -140,8 +147,14 @@ titre = title;
  pagenum = "";
 tiret = "        -----------";
 l1 = "BARO SET";
+if(getprop("instrumentation/altimeter/mode") == "IN-HG"){
 l2 = sprintf("%2.2f",getprop("instrumentation/altimeter/setting-inhg"));
 sl2 = small(l2,"IN");
+}
+else{
+l2 = sprintf("%04.0f",getprop("instrumentation/altimeter/setting-hpa"));
+sl2 = small(l2," HPA");
+}
 l3 = "DH SET";
 l4 = sprintf("%i", getprop("instrumentation/mk-viii/inputs/arinc429/decision-height"));
 sl4 = small(l4,"FT");
@@ -185,16 +198,110 @@ r10 = "CTR>";
 r12 = "OPTIONS>";
 }
 
+if (title == "PERF INIT"){
+titre = title;
+l1 = "GR WT ADV";
+l2 = "###.#";
+l3 = "FUEL";
+l4 = "###.#";
+sl4 = "           CALC";
+}
+
+
 if (title == "POS INIT"){
+pagenum = getprop("instrumentation/cdu/page/current-page")~"/"~getprop("instrumentation/cdu/page/maxpage");
+if (getprop("instrumentation/cdu/page/current-page") == 1){
 titre = title;
 tiret = "------------------------";
 l3 = "REF AIRPORT";
+if (getprop("instrumentation/cdu/page/POS-INIT/airport") == ""){
+l4 = "----";
+} else{
+l4 = getprop("instrumentation/cdu/page/POS-INIT/airport");
+}
+l5 = "GATE";
+if (getprop("instrumentation/cdu/page/POS-INIT/airport") == ""){
+l6 = "";
+} else{
+l6 = "----";
+}
+l7 = "UTC (GPS)";
+l8 = sprintf("%02.0f",getprop("instrumentation/clock/indicated-hour"))~""~sprintf("%02.0f",getprop("instrumentation/clock/indicated-min"));
+sl8 = "      Z";
+l9 = "SET HDG";
+l10 = "---g";
+l12 = "<INDEX";
+r1 = "LAST POS";
+r2 = LastREGISTEREDPOS;
+var airport = getprop("instrumentation/cdu/page/POS-INIT/airport");
+var info = airportinfo(airport);
+if (airport != ""){
+r4 = latdeg2dmm(info.lat)~" "~londeg2dmm(info.lon);
+}
+else {
+r4 = "";
+}
+r7 = "GPS POS";
 r8 = latdeg2dmm(getprop("position/latitude-deg"))~" "~londeg2dmm(getprop("position/longitude-deg"));
 r9 = "SET IRS POS";
 r10 = "###g##.# ####g##.#";
+r12 = "ROUTE>";
+tiret = "------------------------";
+}
+
+if (getprop("instrumentation/cdu/page/current-page") == 2){
+l1 = "FMC POS "~"("~"GPS"~")";
+l2 = latdeg2dmm(getprop("position/latitude-deg"))~" "~londeg2dmm(getprop("position/longitude-deg"));
+
+var GroundS1 = 0;
+var GroundS2 = 0;
+var GroundS1L = 0;
+var GroundS2L = 0;
+if (rand() > 0.5){
+GroundS1 = sprintf("%4.0f", (getprop("velocities/groundspeed-kt") + (2 * rand())));
+GroundS2 = sprintf("%4.0f", (getprop("velocities/groundspeed-kt") + (2 * rand())));
+}else{
+GroundS1 = sprintf("%4.0f", (getprop("velocities/groundspeed-kt") - (2 * rand())));
+GroundS2 = sprintf("%4.0f", (getprop("velocities/groundspeed-kt") - (2 * rand())));	
+}
+
+
+r1 = "GS";
+r2 = GroundS1~"  ";
+sr2 = "KT";
+r4 = GroundS2~"  ";
+sr4 = "KT";
+
+# var timer = maketimer (2, func(){
+# r5 = RadPosition();
+# });
+# timer.start();
+
+# var UpdateGS = func(){
+# GSTrue1 = sprintf("%4.0f", (getprop("velocities/groundspeed-kt") + (4 * rand())));
+# GSTrue2 = sprintf("%4.0f", (getprop("velocities/groundspeed-kt") + (4 * rand())));
+# Timing.restart(2);
+# }
+
+# var GSTrue1 = "";
+# var GSTrue2 = "";
+# Timing.start();
+# var Timing = maketimer(2, UpdateGS);
+
+}
 }
 
 if (title == "RTE 1"){
+
+l12 = "<RTE 2";
+
+if (getprop("autopilot/route-manager/active") != 1){
+r12 = "ACTIVATE>";
+}
+else{
+r12 = "PERF INIT>";
+}
+
 if(currentpage == 1){
 routepage();
 titre = title;
@@ -229,9 +336,8 @@ l5 = "REQUEST";
 l6 = "<SEND";
 r5 = "CO ROUTE";
 r6 = "----------";
-l12 = "<RTE 2";
-r12 = "ACTIVATE>";
-}else{
+}
+else{
 titre = "RTE 1";
 pagenum = currentpage~"/"~maxpage;
 r1 = "TO";
@@ -246,6 +352,7 @@ l4 = viacolumn()[1];
 l6 = viacolumn()[2];
 l8 = viacolumn()[3];
 l10 = viacolumn()[4];
+tiret = "------------------------";
 }
 }
 

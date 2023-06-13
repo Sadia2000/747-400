@@ -16,6 +16,7 @@ return outputlat;
 
 
 
+
 var londeg2dmm = func(deglonpos) {
 var deg_int = int(deglonpos);
 var decimal = (deglonpos - deg_int) * 60;
@@ -32,6 +33,19 @@ var estwest = "E";
 var outputlon = estwest~outputlondeg~"g"~sprintf("%02.1f",outputlonmin);
 return outputlon;
 }
+
+# Extra pages (Put here if the necessitated page numbers are more than 1)
+var extrapage = func(){
+#
+# Insert In-Between the outer curly brackets.
+#
+if (getprop("/instrumentation/cdu/save/title") == "POS INIT"){
+setprop ("instrumentation/cdu/page/maxpage", "3");
+}
+}
+
+var extrapagetimer = maketimer(0.1, extrapage);
+extrapagetimer.start();
 
 var scratchpad = func(v) {
 if(size(getprop("instrumentation/cdu/input")) < 24 and size(getprop("instrumentation/cdu/save/input")) < 24){
@@ -51,7 +65,8 @@ setprop("instrumentation/cdu/deletekey", 0);
 		var length = size(getprop("/instrumentation/cdu/input")) - 1;
 		setprop("/instrumentation/cdu/input",substr(getprop("/instrumentation/cdu/input"),0,length));
 	}
-	}
+	
+}
 	
 var warnmessage = func(mes) {
 setprop("instrumentation/cdu/warnmessage", 1);
@@ -59,6 +74,8 @@ setprop("instrumentation/cdu/save/input", getprop("instrumentation/cdu/input"));
 setprop("instrumentation/cdu/input", mes);
 update();
 }
+
+
 
 var sids = func {
 var airport = airportinfo(getprop("autopilot/route-manager/departure/airport"));
@@ -1162,3 +1179,244 @@ input = " "~input;
 }
 return input;
 }
+
+var IRSAlign = func(){
+var aligntime = 3;
+var previoustime = "";
+var timetoalign = "";
+var intervaltimer = maketimer(0.1, timer);
+var IRSState = getprop("instrumentation/cdu/Inertial/IRS-1/irs-state");
+var IRSSwitch = getprop("instrumentation/cdu/Inertial/IRS-1/irs-switch");
+timer = func(){
+	if(IRSSwitch == 2){
+	if(IRSState == "Unaligned"){
+	intervaltimer.start();
+	if (timetoalign > 0){
+	previoustime = timetoalign;
+	timetoalign = timetoalign-0.017;
+	intervaltimer.restart(0);
+	}
+	else{
+	intervaltimer.stop;
+	setprop("instrumentation/cdu/Inertial/IRS-1/irs-state", "Aligned");
+	}
+	}
+	}
+	else{
+	setprop("instrumentation/cdu/Inertial/IRS-1/irs-state", "Unaligned");			
+	}
+}
+}
+
+
+# var RadPosition = func(){
+# var navaid = findNavaidsWithinRange(10);
+# var navaid1 = navaid[0];
+# var navaid2 = navaid[1];
+# var navaid3 = navaid[2];
+# var (course1,dist1) = courseAndDistance(navaid1);
+# var (course2,dist2) = courseAndDistance(navaid2);
+# var (course3,dist3) = courseAndDistance(navaid3);
+# var LastDistToNav1 = "";
+# var LastDistToNav2 = "";
+# var LastDistToNav3 = "";
+# var DeltaDist1 = "";
+# var DeltaDist2 = "";
+# var DeltaDist3 = "";
+# var GS1 = "";
+# var GS2 = "";
+# var GS3 = "";
+# var GCS1 = "";
+# var GCS2 = "";
+# var GCS3 = ""; 
+# GCS is Calculated GS
+# var FinalGS = "";
+# if (size(findNavaidsWithinRange(10)) > 2){
+# var timer = maketimer(2, PosCalculator);
+# timer.start();
+# var PosCalculator = func(){
+# if (LastDistToNav1 != dist1){
+# DeltaDist1 = dist1-LastDistToNav1;
+# GS1 = DeltaDist1 / (1/1800);
+# DeltaDist2 = dist2-LastDistToNav2;
+# GS2 = DeltaDist2 / (1/1800);
+# DeltaDist3 = dist3-LastDistToNav3;
+# GS3 = DeltaDist3 / (1/1800);
+
+# if (GS1 < 0){
+#  GCS1 = GS1 * -1;	
+# }
+# if (GS2 < 0){
+# GCS2 = GS2 * -1;	
+# }
+# if (GS3 < 0){
+# GCS3 = GS3 * -1;	
+# }
+
+# timer.restart(0);			
+# }
+# }
+# FinalGS = sprintf("4.0f", (GCS1 + GCS2 + GCS3)/3);
+# return FinalGS;		
+# }
+# else{
+# return nil;	
+# }
+# }
+
+var LastDistToNav1 = 0;
+var LastDistToNav2 = 0;
+var LastDistToNav3 = 0;
+var DeltaDist1 = 0;
+var DeltaDist2 = 0;
+var DeltaDist3 = 0;
+var GS1 = 0;
+var GS2 = 0;
+var GS3 = 0;
+var GCS1 = 0;
+var GCS2 = 0;
+var GCS3 = 0;
+var FinalGS = 0;
+var RadPosition = func() {
+    # GCS is Calculated GS
+    if (size(findNavaidsWithinRange(10)) > 2) {
+		var navaid = findNavaidsWithinRange(10);
+		var navaid1 = navaid[0];
+		var navaid2 = navaid[1];
+		var navaid3 = navaid[2];
+		var (course1, dist1) = courseAndDistance(navaid1);
+		var (course2, dist2) = courseAndDistance(navaid2);
+		var (course3, dist3) = courseAndDistance(navaid3);
+            if (LastDistToNav1 != dist1) {
+                DeltaDist1 = dist1 - LastDistToNav1;
+                GS1 = DeltaDist1 / (1 / 1800);
+                DeltaDist2 = dist2 - LastDistToNav2;
+                GS2 = DeltaDist2 / (1 / 1800);
+                DeltaDist3 = dist3 - LastDistToNav3;
+                GS3 = DeltaDist3 / (1 / 1800);
+
+                if (GS1 < 0) {
+                    GCS1 = GS1 * -1;
+                }
+                if (GS2 < 0) {
+                    GCS2 = GS2 * -1;
+                }
+                if (GS3 < 0) {
+                    GCS3 = GS3 * -1;
+                }
+
+			LastDisToNav1 = dist1;
+			LastDisToNav2 = dist2;
+			LastDisToNav3 = dist3;
+            }
+        FinalGS = sprintf("4.0f", (GCS1 + GCS2 + GCS3) / 3);
+        return FinalGS;
+    } else {
+        return nil;
+    }
+}
+
+
+
+var LastREGISTEREDPOS = nil; # global variable to store your position
+# your CDU would get the position from the above variable
+
+# Listener
+setlistener("/sim/signals/fdm-initialized", func() {
+  LastREGISTEREDPOS = latdeg2dmm(getprop("position/latitude-deg"))~" "~londeg2dmm(getprop("position/longitude-deg"));
+
+   # as soon as /sim/signals/fdm-initialized changes value, e.g. from false to true, update the value of LastREGISTEREDPOS 
+});
+
+
+
+ var randomizer = maketimer(0,func(){
+ 	var randomvalue = rand();
+ 	return randomvalue;
+ });
+ var randomizersensed = maketimer(0,func(){
+ 	var randomvalue = rand();
+	return randomvalue;
+});
+
+randomizersensed.singleShot = 1; # timer will only be run once
+randomizersensed.start();
+randomizer.singleShot = 1; # timer will only be run once
+randomizer.start();
+
+# var zfwtrueLB = getprop("/payload/weight[0]/weight-lb")+getprop("/payload/weight[1]/weight-lb")+getprop("/payload/weight[2]/weight-lb")+getprop("/payload/weight[3]/weight-lb")+getprop("/payload/weight[4]/weight-lb")+getprop("/payload/weight[5]/weight-lb")+getprop("/payload/weight[6]/weight-lb")+getprop("/payload/weight[7]/weight-lb")+getprop("/payload/weight[8]/weight-lb")+getprop("/payload/weight[9]/weight-lb")+getprop("/payload/weight[10]/weight-lb");
+# var zfwtruemetric = WTtrueLBS*LB2KG/1000;
+# var zfwinput = getprop("instrumentation/cdu/page/PERF-INIT/mass/zfw-est");
+# var zfwstate = getprop("instrumentation/cdu/page/PERF-INIT/mass/zfw-state");
+# var zfwpredict = "";
+# var GWinput = getprop("instrumentation/cdu/page/PERF-INIT/mass/GRWT-input");
+# var GWstate = getprop("instrumentation/cdu/page/PERF-INIT/mass/GRWT-state");
+# var GWpredict = "";
+# var fueltrue = getprop("consumables/fuel/total-fuel/kg")/1000-(2.1*randomizer());
+# var fueltruesensed = getprop("consumables/fuel/total-fuel/kg")/1000+(2.1*randomizersensed());
+# var fuelinput = getprop("instrumentation/cdu/page/PERF-INIT/mass/fuel-input");
+# var fuelstate = getprop("instrumentation/cdu/page/PERF-INIT/mass/fuel-state");
+# var fuelpredict = "";
+
+# Function to predict gross weight depending on settings.
+# var grossweightprediction = func(){
+# if (GWstate == "AUTO"){
+# setprop(getprop("instrumentation/cdu/page/PERF-INIT/mass/GRWT-input"), "");
+# if (fuelstate == "CALC"){
+# if (zfwstate == "PREDICT"){
+# GWpredict = zfwtruemetric + fuelpredict;
+# }
+# else if (zfwstate == "MAN"){
+# GWpredict = zfwinput + fuelpredict;
+# }
+# }
+# else if (fuelstate == "SENSED"){
+# if (zfwstate == "PREDICT"){
+# GWpredict = zfwtruemetric + fueltruesensed;
+# }
+# else if (zfwstate == "MAN"){
+# GWpredict = zfwinput + fueltruesensed;
+# }
+# }
+# else if(fuelstate == "MANUAL"){
+# if (zfwstate == "PREDICT"){
+# GWpredict = zfwtruemetric + fuelinput;
+# }
+# else if (zfwstate == "MAN"){
+# GWpredict = zfwinput + fuelinput;
+# }
+# }
+# }
+# else if (GWstate == "MAN"){
+# GWpredict = GWinput;
+# }
+# return GWpredict;
+# }
+
+# Function to predict fuel quantity depending on settings.
+# var fuelpredicted = func(){
+# if (fuelstate == "CALC"){
+# if (zfwstate == "MAN"){
+# if (GWstate == "MAN"){
+# fuelpredict = GWinput - zfwinput;
+# }else if (GWstate == "AUTO"){
+# fuelpredict = fueltrue;
+# }
+# } else if (zfwstate == "PREDICT"){
+# if (GWstate == "AUTO"){
+# fuelpredict = fueltrue;
+# } else if(zfwstate == "MAN"){
+# fuelpredict = fueltrue;
+# }
+# }
+# }
+# else if (fuelstate == "SENSED"){
+# setprop(getprop("instrumentation/cdu/page/PERF-INIT/mass/fuel-input"), "");
+# fuelpredict = fuelsensed;
+# }
+# else if (fuelstate == "MANUAL"){
+# fuelpredict = fuelinput;
+# }
+# return fuelpredict;
+# }
+
