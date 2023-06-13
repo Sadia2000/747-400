@@ -561,17 +561,98 @@ update();
 setprop("instrumentation/efis/mfd/display-mode", "VOR");
 }
 if (button == "R5"){
-warnmessage('NOT IMPLEMENTED YET');
+update();
+if (getprop("instrumentation/efis[0]/inputs/nd-centered") == 0){
+setprop("instrumentation/efis[0]/inputs/nd-centered", 1);
+setprop("instrumentation/efis[1]/inputs/nd-centered", 1);
 }
-if (button == "R6"){
-newpage("Options");
+else{
+setprop("instrumentation/efis[0]/inputs/nd-centered", 0);
+setprop("instrumentation/efis[1]/inputs/nd-centered", 0);
 }
 }
 
-if (title == "Options"){
-	
-	
+if (button == "R6"){
+newpage("EFIS OPTIONS");
 }
+}
+
+if (title == "EFIS OPTIONS"){
+if (button == "L1"){
+update();
+if(getprop("instrumentation/efis[0]/inputs/wxr") == 1){
+setprop("instrumentation/efis[0]/inputs/wxr", 0);
+setprop("instrumentation/efis[1]/inputs/wxr", 0);
+}
+else{
+setprop("instrumentation/efis[0]/inputs/wxr", 1);
+setprop("instrumentation/efis[1]/inputs/wxr", 1);	
+}
+}
+
+if (button == "L2"){
+update();
+if(getprop("instrumentation/efis[0]/inputs/pos") == 1){
+setprop("instrumentation/efis[0]/inputs/pos", 0);
+setprop("instrumentation/efis[1]/inputs/pos", 0);
+}
+else{
+setprop("instrumentation/efis[0]/inputs/pos", 1);
+setprop("instrumentation/efis[1]/inputs/pos", 1);	
+}
+}
+if (button == "L3"){
+warnmessage('NOT IMPLEMENTED YET');
+}
+if (button == "R1"){
+if(getprop("instrumentation/efis[0]/inputs/wpt") == 1){
+setprop("instrumentation/efis[0]/inputs/wpt", 0);
+setprop("instrumentation/efis[1]/inputs/wpt", 0);
+}
+else{
+setprop("instrumentation/efis[0]/inputs/wpt", 1);
+setprop("instrumentation/efis[1]/inputs/wpt", 1);	
+}
+}
+if (button == "R2"){
+if(getprop("instrumentation/efis[0]/inputs/sta") == 1){
+setprop("instrumentation/efis[0]/inputs/sta", 0);
+setprop("instrumentation/efis[1]/inputs/sta", 0);
+}
+else{
+setprop("instrumentation/efis[0]/inputs/sta", 1);
+setprop("instrumentation/efis[1]/inputs/sta", 1);	
+}
+}
+if (button == "R3"){
+if(getprop("instrumentation/efis[0]/inputs/arpt") == 1){
+setprop("instrumentation/efis[0]/inputs/arpt", 0);
+setprop("instrumentation/efis[1]/inputs/arpt", 0);
+}
+else{
+setprop("instrumentation/efis[0]/inputs/arpt", 1);
+setprop("instrumentation/efis[1]/inputs/arpt", 1);	
+}
+}
+if (button == "R4"){
+if(getprop("instrumentation/efis[0]/inputs/data") == 1){
+setprop("instrumentation/efis[0]/inputs/data", 0);
+setprop("instrumentation/efis[1]/inputs/data", 0);
+}
+else{
+setprop("instrumentation/efis[0]/inputs/data", 1);
+setprop("instrumentation/efis[1]/inputs/data", 1);	
+}
+}
+if (button == "R5"){
+warnmessage('NOT IMPLEMENTED YET');
+}
+if (button == "R6"){
+warnmessage('NOT IMPLEMENTED YET');
+}
+}
+
+
 if(title == "POS INIT"){
 if(button == "L2"){
 if (inputsize == 4){
