@@ -605,6 +605,7 @@ if (button == "L3"){
 warnmessage('NOT IMPLEMENTED YET');
 }
 if (button == "R1"){
+update();
 if(getprop("instrumentation/efis[0]/inputs/wpt") == 1){
 setprop("instrumentation/efis[0]/inputs/wpt", 0);
 setprop("instrumentation/efis[1]/inputs/wpt", 0);
@@ -615,6 +616,7 @@ setprop("instrumentation/efis[1]/inputs/wpt", 1);
 }
 }
 if (button == "R2"){
+update();
 if(getprop("instrumentation/efis[0]/inputs/sta") == 1){
 setprop("instrumentation/efis[0]/inputs/sta", 0);
 setprop("instrumentation/efis[1]/inputs/sta", 0);
@@ -635,6 +637,7 @@ setprop("instrumentation/efis[1]/inputs/arpt", 1);
 }
 }
 if (button == "R4"){
+update();
 if(getprop("instrumentation/efis[0]/inputs/data") == 1){
 setprop("instrumentation/efis[0]/inputs/data", 0);
 setprop("instrumentation/efis[1]/inputs/data", 0);
@@ -645,9 +648,11 @@ setprop("instrumentation/efis[1]/inputs/data", 1);
 }
 }
 if (button == "R5"){
+update();
 warnmessage('NOT IMPLEMENTED YET');
 }
 if (button == "R6"){
+update();
 warnmessage('NOT IMPLEMENTED YET');
 }
 }
