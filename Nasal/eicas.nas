@@ -225,6 +225,8 @@ var advisory_messages = func {
 			msgs_elecGenOff = msgs_elecGenOff~"4, ";
 		append(msgs_advisory,substr(msgs_elecGenOff,0,size(msgs_elecGenOff)-2));
 	}
+	if(getprop("/instrumentation/cdu/warnmessage") == 1)
+		append(msgs_advisory,">FMC MESSAGE");
 	if (getprop("/controls/flight/flaps") != getprop("/fdm/jsbsim/fcs/flap-cmd-norm"))
 		append(msgs_advisory,">FLAP RELIEF");
 	if (math.abs((fuel[1]-fuel[4])) > 3000)
