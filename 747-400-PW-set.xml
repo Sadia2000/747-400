@@ -848,6 +848,9 @@ left mouse button and counter clockwise using the middle mouse button.
                 <display-type type="string">CRT</display-type>
             </mfd>
         </efis>
+		<altimeter>
+		<mode>IN-HG</mode>
+		</altimeter>
         <cdu>
             <update type="double">0</update>
             <flt-no type="string">--------</flt-no>
@@ -857,6 +860,20 @@ left mouse button and counter clockwise using the middle mouse button.
             <cleartimer type="double">0</cleartimer>
             <warnmessage type="double">0</warnmessage>
             <deletekey type="double">0</deletekey>
+			<Inertial>
+			<IRS-1>
+				<irs-switch type="string">0</irs-switch>
+				<irs-status type="string">Unaligned</irs-status>
+			</IRS-1>
+			<IRS-2>
+				<irs-switch type="string">0</irs-switch>
+				<irs-status type="string">Unaligned</irs-status>
+			</IRS-2>
+			<IRS-3>
+				<irs-switch type="string">0</irs-switch>
+				<irs-status type="string">Unaligned</irs-status>
+			</IRS-3>
+			</Inertial>
             <save>
                 <title>MENU</title>
                 <input type="string"></input>
@@ -865,8 +882,22 @@ left mouse button and counter clockwise using the middle mouse button.
                 <current-page type="double">1</current-page>
                 <maxpage type="double">0</maxpage>
                 <POS-INIT>
-                    <airport>----</airport>
+                    <airport></airport>
                 </POS-INIT>
+                <PREF-INIT>
+					<mass>
+							<GRWT-input type="int"></GRWT-input>
+							<GRWT-state type="string"></GRWT-state>
+							<fuel-input type="int"></fuel-input>
+							<fuel-state type="string"></fuel-state>
+							<zfw-input type="int"></zfw-input>
+							<zfw-state type="string"></zfw-state>
+							<reserves-input type="string"></reserves-input>
+					</mass>
+							<costindex-input></costindex-input>
+							<cruise-alt></cruise-alt>
+							<step-size></step-size>
+                </PREF-INIT>
                 <dep>
                     <sidsel>0</sidsel>
                 </dep>
