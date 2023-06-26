@@ -1355,133 +1355,333 @@
     </animation>
 
     <!-- Fire Protection -->
-
     <animation>
         <type>pick</type>
         <object-name>fire.1</object-name>
         <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[0]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[0]/extinguisher</property>
+				<step>1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[0]/extinguisher") == 1){
+				fireprotection.extinguish(0,"A");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[0]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[0]/extinguisher</property>
+				<step>-1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[0]/extinguisher") == -1){
+				fireprotection.extinguish(0,"B");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
             <button>0</button>
             <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>engines/engine[0]/extinguisher</property>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>engines/engine[0]/extinguished</property>
-                <value>1</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>/controls/pneumatic/engine[0]/bleed</property>
-                <value>0</value>
+			<binding>
+                <command>nasal</command>
+               <script>fireprotection.extinguisherani(0);</script>
             </binding>
         </action>
     </animation>
     <animation>
         <type>translate</type>
         <object-name>fire.1</object-name>
-        <property>engines/engine[0]/extinguisher</property>
+        <property>engines/engine[0]/extinguisher-arm</property>
         <factor>0.02</factor>
         <axis>
             <z>1</z>
         </axis>
     </animation>
+	<animation>
+        <type>rotate</type>
+        <object-name>fire.1</object-name>
+        <property>/engines/engine[0]/extinguisher</property>
+        <factor>10</factor>
+        <axis>
+			<z>1</z>
+        </axis>
+		<center>
+			<x-m>-0.1</x-m>
+			<y-m>-0.1</y-m>
+			<z-m>0</z-m>
+		</center>
+    </animation>
+
 
     <animation>
         <type>pick</type>
         <object-name>fire.2</object-name>
         <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[1]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[1]/extinguisher</property>
+				<step>1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[1]/extinguisher") == 1){
+				fireprotection.extinguish(1,"A");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[1]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[1]/extinguisher</property>
+				<step>-1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[1]/extinguisher") == -1){
+				fireprotection.extinguish(1,"B");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
             <button>0</button>
             <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>engines/engine[1]/extinguisher</property>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>engines/engine[1]/extinguished</property>
-                <value>1</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>/controls/pneumatic/engine[1]/bleed</property>
-                <value>0</value>
+			<binding>
+                <command>nasal</command>
+               <script>fireprotection.extinguisherani(1);</script>
             </binding>
         </action>
     </animation>
     <animation>
         <type>translate</type>
         <object-name>fire.2</object-name>
-        <property>engines/engine[1]/extinguisher</property>
+        <property>engines/engine[1]/extinguisher-arm</property>
         <factor>0.02</factor>
         <axis>
             <z>1</z>
         </axis>
+    </animation>
+	<animation>
+        <type>rotate</type>
+        <object-name>fire.2</object-name>
+        <property>/engines/engine[1]/extinguisher</property>
+        <factor>10</factor>
+        <axis>
+			<z>1</z>
+        </axis>
+		<center>
+			<x-m>-0.1</x-m>
+			<y-m>-0.04</y-m>
+			<z-m>0</z-m>
+		</center>
     </animation>
 
     <animation>
         <type>pick</type>
         <object-name>fire.3</object-name>
         <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[2]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[2]/extinguisher</property>
+				<step>1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[2]/extinguisher") == 1){
+				fireprotection.extinguish(2,"A");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[2]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[2]/extinguisher</property>
+				<step>-1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[2]/extinguisher") == -1){
+				fireprotection.extinguish(2,"B");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
             <button>0</button>
             <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>engines/engine[2]/extinguisher</property>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>engines/engine[2]/extinguished</property>
-                <value>1</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>/controls/pneumatic/engine[2]/bleed</property>
-                <value>0</value>
+			<binding>
+                <command>nasal</command>
+               <script>fireprotection.extinguisherani(2);</script>
             </binding>
         </action>
     </animation>
     <animation>
         <type>translate</type>
         <object-name>fire.3</object-name>
-        <property>engines/engine[2]/extinguisher</property>
+        <property>engines/engine[2]/extinguisher-arm</property>
         <factor>0.02</factor>
         <axis>
             <z>1</z>
         </axis>
+    </animation>
+	<animation>
+        <type>rotate</type>
+        <object-name>fire.3</object-name>
+        <property>/engines/engine[2]/extinguisher</property>
+        <factor>10</factor>
+        <axis>
+			<z>1</z>
+        </axis>
+		<center>
+			<x-m>-0.1</x-m>
+			<y-m>0.04</y-m>
+			<z-m>0</z-m>
+		</center>
     </animation>
 
     <animation>
         <type>pick</type>
         <object-name>fire.4</object-name>
         <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[3]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[3]/extinguisher</property>
+				<step>1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[3]/extinguisher") == 1){
+				fireprotection.extinguish(3,"A");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+			<binding>
+				<condition>
+					<property>engines/engine[3]/extinguisher-arm</property>
+				</condition>
+				<command>property-adjust</command>
+				<property>/engines/engine[3]/extinguisher</property>
+				<step>-1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if(getprop("engines/engine[3]/extinguisher") == -1){
+				fireprotection.extinguish(3,"B");
+				}
+				</script>
+            </binding>
+        </action>
+        <action>
             <button>0</button>
             <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>engines/engine[3]/extinguisher</property>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>engines/engine[3]/extinguished</property>
-                <value>1</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>/controls/pneumatic/engine[3]/bleed</property>
-                <value>0</value>
+			<binding>
+                <command>nasal</command>
+               <script>fireprotection.extinguisherani(3);</script>
             </binding>
         </action>
     </animation>
     <animation>
         <type>translate</type>
         <object-name>fire.4</object-name>
-        <property>engines/engine[3]/extinguisher</property>
+        <property>engines/engine[3]/extinguisher-arm</property>
         <factor>0.02</factor>
         <axis>
             <z>1</z>
         </axis>
+    </animation>
+	<animation>
+        <type>rotate</type>
+        <object-name>fire.4</object-name>
+        <property>/engines/engine[3]/extinguisher</property>
+        <factor>10</factor>
+        <axis>
+			<z>1</z>
+        </axis>
+		<center>
+			<x-m>-0.1</x-m>
+			<y-m>0.1</y-m>
+			<z-m>0</z-m>
+		</center>
     </animation>
 
     <effect>
