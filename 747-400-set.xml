@@ -538,18 +538,52 @@ left mouse button and counter clockwise using the middle mouse button.
     <engines>
         <engine n="0">
             <running>false</running>
+			<extinguisher type="int">0</extinguisher>
+			<extinguisher-arm type ="bool">0</extinguisher-arm>
+			<extinguisher-A type ="bool">0</extinguisher-A>
+			<extinguisher-B type ="bool">0</extinguisher-B>
+			<on-fire type ="bool">0</on-fire>
+			<extinguished type ="bool">0</extinguished>
+			<smoke type ="bool">0</smoke>
         </engine>
         <engine n="1">
             <running>false</running>
+			<extinguisher>0</extinguisher>
+			<extinguisher-arm type ="bool">0</extinguisher-arm>
+			<extinguisher-A type ="bool">0</extinguisher-A>
+			<extinguisher-B type ="bool">0</extinguisher-B>
+			<on-fire type ="bool">0</on-fire>
+			<extinguished type ="bool">0</extinguished>
+			<smoke type ="bool">0</smoke>
         </engine>
         <engine n="2">
             <running>false</running>
+			<extinguisher>0</extinguisher>
+			<extinguisher-arm type ="bool">0</extinguisher-arm>
+			<extinguisher-A type ="bool">0</extinguisher-A>
+			<extinguisher-B type ="bool">0</extinguisher-B>
+			<on-fire type ="bool">0</on-fire>
+			<extinguished type ="bool">0</extinguished>
+			<smoke type ="bool">0</smoke>
         </engine>
         <engine n="3">
             <running>false</running>
+			<extinguisher>0</extinguisher>
+			<extinguisher-arm type ="bool">0</extinguisher-arm>
+			<extinguisher-A type ="bool">0</extinguisher-A>
+			<extinguisher-B type ="bool">0</extinguisher-B>
+			<on-fire type ="bool">0</on-fire>
+			<extinguished type ="bool">0</extinguished>
+			<smoke type ="bool">0</smoke>
         </engine>
         <engine n="4">
             <running>false</running>
+			<extinguisher-arm>0</extinguisher-arm>
+			<extinguisher-A>0</extinguisher-A>
+			<extinguisher-B>0</extinguisher-B>
+			<on-fire>0</on-fire>
+			<extinguished>0</extinguished>
+			<smoke type ="bool">0</smoke>
         </engine>
         <apu>
             <n1 alias="/engines/engine[4]/n1" />
@@ -1098,6 +1132,9 @@ left mouse button and counter clockwise using the middle mouse button.
         <gear>
             <file>Aircraft/747-400/Nasal/gear.nas</file>
         </gear>
+	<fireprotection>
+			<file>Aircraft/747-400/Nasal/extsys.nas</file>
+	</fireprotection>
     </nasal>
 
     <payload>
