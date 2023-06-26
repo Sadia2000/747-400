@@ -123,18 +123,13 @@
         </offsets>
     </model>
 
-    <!-- ENGINE #1 FIRE AND SMOKE AND EXT -->
+    <!-- ENGINE #1 FIRE, SMOKE AND EXT -->
 
     <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.1</name>
         <condition>
-            <and>
                 <property>engines/engine[0]/on-fire</property>
-                <not>
-                    <property>engines/engine[0]/extinguished</property>
-                </not>
-            </and>
         </condition>
         <offsets>
             <x-m> 10.5 </x-m>
@@ -147,7 +142,7 @@
         <path>Aircraft/747-400/Models/Effects/ext.xml</path>
         <name>engineext.1</name>
         <condition>
-            <property>engines/engine[0]/extinguisher</property>
+            <property>engines/engine[0]/extinguished</property>
         </condition>
         <offsets>
             <x-m> 10.5 </x-m>
@@ -160,7 +155,7 @@
         <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
         <name>enginesmoke.1</name>
         <condition>
-            <property>engines/engine[0]/on-fire</property>
+            <property>engines/engine[0]/smoke</property>
         </condition>
         <offsets>
             <x-m> 17.5 </x-m>
@@ -169,18 +164,13 @@
         </offsets>
     </model>
 
-    <!-- ENGINE #2 FIRE AND SMOKE AND EXT -->
+    <!-- ENGINE #2 FIRE, SMOKE AND EXT -->
 
     <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.2</name>
         <condition>
-            <and>
                 <property>engines/engine[1]/on-fire</property>
-                <not>
-                    <property>engines/engine[1]/extinguished</property>
-                </not>
-            </and>
         </condition>
         <offsets>
             <x-m>  3    </x-m>
@@ -193,7 +183,7 @@
         <path>Aircraft/747-400/Models/Effects/ext.xml</path>
         <name>engineext.2</name>
         <condition>
-            <property>engines/engine[1]/extinguisher</property>
+            <property>engines/engine[1]/extinguished</property>
         </condition>
         <offsets>
             <x-m> 3 </x-m>
@@ -206,7 +196,7 @@
         <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
         <name>enginesmoke.2</name>
         <condition>
-            <property>engines/engine[1]/on-fire</property>
+            <property>engines/engine[1]/smoke</property>
         </condition>
         <offsets>
             <x-m> 10 </x-m>
@@ -215,18 +205,13 @@
         </offsets>
     </model>
 
-    <!-- ENGINE #3 FIRE AND SMOKE AND EXT -->
+    <!-- ENGINE #3 FIRE, SMOKE AND EXT -->
 
     <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.3</name>
         <condition>
-            <and>
                 <property>engines/engine[2]/on-fire</property>
-                <not>
-                    <property>engines/engine[2]/extinguished</property>
-                </not>
-            </and>
         </condition>
         <offsets>
             <x-m> 3   </x-m>
@@ -239,7 +224,7 @@
         <path>Aircraft/747-400/Models/Effects/ext.xml</path>
         <name>engineext.3</name>
         <condition>
-            <property>engines/engine[2]/extinguisher</property>
+            <property>engines/engine[2]/extinguished</property>
         </condition>
         <offsets>
             <x-m> 3 </x-m>
@@ -252,7 +237,7 @@
         <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
         <name>enginesmoke.3</name>
         <condition>
-            <property>engines/engine[2]/on-fire</property>
+            <property>engines/engine[2]/smoke</property>
         </condition>
         <offsets>
             <x-m> 10 </x-m>
@@ -261,18 +246,13 @@
         </offsets>
     </model>
 
-    <!-- ENGINE #4 FIRE AND SMOKE AND EXT-->
+    <!-- ENGINE #4 FIRE, SMOKE AND EXT-->
 
     <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.4</name>
         <condition>
-            <and>
                 <property>engines/engine[3]/on-fire</property>
-                <not>
-                    <property>engines/engine[3]/extinguished</property>
-                </not>
-            </and>
         </condition>
         <offsets>
             <x-m>10.5</x-m>
@@ -285,7 +265,7 @@
         <path>Aircraft/747-400/Models/Effects/ext.xml</path>
         <name>engineext.4</name>
         <condition>
-            <property>engines/engine[3]/extinguisher</property>
+            <property>engines/engine[3]/extinguished</property>
         </condition>
         <offsets>
             <x-m> 10.5 </x-m>
@@ -298,7 +278,7 @@
         <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
         <name>enginesmoke.4</name>
         <condition>
-            <property>engines/engine[3]/on-fire</property>
+            <property>engines/engine[3]/smoke</property>
         </condition>
         <offsets>
             <x-m> 17.5 </x-m>
