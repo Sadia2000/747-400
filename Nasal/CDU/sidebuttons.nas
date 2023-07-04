@@ -404,30 +404,47 @@ newpage("PERF INIT");
 }
 
 if(title == "rte choose waypoint"){
+index = getprop("instrumentation/cdu/page/RTE/index");
+rtepage = getprop("instrumentation/cdu/page/RTE/currentpage");
 if(button == "L1"){
 var multipleway = multiplewaypoint()[0];
-var rtenum = getprop("instrumentation/cdu/page/RTE/num");
-multipleinsertinroute(multipleway,rtenum);
+if(multipleway.id != " "){
+insertinroute(multipleway,index,"ghost");
+newpage("RTE 1");
+setprop("instrumentation/cdu/page/current-page", rtepage);
+}
 }
 if(button == "L2"){
 var multipleway = multiplewaypoint()[1];
-var rtenum = getprop("instrumentation/cdu/page/RTE/num");
-multipleinsertinroute(multipleway,rtenum);
+if(multipleway.id != " "){
+insertinroute(multipleway,index,"ghost");
+newpage("RTE 1");
+setprop("instrumentation/cdu/page/current-page", rtepage);
+}
 }
 if(button == "L3"){
 var multipleway = multiplewaypoint()[2];
-var rtenum = getprop("instrumentation/cdu/page/RTE/num");
-multipleinsertinroute(multipleway,rtenum);
+if(multipleway.id != " "){
+insertinroute(multipleway,index,"ghost");
+newpage("RTE 1");
+setprop("instrumentation/cdu/page/current-page", rtepage);
+}
 }
 if(button == "L4"){
 var multipleway = multiplewaypoint()[3];
-var rtenum = getprop("instrumentation/cdu/page/RTE/num");
-multipleinsertinroute(multipleway,rtenum);
+if(multipleway.id != " "){
+insertinroute(multipleway,index,"ghost");
+newpage("RTE 1");
+setprop("instrumentation/cdu/page/current-page", rtepage);
+}
 }
 if(button == "L5"){
 var multipleway = multiplewaypoint()[4];
-var rtenum = getprop("instrumentation/cdu/page/RTE/num");
-multipleinsertinroute(multipleway,rtenum);
+if(multipleway.id != " "){
+insertinroute(multipleway,index,"ghost");
+newpage("RTE 1");
+setprop("instrumentation/cdu/page/current-page", rtepage);
+}
 }
 }
 
