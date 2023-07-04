@@ -397,6 +397,21 @@
 	</action>
 </animation>
 
+<animation>
+	<type>pick</type>
+	<object-name>legs</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>
+			cdu.newpage("LEGS");	
+			</script>
+		</binding>
+	</action>
+</animation>
+
 <!-- NUM KEYS -->
 
 <animation>
