@@ -487,242 +487,149 @@ return ["", "", "", "", ""];
 }
 }
 
-var routepage = func(joe=0) {
+var routepage = func(returntype="display") {
 var currentpage = getprop("instrumentation/cdu/page/current-page");
 fp = flightplan();
-var amogusamog = 0;
-wpafterdest = [];
-setprop("instrumentation/cdu/page/RTE/missedapp",0);
-wptype = [];
-if(fp.destination != nil){
-if(fp.destination_runway != nil){
-sec = fp.clone();
-sec.star = nil;
-sec.star_trans = nil;
-sec.approach = nil;
-sec.approach_trans = nil;
-susmogus = sec.getWP(sec.getPlanSize()-1);
-destwp = createWP(susmogus.lat, susmogus.lon, susmogus.id);
-}else{
-destwp = fp.destination;
+clone = fp.clone();
+clone.sid = nil;
+clone.sid_trans = nil;
+clone.star = nil;
+clone.star_trans = nil;
+clone.departure = nil;
+clone.destination = nil;
+var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 1000);
+dash = createWP(pos, "----");
+void = createWP(pos, "");
+if(fp.sid != nil){
+sid = createWP(pos, fp.sid.route(fp.sid_trans)[size(fp.sid.route(fp.sid_trans))-1].id, "sid");
+clone.insertWP(sid,0);
+}else if(clone.getPlanSize() > 0){
+clone.insertWP(dash,0);
 }
-destindex = fp.indexOfWP(destwp) + 1;
-setprop("instrumentation/cdu/page/RTE/destwp", "-1");
-while(destindex < fp.getPlanSize()){
-	if(fp.getWP(destindex).wp_role == "missed" and (destindex == fp.getPlanSize()-1 or fp.getWP(fp.getPlanSize()-1).wp_role != "missed")){
-		var amogusamog = 1;
-		setprop("instrumentation/cdu/page/RTE/destwp", destindex);
-		var baka = fp.getWP(destindex);
-	}else if(fp.getWP(destindex).wp_role != "missed"){
-		wpamog = fp.getWP(destindex);
-append(wpafterdest, wpamog);
-	}
-destindex = destindex + 1;
-setprop("instrumentation/cdu/page/RTE/missedapp",1);
-}
-}
-var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 100000);
-nextwp = createWP(pos.lat(),pos.lon(), "----");
-if(fp.sid == nil){
-sid = nextwp;
-if(fp.departure == nil){
-indexsid = 0;
-}else{
-indexsid = 1;
-}
-}else{
-sid = fp.getWP(size(fp.sid.route(fp.sid_trans)));
-indexsid = fp.indexOfWP(sid) + 1;
-}
-wpbeforestar = [];
-append(wpbeforestar,sid);
-		append(wptype, "sid");
 if(fp.star != nil){
-indexstar = fp.indexOfWP(fp.star.route(fp.star_trans)[0]);
-}else if(fp.approach != nil){
-indexstar = fp.indexOfWP(fp.approach.route(fp.approach_trans)[0]);
-}else{
-if(fp.destination == nil){
-indexstar = fp.getPlanSize();
-}else{
-indexstar = fp.getPlanSize()-1;
+star = createWP(pos, fp.star.route(fp.star_trans)[size(fp.star.route(fp.star_trans))-1].id, "star");
+clone.appendWP(star);
 }
-}
-while(indexsid < indexstar){
-	wpmogus = fp.getWP(indexsid);
-		append(wptype, "normal");
-append(wpbeforestar, wpmogus);
-indexsid = indexsid + 1;
-}
-var wpnum = size(wpbeforestar);
-setprop("instrumentation/cdu/page/RTE/firststarwp", 9999);
-setprop("instrumentation/cdu/page/RTE/laststarwp", 9999);
-if(fp.star != nil){
-starroute = fp.star.route();
-var starwp = createWP(pos.lat(),pos.lon(),starroute[size(starroute)-1].id);
-		append(wptype, "star");
-if(getprop("instrumentation/cdu/page/RTE/firststarwp") == 9999){
-setprop("instrumentation/cdu/page/RTE/firststarwp", wpnum);
-}
-setprop("instrumentation/cdu/page/RTE/laststarwp", wpnum);
-append(wpbeforestar, starwp);
-}
-var wpnum = size(wpbeforestar);
 if(fp.approach_trans != nil){
-approute = fp.approach.route(fp.approach_trans);
-approutetwo = fp.approach.route();
-approutetrue = [];
-mogusus = 0;
-foreach(var mogu; approute){
-	if(mogu != approutetwo[mogusus]){
-		append(approutetrue, mogu);
-	}
+app = fp.indexOfWP(fp.approach.route()[0]);
+appwtrans = fp.indexOfWP(fp.approach.route(fp.approach_trans)[0]);
+index = app-appwtrans;
+apptrans = [];
+for(var i=0; i < index; i+=1){
+append(apptrans, fp.approach.route(fp.approach_trans)[i]);
 }
-var apptranswp = createWP(pos.lat(),pos.lon(),approutetrue[size(approutetrue)-1].id);
-		append(wptype, "approachtrans");
-if(getprop("instrumentation/cdu/page/RTE/firststarwp") == 9999){
-setprop("instrumentation/cdu/page/RTE/firststarwp", wpnum);
+if(size(apptrans) > 0){
+apptrans = createWP(apptrans[size(apptrans)-1], apptrans[size(apptrans)-1].id, "approach");
+clone.appendWP(apptrans);
 }
-setprop("instrumentation/cdu/page/RTE/laststarwp", wpnum);
-append(wpbeforestar, apptranswp);
 }
-var wpnum = size(wpbeforestar);
 if(fp.destination_runway != nil){
-var destrwy = createWP(pos.lat(),pos.lon(),"RW"~fp.destination_runway.id);
-		append(wptype, "approach");
-if(getprop("instrumentation/cdu/page/RTE/firststarwp") == 9999){
-setprop("instrumentation/cdu/page/RTE/firststarwp", wpnum);
+destrwy = createWP(pos, "RW"~fp.destination_runway.id);
+clone.appendWP(destrwy);
+if(fp.indexOfWP(fp.destination_runway) < fp.getPlanSize()-1){
+missed=[];
+wpafter = [];
+for (i=fp.indexOfWP(fp.destination_runway)+1; i < fp.getPlanSize(); i+=1){
+if(fp.getWP(i).wp_role != "missed"){
+append(wpafter, fp.getWP(i));
+fpclonewp = createWP(fp.getWP(i), fp.getWP(i).id);
+clone.deleteWP(clone.indexOfWP(fpclonewp));
+}else{
+append(missed, fp.getWP(i));
 }
-setprop("instrumentation/cdu/page/RTE/laststarwp", wpnum);
-append(wpbeforestar, destrwy);
 }
-var wpnum = size(wpbeforestar);
-if(amogusamog == 1){
-	if(getprop("instrumentation/cdu/page/RTE/firststarwp") == 9999){
-setprop("instrumentation/cdu/page/RTE/firststarwp", wpnum);
+if(size(missed) > 0){
+missedapp = createWP(pos, missed[size(missed)-1].id, "missed");
+clone.appendWP(missedapp);
 }
-setprop("instrumentation/cdu/page/RTE/laststarwp", wpnum);
-setprop("instrumentation/cdu/page/RTE/missedapp",1);
-		append(wptype, "missed");
-append(wpbeforestar, baka);
+foreach(var wpfromdest; wpafter){
+clone.appendWP(wpfromdest);
+}
+}
+}
+allwp = [];
+for(var i=0; i < clone.getPlanSize(); i=i+1){
+append(allwp,clone.getWP(i));
+}
+append(allwp, dash);
+wpdisplay = [];
+var maxpage = math.ceil(size(allwp) / 5);
+setprop("instrumentation/cdu/page/maxpage", maxpage+1);
+var firstwpnum = 5 * (currentpage-2);
+if(firstwpnum < 0){
+firstwpnum = 0;
+}
+for (var i=firstwpnum; i < firstwpnum+5; i=i+1){
+if(i == size(allwp)){
+break;
+}
+append(wpdisplay, allwp[i]);
+}
+while(size(wpdisplay) < 5){
+append(wpdisplay, void);
+}
+if(returntype == "display"){
+return wpdisplay;
+}else{
+return allwp;
+}
 }
 
-var wpnum = size(wpbeforestar);
-var i = 0;
-wpdivfive = wpnum / 5;
-var wpnbr = math.ceil(wpdivfive);
-conte = (currentpage - 3);
-var route = [];
-var t = 0;
-	while(t < size(wpafterdest)){
-append(wpbeforestar, wpafterdest[t]);
-		append(wptype, "normal");
-t = t + 1;
-}
-var wpnum = size(wpbeforestar);
-if(wpnum > 1 or fp.sid != nil){
-			append(wptype, "----");
-append(wpbeforestar,nextwp);
-}
-if(joe == 1){
-return wpbeforestar;
-}else if(joe == 2){
-	return wptype;
-}else{
-var wpnum = size(wpbeforestar);
-pages = math.ceil(wpnum / 5);
-if(pages == 0){
-pages = pages + 2;
-}else{
-pages = pages + 1;
-}
-if(pages > getprop("instrumentation/cdu/page/maxpage")){
-setprop("instrumentation/cdu/page/maxpage", pages);
-}
-if(currentpage != 1){
-var count = (currentpage - 2) * 5;
-}else{
-count = 0;
-}
-while(i < 5){
-if(count <= wpnum-1){
-append(route, wpbeforestar[count].id);
-count = count + 1;
-i = i + 1;
-}else{
-append(route, "");
-i = i + 1;
-}
-}
-}
-return route;
-}
-
-var viacolumn = func {
-var currentpage = getprop("instrumentation/cdu/page/current-page");
+var viacolumn = func (){
 fp = flightplan();
-var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 100000);
-viacolone = [];
-wpnum = size(viacolone);
-routepag = routepage(1);
-wptype = routepage(2);
+via = [];
+route = routepage();
+currentpage = getprop("instrumentation/cdu/page/RTE/currentpage");
 i = 0;
-foreach(var amog; routepag){
-	if(wptype[i] == "normal"){
-	if(i == 1 and fp.departure_runway == nil){
-		append(viacolone, "----");		
-	}else{
-		append(viacolone, "DIRECT");	
-}		
-}else if(wptype[i] == "sid"){
-	if(fp.sid != nil){
-		if(fp.sid_trans != nil){
-			sid = fp.sid.id~"."~fp.sid_trans.id;
-		}else{
-			sid = fp.sid.id;
-		}
-	}else{
-		sid = "----";
-	}
-		append(viacolone, sid);
-	}else if(wptype[i] == "star"){
-		if(fp.sid_trans != nil){
-			star = fp.star.id~"."~fp.star_trans.id;
-		}else{
-			star = fp.star.id;
-		}
-		append(viacolone, star);		
-	}else if(wptype[i] == "approachtrans"){
-		append(viacolone, "APP TRANS");
-	}else if(wptype[i] == "approach"){
-	if(fp.approach != nil){
-		iap = fp.approach.id;
-	}else{
-		iap = "----";	
-	}
-		append(viacolone, iap);
-	}else if(wptype[i] == "missed"){
-		append(viacolone, "MISSED APPR");
-	}else if(wptype[i] == "----"){
-		append(viacolone, "----");
-	}
-	i = i + 1;
+while(i < 5){
+if(route[i].wp_role == "sid"){
+if(fp.sid_trans != nil){
+append(via, fp.sid.id~"."~fp.sid_trans.id);
+}else{
+append(via, fp.sid.id);
 }
-wpnum = size(viacolone);
-var count = (currentpage - 2) * 5;
-var j = 0;
-var via = [];
-while(j < 5){
-if(count <= wpnum-1){
-append(via, viacolone[count]);
-count = count + 1;
-j = j + 1;
+}else if(route[i].wp_role == "approach"){
+append(via, "APPR TRANS");
+}else if(route[i].wp_role == "star"){
+if(fp.star_trans != nil){
+append(via, fp.star_trans.id~"."~fp.star.id);
+}else{
+append(via, fp.star.id);
+}
+}else if(route[i].id == "----"){
+append(via, "----");
+}else if(find("RW", route[i].id) != -1){
+if(fp.approach != nil){
+append(via, fp.approach.id);
+}else{
+append(via, "----");
+}
+}else if(route[i].wp_role == "missed"){
+append(via, "MISSED APPR");
+}else if(route[i].id != ""){
+if(currentpage == 2 and i == 1 and fp.departure_runway == nil){
+append(via,"----");
+}else{
+append(via, "DIRECT");
+}
 }else{
 append(via, "");
-j = j + 1;
 }
+i = i+1
+}
+while(size(via) < 5){
+append(via, "");
 }
 return via;
+}
+
+var small = func(num, val) {
+var result = "";
+for(var i = 0; i < size(num)+math.ceil(size(num)/2); i+=1){
+result = result~" ";
+}
+result = result~val;
+return result;
 }
 
 var small = func(num, val) {
@@ -817,9 +724,9 @@ return rwy;
 die();
 }
 }else{
-	waluigi = substr(input,2);
-	rwy = airport.runway(waluigi);
-	if(rwy == nil){
+waluigi = substr(input,2);
+rwy = airport.runway(waluigi);
+if(rwy == nil){
 warnmessage("NOT IN DATA BASE");
 die();
 }else{
@@ -834,36 +741,35 @@ if(type == "all"){
 var apts = findAirportsByICAO(input);
 var fixes = findFixesByID(input);
 var navs = findNavaidsByID(input);
-var wario = 0;
-if(size(apts) == 1){
+var allwp = [];	
+foreach(var i; apts){
+if(i.id == input){
+append(allwp, i);
+}
+}
+foreach(var i; fixes){
+if(i.id == input){
+append(allwp, i);
+}
+}
+foreach(var i; navs){
+if(i.id == input){
+append(allwp, i);
+}
+}
+if(size(allwp) == 1){
 resetinput();
-return airportinfo(input);
+return allwp[0];
 die();
-}else if(size(fixes) == 1){
+}else if(size(allwp) > 1){
 resetinput();
-return fixes[0];
-}else if(size(fixes) > 1){
-resetinput();
-			            setprop("instrumentation/cdu/page/RTE/currentpage", getprop("instrumentation/cdu/page/current-page"));
-						setprop("instrumentation/cdu/page/RTE/input", input);
-						setprop("instrumentation/cdu/page/RTE/num", num);
-									newpage("rte choose waypoint");
+setprop("instrumentation/cdu/page/RTE/currentpage", getprop("instrumentation/cdu/page/current-page"));
+setprop("instrumentation/cdu/page/RTE/input", input);
+setprop("instrumentation/cdu/page/RTE/num", num);
+newpage("rte choose waypoint");
 var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 100000);
-var newwpreturn = createWP(pos.lat(),pos.lon(),"notavail");
-return newwpreturn;
-}else if(size(navs) == 1){
-resetinput();
-return navs[0];
-}else if(size(navs) > 1){
-resetinput();
-			            setprop("instrumentation/cdu/page/RTE/currentpage", getprop("instrumentation/cdu/page/current-page"));
-						setprop("instrumentation/cdu/page/RTE/input", input);
-						setprop("instrumentation/cdu/page/RTE/num", num);
-			newpage("rte choose waypoint");
-var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 100000);
-var newwpreturn = createWP(pos.lat(),pos.lon(),"notavail");
-return newwpreturn;
-		
+var notavail = createWP(pos,"notavail");
+return notavail;	
 }else{
 warnmessage("NOT IN DATA BASE");
 die();
@@ -872,85 +778,43 @@ die();
 }
 
 
-var multiplewaypoint = func(returninfo=""){
+var multiplewaypoint = func(){
 	input = getprop("instrumentation/cdu/page/RTE/input");
+    var apts = findAirportsByICAO(input);
 	var fixes = findFixesByID(input);
 	var navs = findNavaidsByID(input);
 	var allwp = [];	
-foreach(var i; fixes){
+foreach(var i; apts){
+if(i.id == input){
 	append(allwp, i);
 }
-foreach(var f; navs){
-	append(allwp, f);
+}
+foreach(var i; fixes){
+if(i.id == input){
+append(allwp, i);
+}
+}
+foreach(var i; navs){
+if(i.id == input){
+append(allwp, i);
+}
 }
 currentpage = getprop("instrumentation/cdu/page/current-page");
 maxpage = math.ceil(size(allwp)/5);
 setprop("instrumentation/cdu/page/maxpage", maxpage);
-amogussus = [];
-amogus = (currentpage-1)*5;
-if(returninfo == "frequency"){
-while(size(amogussus) < 5){
-if(amogus < size(allwp) and allwp[amogus].type != "fix" and allwp[amogus].type != "glideslope"){
-append(amogussus, sprintf("%.1f",allwp[amogus].frequency * 0.01));
+var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 100000);
+var void = createWP(pos," ");
+displaywp = [];
+index = (currentpage-1)*5;
+if(index < 0) index = 0;
+for(var i=index; i < index+5; i+=1){
+if(i < size(allwp)){
+append(displaywp, allwp[i]);
 }else{
-append(amogussus, "    ");
-}
-amogus = amogus + 1;
-}
-}else if(returninfo == "type"){
-while(size(amogussus) < 5){
-if(amogus < size(allwp) and allwp[amogus].type != "fix" and allwp[amogus].type != "glideslope"){
-append(amogussus, allwp[amogus].type);
-}else{
-append(amogussus, "");
-}
-amogus = amogus + 1;
-}
-}else if(returninfo == "lon"){
-while(size(amogussus) < 5){
-if(amogus < size(allwp)){
-append(amogussus, londeg2dmm(allwp[amogus].lon));
-}else{
-append(amogussus, "");
-}
-amogus = amogus + 1;
-}
-}else if(returninfo == "lat"){
-while(size(amogussus) < 5){
-if(amogus < size(allwp)){
-append(amogussus, latdeg2dmm(allwp[amogus].lat));
-}else{
-append(amogussus, "");
-}
-amogus = amogus + 1;
-}
-}else{
-while(size(amogussus) < 5){
-if(amogus < size(allwp)){
-append(amogussus, allwp[amogus]);
-}else{
-append(amogussus, "");
-}
-amogus = amogus + 1;
+append(displaywp, void);
 }
 }
-	return amogussus;
-}
-
-multiplewaypointid = func(){
-var allwp = multiplewaypoint();
-var wplist = [];
-currentpage = getprop("instrumentation/cdu/page/current-page");
-amogus = 0;
-while(size(wplist) < 5){
-if(allwp[amogus] == ""){
-append(wplist, "");
-}else{
-append(wplist, allwp[amogus].id);
-}
-amogus = amogus + 1;
-}
-	return wplist;
+return displaywp;
 }
 
 var resetinput = func {
@@ -958,131 +822,188 @@ setprop("instrumentation/cdu/input", "");
 update();
 }
 
-var insertinroute = func(input,num) {
+var insertinroute = func(input,index,wpghost=nil) {
 fp = flightplan();
+if(wpghost == nil){
+wp = routepage()[index];
+allwp = routepage("all");
 var currentpage = getprop("instrumentation/cdu/page/current-page");
-if(num+((currentpage-2)*5) <= size(routepage(1))){
-if(num == 1 and currentpage == 2 and fp.sid == nil and fp.departure == nil){
-num = 0;
-}
-if((fp.sid != nil and num == 0 and currentpage == 2 )or (fp.departure != nil and num == 0)){
-num = 1;
-}
-wp = findinput(input,"all",num);
-if(wp.id == input){
-sec = fp.clone();
-sec.cleanPlan();
-sec.departure = nil;
-if(fp.sid != nil){
-sid = size(fp.sid.route(fp.sid_trans));
+index = index+((currentpage-2)*5);
 }else{
-sid = 0;
+wp = routepage()[0];
 }
-i = (currentpage-2)*5;
-laststarwp = getprop("instrumentation/cdu/page/RTE/laststarwp");
-firststarwp = getprop("instrumentation/cdu/page/RTE/firststarwp");
-
-if(fp.destination != nil){
-	if(getprop("instrumentation/cdu/page/RTE/destwp") == "-1"){
-if(fp.destination_runway != nil){
-susmogus = sec.getWP(sec.getPlanSize()-1);
-destwp = createWP(susmogus.lat, susmogus.lon, susmogus.id);
-}else{
-destwp = fp.destination;
+if(wp.id != "" or (wp.id == "" and index == 1)){
+if(wpghost == nil){
+input = findinput(input);
+if(input.id != "notavail"){
+input = createWP(input, input.id);
 }
-
-if(getprop("instrumentation/cdu/page/RTE/missedapp") == 1){
-destwp = fp.indexOfWP(destwp);
-}else{
-destwp = fp.indexOfWP(destwp)+1;
+sidindex =nil;
+starindex = 999999;
+apptransindex = 999999;
+destindex = 999999;
+missedindex = 999999;
+i=0;
+foreach(var wpmatch; allwp){
+if(wpmatch.wp_role == "sid"){
+sidindex = i;
+}else if(wpmatch.wp_role == "star"){
+starindex = i;
+}else if(wpmatch.wp_role == "approach"){
+apptransindex = i;
+}else if(find("RW", wpmatch.id) != -1){
+destindex = i;
+}else if(wpmatch.wp_role == "missed"){
+missedindex = i;
 }
-
-	}else{
-		destwp = getprop("instrumentation/cdu/page/RTE/destwp")+1;
-	}
+i=i+1;
 }
-numi = num + i;
-index = "not avail";
-setprop("instrumentation/amogus/amogus",index);
-setprop("instrumentation/amogus/num",num);
-if(numi > laststarwp and fp.destination != nil){
-wp = findinput(input,"all",num);
-if(wp.id == input){
-index = destwp + (numi - (laststarwp + 1));
-setprop("instrumentation/amogus/amogus",index);
+depindex = nil;
+if(sidindex != nil){
+depindex = size(fp.sid.route(fp.sid_trans));
+if(index == 1){
+depindex = depindex+1;
 }
-}else if(numi <= firststarwp){
-	wp = findinput(input,"all",num);
-	if(wp.id == input){
-index = sid + i + num;
-setprop("instrumentation/amogus/amogus",index);
-	}
-}else{
+depindex = depindex+index;
+}else if(fp.departure != nil){
+depindex = index;
+if(index == 0){
+depindex = index+1;
+}
+}else if(index != 0){
+depindex = index-1;
+}
+arrindex = nil;
+print("prev index:"~index);
+if(index >= starindex){
+if(index == starindex){
+arrindex = fp.indexOfWP(fp.star.route(fp.star_trans)[0]);
+}else if(index == apptransindex or index == destindex or index == missedindex){
 warnmessage("NOT ALLOWED");
 die();
 }
-if(index != "not avail"){
-wpinsert = createWP(wp.lat, wp.lon, wp.id);
-fp.insertWP(wpinsert, index);
+}else if(index >= apptransindex){
+if(index == apptransindex){
+arrindex = fp.indexOfWP(fp.approach.route(fp.approach_trans)[0]);
+}else if(index == destindex or index == missedindex){
+warnmessage("NOT ALLOWED");
+die();
+}
+}else if(index >= destindex){
+if(index == destindex){
+arrindex = fp.indexOfWP(fp.destination_runway);
+}else if(index == missedindex){
+warnmessage("NOT ALLOWED");
+die();
+}
+}else if(index >= missedindex){
+if(index == missedindex){
+arrindex = fp.indexOfWP(fp.destination_runway)+1;
+}
+}
+afterindex = nil;
+if(index > starindex and apptransindex == 999999 and destindex == 999999 and missedindex == 999999){
+afterindex = fp.indexOfWP(fp.star.route(fp.star_trans)[size(fp.star.route(fp.star_trans))-1]);
+}else if(index > apptransindex and destindex == 999999 and missedindex == 999999){
+afterindex = destindex-1;
+}else if(index > destindex and missedindex == 999999){
+afterindex = destindex;
+}else if(index > missedindex){
+misswp = createWP(allwp[missedindex], allwp[missedindex].id);
+arrindex = fp.indexOfWP(misswp);
+}
+if(afterindex != nil){
+index = (index/5-currentpage+2)*math.ceil(afterindex/5)-afterindex;
+}else if(arrindex !=nil){
+index = arrindex;
+}else if(depindex != nil){
+index = depindex;
+}
+if(input.id == "notavail"){
+setprop("instrumentation/cdu/page/RTE/index", index);
+die();
+}
+}else{
+input = createWP(input, input.id);
+}
+fp.insertWP(input, index);
+update();
 resetinput();
 }
 }
-}
-}
 
-var multipleinsertinroute = func(input,num) {
+legspage = func(VecToReturn){
 fp = flightplan();
-var currentpage = getprop("instrumentation/cdu/page/RTE/currentpage");
-sec = fp.clone();
-sec.cleanPlan();
-sec.departure = nil;
-if(fp.sid != nil){
-sid = size(fp.sid.route(fp.sid_trans));
+currentpage = getprop("instrumentation/cdu/page/current-page");
+currentpage = (currentpage-1)*5;
+var pos = geo.aircraft_position().apply_course_distance(getprop("/orientation/heading-deg"), 1000);
+void = createWP(pos, "");
+allwp = [];
+if(fp.departure != nil){
+var i = 1;
 }else{
-sid = 0;
+var i = 0;
 }
-i = (currentpage-2)*5;
-laststarwp = getprop("instrumentation/cdu/page/RTE/laststarwp");
-firststarwp = getprop("instrumentation/cdu/page/RTE/firststarwp");
-
-if(fp.destination != nil){
-	if(getprop("instrumentation/cdu/page/RTE/destwp") == "-1"){
-if(fp.destination_runway != nil){
-susmogus = sec.getWP(sec.getPlanSize()-1);
-destwp = createWP(susmogus.lat, susmogus.lon, susmogus.id);
+for(var i=i; i < fp.getPlanSize(); i=i+1){
+append(allwp, fp.getWP(i));
+}
+maxpage = math.ceil(size(allwp)/5);
+if(maxpage < 1) maxpage = 1;
+setprop("instrumentation/cdu/page/maxpage", maxpage);
+displaywp = [];
+bearing=[];
+distance=[];
+altspdcstr = [];
+for(var i=currentpage; i < currentpage+5; i=i+1){
+if(i == size(allwp)){
+break;
+}
+append(displaywp, allwp[i].id);
+wpbearing = math.round(allwp[i].leg_bearing);
+wpbearing = sprintf("%03i", wpbearing)~"g";
+append(bearing, wpbearing);
+wpdistance = math.round(allwp[i].leg_distance);
+wpdistance = sprintf("%4d", wpdistance)~"NM";
+append(distance, wpdistance);
+if(allwp[i].speed_cstr != 0){
+var spdcstr = " "~allwp[i].speed_cstr;
 }else{
-destwp = fp.destination;
+var spdcstr = "---";
 }
-
-if(getprop("instrumentation/cdu/page/RTE/missedapp") == 1){
-destwp = fp.indexOfWP(destwp);
+if(allwp[i].alt_cstr != 0){
+if(allwp[i].alt_cstr_type == "above"){
+var altcstrtype = "A";
+}else if(allwp[i].alt_cstr_type == "below"){
+var altcstrtype = "B";
 }else{
-destwp = fp.indexOfWP(destwp)+1;
+var altcstrtype = " ";
 }
-
-	}else{
-		destwp = getprop("instrumentation/cdu/page/RTE/destwp")+1;
-	}
-}
-numi = num + i;
-index = "not avail";
-setprop("instrumentation/amogus/amogus",index);
-setprop("instrumentation/amogus/num",num);
-if(numi > laststarwp and fp.destination != nil){
-index = destwp + (numi - (laststarwp + 1));
-setprop("instrumentation/amogus/amogus",index);
-}else if(numi <= firststarwp){
-index = sid + i + num;
-setprop("instrumentation/amogus/amogus",index);
+altcstr = sprintf("%5d", allwp[i].alt_cstr);
+var altcstr = altcstr~altcstrtype;
 }else{
-warnmessage("NOT ALLOWED");
-die();
+var altcstr = "----- ";
 }
-wpinsert = createWP(input.lat,input.lon,input.id);
-if(index == "notavail")
-fp.insertWP(wpinsert, index);
-newpage("RTE 1");
-setprop("instrumentation/cdu/page/current-page", currentpage);
+if(allwp[i].alt_cstr != nil or allwp[i].speed_cstr != nil){
+append(altspdcstr, spdcstr~"/"~altcstr);
+}else{
+append(altspdcstr, "");
+}
+}
+while(size(displaywp) < 5){
+append(displaywp, "");
+append(bearing, "");
+append(distance, "");
+append(altspdcstr, "");
+}
+if(VecToReturn == "name"){
+return displaywp;
+}else if(VecToReturn == "bearing"){
+return bearing;
+}else if(VecToReturn == "distance"){
+return distance;
+}else{
+return altspdcstr;
+}
 }
 
 var update = func {
@@ -1099,49 +1020,11 @@ setprop("instrumentation/cdu/deletekey", 1);
 }
 
 var deletewayp = func(num){
-num = num+(getprop("instrumentation/cdu/page/current-page")-2)*5;
+wp = routepage()[num];
 fp = flightplan();
-sec = fp.clone();
-sec.cleanPlan();
-sec.departure = nil;
-if(fp.sid != nil){
-sid = size(fp.sid.route(fp.sid_trans));
-}else{
-sid = 0;
-}
-laststarwp = getprop("instrumentation/cdu/page/RTE/laststarwp");
-firststarwp = getprop("instrumentation/cdu/page/RTE/firststarwp");
-if(fp.destination != nil){
-	if(getprop("instrumentation/cdu/page/RTE/destwp") == "-1"){
-if(fp.destination_runway != nil){
-susmogus = sec.getWP(sec.getPlanSize()-1);
-destwp = createWP(susmogus.lat, susmogus.lon, susmogus.id);
-}else{
-destwp = fp.destination;
-}
-
-if(getprop("instrumentation/cdu/page/RTE/missedapp") == 1){
-destwp = fp.indexOfWP(destwp);
-}else{
-destwp = fp.indexOfWP(destwp)+1;
-}
-
-	}else{
-		destwp = getprop("instrumentation/cdu/page/RTE/destwp");
-	}
-}
-if(num < size(routepage(1))-1 and num > 0 and (num < firststarwp or num > laststarwp)){
-if(num > laststarwp and fp.destination != nil){
-index = destwp + (num - (laststarwp + 1)) + 1;
-}else if(num <= firststarwp){
-if(fp.departure == nil and num == 1){
-index = sid + (num-1);
-}else{
-index = sid + num;
-}
-}else{
-die();
-}
+if(wp.id != "" and wp.id != "----" and wp.wp_role != "sid" and wp.wp_role != "star" and find("RW", wp.id) == -1 and wp.wp_role != "missed" and wp.wp_role !="approach"){
+wp = createWP(wp, wp.id);
+index = fp.indexOfWP(wp);
 resetinput();
 setprop("instrumentation/cdu/deletekey", 0);
 fp.deleteWP(index);
@@ -1150,13 +1033,13 @@ clear();
 }
 }
 
-var addspace = func(input,side){
+var addspace = func(input,side,wantedspace=7){
 if(side == "right"){
-while(size(input) < 7){
+while(size(input) < wantedspace){
 input = input~" ";
 }
 }else if(side == "left"){
-while(size(input) < 7){
+while(size(input) < wantedspace){
 input = " "~input;
 }
 }
