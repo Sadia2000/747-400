@@ -64,6 +64,10 @@
     <model>
         <name>cockpit</name>
         <path>Aircraft/747-400/Models/Cockpit/cockpit.xml</path>
+        <offsets>
+            <x-m>-23.745988</x-m>
+            <z-m>3.36622</z-m>
+        </offsets>
     </model>
     <animation>
         <object-name>cockpit</object-name>
@@ -71,16 +75,6 @@
         <min-m>0</min-m>
         <max-m>500</max-m>
     </animation>
-
-    <!-- Fuselage Effects -->
-    <effect>
-        <inherits-from>Effects/747-400_chrome</inherits-from>
-        <object-name>v-stab.chrome</object-name>
-        <object-name>winglet.chromeL</object-name>
-        <object-name>winglet.chromeR</object-name>
-        <object-name>wing.edgeL</object-name>
-        <object-name>wing.edgeR</object-name>
-    </effect>
 
     <!-- Wingtip Vortices -->
     <model>
@@ -107,13 +101,9 @@
     <!-- otherwise, rotate as normal -->
     <animation>
         <type>rotate</type>
-        <object-name>wing.UL2</object-name>
-        <object-name>wing.LL2</object-name>
-        <object-name>wing.UL3</object-name>
-        <object-name>wing.LL3</object-name>
+        <object-name>wing.L2</object-name>
+        <object-name>wing.L3</object-name>
         <object-name>aileron.LI</object-name>
-        <object-name>wing.edgeL2</object-name>
-        <object-name>wing.edgeL3</object-name>
         <object-name>spoiler.L3</object-name>
         <object-name>spoiler.L4</object-name>
         <object-name>spoiler.L5</object-name>
@@ -130,9 +120,6 @@
         <object-name>slat.L2</object-name>
         <object-name>slat.L3</object-name>
         <object-name>slat.L4</object-name>
-        <object-name>slat.boxL2</object-name>
-        <object-name>slat.boxL3</object-name>
-        <object-name>nav.caseL</object-name>
         <object-name>light.strobeL</object-name>
         <object-name>strobe-left</object-name>
         <object-name>light.navL</object-name>
@@ -141,9 +128,7 @@
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
         <object-name>lightning.wingL</object-name>
-        <object-name>fueldump.L</object-name>
         <object-name>winglet.L</object-name>
-        <object-name>winglet.chromeL</object-name>
         <object-name>vortex.L</object-name>
         <property>fdm/jsbsim/forces/wing[1]</property>
         <interpolation>
@@ -171,15 +156,11 @@
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>wing.UL3</object-name>
-        <object-name>wing.LL3</object-name>
-        <object-name>wing.edgeL3</object-name>
+        <object-name>wing.L3</object-name>
         <object-name>cover.L7</object-name>
         <object-name>cover.L8</object-name>
         <object-name>cover.armL4</object-name>
         <object-name>slat.L4</object-name>
-        <object-name>slat.boxL3</object-name>
-        <object-name>nav.caseL</object-name>
         <object-name>light.strobeL</object-name>
         <object-name>strobe-left</object-name>
         <object-name>light.navL</object-name>
@@ -188,9 +169,7 @@
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
         <object-name>lightning.wingL</object-name>
-        <object-name>fueldump.L</object-name>
         <object-name>winglet.L</object-name>
-        <object-name>winglet.chromeL</object-name>
         <object-name>vortex.L</object-name>
         <property>fdm/jsbsim/forces/wing[0]</property>
         <interpolation>
@@ -219,13 +198,9 @@
 
     <animation>
         <type>rotate</type>
-        <object-name>wing.UR2</object-name>
-        <object-name>wing.LR2</object-name>
-        <object-name>wing.UR3</object-name>
-        <object-name>wing.LR3</object-name>
+        <object-name>wing.R2</object-name>
+        <object-name>wing.R3</object-name>
         <object-name>aileron.RI</object-name>
-        <object-name>wing.edgeR2</object-name>
-        <object-name>wing.edgeR3</object-name>
         <object-name>spoiler.R3</object-name>
         <object-name>spoiler.R4</object-name>
         <object-name>spoiler.R5</object-name>
@@ -242,9 +217,6 @@
         <object-name>slat.R2</object-name>
         <object-name>slat.R3</object-name>
         <object-name>slat.R4</object-name>
-        <object-name>slat.boxR2</object-name>
-        <object-name>slat.boxR3</object-name>
-        <object-name>nav.caseR</object-name>
         <object-name>light.strobeR</object-name>
         <object-name>strobe-right</object-name>
         <object-name>light.navR</object-name>
@@ -253,9 +225,7 @@
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
         <object-name>lightning.wingR</object-name>
-        <object-name>fueldump.R</object-name>
         <object-name>winglet.R</object-name>
-        <object-name>winglet.chromeR</object-name>
         <object-name>vortex.R</object-name>
         <property>fdm/jsbsim/forces/wing[3]</property>
         <interpolation>
@@ -283,15 +253,11 @@
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>wing.UR3</object-name>
-        <object-name>wing.LR3</object-name>
-        <object-name>wing.edgeR3</object-name>
+        <object-name>wing.R3</object-name>
         <object-name>cover.R7</object-name>
         <object-name>cover.R8</object-name>
         <object-name>cover.armR4</object-name>
         <object-name>slat.R4</object-name>
-        <object-name>slat.boxR3</object-name>
-        <object-name>nav.caseR</object-name>
         <object-name>light.strobeR</object-name>
         <object-name>strobe-right</object-name>
         <object-name>light.navR</object-name>
@@ -300,9 +266,7 @@
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
         <object-name>lightning.wingR</object-name>
-        <object-name>fueldump.R</object-name>
         <object-name>winglet.R</object-name>
-        <object-name>winglet.chromeR</object-name>
         <object-name>vortex.R</object-name>
         <property>fdm/jsbsim/forces/wing[4]</property>
         <interpolation>

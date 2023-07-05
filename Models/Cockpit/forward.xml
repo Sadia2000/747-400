@@ -140,13 +140,13 @@
             <binding>
                 <command>nasal</command>
                 <script>
-				if (getprop("/it-autoflight/custom/at-arm") == 0) {
-					setprop("/it-autoflight/custom/at-arm", 1);
-				} else if (getprop("/it-autoflight/custom/at-arm") == 1) {
-					setprop("/it-autoflight/custom/at-arm", 0);
-					setprop("/it-autoflight/input/athr", 0);
-				}
-				</script>
+                    if (getprop("/it-autoflight/custom/at-arm") == 0) {
+                    setprop("/it-autoflight/custom/at-arm", 1);
+                    } else if (getprop("/it-autoflight/custom/at-arm") == 1) {
+                    setprop("/it-autoflight/custom/at-arm", 0);
+                    setprop("/it-autoflight/input/athr", 0);
+                    }
+                </script>
             </binding>
         </action>
     </animation>
@@ -576,12 +576,13 @@
             <binding>
                 <command>nasal</command>
                 <script>
-				if (getprop("/it-autoflight/custom/at-arm") == 0 or getprop("/it-autoflight/input/athr") == 1) {
-					setprop("/it-autoflight/input/athr", 0);
-				} else if (getprop("/it-autoflight/custom/at-arm") == 1) {
-					setprop("/it-autoflight/input/athr", 1);
-				}
-			</script>
+                    if (getprop("/it-autoflight/custom/at-arm") == 0 or
+                    getprop("/it-autoflight/input/athr") == 1) {
+                    setprop("/it-autoflight/input/athr", 0);
+                    } else if (getprop("/it-autoflight/custom/at-arm") == 1) {
+                    setprop("/it-autoflight/input/athr", 1);
+                    }
+                </script>
             </binding>
         </action>
     </animation>
@@ -931,9 +932,9 @@
             <binding>
                 <command>nasal</command>
                 <script>
-				setprop("it-autoflight/input/ap1", 0);
-				setprop("it-autoflight/input/athr", 0);
-			</script>
+                    setprop("it-autoflight/input/ap1", 0);
+                    setprop("it-autoflight/input/athr", 0);
+                </script>
             </binding>
         </action>
     </animation>

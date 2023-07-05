@@ -50,7 +50,8 @@ var _list = setlistener("sim/signals/fdm-initialized", func() {
 		"mipmapping": 1
 	});
 
-	nd_display.fo.addPlacement({"node": "ndScreenR"});
+	pfd_display.addPlacement({"node": "screen.nav-capt"});
+	pfd_display.addPlacement({"node": "screen.nav-fo"});
 	var group = nd_display.fo.createGroup();
 	NDFo.newMFD(group, nd_display.fo);
 	NDFo.update();

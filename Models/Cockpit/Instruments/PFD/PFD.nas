@@ -401,7 +401,8 @@ setlistener("sim/signals/fdm-initialized", func() {
 		"view": [1024, 1024],
 		"mipmapping": 1
 	});
-	pfd_display.addPlacement({"node": "pfdScreen"});
+	pfd_display.addPlacement({"node": "screen.pfd-capt"});
+	pfd_display.addPlacement({"node": "screen.pfd-fo"});
 	var group = pfd_display.createGroup();
 	pfd_canvas = canvas_PFD.new(group);
 	pfd_canvas.update();

@@ -1,3 +1,61 @@
 <PropertyList>
     <path>cockpit.ac</path>
+
+    <!-- Yokes -->
+    <animation>
+        <type>rotate</type>
+        <property>controls/flight/aileron</property>
+        <factor>-88</factor>
+        <object-name>ap.discL</object-name>
+        <object-name>h-trim.LL</object-name>
+        <object-name>h-trim.RL</object-name>
+        <object-name>yoke.capt</object-name>
+        <center>
+            <x-m>-1.0577</x-m>
+            <y-m>0.499815</y-m>
+            <z-m>-0.116545</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <property>controls/flight/aileron</property>
+        <factor>-88</factor>
+        <object-name>ap.discR</object-name>
+        <object-name>h-trim.LR</object-name>
+        <object-name>h-trim.RR</object-name>
+        <object-name>yoke.fo</object-name>
+        <center>
+            <x-m>-1.0577</x-m>
+            <y-m>0.499815</y-m>
+            <z-m>-0.116545</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ap.discL</object-name>
+        <object-name>ap.discR</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>/autopilot/settings/disengaged</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("it-autoflight/input/ap1", 0);
+                    setprop("it-autoflight/input/athr", 0);
+                </script>
+            </binding>
+        </action>
+    </animation>
 </PropertyList>
