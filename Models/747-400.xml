@@ -1,6 +1,7 @@
 <PropertyList>
     <path>747-400.ac</path>
-    <main include="doors.xml" omit-node="y" />
+    <main include="doors.xml" omit-node="y"/>
+    <main include="gear.xml" omit-node="y"/>
 
     <!-- Engine variants -->
     <model>
@@ -95,203 +96,6 @@
             <z-m>2.09761</z-m>
         </offsets>
     </model>
-
-    <!-- Wing Flex -->
-    <!-- when wing[1] or wing[4] = -4450 or wing[2] and wing[3] = -4180, do not rotate -->
-    <!-- otherwise, rotate as normal -->
-    <animation>
-        <type>rotate</type>
-        <object-name>wing.L2</object-name>
-        <object-name>wing.L3</object-name>
-        <object-name>aileron.LI</object-name>
-        <object-name>spoiler.L3</object-name>
-        <object-name>spoiler.L4</object-name>
-        <object-name>spoiler.L5</object-name>
-        <object-name>spoiler.L6</object-name>
-        <object-name>flap.LO1</object-name>
-        <object-name>flap.LO2</object-name>
-        <object-name>flap.LO3</object-name>
-        <object-name>cover.L5</object-name>
-        <object-name>cover.L6</object-name>
-        <object-name>cover.L7</object-name>
-        <object-name>cover.L8</object-name>
-        <object-name>cover.armL3</object-name>
-        <object-name>cover.armL4</object-name>
-        <object-name>slat.L2</object-name>
-        <object-name>slat.L3</object-name>
-        <object-name>slat.L4</object-name>
-        <object-name>light.strobeL</object-name>
-        <object-name>strobe-left</object-name>
-        <object-name>light.navL</object-name>
-        <object-name>nav-green1</object-name>
-        <object-name>nav-green2</object-name>
-        <object-name>aileron.LO</object-name>
-        <object-name>lightning.ailL</object-name>
-        <object-name>lightning.wingL</object-name>
-        <object-name>winglet.L</object-name>
-        <object-name>vortex.L</object-name>
-        <property>fdm/jsbsim/forces/wing[1]</property>
-        <interpolation>
-            <entry>
-                <ind>-6680</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4180</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1680</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>0.91661</x-m>
-            <y-m>-11.3631</y-m>
-            <z-m>-0.885596</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>wing.L3</object-name>
-        <object-name>cover.L7</object-name>
-        <object-name>cover.L8</object-name>
-        <object-name>cover.armL4</object-name>
-        <object-name>slat.L4</object-name>
-        <object-name>light.strobeL</object-name>
-        <object-name>strobe-left</object-name>
-        <object-name>light.navL</object-name>
-        <object-name>nav-green1</object-name>
-        <object-name>nav-green2</object-name>
-        <object-name>aileron.LO</object-name>
-        <object-name>lightning.ailL</object-name>
-        <object-name>lightning.wingL</object-name>
-        <object-name>winglet.L</object-name>
-        <object-name>vortex.L</object-name>
-        <property>fdm/jsbsim/forces/wing[0]</property>
-        <interpolation>
-            <entry>
-                <ind>-6950</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4450</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1950</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>10.2632</x-m>
-            <y-m>-21.2528</y-m>
-            <z-m>-0.069555</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>wing.R2</object-name>
-        <object-name>wing.R3</object-name>
-        <object-name>aileron.RI</object-name>
-        <object-name>spoiler.R3</object-name>
-        <object-name>spoiler.R4</object-name>
-        <object-name>spoiler.R5</object-name>
-        <object-name>spoiler.R6</object-name>
-        <object-name>flap.RO1</object-name>
-        <object-name>flap.RO2</object-name>
-        <object-name>flap.RO3</object-name>
-        <object-name>cover.R5</object-name>
-        <object-name>cover.R6</object-name>
-        <object-name>cover.R7</object-name>
-        <object-name>cover.R8</object-name>
-        <object-name>cover.armR3</object-name>
-        <object-name>cover.armR4</object-name>
-        <object-name>slat.R2</object-name>
-        <object-name>slat.R3</object-name>
-        <object-name>slat.R4</object-name>
-        <object-name>light.strobeR</object-name>
-        <object-name>strobe-right</object-name>
-        <object-name>light.navR</object-name>
-        <object-name>nav-red1</object-name>
-        <object-name>nav-red2</object-name>
-        <object-name>aileron.RO</object-name>
-        <object-name>lightning.ailR</object-name>
-        <object-name>lightning.wingR</object-name>
-        <object-name>winglet.R</object-name>
-        <object-name>vortex.R</object-name>
-        <property>fdm/jsbsim/forces/wing[3]</property>
-        <interpolation>
-            <entry>
-                <ind>-6680</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4180</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1680</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>0.91661</x-m>
-            <y-m>11.3631</y-m>
-            <z-m>-0.885596</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>wing.R3</object-name>
-        <object-name>cover.R7</object-name>
-        <object-name>cover.R8</object-name>
-        <object-name>cover.armR4</object-name>
-        <object-name>slat.R4</object-name>
-        <object-name>light.strobeR</object-name>
-        <object-name>strobe-right</object-name>
-        <object-name>light.navR</object-name>
-        <object-name>nav-red1</object-name>
-        <object-name>nav-red2</object-name>
-        <object-name>aileron.RO</object-name>
-        <object-name>lightning.ailR</object-name>
-        <object-name>lightning.wingR</object-name>
-        <object-name>winglet.R</object-name>
-        <object-name>vortex.R</object-name>
-        <property>fdm/jsbsim/forces/wing[4]</property>
-        <interpolation>
-            <entry>
-                <ind>-6950</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4450</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1950</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>10.2632</x-m>
-            <y-m>21.2528</y-m>
-            <z-m>-0.069555</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-        </axis>
-    </animation>
 
     <!-- Leading Edge Slats -->
     <animation>
@@ -1789,11 +1593,11 @@
             </entry>
             <entry>
                 <ind>0.15</ind>
-                <dep>90</dep>
+                <dep>110</dep>
             </entry>
             <entry>
                 <ind>0.85</ind>
-                <dep>90</dep>
+                <dep>110</dep>
             </entry>
             <entry>
                 <ind>1</ind>
@@ -1853,11 +1657,11 @@
             </entry>
             <entry>
                 <ind>0.15</ind>
-                <dep>-90</dep>
+                <dep>-110</dep>
             </entry>
             <entry>
                 <ind>0.85</ind>
-                <dep>-90</dep>
+                <dep>-110</dep>
             </entry>
             <entry>
                 <ind>1</ind>

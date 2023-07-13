@@ -78,7 +78,7 @@
         <output>
             <property>/gear/gear[1]/gear-tilt-deg</property>
         </output>
-        <min>-40</min>
+        <min>0</min>
         <max>40</max>
     </filter>
 
@@ -137,7 +137,7 @@
         <output>
             <property>/gear/gear[4]/gear-tilt-deg</property>
         </output>
-        <min>-40</min>
+        <min>0</min>
         <max>40</max>
     </filter>
 

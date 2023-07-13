@@ -1,0 +1,80 @@
+<PropertyList>
+    <path>747-400.ac</path>
+    <!-- Tire Rotations -->
+
+    <!-- Axle + Piston Movements -->
+
+    <!-- Landing Gear Retraction -->
+    <animation>
+        <type>rotate</type>
+        <property>gear/gear[1]/position-norm</property>
+        <object-name>mlg.axleULF</object-name>
+        <object-name>mlg.axleLLF</object-name>
+        <object-name>mlg.strutLF1</object-name>
+        <object-name>mlg.strutLF2</object-name>
+        <object-name>mlg.pistonL1</object-name>
+        <object-name>mlg.pistonL2</object-name>
+        <object-name>mlg.pistonL3</object-name>
+        <object-name>mlg.pistonL4</object-name>
+        <object-name>mlg.armLF</object-name>
+        <object-name>mlg.tireLF1</object-name>
+        <object-name>mlg.tireLF2</object-name>
+        <object-name>mlg.strutLF3</object-name>
+        <object-name>mlg.strutLF5</object-name>
+        <object-name>mlg.strutLF7</object-name>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>80</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>1.57531</x-m>
+            <y-m>-5.2238</y-m>
+            <z-m>-1.20531</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <property>gear/gear[4]/position-norm</property>
+        <object-name>mlg.axleURF</object-name>
+        <object-name>mlg.axleLRF</object-name>
+        <object-name>mlg.strutRF1</object-name>
+        <object-name>mlg.strutRF2</object-name>
+        <object-name>mlg.pistonR1</object-name>
+        <object-name>mlg.pistonR2</object-name>
+        <object-name>mlg.pistonR3</object-name>
+        <object-name>mlg.pistonR4</object-name>
+        <object-name>mlg.armRF</object-name>
+        <object-name>mlg.tireRF1</object-name>
+        <object-name>mlg.tireRF2</object-name>
+        <object-name>mlg.strutRF3</object-name>
+        <object-name>mlg.strutRF5</object-name>
+        <object-name>mlg.strutRF7</object-name>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>-80</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>1.57531</x-m>
+            <y-m>5.2238</y-m>
+            <z-m>-1.20531</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+</PropertyList>

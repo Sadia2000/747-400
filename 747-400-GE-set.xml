@@ -848,6 +848,23 @@ left mouse button and counter clockwise using the middle mouse button.
                 <display-type type="string">CRT</display-type>
             </mfd>
         </efis>
+        <efis n="1">
+            <inputs>
+                <tfc type="bool">true</tfc>
+                <sta type="bool">false</sta>
+                <arpt type="bool">true</arpt>
+                <wpt type="bool">false</wpt>
+                <wxr type="bool">false</wxr>
+                <lh-vor-adf type="int">0</lh-vor-adf>
+                <rh-vor-adf type="int">0</rh-vor-adf>
+                <range-nm type="int">10</range-nm>
+                <plan-wpt-index type="int">-1</plan-wpt-index>
+            </inputs>
+            <mfd>
+                <display-mode type="string">MAP</display-mode>
+                <display-type type="string">CRT</display-type>
+            </mfd>
+        </efis>
 		<altimeter>
 		<mode>IN-HG</mode>
 		</altimeter>
@@ -919,23 +936,6 @@ left mouse button and counter clockwise using the middle mouse button.
             <amogus>not avail</amogus>
             <num>not avail</num>
         </amogus>
-        <efis n="1">
-            <inputs>
-                <tfc type="bool">true</tfc>
-                <sta type="bool">false</sta>
-                <arpt type="bool">true</arpt>
-                <wpt type="bool">false</wpt>
-                <wxr type="bool">false</wxr>
-                <lh-vor-adf type="int">0</lh-vor-adf>
-                <rh-vor-adf type="int">0</rh-vor-adf>
-                <range-nm type="int">10</range-nm>
-                <plan-wpt-index type="int">-1</plan-wpt-index>
-            </inputs>
-            <mfd>
-                <display-mode type="string">MAP</display-mode>
-                <display-type type="string">CRT</display-type>
-            </mfd>
-        </efis>
         <eicas>
             <display>FUEL</display>
         </eicas>

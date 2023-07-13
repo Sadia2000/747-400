@@ -12,7 +12,7 @@
         <object-name>yoke.capt</object-name>
         <center>
             <x-m>-1.0577</x-m>
-            <y-m>0.499815</y-m>
+            <y-m>-0.499815</y-m>
             <z-m>-0.116545</z-m>
         </center>
         <axis>
@@ -35,6 +35,30 @@
         </center>
         <axis>
             <x>1</x>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <property>controls/flight/elevator</property>
+        <factor>-12.5</factor>
+        <object-name>ap.discL</object-name>
+        <object-name>h-trim.LL</object-name>
+        <object-name>h-trim.RL</object-name>
+        <object-name>yoke.capt</object-name>
+        <object-name>yoke.column-capt</object-name>
+        <object-name>ap.discR</object-name>
+        <object-name>h-trim.LR</object-name>
+        <object-name>h-trim.RR</object-name>
+        <object-name>yoke.fo</object-name>
+        <object-name>yoke.column-fo</object-name>
+        <center>
+            <x-m>-1.11248</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.90859</z-m>
+        </center>
+        <axis>
+            <y>1</y>
         </axis>
     </animation>
 

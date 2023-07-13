@@ -2,201 +2,39 @@
 <PropertyList>
     <path>RR-RB211.ac</path>
 
-    <effect>
-        <inherits-from>Effects/747-400_chrome</inherits-from>
-        <object-name>n1.intake</object-name>
-        <object-name>n2.intake</object-name>
-        <object-name>n3.intake</object-name>
-        <object-name>n4.intake</object-name>
-    </effect>
-
-    <effect>
+    <!-- <effect>
         <inherits-from>Effects/747-400</inherits-from>
         <object-name>n1.cowl</object-name>
         <object-name>n1.rev</object-name>
+        <object-name>n1.warn-cowl</object-name>
+        <object-name>n1.warn-intake</object-name>
         <object-name>n2.cowl</object-name>
         <object-name>n2.rev</object-name>
+        <object-name>n2.warn-cowl</object-name>
+        <object-name>n2.warn-intake</object-name>
         <object-name>n3.cowl</object-name>
         <object-name>n3.rev</object-name>
+        <object-name>n3.warn-cowl</object-name>
+        <object-name>n3.warn-intake</object-name>
         <object-name>n4.cowl</object-name>
         <object-name>n4.rev</object-name>
-    </effect>
-    <!-- Wing Flex -->
-    <!-- when wing[1] or wing[4] = -4450 or wing[2] and wing[3] = -4180, do not rotate -->
-    <!-- otherwise, rotate as normal -->
-    <animation>
-        <type>rotate</type>
-        <object-name>n1.cone</object-name>
-        <object-name>n1.cowl</object-name>
-        <object-name>n1.exhaust</object-name>
-        <object-name>n1.fan</object-name>
-        <object-name>n1.intake</object-name>
-        <object-name>n1.interior</object-name>
-        <object-name>n1.pylon</object-name>
-        <object-name>n1.rev</object-name>
-        <object-name>n1.vent</object-name>
-        <object-name>n2.cone</object-name>
-        <object-name>n2.cowl</object-name>
-        <object-name>n2.exhaust</object-name>
-        <object-name>n2.fan</object-name>
-        <object-name>n2.intake</object-name>
-        <object-name>n2.interior</object-name>
-        <object-name>n2.pylon</object-name>
-        <object-name>n2.rev</object-name>
-        <object-name>n2.vent</object-name>
-        <property>fdm/jsbsim/forces/wing[1]</property>
-        <interpolation>
-            <entry>
-                <ind>-6680</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4180</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1680</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>0.91661</x-m>
-            <y-m>-11.3631</y-m>
-            <z-m>-0.885596</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>n1.cone</object-name>
-        <object-name>n1.cowl</object-name>
-        <object-name>n1.exhaust</object-name>
-        <object-name>n1.fan</object-name>
-        <object-name>n1.intake</object-name>
-        <object-name>n1.interior</object-name>
-        <object-name>n1.pylon</object-name>
-        <object-name>n1.rev</object-name>
-        <object-name>n1.vent</object-name>
-        <property>fdm/jsbsim/forces/wing[0]</property>
-        <interpolation>
-            <entry>
-                <ind>-6950</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4450</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1950</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>10.2632</x-m>
-            <y-m>-21.2528</y-m>
-            <z-m>-0.069555</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>n3.cone</object-name>
-        <object-name>n3.cowl</object-name>
-        <object-name>n3.exhaust</object-name>
-        <object-name>n3.fan</object-name>
-        <object-name>n3.intake</object-name>
-        <object-name>n3.interior</object-name>
-        <object-name>n3.pylon</object-name>
-        <object-name>n3.rev</object-name>
-        <object-name>n3.vent</object-name>
-        <object-name>n4.cone</object-name>
-        <object-name>n4.cowl</object-name>
-        <object-name>n4.exhaust</object-name>
-        <object-name>n4.fan</object-name>
-        <object-name>n4.intake</object-name>
-        <object-name>n4.interior</object-name>
-        <object-name>n4.pylon</object-name>
-        <object-name>n4.rev</object-name>
-        <object-name>n4.vent</object-name>
-        <property>fdm/jsbsim/forces/wing[3]</property>
-        <interpolation>
-            <entry>
-                <ind>-6680</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4180</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1680</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>0.91661</x-m>
-            <y-m>11.3631</y-m>
-            <z-m>-0.885596</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <property>fdm/jsbsim/forces/wing[4]</property>
-        <object-name>n4.cone</object-name>
-        <object-name>n4.cowl</object-name>
-        <object-name>n4.exhaust</object-name>
-        <object-name>n4.fan</object-name>
-        <object-name>n4.intake</object-name>
-        <object-name>n4.interior</object-name>
-        <object-name>n4.pylon</object-name>
-        <object-name>n4.rev</object-name>
-        <object-name>n4.vent</object-name>
-        <interpolation>
-            <entry>
-                <ind>-6950</ind>
-                <dep>1</dep>
-            </entry>
-            <entry>
-                <ind>-4450</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>-1950</ind>
-                <dep>-1</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>10.2632</x-m>
-            <y-m>21.2528</y-m>
-            <z-m>-0.069555</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-        </axis>
-    </animation>
+        <object-name>n4.warn-cowl</object-name>
+        <object-name>n4.warn-intake</object-name>
+    </effect> -->
 
     <animation>
         <type>spin</type>
         <object-name>n1.cone</object-name>
-        <object-name>n1.fan</object-name>
+        <object-name>n1.fan1</object-name>
         <property>engines/engine[0]/n1</property>
         <factor>38.54</factor>
         <axis>
-            <x1-m>3.41087</x1-m>
-            <y1-m>-21.0399</y1-m>
-            <z1-m>-2.20543</z1-m>
-            <x2-m>4.5543</x2-m>
-            <y2-m>-21.0998</y2-m>
-            <z2-m>-2.20543</z2-m>
+            <x1-m>3.78125</x1-m>
+            <y1-m>-21.0878</y1-m>
+            <z1-m>-2.21348</z1-m>
+            <x2-m>4.51048</x2-m>
+            <y2-m>-21.1051</y2-m>
+            <z2-m>-2.21348</z2-m>
         </axis>
     </animation>
     <animation>
@@ -205,28 +43,28 @@
         <property>engines/engine[0]/reverser-pos-norm</property>
         <factor>0.6</factor>
         <axis>
-            <x1-m>6.27359</x1-m>
-            <y1-m>-21.1899</y1-m>
-            <z1-m>-1.00878</z1-m>
-            <x2-m>7.99217</x2-m>
-            <y2-m>-21.2799</y2-m>
-            <z2-m>-1.00878</z2-m>
+            <x1-m>3.78125</x1-m>
+            <y1-m>-21.0878</y1-m>
+            <z1-m>-2.21348</z1-m>
+            <x2-m>4.51048</x2-m>
+            <y2-m>-21.1051</y2-m>
+            <z2-m>-2.21348</z2-m>
         </axis>
     </animation>
 
     <animation>
         <type>spin</type>
         <object-name>n2.cone</object-name>
-        <object-name>n2.fan</object-name>
+        <object-name>n2.fan1</object-name>
         <property>engines/engine[1]/n1</property>
         <factor>38.54</factor>
+        <center>
+            <x-m>-5.48514</x-m>
+            <y-m>-11.9179</y-m>
+            <z-m>-2.86547</z-m>
+        </center>
         <axis>
-            <x1-m>-5.8874</x1-m>
-            <y1-m>-11.9698</y1-m>
-            <z1-m>-2.92368</z1-m>
-            <x2-m>-4.74397</x2-m>
-            <y2-m>-12.0297</y2-m>
-            <z2-m>-2.92368</z2-m>
+            <x>1</x>
         </axis>
     </animation>
     <animation>
@@ -242,13 +80,13 @@
     <animation>
         <type>spin</type>
         <object-name>n3.cone</object-name>
-        <object-name>n3.fan</object-name>
+        <object-name>n3.fan1</object-name>
         <property>engines/engine[2]/n1</property>
         <factor>38.54</factor>
         <center>
-            <x-m>-5.12043</x-m>
-            <y-m>11.8843</y-m>
-            <z-m>-2.86548</z-m>
+            <x-m>-5.48514</x-m>
+            <y-m>11.9179</y-m>
+            <z-m>-2.86547</z-m>
         </center>
         <axis>
             <x>1</x>
@@ -267,16 +105,16 @@
     <animation>
         <type>spin</type>
         <object-name>n4.cone</object-name>
-        <object-name>n4.fan</object-name>
+        <object-name>n4.fan1</object-name>
         <property>engines/engine[3]/n1</property>
         <factor>38.54</factor>
-        <center>
-            <x-m>4.15548</x-m>
-            <y-m>21.0722</y-m>
-            <z-m>-2.20733</z-m>
-        </center>
         <axis>
-            <x>1</x>
+            <x1-m>3.78125</x1-m>
+            <y1-m>21.0878</y1-m>
+            <z1-m>-2.21348</z1-m>
+            <x2-m>4.51048</x2-m>
+            <y2-m>21.1051</y2-m>
+            <z2-m>-2.21348</z2-m>
         </axis>
     </animation>
     <animation>
@@ -285,12 +123,12 @@
         <property>engines/engine[3]/reverser-pos-norm</property>
         <factor>0.6</factor>
         <axis>
-            <x1-m>5.16741</x1-m>
-            <y1-m>21.0847</y1-m>
-            <z1-m>-0.847897</z1-m>
-            <x2-m>6.19761</x2-m>
-            <y2-m>21.192</y2-m>
-            <z2-m>-0.847897</z2-m>
+            <x1-m>3.78125</x1-m>
+            <y1-m>21.0878</y1-m>
+            <z1-m>-2.21348</z1-m>
+            <x2-m>4.51048</x2-m>
+            <y2-m>21.1051</y2-m>
+            <z2-m>-2.21348</z2-m>
         </axis>
     </animation>
     
