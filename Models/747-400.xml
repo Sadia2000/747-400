@@ -1774,11 +1774,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>lower-beacon</name>
@@ -1807,11 +1807,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>strobe-aft</name>
@@ -1840,11 +1840,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>strobe-left</name>
@@ -1873,11 +1873,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>strobe-right</name>
@@ -1906,11 +1906,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>nav-red1</name>
@@ -1920,6 +1920,11 @@
             <y-m>-32.0078</y-m>
             <z-m>0.490955</z-m>
         </position>
+        <direction>
+            <pitch-deg>90</pitch-deg>
+            <roll-deg>0</roll-deg>
+            <heading-deg>55</heading-deg>
+        </direction>
         <ambient>
             <r>1</r>
             <g>0</g>
@@ -1939,11 +1944,13 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.014</l>
+            <q>0.0007</q>
         </attenuation>
-        <range-m>1</range-m>
+        <spot-exponent>18.1423</spot-exponent>
+        <spot-cutoff>110</spot-cutoff>
+        <range-m>325</range-m>
     </light>
     <light>
         <name>nav-red2</name>
@@ -1972,11 +1979,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>nav-green1</name>
@@ -2005,11 +2012,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>nav-green2</name>
@@ -2038,11 +2045,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>nav-rear-left</name>
@@ -2071,11 +2078,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
     <light>
         <name>nav-rear-right</name>
@@ -2104,11 +2111,11 @@
             <a>1</a>
         </specular>
         <attenuation>
-            <c>1</c>
-            <l>2</l>
-            <q>20</q>
+            <c>1.0</c>
+            <l>0.7</l>
+            <q>1.8</q>
         </attenuation>
-        <range-m>1</range-m>
+        <range-m>5</range-m>
     </light>
 
     <light>

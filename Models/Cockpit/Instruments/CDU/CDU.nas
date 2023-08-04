@@ -162,7 +162,7 @@ setlistener("sim/signals/fdm-initialized", func() {
 		"view": [1024, 864],
 		"mipmapping": 1
 	});
-	cdu_display_pilot.addPlacement({"node": "CDUscreen"});
+	cdu_display_pilot.addPlacement({"node": "cdu.capt-screen"});
 	var group_pilot = cdu_display_pilot.createGroup();
 	cdu_canvas_pilot = canvas_CDU_pilot.new(group_pilot);
 	cdu_canvas_pilot.update_pilot();
