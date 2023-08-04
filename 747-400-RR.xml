@@ -620,7 +620,6 @@
     <system file="gear" />
     <system file="hydraulics" />
     <system file="systems" />
-    <system file="wingflex" />
 
     <flight_control name="747-400">
         <property>fcs/LE-flap-cmd-norm</property>
