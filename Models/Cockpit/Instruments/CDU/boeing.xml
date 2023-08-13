@@ -1,965 +1,958 @@
 <PropertyList>
 
-<path>boeing.ac</path>
+	<path>boeing.ac</path>
 
-<animation> 
-	<type>material</type> 
-	<texture alias="../../texture"/> 
-</animation>
+	<animation>
+		<type>material</type>
+		<texture alias="../../texture" />
+	</animation>
 
-<effect>
-	<inherits-from>Effects/lightmap</inherits-from>
-	<parameters>
-		<texture n="1">
-			<image>Aircraft/747-400/Instruments/CDU/boeing_lightmap.png</image>
-		</texture>
-		<factor><use>/controls/lighting/panel-norm</use></factor>
-	</parameters>
-	<object-name>CDU</object-name>
- 	<object-name>Btn.A</object-name>
-	<object-name>Btn.B</object-name>
-	<object-name>Btn.C</object-name>
-	<object-name>Btn.D</object-name>
-	<object-name>Btn.E</object-name>
-	<object-name>Btn.F</object-name>
-	<object-name>Btn.G</object-name>
-	<object-name>Btn.H</object-name>
-	<object-name>Btn.I</object-name>
-	<object-name>Btn.J</object-name>
-	<object-name>Btn.K</object-name>
-	<object-name>Btn.L</object-name>
-	<object-name>Btn.M</object-name>
-	<object-name>Btn.N</object-name>
-	<object-name>Btn.O</object-name>
-	<object-name>Btn.P</object-name>
-	<object-name>Btn.Q</object-name>
-	<object-name>Btn.R</object-name>
-	<object-name>Btn.S</object-name>
-	<object-name>Btn.T</object-name>
-	<object-name>Btn.U</object-name>
-	<object-name>Btn.V</object-name>
-	<object-name>Btn.W</object-name>
-	<object-name>Btn.X</object-name>
-	<object-name>Btn.Y</object-name>
-	<object-name>Btn.Z</object-name>
-	<object-name>Btn.zero</object-name>
-	<object-name>Btn.num1</object-name>
-	<object-name>Btn.num2</object-name>
-	<object-name>Btn.num3</object-name>
-	<object-name>Btn.num4</object-name>
-	<object-name>Btn.num5</object-name>
-	<object-name>Btn.num6</object-name>
-	<object-name>Btn.num7</object-name>
-	<object-name>Btn.num8</object-name>
-	<object-name>Btn.num9</object-name>
-	<object-name>Btn.period</object-name>
-	<object-name>Btn.plusminus</object-name>
-	<object-name>Btn.sp</object-name>
-	<object-name>Btn.slash</object-name>
-	<object-name>Btn.del</object-name>
-	<object-name>Btn.clr</object-name>
-	<object-name>Btn.init-ref</object-name>
-	<object-name>Btn.rte</object-name>
-	<object-name>Btn.dep-arr</object-name>
-	<object-name>Btn.altn</object-name>
-	<object-name>Btn.vnav</object-name>
-	<object-name>Btn.fix</object-name>
-	<object-name>Btn.legs</object-name>
-	<object-name>Btn.hold</object-name>
-	<object-name>Btn.fmc-comm</object-name>
-	<object-name>Btn.prog</object-name>
-	<object-name>Btn.exec</object-name>
-	<object-name>Btn.menu</object-name>
-	<object-name>Btn.nav-rad</object-name>
-	<object-name>Btn.prev-page</object-name>
-	<object-name>Btn.next-page</object-name>
-	<object-name>Btn.side.l.1</object-name>
-	<object-name>Btn.side.l.2</object-name>
-	<object-name>Btn.side.l.3</object-name>
-	<object-name>Btn.side.l.4</object-name>
-	<object-name>Btn.side.l.5</object-name>
-	<object-name>Btn.side.l.6</object-name>
-	<object-name>Btn.side.r.1</object-name>
-	<object-name>Btn.side.r.2</object-name>
-	<object-name>Btn.side.r.3</object-name>
-	<object-name>Btn.side.r.4</object-name>
-	<object-name>Btn.side.r.5</object-name>
-	<object-name>Btn.side.r.6</object-name>
-	<object-name>l1</object-name>
-	<object-name>l2</object-name>
-	<object-name>l3</object-name>
-	<object-name>l4</object-name>
-	<object-name>l5</object-name>
-	<object-name>l6</object-name>
-	<object-name>r1</object-name>
-	<object-name>r2</object-name>
-	<object-name>r3</object-name>
-	<object-name>r4</object-name>
-	<object-name>r5</object-name>
-	<object-name>r6</object-name>
-	<object-name>1</object-name>
-    <object-name>2</object-name>
-	<object-name>3</object-name>
-    <object-name>4</object-name>
-	<object-name>5</object-name>
-    <object-name>6</object-name>
-	<object-name>7</object-name>
-    <object-name>8</object-name>
-	<object-name>9</object-name>
-    <object-name>0</object-name>
-	<object-name>+/-</object-name>
-    <object-name>dot</object-name>
-	<object-name>A</object-name>
-    <object-name>B</object-name>
-	<object-name>C</object-name>
-    <object-name>D</object-name>
-	<object-name>E</object-name>
-    <object-name>F</object-name>
-	<object-name>G</object-name>
-    <object-name>H</object-name>
-	<object-name>I</object-name>
-    <object-name>J</object-name>
-	<object-name>K</object-name>
-    <object-name>L</object-name>
-	<object-name>M</object-name>
-    <object-name>N</object-name>
-	<object-name>O</object-name>
-    <object-name>P</object-name>
-	<object-name>Q</object-name>
-    <object-name>R</object-name>
-	<object-name>S</object-name>
-    <object-name>T</object-name>
-	<object-name>U</object-name>
-    <object-name>V</object-name>
-	<object-name>W</object-name>
-    <object-name>X</object-name>
-	<object-name>Y</object-name>
-    <object-name>Z</object-name>
-	<object-name>SP</object-name>
-    <object-name>/</object-name>
-	<object-name>DEL</object-name>
-    <object-name>CLR</object-name>
-	<object-name>initref</object-name>
-    <object-name>navrad</object-name>
-	<object-name>nextpage</object-name>
-    <object-name>prevpage</object-name>
-	<object-name>fix</object-name>
-    <object-name>fmc comm</object-name>
-	<object-name>vnav</object-name>
-    <object-name>menu</object-name>
-	<object-name>exec</object-name>
-    <object-name>prog</object-name>
-	<object-name>altn</object-name>
-    <object-name>legs</object-name>
-	<object-name>hold</object-name>
-    <object-name>rte</object-name>
-	<object-name>deparr</object-name>
-    <object-name>brightnessknob</object-name>
-</effect>
+	<effect>
+		<inherits-from>Effects/lightmap</inherits-from>
+		<parameters>
+			<texture n="1">
+				<image>Aircraft/747-400/Instruments/CDU/boeing_lightmap.png</image>
+			</texture>
+			<factor>
+				<use>/controls/lighting/panel-norm</use>
+			</factor>
+		</parameters>
+		<object-name>CDU</object-name>
+		<object-name>Btn.A</object-name>
+		<object-name>Btn.B</object-name>
+		<object-name>Btn.C</object-name>
+		<object-name>Btn.D</object-name>
+		<object-name>Btn.E</object-name>
+		<object-name>Btn.F</object-name>
+		<object-name>Btn.G</object-name>
+		<object-name>Btn.H</object-name>
+		<object-name>Btn.I</object-name>
+		<object-name>Btn.J</object-name>
+		<object-name>Btn.K</object-name>
+		<object-name>Btn.L</object-name>
+		<object-name>Btn.M</object-name>
+		<object-name>Btn.N</object-name>
+		<object-name>Btn.O</object-name>
+		<object-name>Btn.P</object-name>
+		<object-name>Btn.Q</object-name>
+		<object-name>Btn.R</object-name>
+		<object-name>Btn.S</object-name>
+		<object-name>Btn.T</object-name>
+		<object-name>Btn.U</object-name>
+		<object-name>Btn.V</object-name>
+		<object-name>Btn.W</object-name>
+		<object-name>Btn.X</object-name>
+		<object-name>Btn.Y</object-name>
+		<object-name>Btn.Z</object-name>
+		<object-name>Btn.zero</object-name>
+		<object-name>Btn.num1</object-name>
+		<object-name>Btn.num2</object-name>
+		<object-name>Btn.num3</object-name>
+		<object-name>Btn.num4</object-name>
+		<object-name>Btn.num5</object-name>
+		<object-name>Btn.num6</object-name>
+		<object-name>Btn.num7</object-name>
+		<object-name>Btn.num8</object-name>
+		<object-name>Btn.num9</object-name>
+		<object-name>Btn.period</object-name>
+		<object-name>Btn.plusminus</object-name>
+		<object-name>Btn.sp</object-name>
+		<object-name>Btn.slash</object-name>
+		<object-name>Btn.del</object-name>
+		<object-name>Btn.clr</object-name>
+		<object-name>Btn.init-ref</object-name>
+		<object-name>Btn.rte</object-name>
+		<object-name>Btn.dep-arr</object-name>
+		<object-name>Btn.altn</object-name>
+		<object-name>Btn.vnav</object-name>
+		<object-name>Btn.fix</object-name>
+		<object-name>Btn.legs</object-name>
+		<object-name>Btn.hold</object-name>
+		<object-name>Btn.fmc-comm</object-name>
+		<object-name>Btn.prog</object-name>
+		<object-name>Btn.exec</object-name>
+		<object-name>Btn.menu</object-name>
+		<object-name>Btn.nav-rad</object-name>
+		<object-name>Btn.prev-page</object-name>
+		<object-name>Btn.next-page</object-name>
+		<object-name>Btn.side.l.1</object-name>
+		<object-name>Btn.side.l.2</object-name>
+		<object-name>Btn.side.l.3</object-name>
+		<object-name>Btn.side.l.4</object-name>
+		<object-name>Btn.side.l.5</object-name>
+		<object-name>Btn.side.l.6</object-name>
+		<object-name>Btn.side.r.1</object-name>
+		<object-name>Btn.side.r.2</object-name>
+		<object-name>Btn.side.r.3</object-name>
+		<object-name>Btn.side.r.4</object-name>
+		<object-name>Btn.side.r.5</object-name>
+		<object-name>Btn.side.r.6</object-name>
+		<object-name>l1</object-name>
+		<object-name>l2</object-name>
+		<object-name>l3</object-name>
+		<object-name>l4</object-name>
+		<object-name>l5</object-name>
+		<object-name>l6</object-name>
+		<object-name>r1</object-name>
+		<object-name>r2</object-name>
+		<object-name>r3</object-name>
+		<object-name>r4</object-name>
+		<object-name>r5</object-name>
+		<object-name>r6</object-name>
+		<object-name>1</object-name>
+		<object-name>2</object-name>
+		<object-name>3</object-name>
+		<object-name>4</object-name>
+		<object-name>5</object-name>
+		<object-name>6</object-name>
+		<object-name>7</object-name>
+		<object-name>8</object-name>
+		<object-name>9</object-name>
+		<object-name>0</object-name>
+		<object-name>+/-</object-name>
+		<object-name>dot</object-name>
+		<object-name>A</object-name>
+		<object-name>B</object-name>
+		<object-name>C</object-name>
+		<object-name>D</object-name>
+		<object-name>E</object-name>
+		<object-name>F</object-name>
+		<object-name>G</object-name>
+		<object-name>H</object-name>
+		<object-name>I</object-name>
+		<object-name>J</object-name>
+		<object-name>K</object-name>
+		<object-name>L</object-name>
+		<object-name>M</object-name>
+		<object-name>N</object-name>
+		<object-name>O</object-name>
+		<object-name>P</object-name>
+		<object-name>Q</object-name>
+		<object-name>R</object-name>
+		<object-name>S</object-name>
+		<object-name>T</object-name>
+		<object-name>U</object-name>
+		<object-name>V</object-name>
+		<object-name>W</object-name>
+		<object-name>X</object-name>
+		<object-name>Y</object-name>
+		<object-name>Z</object-name>
+		<object-name>SP</object-name>
+		<object-name>/</object-name>
+		<object-name>DEL</object-name>
+		<object-name>CLR</object-name>
+		<object-name>initref</object-name>
+		<object-name>navrad</object-name>
+		<object-name>nextpage</object-name>
+		<object-name>prevpage</object-name>
+		<object-name>fix</object-name>
+		<object-name>fmc comm</object-name>
+		<object-name>vnav</object-name>
+		<object-name>menu</object-name>
+		<object-name>exec</object-name>
+		<object-name>prog</object-name>
+		<object-name>altn</object-name>
+		<object-name>legs</object-name>
+		<object-name>hold</object-name>
+		<object-name>rte</object-name>
+		<object-name>deparr</object-name>
+		<object-name>brightnessknob</object-name>
+	</effect>
 
-<!-- SIDE KEY BINDINGS -->
+	<!-- SIDE KEY BINDINGS -->
 
-<animation>
-	<type>pick</type>
-	<object-name>Btn.side.l.1</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('L1');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>l2</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('L2');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>l3</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('L3');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>l4</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('L4');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>l5</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('L5');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>l6</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('L6');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>Btn.side.l.1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('L1');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>l2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('L2');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>l3</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('L3');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>l4</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('L4');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>l5</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('L5');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>l6</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('L6');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>r1</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('R1');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>r2</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('R2');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>r3</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('R3');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>r4</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('R4');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>r5</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('R5');</script>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>r6</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable> 
-		<binding>
-			<command>nasal</command>
-			<script>cdu.sidebuttons('R6');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>r1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('R1');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>r2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('R2');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>r3</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('R3');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>r4</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('R4');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>r5</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('R5');</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>r6</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.sidebuttons('R6');</script>
+			</binding>
+		</action>
+	</animation>
 
-<!-- IMPORTANT BTN -->
+	<!-- IMPORTANT BTN -->
 
-<animation>
-	<type>pick</type>
-	<object-name>initref</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.newpage("INIT/REF INDEX");	
-			</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>initref</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.newpage("INIT/REF INDEX");</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>rte</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.newpage("RTE 1");
-			</script>
-		</binding>
-	</action>
-</animation>
- 
-<animation>
-	<type>pick</type>
-	<object-name>menu</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.newpage("MENU");	
-			</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>rte</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.newpage("RTE 1");</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>deparr</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.newpage("DEP/ARR INDEX");	
-			</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>menu</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.newpage("MENU");</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>prevpage</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.prevpage();	
-			</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>deparr</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.newpage("DEP/ARR INDEX");</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>nextpage</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.nextpage();	
-			</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>prevpage</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.prevpage();</script>
+			</binding>
+		</action>
+	</animation>
 
-<!-- NUM KEYS -->
+	<animation>
+		<type>pick</type>
+		<object-name>nextpage</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.nextpage();</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>0</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('0');</script>
-		</binding>
-	</action>
-</animation>
+	<!-- NUM KEYS -->
 
-<animation>
-	<type>pick</type>
-	<object-name>1</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('1');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>0</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('0');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>2</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('2');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('1');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>3</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('3');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('2');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>4</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('4');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>3</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('3');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>5</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('5');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>4</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('4');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>6</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('6');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>5</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('5');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>7</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('7');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>6</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('6');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>8</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('8');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>7</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('7');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>9</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('9');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>8</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('8');</script>
+			</binding>
+		</action>
+	</animation>
 
-<!--LETTERS KEY-->
+	<animation>
+		<type>pick</type>
+		<object-name>9</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('9');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>A</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('A');</script>
-		</binding>
-	</action>
-</animation>
+	<!--LETTERS
+	KEY-->
 
-<animation>
-	<type>pick</type>
-	<object-name>B</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('B');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>A</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('A');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>C</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('C');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>B</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('B');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>D</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('D');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>C</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('C');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>E</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('E');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>D</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('D');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>F</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('F');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>E</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('E');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>G</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('G');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>F</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('F');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>H</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('H');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>G</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('G');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>I</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('I');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>H</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('H');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>J</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('J');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>I</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('I');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>K</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('K');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>J</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('J');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>L</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('L');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>K</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('K');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>M</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('M');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>L</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('L');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>N</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('N');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>M</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('M');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>O</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('O');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>N</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('N');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>P</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('P');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>O</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('O');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>Q</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('Q');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>P</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('P');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>R</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('R');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>Q</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('Q');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>S</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('S');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>R</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('R');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>T</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('T');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>S</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('S');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>U</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('U');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>T</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('T');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>V</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('V');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>U</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('U');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>W</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('W');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>V</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('V');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>X</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('X');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>W</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('W');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>Y</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('Y');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>X</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('X');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>Z</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('Z');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>Y</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('Y');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>dot</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('.');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>Z</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('Z');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>/</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>cdu.scratchpad('/');</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>dot</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('.');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>DEL</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			if(getprop("instrumentation/cdu/deletekey") == 0){
-			cdu.deletekeypress();
-			}
-			</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>/</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>cdu.scratchpad('/');</script>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>CLR</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>nasal</command>
-			<script>
-			cdu.clear();
-		    setprop("/instrumentation/cdu/clear", 1);
-			</script>
-		</binding>
-		<mod-up>
-		<binding>
-			<command>nasal</command>
-			<script>
-			setprop("/instrumentation/cdu/clear", 0);
-			</script>
-		</binding>
-		</mod-up>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>DEL</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+					if(getprop("instrumentation/cdu/deletekey") == 0){
+					cdu.deletekeypress();
+					}
+				</script>
+			</binding>
+		</action>
+	</animation>
 
-<!--OTHER-->
+	<animation>
+		<type>pick</type>
+		<object-name>CLR</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+					cdu.clear();
+					setprop("/instrumentation/cdu/clear", 1);
+				</script>
+			</binding>
+			<mod-up>
+				<binding>
+					<command>nasal</command>
+					<script>
+						setprop("/instrumentation/cdu/clear", 0);
+					</script>
+				</binding>
+			</mod-up>
+		</action>
+	</animation>
 
-<animation>
-	<type>knob</type>
-	<object-name>brightnessknob</object-name>
-	<property>/controls/lighting/cdu-screen-brightness</property>
-	<factor>360</factor>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>  
-		<binding>
-			<command>property-adjust</command>
-			<property>/controls/lighting/cdu-screen-brightness</property>
-			<factor>-0.05</factor>
-			<min>0</min>
-			<max>1</max>
-		</binding>
-	</action>
-	<center>
-		<x-m>0.00545</x-m><y-m>0.05271</y-m><z-m>-0.00135</z-m>
-	</center>
-	<axis>
-		<x>-1</x>
-	</axis>
-</animation>
+	<!--OTHER-->
+
+	<animation>
+		<type>knob</type>
+		<object-name>brightnessknob</object-name>
+		<property>/controls/lighting/cdu-screen-brightness</property>
+		<factor>360</factor>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>/controls/lighting/cdu-screen-brightness</property>
+				<factor>-0.05</factor>
+				<min>0</min>
+				<max>1</max>
+			</binding>
+		</action>
+		<center>
+			<x-m>0.00545</x-m>
+			<y-m>0.05271</y-m>
+			<z-m>-0.00135</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+		</axis>
+	</animation>
 
 </PropertyList>

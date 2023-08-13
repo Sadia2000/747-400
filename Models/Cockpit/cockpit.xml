@@ -1,5 +1,54 @@
 <PropertyList>
     <path>cockpit.ac</path>
+    <main include="CDU.xml" omit-node="y"/>
+
+    <!-- Default Illumination -->
+    <animation>
+        <type>material</type>
+        <object-name>screen.pfd-capt</object-name>
+        <object-name>screen.nav-capt</object-name>
+        <object-name>screen.eicas</object-name>
+        <object-name>screen.nav-fo</object-name>
+        <object-name>screen.pfd-fo</object-name>
+        <object-name>screen.mfd</object-name>
+        <object-name>cdu.capt-screen</object-name>
+        <object-name>cdu.center-screen</object-name>
+        <object-name>cdu.fo-screen</object-name>
+        <object-name>ap.spd-100</object-name>
+        <object-name>ap.spd-10</object-name>
+        <object-name>ap.spd-1</object-name>
+        <object-name>ap.hdg-100</object-name>
+        <object-name>ap.hdg-10</object-name>
+        <object-name>ap.hdg-1</object-name>
+        <object-name>ap.vs-rate</object-name>
+        <object-name>ap.vs-1000</object-name>
+        <object-name>ap.vs-100</object-name>
+        <object-name>ap.vs-10</object-name>
+        <object-name>ap.vs-1</object-name>
+        <object-name>ap.alt-10000</object-name>
+        <object-name>ap.alt-1000</object-name>
+        <object-name>ap.alt-100</object-name>
+        <object-name>ap.alt-10</object-name>
+        <object-name>ap.alt-1</object-name>
+        <object-name>ap.thr-engage</object-name>
+        <object-name>ap.spd-engage</object-name>
+        <object-name>ap.lnav-engage</object-name>
+        <object-name>ap.vnav-engage</object-name>
+        <object-name>ap.flch-engage</object-name>
+        <object-name>ap.hdg-hold-engage</object-name>
+        <object-name>ap.vs-engage</object-name>
+        <object-name>ap.alt-hold-engage</object-name>
+        <object-name>ap.loc-engage</object-name>
+        <object-name>ap.app-engage</object-name>
+        <object-name>ap.engageL</object-name>
+        <object-name>ap.engageC</object-name>
+        <object-name>ap.engageR</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+    </animation>
 
     <!-- Yokes -->
     <animation>
@@ -81,5 +130,65 @@
                 </script>
             </binding>
         </action>
+    </animation>
+
+    <!-- CDU -->
+    <!-- Side buttons -->
+    <animation>
+        <type>pick</type>
+        <object-name>cdu.capt-L1</object-name>
+        <object-name>cdu.center-L1</object-name>
+        <object-name>cdu.fo-L1</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable> 
+            <binding>
+                <command>nasal</command>
+                <script>cdu.sidebuttons('L1');</script>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>cdu.capt-L2</object-name>
+        <object-name>cdu.center-L2</object-name>
+        <object-name>cdu.fo-L2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable> 
+            <binding>
+                <command>nasal</command>
+                <script>cdu.sidebuttons('L2');</script>
+            </binding>
+        </action>
+    </animation>
+
+    <!-- Glareshield -->
+    <!-- EFIS Panel, Left -->
+    <animation>
+        <type>pick</type>
+        <object-name>efis.mins-modeL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[0]/inputs/minimums/mins-mode</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>efis.mins-modeL</object-name>
+        <property>controls/switches/efis[0]/mins-mode</property>
+        <factor>-60</factor>
+        <center>
+            <x-m>-1.15153</x-m>
+            <y-m>-0.362841</y-m>
+            <z-m>0.178918</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
     </animation>
 </PropertyList>

@@ -17,8 +17,8 @@ var myCockpit_switches = {
 	'toggle_display_mode': 	{path: '/mfd/display-mode', value:'MAP', type:'STRING'},
 	'toggle_display_type': 	{path: '/mfd/display-type', value:'CRT', type:'STRING'},
 	'toggle_true_north': 	{path: '/mfd/true-north', value:0, type:'BOOL'},
-    	'toggle_rangearc':      {path: '/mfd/rangearc', value:0, type:'BOOL'},
-    	'toggle_track_heading': {path: '/trk-selected', value:0, type:'BOOL'},
+    'toggle_rangearc':      {path: '/mfd/rangearc', value:0, type:'BOOL'},
+    'toggle_track_heading': {path: '/trk-selected', value:0, type:'BOOL'},
 	# add new switches here
 };
 
@@ -36,7 +36,7 @@ var _list = setlistener("sim/signals/fdm-initialized", func() {
 		"mipmapping": 1
 	});
 
-	nd_display.cpt.addPlacement({"node": "ndScreenL"});
+	nd_display.cpt.addPlacement({"node": "screen.nav-capt"});
 	var group = nd_display.cpt.createGroup();
 	NDCpt.newMFD(group, nd_display.cpt);
 	NDCpt.update();
@@ -50,8 +50,7 @@ var _list = setlistener("sim/signals/fdm-initialized", func() {
 		"mipmapping": 1
 	});
 
-	pfd_display.addPlacement({"node": "screen.nav-capt"});
-	pfd_display.addPlacement({"node": "screen.nav-fo"});
+	nd_display.fo.addPlacement({"node": "screen.nav-fo"});
 	var group = nd_display.fo.createGroup();
 	NDFo.newMFD(group, nd_display.fo);
 	NDFo.update();

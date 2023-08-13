@@ -246,7 +246,7 @@ setlistener("/nasal/canvas/loaded", func {
 		"view": [1024, 1024],
 		"mipmapping": 1
 	});
-	primary_eicas.addPlacement({"node": "Upper-EICAS-Screen"});
+	primary_eicas.addPlacement({"node": "screen.eicas"});
 	var group = primary_eicas.createGroup();
 	var demo = canvas_primary.new(group);
 	demo.slow_update();

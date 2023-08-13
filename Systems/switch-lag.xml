@@ -1,0 +1,10 @@
+<PropertyList>
+    <!-- EFIS switches -->
+    <filter>
+		<name>Minimums Mode</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>/instrumentation/efis[0]/inputs/minimums/mins-mode</input>
+		<output>/controls/switches/efis[0]/mins-mode</output>
+	</filter>
+</PropertyList>

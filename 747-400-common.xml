@@ -130,6 +130,10 @@
             <path>Aircraft/747-400/Systems/instrumentation.xml</path>
         </instrumentation>
 
+        <switches>
+            <path>Aircraft/747-400/Systems/switch-lag.xml</path>
+        </switches>
+
         <panel>
             <path>Aircraft/747-400/Panels/744_hyd_panel.xml</path>
         </panel>
@@ -143,11 +147,11 @@
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config>
-                <x-offset-m type="double">-0.55</x-offset-m>
-                <y-offset-m type="double">3.8</y-offset-m>
-                <z-offset-m type="double">-23.80</z-offset-m>
+                <x-offset-m type="double">-0.496209</x-offset-m>
+                <y-offset-m type="double">3.618222</y-offset-m>
+                <z-offset-m type="double">-24.171365</z-offset-m>
                 <pitch-offset-deg>-10</pitch-offset-deg>
-                <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
+                <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
             </config>
         </view>
 
@@ -177,11 +181,11 @@
                 <from-model type="bool">true</from-model>
                 <from-model-idx type="int">0</from-model-idx>
                 <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
-                <x-offset-m type="double">0.55</x-offset-m>
-                <y-offset-m type="double">3.8</y-offset-m>
-                <z-offset-m type="double">-24.15</z-offset-m>
-                <pitch-offset-deg>-15</pitch-offset-deg>
-                <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
+                <x-offset-m type="double">0.496209</x-offset-m>
+                <y-offset-m type="double">3.618222</y-offset-m>
+                <z-offset-m type="double">-24.171365</z-offset-m>
+                <pitch-offset-deg>-10</pitch-offset-deg>
+                <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
             </config>
             <dynamic>
                 <enabled type="bool">false</enabled>
@@ -664,6 +668,12 @@
             <turnoff-light-r type="bool">0</turnoff-light-r>
         </lighting>
 
+        <switches>
+            <efis>
+                <mins-mode type="int">0</mins-mode>
+            </efis>
+        </switches>
+
     </controls>
 
     <input>
@@ -832,40 +842,62 @@
         </annunciators>
         <efis>
             <inputs>
+                <minimums>
+                    <mins-mode type="int">0</mins-mode>
+                    <mins-altitude type="int">250</mins-altitude>
+                </minimums>
+                <baro>
+                    <mode>0</mode>
+                    <pressure>29.92</pressure>
+                </baro>
+                <nav>
+                    <mode>2</mode>
+                    <range>10</range>
+                </nav>
+                <fpv type="bool">false</fpv>
+                <mtrs type="bool"></mtrs>
+                <wxr type="bool">false</wxr>
                 <tfc type="bool">true</tfc>
                 <sta type="bool">false</sta>
-                <arpt type="bool">true</arpt>
                 <wpt type="bool">false</wpt>
-                <wxr type="bool">false</wxr>
+                <arpt type="bool">true</arpt>
+                <data type="bool">false</data>
+                <pos type="bool">false</pos>
+                <terr type="bool">false</terr>
                 <lh-vor-adf type="int">0</lh-vor-adf>
                 <rh-vor-adf type="int">0</rh-vor-adf>
-                <range-nm type="int">10</range-nm>
-                <plan-wpt-index type="int">-1</plan-wpt-index>
             </inputs>
-            <mfd>
-                <display-mode type="string">MAP</display-mode>
-                <display-type type="string">CRT</display-type>
-            </mfd>
         </efis>
         <efis n="1">
             <inputs>
+                <minimums>
+                    <mins-mode type="bool">0</mins-mode>
+                    <mins-altitude type="int">250</mins-altitude>
+                </minimums>
+                <baro>
+                    <mode>0</mode>
+                    <pressure>29.92</pressure>
+                </baro>
+                <nav>
+                    <mode>2</mode>
+                    <range>10</range>
+                </nav>
+                <fpv type="bool">false</fpv>
+                <mtrs type="bool"></mtrs>
+                <wxr type="bool">false</wxr>
                 <tfc type="bool">true</tfc>
                 <sta type="bool">false</sta>
-                <arpt type="bool">true</arpt>
                 <wpt type="bool">false</wpt>
-                <wxr type="bool">false</wxr>
+                <arpt type="bool">true</arpt>
+                <data type="bool">false</data>
+                <pos type="bool">false</pos>
+                <terr type="bool">false</terr>
                 <lh-vor-adf type="int">0</lh-vor-adf>
                 <rh-vor-adf type="int">0</rh-vor-adf>
-                <range-nm type="int">10</range-nm>
-                <plan-wpt-index type="int">-1</plan-wpt-index>
             </inputs>
-            <mfd>
-                <display-mode type="string">MAP</display-mode>
-                <display-type type="string">CRT</display-type>
-            </mfd>
         </efis>
 		<altimeter>
-		<mode>IN-HG</mode>
+		    <mode>IN-HG</mode>
 		</altimeter>
         <cdu>
             <update type="double">0</update>

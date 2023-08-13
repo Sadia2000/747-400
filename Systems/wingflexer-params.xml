@@ -3,15 +3,15 @@
 <PropertyList>
 
     <params>
-        <m-wing-dry-kg type="double">21500</m-wing-dry-kg>
-        <K type="double">259</K>
-        <D type="double">12</D>
+        <m-wing-dry-kg type="double">21500.</m-wing-dry-kg>
+        <K type="double">259.</K>
+        <D type="double">12.</D>
         <fuel-frac type="double">0.375</fuel-frac>
         <lift-node-lbs alias="/fdm/jsbsim/forces/fbz-aero-lbs"/>
         <fuel-node-1-kg alias="/consumables/fuel/tank[1]/level-kg"/>
         <fuel-node-2-kg alias="/consumables/fuel/tank[2]/level-kg"/>
-        <fuel-node-3-kg alias="/consumables/fuel/tank[3]/level-kg"/>
-        <fuel-node-4-kg alias="/consumables/fuel/tank[4]/level-kg"/>
+        <!-- <fuel-node-3-kg alias="/consumables/fuel/tank[3]/level-kg"/>
+        <fuel-node-4-kg alias="/consumables/fuel/tank[4]/level-kg"/> -->
     </params>
 
 </PropertyList>

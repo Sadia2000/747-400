@@ -21,6 +21,115 @@
         <object-name>n4.warn-cowl</object-name>
         <object-name>n4.warn-intake</object-name>
     </effect> -->
+    
+    <!-- Wing Flex -->
+    <animation>
+        <type>rotate</type>
+        <object-name>n1.chrome</object-name>
+        <object-name>n1.cone</object-name>
+        <object-name>n1.cowl</object-name>
+        <object-name>n1.exhaust</object-name>
+        <object-name>n1.fan1</object-name>
+        <object-name>n1.fan2</object-name>
+        <object-name>n1.intake</object-name>
+        <object-name>n1.mechanics</object-name>
+        <object-name>n1.rev</object-name>
+        <object-name>n2.chrome</object-name>
+        <object-name>n2.cone</object-name>
+        <object-name>n2.cowl</object-name>
+        <object-name>n2.exhaust</object-name>
+        <object-name>n2.fan1</object-name>
+        <object-name>n2.fan2</object-name>
+        <object-name>n2.intake</object-name>
+        <object-name>n2.mechanics</object-name>
+        <object-name>n2.rev</object-name>
+        <property>sim/systems/wingflexer/z-raw-m</property>
+        <factor>-10</factor>
+        <center>
+            <x-m>0.91661</x-m>
+            <y-m>-11.3631</y-m>
+            <z-m>-0.885596</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>n1.chrome</object-name>
+        <object-name>n1.cone</object-name>
+        <object-name>n1.cowl</object-name>
+        <object-name>n1.exhaust</object-name>
+        <object-name>n1.fan1</object-name>
+        <object-name>n1.fan2</object-name>
+        <object-name>n1.intake</object-name>
+        <object-name>n1.mechanics</object-name>
+        <object-name>n1.rev</object-name>
+        <property>sim/systems/wingflexer/z-raw-m</property>
+        <factor>-10</factor>
+        <center>
+            <x-m>10.2632</x-m>
+            <y-m>-21.2528</y-m>
+            <z-m>-0.069555</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>n3.chrome</object-name>
+        <object-name>n3.cone</object-name>
+        <object-name>n3.cowl</object-name>
+        <object-name>n3.exhaust</object-name>
+        <object-name>n3.fan1</object-name>
+        <object-name>n3.fan2</object-name>
+        <object-name>n3.intake</object-name>
+        <object-name>n3.mechanics</object-name>
+        <object-name>n3.rev</object-name>
+        <object-name>n4.chrome</object-name>
+        <object-name>n4.cone</object-name>
+        <object-name>n4.cowl</object-name>
+        <object-name>n4.exhaust</object-name>
+        <object-name>n4.fan1</object-name>
+        <object-name>n4.fan2</object-name>
+        <object-name>n4.intake</object-name>
+        <object-name>n4.mechanics</object-name>
+        <object-name>n4.rev</object-name>
+        <property>sim/systems/wingflexer/z-raw-m</property>
+        <factor>10</factor>
+        <center>
+            <x-m>0.91661</x-m>
+            <y-m>11.3631</y-m>
+            <z-m>-0.885596</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>n4.chrome</object-name>
+        <object-name>n4.cone</object-name>
+        <object-name>n4.cowl</object-name>
+        <object-name>n4.exhaust</object-name>
+        <object-name>n4.fan1</object-name>
+        <object-name>n4.fan2</object-name>
+        <object-name>n4.intake</object-name>
+        <object-name>n4.mechanics</object-name>
+        <object-name>n4.rev</object-name>
+        <property>sim/systems/wingflexer/z-raw-m</property>
+        <factor>10</factor>
+        <center>
+            <x-m>10.2632</x-m>
+            <y-m>21.2528</y-m>
+            <z-m>-0.069555</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
 
     <animation>
         <type>spin</type>
@@ -131,5 +240,7 @@
             <z2-m>-2.21348</z2-m>
         </axis>
     </animation>
+
+    
     
 </PropertyList>
