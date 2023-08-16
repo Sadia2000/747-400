@@ -1,14 +1,13 @@
 <PropertyList>
     <path>747-400.ac</path>
 
-    <!-- Axle + Piston Movements -->
+    <!-- Gear Compression Movements -->
     <animation>
         <type>translate</type>
         <object-name>nlg.axleL</object-name>
         <object-name>nlg.tire</object-name>
         <object-name>nlg.scissorL</object-name>
-        <property>gear/gear[0]/compression-norm</property>
-        <factor>0.3048</factor>
+        <property>gear/gear[0]/compression-m</property>
         <axis>
             <z>1</z>
         </axis>
@@ -36,6 +35,190 @@
             <x-m>-22.73</x-m>
             <y-m>-0.039476</y-m>
             <z-m>-3.685</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>mlg.axleLLF</object-name>
+        <object-name>mlg.armLF</object-name>
+        <object-name>mlg.tireLF1</object-name>
+        <object-name>mlg.tireLF2</object-name>
+        <object-name>mlg.strutLF1</object-name>
+        <property>gear/gear[1]/compression-m</property>
+        <axis>
+            <x1-m>1.6175</x1-m>
+            <y1-m>-5.21043</y1-m>
+            <z1-m>-3.13995</z1-m>
+            <x2-m>1.60966</x2-m>
+            <y2-m>-5.2117</y2-m>
+            <z2-m>-2.64001</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutLF1</object-name>
+        <property>gear/gear[1]/compression-m</property>
+        <factor>-35</factor>
+        <center>
+            <x-m>1.81031</x-m>
+            <y-m>-5.34513</y-m>
+            <z-m>-4.12863</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutLF2</object-name>
+        <property>gear/gear[1]/compression-m</property>
+        <factor>35</factor>
+        <center>
+            <x-m>1.84996</x-m>
+            <y-m>-5.37356</y-m>
+            <z-m>-3.45772</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>mlg.axleLLA</object-name>
+        <object-name>mlg.armLA</object-name>
+        <object-name>mlg.tireLA1</object-name>
+        <object-name>mlg.tireLA2</object-name>
+        <object-name>mlg.strutLA1</object-name>
+        <property>gear/gear[2]/compression-m</property>
+        <axis>
+            <x1-m>4.78296</x1-m>
+            <y1-m>-1.94871</y1-m>
+            <z1-m>-3.16366</z1-m>
+            <x2-m>4.7893</x2-m>
+            <y2-m>-1.94869</y2-m>
+            <z2-m>-2.6637</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutLA1</object-name>
+        <property>gear/gear[2]/compression-m</property>
+        <factor>-40</factor>
+        <center>
+            <x-m>4.94777</x-m>
+            <y-m>-2.13603</y-m>
+            <z-m>-4.13377</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutLA2</object-name>
+        <property>gear/gear[2]/compression-m</property>
+        <factor>40</factor>
+        <center>
+            <x-m>4.94777</x-m>
+            <y-m>-2.13603</y-m>
+            <z-m>-4.13377</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>mlg.axleLRA</object-name>
+        <object-name>mlg.armRA</object-name>
+        <object-name>mlg.tireRA1</object-name>
+        <object-name>mlg.tireRA2</object-name>
+        <object-name>mlg.strutRA1</object-name>
+        <property>gear/gear[3]/compression-m</property>
+        <axis>
+            <x1-m>4.78296</x1-m>
+            <y1-m>1.94871</y1-m>
+            <z1-m>-3.16366</z1-m>
+            <x2-m>4.7893</x2-m>
+            <y2-m>1.94869</y2-m>
+            <z2-m>-2.6637</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutRA1</object-name>
+        <property>gear/gear[3]/compression-m</property>
+        <factor>-40</factor>
+        <center>
+            <x-m>4.94777</x-m>
+            <y-m>2.13603</y-m>
+            <z-m>-4.13377</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutRA2</object-name>
+        <property>gear/gear[3]/compression-m</property>
+        <factor>40</factor>
+        <center>
+            <x-m>4.94777</x-m>
+            <y-m>2.13603</y-m>
+            <z-m>-4.13377</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>mlg.axleLRF</object-name>
+        <object-name>mlg.armRF</object-name>
+        <object-name>mlg.tireRF1</object-name>
+        <object-name>mlg.tireRF2</object-name>
+        <object-name>mlg.strutRF1</object-name>
+        <property>gear/gear[4]/compression-m</property>
+        <axis>
+            <x1-m>1.6175</x1-m>
+            <y1-m>5.21043</y1-m>
+            <z1-m>-3.13995</z1-m>
+            <x2-m>1.60966</x2-m>
+            <y2-m>5.2117</y2-m>
+            <z2-m>-2.64001</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutRF1</object-name>
+        <property>gear/gear[4]/compression-m</property>
+        <factor>-35</factor>
+        <center>
+            <x-m>1.81031</x-m>
+            <y-m>5.34513</y-m>
+            <z-m>-4.12863</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.strutRF2</object-name>
+        <property>gear/gear[4]/compression-m</property>
+        <factor>35</factor>
+        <center>
+            <x-m>1.84996</x-m>
+            <y-m>5.37356</y-m>
+            <z-m>-3.45772</z-m>
         </center>
         <axis>
             <y>1</y>
