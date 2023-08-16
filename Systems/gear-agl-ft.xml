@@ -28,58 +28,43 @@
         <type>gain</type>
         <gain>1.0</gain>
         <input>
-            <condition>
-                <equals>
-                    <property>/gear/gear[1]/wow</property>
+            <!-- <condition>
+                <greater-than>
+                    <sum>
+                        <difference>
+                            <property>gear/gear[1]/compression-m</property>
+                            <property>gear/gear[6]/compression-m</property>
+                        </difference>
+                        <value>0.6227572</value>
+                    </sum>
                     <value>0</value>
-                </equals>
-            </condition>
+                </greater-than>
+            </condition> -->
             <expression>
                 <sum>
-                    <table>
-                        <property>/position/gear-agl-ft</property>
-                        <entry>
-                            <ind>3.485</ind>
-                            <dep> 0</dep>
-                        </entry>
-                        <entry>
-                            <ind>5.533</ind>
-                            <dep>60</dep>
-                        </entry>
-                    </table>
-                    <table>
-                        <property>/orientation/roll-deg</property>
-                        <entry>
-                            <ind>0</ind>
-                            <dep> 0</dep>
-                        </entry>
-                        <entry>
-                            <ind>7.7</ind>
-                            <dep>60</dep>
-                        </entry>
-                        <entry>
-                            <ind>90</ind>
-                            <dep>60</dep>
-                        </entry>
-                    </table>
+                    <rad2deg>
+                        <atan>
+                            <div>
+                                <sum>
+                                    <difference>
+                                        <property>gear/gear[1]/compression-m</property>
+                                        <property>gear/gear[6]/compression-m</property>
+                                    </difference>
+                                    <value>0.6227572</value>
+                                </sum>
+                                <value>0.35955859</value>
+                            </div>
+                        </atan>
+                    </rad2deg>
+                    <value>2.1962429977734631</value>
                 </sum>
             </expression>
-        </input>
-        <input>
-            <condition>
-                <equals>
-                    <property>/gear/gear[1]/wow</property>
-                    <value>1</value>
-                </equals>
-            </condition>
-            <property>/orientation/pitch-deg</property>
-            <scale>-1.0</scale>
         </input>
         <output>
             <property>/gear/gear[1]/gear-tilt-deg</property>
         </output>
-        <min>0</min>
-        <max>40</max>
+        <min>-12.5</min>
+        <max>60</max>
     </filter>
 
 </PropertyList>

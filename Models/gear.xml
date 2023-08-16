@@ -822,6 +822,23 @@
         </axis>
     </animation>
 
+    <!-- Gear Tilt -->
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.tireLF1</object-name>
+        <object-name>mlg.tireLF2</object-name>
+        <object-name>mlg.axleLF</object-name>
+        <property>gear/gear[1]/gear-tilt-deg</property>
+        <center>
+            <x-m>1.59336</x-m>
+            <y-m>-5.22867</y-m>
+            <z-m>-4.49794</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+
     <!-- Tire Rotations -->
     <animation>
         <type>spin</type>

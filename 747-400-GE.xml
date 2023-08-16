@@ -280,67 +280,38 @@
         </contact>
 
         <!-- Aft wheels, used for gear tilt calculations -->
+        <contact type="BOGEY" name="LEFT_WING_FWD">
+            <location unit="IN">
+                <x> 1298.2063 </x>
+                <y> -205.847 </y>
+                <z> -207.961 </z>
+            </location>
+            <static_friction> 0 </static_friction>
+            <dynamic_friction> 0 </dynamic_friction>
+            <rolling_friction> 0 </rolling_friction>
+            <spring_coeff unit="LBS/FT"> 0 </spring_coeff>
+            <damping_coeff unit="LBS/FT/SEC"> 0 </damping_coeff>
+            <max_steer unit="DEG"> 0 </max_steer>
+            <brake_group> NONE </brake_group>
+            <retractable>1</retractable>
+        </contact>
         <contact type="BOGEY" name="LEFT_WING_AFT">
             <location unit="IN">
-                <x> 1354.1579 </x>
+                <x> 1340.0023 </x>
                 <y> -205.847 </y>
-                <z> -201.833 </z>
+                <z> -226.351 </z>
             </location>
             <static_friction> 0 </static_friction>
             <dynamic_friction> 0 </dynamic_friction>
             <rolling_friction> 0 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
-            <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
+            <spring_coeff unit="LBS/FT"> 0 </spring_coeff>
+            <damping_coeff unit="LBS/FT/SEC"> 0 </damping_coeff>
             <max_steer unit="DEG"> 0 </max_steer>
-            <brake_group> LEFT </brake_group>
-            <retractable>1</retractable>
-        </contact>
-        <contact type="BOGEY" name="LEFT_BODY_AFT">
-            <location unit="IN">
-                <x> 1480.602 </x>
-                <y> -76.9321 </y>
-                <z> -201.833 </z>
-            </location>
-            <static_friction> 0 </static_friction>
-            <dynamic_friction> 0 </dynamic_friction>
-            <rolling_friction> 0 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
-            <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0 </max_steer>
-            <brake_group> LEFT </brake_group>
-            <retractable>1</retractable>
-        </contact>
-        <contact type="BOGEY" name="RIGHT_BODY_AFT">
-            <location unit="IN">
-                <x> 1480.602 </x>
-                <y> 76.9321 </y>
-                <z> -201.833 </z>
-            </location>
-            <static_friction> 0 </static_friction>
-            <dynamic_friction> 0 </dynamic_friction>
-            <rolling_friction> 0 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
-            <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0 </max_steer>
-            <brake_group> LEFT </brake_group>
-            <retractable>1</retractable>
-        </contact>
-        <contact type="BOGEY" name="RIGHT_WING_AFT">
-            <location unit="IN">
-                <x> 1354.1579 </x>
-                <y> 205.847 </y>
-                <z> -201.833 </z>
-            </location>
-            <static_friction> 0 </static_friction>
-            <dynamic_friction> 0 </dynamic_friction>
-            <rolling_friction> 0 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
-            <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0 </max_steer>
-            <brake_group> LEFT </brake_group>
+            <brake_group> NONE </brake_group>
             <retractable>1</retractable>
         </contact>
 
+        <!-- Contact points -->
         <contact type="BOGEY" name="NOSE_GROUND">
             <location unit="IN">
                 <x> 340 </x>
