@@ -838,6 +838,51 @@
             <y>1</y>
         </axis>
     </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.tireLA1</object-name>
+        <object-name>mlg.tireLA2</object-name>
+        <object-name>mlg.axleLA</object-name>
+        <property>gear/gear[2]/gear-tilt-deg</property>
+        <center>
+            <x-m>4.80505</x-m>
+            <y-m>-1.95422</y-m>
+            <z-m>-4.49794</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.tireRA1</object-name>
+        <object-name>mlg.tireRA2</object-name>
+        <object-name>mlg.axleRA</object-name>
+        <property>gear/gear[3]/gear-tilt-deg</property>
+        <center>
+            <x-m>4.80505</x-m>
+            <y-m>1.95422</y-m>
+            <z-m>-4.49794</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>mlg.tireRF1</object-name>
+        <object-name>mlg.tireRF2</object-name>
+        <object-name>mlg.axleRF</object-name>
+        <property>gear/gear[4]/gear-tilt-deg</property>
+        <center>
+            <x-m>1.59336</x-m>
+            <y-m>5.22867</y-m>
+            <z-m>-4.49794</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
 
     <!-- Tire Rotations -->
     <animation>

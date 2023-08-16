@@ -28,18 +28,20 @@
         <type>gain</type>
         <gain>1.0</gain>
         <input>
-            <!-- <condition>
-                <greater-than>
-                    <sum>
-                        <difference>
-                            <property>gear/gear[1]/compression-m</property>
-                            <property>gear/gear[6]/compression-m</property>
-                        </difference>
-                        <value>0.6227572</value>
-                    </sum>
-                    <value>0</value>
-                </greater-than>
-            </condition> -->
+            <condition>
+                <equals>
+                    <property>gear/gear[1]/wow</property>
+                    <value>1</value>
+                </equals>
+            </condition>
+            <expression>
+                <product>
+                    <property>orientation/pitch-deg</property>
+                    <value>-1</value>
+                </product>
+            </expression>
+        </input>
+        <input>
             <expression>
                 <sum>
                     <rad2deg>
@@ -48,20 +50,166 @@
                                 <sum>
                                     <difference>
                                         <property>gear/gear[1]/compression-m</property>
-                                        <property>gear/gear[6]/compression-m</property>
+                                        <property>gear/gear[5]/compression-m</property>
                                     </difference>
-                                    <value>0.6227572</value>
+                                    <value>0.6227572</value> <!-- vertical distance between gear
+                                    points -->
                                 </sum>
-                                <value>0.35955859</value>
+                                <value>0.35955859</value> <!-- horizontal distance between gear
+                                points -->
                             </div>
                         </atan>
                     </rad2deg>
-                    <value>2.1962429977734631</value>
+                    <value>2.1962429977734631</value> <!-- fine-tuning value -->
                 </sum>
             </expression>
         </input>
         <output>
             <property>/gear/gear[1]/gear-tilt-deg</property>
+        </output>
+        <min>-12.5</min>
+        <max>60</max>
+    </filter>
+
+    <filter>
+        <name>Gear Tilt 2</name>
+        <type>gain</type>
+        <gain>1.0</gain>
+        <input>
+            <condition>
+                <equals>
+                    <property>gear/gear[2]/wow</property>
+                    <value>1</value>
+                </equals>
+            </condition>
+            <expression>
+                <product>
+                    <property>orientation/pitch-deg</property>
+                    <value>-1</value>
+                </product>
+            </expression>
+        </input>
+        <input>
+            <expression>
+                <sum>
+                    <rad2deg>
+                        <atan>
+                            <div>
+                                <sum>
+                                    <difference>
+                                        <property>gear/gear[2]/compression-m</property>
+                                        <property>gear/gear[6]/compression-m</property>
+                                    </difference>
+                                    <value>0.10008</value> <!-- vertical distance between gear
+                                    points -->
+                                </sum>
+                                <value>0.71503</value> <!-- horizontal distance between gear
+                                points -->
+                            </div>
+                        </atan>
+                    </rad2deg>
+                    <value>0</value> <!-- fine-tuning value -->
+                </sum>
+            </expression>
+        </input>
+        <output>
+            <property>/gear/gear[2]/gear-tilt-deg</property>
+        </output>
+        <min>-12.5</min>
+        <max>8</max>
+    </filter>
+
+    <filter>
+        <name>Gear Tilt 3</name>
+        <type>gain</type>
+        <gain>1.0</gain>
+        <input>
+            <condition>
+                <equals>
+                    <property>gear/gear[3]/wow</property>
+                    <value>1</value>
+                </equals>
+            </condition>
+            <expression>
+                <product>
+                    <property>orientation/pitch-deg</property>
+                    <value>-1</value>
+                </product>
+            </expression>
+        </input>
+        <input>
+            <expression>
+                <sum>
+                    <rad2deg>
+                        <atan>
+                            <div>
+                                <sum>
+                                    <difference>
+                                        <property>gear/gear[3]/compression-m</property>
+                                        <property>gear/gear[7]/compression-m</property>
+                                    </difference>
+                                    <value>0.10008</value> <!-- vertical distance between gear
+                                    points -->
+                                </sum>
+                                <value>0.71503</value> <!-- horizontal distance between gear
+                                points -->
+                            </div>
+                        </atan>
+                    </rad2deg>
+                    <value>0</value> <!-- fine-tuning value -->
+                </sum>
+            </expression>
+        </input>
+        <output>
+            <property>/gear/gear[3]/gear-tilt-deg</property>
+        </output>
+        <min>-12.5</min>
+        <max>8</max>
+    </filter>
+
+    <filter>
+        <name>Gear Tilt 4</name>
+        <type>gain</type>
+        <gain>1.0</gain>
+        <input>
+            <condition>
+                <equals>
+                    <property>gear/gear[4]/wow</property>
+                    <value>1</value>
+                </equals>
+            </condition>
+            <expression>
+                <product>
+                    <property>orientation/pitch-deg</property>
+                    <value>-1</value>
+                </product>
+            </expression>
+        </input>
+        <input>
+            <expression>
+                <sum>
+                    <rad2deg>
+                        <atan>
+                            <div>
+                                <sum>
+                                    <difference>
+                                        <property>gear/gear[4]/compression-m</property>
+                                        <property>gear/gear[8]/compression-m</property>
+                                    </difference>
+                                    <value>0.6227572</value> <!-- vertical distance between gear
+                                    points -->
+                                </sum>
+                                <value>0.35955859</value> <!-- horizontal distance between gear
+                                points -->
+                            </div>
+                        </atan>
+                    </rad2deg>
+                    <value>2.1962429977734631</value> <!-- fine-tuning value -->
+                </sum>
+            </expression>
+        </input>
+        <output>
+            <property>/gear/gear[4]/gear-tilt-deg</property>
         </output>
         <min>-12.5</min>
         <max>60</max>
