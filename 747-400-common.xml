@@ -29,6 +29,7 @@
         <virtual-cockpit>true</virtual-cockpit>
 
         <sound>
+            <path>Aircraft/747-400/Systems/cf6-sound.xml</path>
             <path>Aircraft/747-400/Sounds/747-sound.xml</path>
             <switch type="bool"></switch>
         </sound>
