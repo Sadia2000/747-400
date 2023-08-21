@@ -1255,45 +1255,6 @@
         </axis>
     </animation>
 
-    
-
-    <!-- Gear Tilt -->
-    <animation>
-        <type>rotate</type>
-        <object-name>mlg.tireRF1</object-name>
-        <object-name>mlg.tireRF2</object-name>
-        <object-name>mlg.armLF</object-name>
-        <object-name>mlg.pistonR4</object-name>
-        <property>gear/gear[1]/gear-tilt-deg</property>
-        <center>
-            <x-m>1.58468</x-m>
-            <y-m>-5.22859</y-m>
-            <z-m>-4.50404</z-m>
-        </center>
-        <axis>
-            <y>1</y>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>mlg.pistonL3</object-name>
-        <property>gear/gear[1]/gear-tilt-deg</property>
-        <center>
-            <x-m>2.46466</x-m>
-            <y-m>5.23209</y-m>
-            <z-m>-3.8315</z-m>
-        </center>
-        <axis>
-            <y>1</y>
-        </axis>
-    </animation>
-    <animation>
-        <type>translate</type>
-        <object-name>mlg.pistonR2</object-name>
-        <property>gear/gear[1]/gear-tilt-deg</property>
-        <factor></factor>
-    </animation>
-
     <!-- Compositor Lights -->
     <light>
         <name>upper-beacon</name>
