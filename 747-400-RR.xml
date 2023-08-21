@@ -6,14 +6,14 @@
 
     <fileheader>
         <author>Gijs de Rooy</author>
-        <filecreationdate>2008</filecreationdate>
+        <filecreationdate>2008-01-01</filecreationdate>
         <version>20200507</version>
-        <description>Boeing 747-400 with RR RB211 engines</description>
+        <description>Boeing 747-400 with GE CF6-80C2B1F engines</description>
 
-        <license>
+        <!-- <license>
             <licenseName>GPL</licenseName>
             <licenseURL>http://www.gnu.org/licenses/gpl.html</licenseURL>
-        </license>
+        </license> -->
 
         <reference
             refID="747 airplane characteristics, D6-58236"
@@ -63,57 +63,55 @@
         <vtailarm unit="FT"> 0 </vtailarm>
         <wing_incidence unit="DEG"> 2 </wing_incidence>
         <location name="AERORP" unit="IN">
-            <x> 1340 </x> <!-- located at 25% MAC = 1258+0.25*327.78, automatically moved to coincide with CoG -->
-            <y>    0 </y>
-            <z>   39 </z> <!-- GUESSTIMATE -->
+            <x> 1340 </x> <!-- located at 25% MAC = 1258+0.25*327.78, automatically moved to coincide
+            with CoG -->
+            <y> 0 </y>
+            <z> 39 </z> <!-- GUESSTIMATE -->
         </location>
         <location name="EYEPOINT" unit="IN">
             <x> 218 </x>
             <y> -21 </y>
-            <z>  80 </z>
+            <z> 80 </z>
         </location>
         <location name="VRP" unit="IN">
             <x> 1263 </x>
-            <y>    0 </y>
-            <z>    0 </z>
+            <y> 0 </y>
+            <z> 0 </z>
         </location>
     </metrics>
 
     <mass_balance>
-        <documentation>
-          - operational empty weight = 394088 lb
-          - empty CG at 23 % MAC (no payload)
-            
-            inertia for empty weight from NASA
-        </documentation>
+        <!-- - operational empty weight = 394088 lb -->
+        <!-- - empty CG at 23 % MAC (no payload) -->
+        <!-- inertia for empty weight from NASA -->
         <ixx unit="SLUG*FT2"> 1.23e+07 </ixx>
         <iyy unit="SLUG*FT2"> 2.43e+07 </iyy>
         <izz unit="SLUG*FT2"> 3.52e+07 </izz>
         <ixy unit="SLUG*FT2"> 0 </ixy>
         <ixz unit="SLUG*FT2"> 0.74e+06 </ixz>
         <iyz unit="SLUG*FT2"> 0 </iyz>
-        <emptywt unit="KG"> 180990  </emptywt> <!-- 3 pilots, 17 cabin crew, includes water, blankets etc. -->
+        <emptywt unit="KG"> 180990 </emptywt> <!-- 3 pilots, 17 cabin crew, includes water, blankets
+        etc. -->
         <location name="CG" unit="IN">
             <x> 1342 </x> <!-- GUESSTIMATE, based on TUI document and CG calculation -->
-            <y>    0 </y>
-            <z>   39 </z> <!-- GUESSTIMATE -->
+            <y> 0 </y>
+            <z> 39 </z> <!-- GUESSTIMATE -->
         </location>
 
         <!-- average passenger is 80 kg -->
-
         <pointmass name="Passengers 0A">
             <weight unit="KG"> 3200 </weight> <!-- 40 passengers -->
             <location name="POINTMASS" unit="IN">
                 <x> 348 </x>
-                <y>   0 </y>
-                <z>  37 </z> <!-- GUESSTIMATE -->
+                <y> 0 </y>
+                <z> 37 </z> <!-- GUESSTIMATE -->
             </location>
         </pointmass>
         <pointmass name="Passengers 0B (upper)">
             <weight unit="KG"> 2400 </weight> <!-- 30 passengers -->
             <location name="POINTMASS" unit="IN">
                 <x> 678 </x>
-                <y>   0 </y>
+                <y> 0 </y>
                 <z> 142 </z> <!-- GUESSTIMATE -->
             </location>
         </pointmass>
@@ -121,87 +119,91 @@
             <weight unit="KG"> 5600 </weight> <!-- 70 passengers -->
             <location name="POINTMASS" unit="IN">
                 <x> 678 </x>
-                <y>   0 </y>
-                <z>  37 </z> <!-- GUESSTIMATE -->
+                <y> 0 </y>
+                <z> 37 </z> <!-- GUESSTIMATE -->
             </location>
         </pointmass>
         <pointmass name="Passengers 0C">
             <weight unit="KG"> 8800 </weight> <!-- 110 passengers -->
             <location name="POINTMASS" unit="IN">
                 <x> 1073 </x>
-                <y>    0 </y>
-                <z>   37 </z> <!-- GUESSTIMATE -->
+                <y> 0 </y>
+                <z> 37 </z> <!-- GUESSTIMATE -->
             </location>
         </pointmass>
         <pointmass name="Passengers 0D">
             <weight unit="KG"> 8000 </weight> <!-- 100 passengers -->
             <location name="POINTMASS" unit="IN">
                 <x> 1490 </x>
-                <y>    0 </y>
-                <z>   37 </z> <!-- GUESSTIMATE -->
+                <y> 0 </y>
+                <z> 37 </z> <!-- GUESSTIMATE -->
             </location>
         </pointmass>
         <pointmass name="Passengers 0E">
             <weight unit="KG"> 12000 </weight> <!-- 150 passengers -->
             <location name="POINTMASS" unit="IN">
                 <x> 1968 </x>
-                <y>    0 </y>
-                <z>   37 </z> <!-- GUESSTIMATE -->
+                <y> 0 </y>
+                <z> 37 </z> <!-- GUESSTIMATE -->
             </location>
         </pointmass>
         <pointmass name="Cargo 1">
-            <weight unit="KG"> 0 </weight> <!-- 3 full-width (7000 lbs) or 6 half-width (3500 lbs) containers -->
+            <weight unit="KG"> 0 </weight> <!-- 3 full-width (7000 lbs) or 6 half-width (3500 lbs)
+            containers -->
             <location name="POINTMASS" unit="IN">
                 <x> 574 </x>
-                <y>   0 </y>
+                <y> 0 </y>
                 <z> -54 </z>
             </location>
         </pointmass>
         <pointmass name="Cargo 2">
-            <weight unit="KG"> 2000 </weight> <!-- 5 full-width (7000 lbs) or 10 half-width (3500 lbs) containers -->
+            <weight unit="KG"> 2000 </weight> <!-- 5 full-width (7000 lbs) or 10 half-width (3500
+            lbs) containers -->
             <location name="POINTMASS" unit="IN">
                 <x> 817 </x>
-                <y>   0 </y>
+                <y> 0 </y>
                 <z> -54 </z>
             </location>
         </pointmass>
         <pointmass name="Cargo 3">
-            <weight unit="KG"> 5000 </weight> <!-- 3 full-width (7000 lbs) or 6 half-width (3500 lbs) containers -->
+            <weight unit="KG"> 5000 </weight> <!-- 3 full-width (7000 lbs) or 6 half-width (3500 lbs)
+            containers -->
             <location name="POINTMASS" unit="IN">
                 <x> 1576 </x>
-                <y>    0 </y>
-                <z>  -54 </z>
+                <y> 0 </y>
+                <z> -54 </z>
             </location>
         </pointmass>
         <pointmass name="Cargo 4">
-            <weight unit="KG"> 6000 </weight> <!-- 4 full-width (7000 lbs) or 8 half-width (3500 lbs) containers -->
+            <weight unit="KG"> 6000 </weight> <!-- 4 full-width (7000 lbs) or 8 half-width (3500 lbs)
+            containers -->
             <location name="POINTMASS" unit="IN">
                 <x> 1789 </x>
-                <y>    0 </y>
-                <z>  -54 </z>
+                <y> 0 </y>
+                <z> -54 </z>
             </location>
         </pointmass>
         <pointmass name="Cargo 5">
-            <weight unit="KG"> 500 </weight> <!-- 1 full-width (7000 lbs) or 2 half-width (3500 lbs) containers -->
+            <weight unit="KG"> 500 </weight> <!-- 1 full-width (7000 lbs) or 2 half-width (3500 lbs)
+            containers -->
             <location name="POINTMASS" unit="IN">
                 <x> 2008 </x>
-                <y>    0 </y>
-                <z>  -54 </z>
+                <y> 0 </y>
+                <z> -54 </z>
             </location>
         </pointmass>
     </mass_balance>
 
     <ground_reactions>
-        <documentation>
-           - gear height determined by 3D model, supposed at scale.
-           - additonal contact points for crash detection, when gear retracted.
-        </documentation>
+            <!-- - gear height determined by 3D model, supposed at scale. -->
+            <!-- - additonal contact points for crash detection, when gear retracted. -->
 
-        <contact type="BOGEY" name="NOSE">
+        <contact
+            type="BOGEY" name="NOSE">
             <location unit="IN">
-                <x>  395.0  </x>
-                <y>    0.0  </y>
-                <z> -221.46 </z>
+                <x> 379.0393701 </x>
+                <y> 0 </y>
+                <z> -221.00905512 </z>
             </location>
             <static_friction> 0.5 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -214,24 +216,24 @@
         </contact>
         <contact type="BOGEY" name="LEFT_WING">
             <location unit="IN">
-                <x> 1342.5  </x>
-                <y> -216.6  </y>
-                <z> -203.27 </z>
+                <x> 1297.5352 </x>
+                <y> -205.847 </y>
+                <z> -201.833 </z>
             </location>
             <static_friction> 0.5 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.015 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
+            <max_steer unit="DEG"> 0 </max_steer>
             <brake_group> LEFT </brake_group>
             <retractable>1</retractable>
         </contact>
         <contact type="BOGEY" name="LEFT_BODY">
             <location unit="IN">
-                <x> 1463.5  </x>
-                <y>  -75.6  </y>
-                <z> -203.27 </z>
+                <x> 1423.98 </x>
+                <y> -76.9321 </y>
+                <z> -201.833 </z>
             </location>
             <static_friction> 0.5 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -244,9 +246,9 @@
         </contact>
         <contact type="BOGEY" name="RIGHT_BODY">
             <location unit="IN">
-                <x> 1463.5  </x>
-                <y>   75.6  </y>
-                <z> -203.27 </z>
+                <x> 1423.98 </x>
+                <y> 76.9321 </y>
+                <z> -201.833 </z>
             </location>
             <static_friction> 0.5 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -259,25 +261,88 @@
         </contact>
         <contact type="BOGEY" name="RIGHT_WING">
             <location unit="IN">
-                <x> 1342.5  </x>
-                <y>  216.6  </y>
-                <z> -203.27 </z>
+                <x> 1297.5352 </x>
+                <y> 205.847 </y>
+                <z> -201.833 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.015 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
+            <max_steer unit="DEG"> 0 </max_steer>
             <brake_group> RIGHT </brake_group>
             <retractable>1</retractable>
         </contact>
 
+        <!-- Aft wheels, used for gear tilt calculations -->
+        <contact type="BOGEY" name="LEFT_WING_AFT">
+            <location unit="IN">
+                <x> 1340.0023 </x>
+                <y> -205.847 </y>
+                <z> -226.351 </z>
+            </location>
+            <static_friction> 0 </static_friction>
+            <dynamic_friction> 0 </dynamic_friction>
+            <rolling_friction> 0 </rolling_friction>
+            <spring_coeff unit="LBS/FT"> 0 </spring_coeff>
+            <damping_coeff unit="LBS/FT/SEC"> 0 </damping_coeff>
+            <max_steer unit="DEG"> 0 </max_steer>
+            <brake_group> NONE </brake_group>
+            <retractable>1</retractable>
+        </contact>
+        <contact type="BOGEY" name="LEFT_BODY_AFT">
+            <location unit="IN">
+                <x> 1480.326 </x>
+                <y> -76.9321 </y>
+                <z> -205.773 </z>
+            </location>
+            <static_friction> 0 </static_friction>
+            <dynamic_friction> 0 </dynamic_friction>
+            <rolling_friction> 0 </rolling_friction>
+            <spring_coeff unit="LBS/FT"> 0 </spring_coeff>
+            <damping_coeff unit="LBS/FT/SEC"> 0 </damping_coeff>
+            <max_steer unit="DEG"> 0 </max_steer>
+            <brake_group> NONE </brake_group>
+            <retractable>1</retractable>
+        </contact>
+        <contact type="BOGEY" name="RIGHT_BODY_AFT">
+            <location unit="IN">
+                <x> 1480.326 </x>
+                <y> 76.9321 </y>
+                <z> -205.773 </z>
+            </location>
+            <static_friction> 0 </static_friction>
+            <dynamic_friction> 0 </dynamic_friction>
+            <rolling_friction> 0 </rolling_friction>
+            <spring_coeff unit="LBS/FT"> 0 </spring_coeff>
+            <damping_coeff unit="LBS/FT/SEC"> 0 </damping_coeff>
+            <max_steer unit="DEG"> 0 </max_steer>
+            <brake_group> NONE </brake_group>
+            <retractable>1</retractable>
+        </contact>
+        <contact type="BOGEY" name="RIGHT_WING_AFT">
+            <location unit="IN">
+                <x> 1340.0023 </x>
+                <y> 205.847 </y>
+                <z> -226.351 </z>
+            </location>
+            <static_friction> 0 </static_friction>
+            <dynamic_friction> 0 </dynamic_friction>
+            <rolling_friction> 0 </rolling_friction>
+            <spring_coeff unit="LBS/FT"> 0 </spring_coeff>
+            <damping_coeff unit="LBS/FT/SEC"> 0 </damping_coeff>
+            <max_steer unit="DEG"> 0 </max_steer>
+            <brake_group> NONE </brake_group>
+            <retractable>1</retractable>
+        </contact>
+
+        <!-- Contact points -->
         <contact type="BOGEY" name="NOSE_GROUND">
             <location unit="IN">
-                <x> 340.0 </x>
-                <y>   0.0 </y>
-                <z> -90.0 </z>
+                <x> 340 </x>
+                <y> 0 </y>
+                <z> -90 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 20 </dynamic_friction>
@@ -290,9 +355,9 @@
         </contact>
         <contact type="BOGEY" name="LEFT_GROUND">
             <location unit="IN">
-                <x> 1420.0 </x>
-                <y>  -78.0 </y>
-                <z> -110.0 </z>
+                <x> 1420 </x>
+                <y> -78 </y>
+                <z> -110 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 20 </dynamic_friction>
@@ -305,9 +370,9 @@
         </contact>
         <contact type="BOGEY" name="RIGHT_GROUND">
             <location unit="IN">
-                <x> 1420.0 </x>
-                <y>   78.0 </y>
-                <z> -110.0 </z>
+                <x> 1420 </x>
+                <y> 78 </y>
+                <z> -110 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 20 </dynamic_friction>
@@ -321,8 +386,8 @@
 
         <contact type="STRUCTURE" name="NOSE_TIP">
             <location unit="IN">
-                <x> 90.0  </x>
-                <y>  0.0  </y>
+                <x> 90 </x>
+                <y> 0 </y>
                 <z> 16.66 </z>
             </location>
             <static_friction> 0.8 </static_friction>
@@ -330,52 +395,54 @@
             <rolling_friction> 0.02 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 249900 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 83300 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
+            <max_steer unit="DEG"> 0 </max_steer>
             <brake_group> NONE </brake_group>
             <retractable>0</retractable>
         </contact>
-        <contact type="STRUCTURE" name="LEFT_WING_TIP">
+        <contact type="STRUCTURE"
+            name="LEFT_WING_TIP">
             <location unit="IN">
-                <x>  2000.0 </x>
-                <y> -1247.0 </y>
-                <z>    55.0 </z>
+                <x> 2000 </x>
+                <y> -1247 </y>
+                <z> 55 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
+            <max_steer unit="DEG"> 0 </max_steer>
             <brake_group> NONE </brake_group>
             <retractable>0</retractable>
         </contact>
-        <contact type="STRUCTURE" name="RIGHT_WING_TIP">
+        <contact type="STRUCTURE"
+            name="RIGHT_WING_TIP">
             <location unit="IN">
-                <x> 2000.0 </x>
-                <y> 1247.0 </y>
-                <z>   55.0 </z>
+                <x> 2000 </x>
+                <y> 1247 </y>
+                <z> 55 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 833000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 166600 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
+            <max_steer unit="DEG"> 0 </max_steer>
             <brake_group> NONE </brake_group>
             <retractable>0</retractable>
         </contact>
         <contact type="STRUCTURE" name="TAIL_TIP">
             <location unit="IN">
-                <x> 2792.0 </x>
-                <y>    0.0 </y>
-                <z>  128.0 </z>
+                <x> 2792 </x>
+                <y> 0 </y>
+                <z> 128 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 249900 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 83300 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
+            <max_steer unit="DEG"> 0 </max_steer>
             <brake_group> NONE </brake_group>
             <retractable>0</retractable>
         </contact>
@@ -391,9 +458,9 @@
                 <z> -100 </z>
             </location>
             <orient unit="DEG">
-                <roll>  0.0 </roll>
-                <pitch> 0.0 </pitch>
-                <yaw>   0.0 </yaw>
+                <roll> 0 </roll>
+                <pitch> 0 </pitch>
+                <yaw> 0 </yaw>
             </orient>
             <feed>1</feed>
             <thruster file="direct">
@@ -403,61 +470,61 @@
                     <z> -100 </z>
                 </location>
                 <orient unit="DEG">
-                    <roll>  0.0 </roll>
-                    <pitch> 0.0 </pitch>
-                    <yaw>   0.0 </yaw>
+                    <roll> 0 </roll>
+                    <pitch> 0 </pitch>
+                    <yaw> 0 </yaw>
                 </orient>
             </thruster>
         </engine>
 
         <engine file="RR-RB211">
             <location unit="IN">
-                <x>  900 </x>
+                <x> 900 </x>
                 <y> -470 </y>
                 <z> -100 </z>
             </location>
             <orient unit="DEG">
-                <roll>  0.0 </roll>
-                <pitch> 0.0 </pitch>
-                <yaw>   0.0 </yaw>
+                <roll> 0 </roll>
+                <pitch> 0 </pitch>
+                <yaw> 0 </yaw>
             </orient>
             <feed>2</feed>
             <thruster file="direct">
                 <location unit="IN">
-                    <x>  900 </x>
+                    <x> 900 </x>
                     <y> -470 </y>
                     <z> -100 </z>
                 </location>
                 <orient unit="DEG">
-                    <roll>  0.0 </roll>
-                    <pitch> 0.0 </pitch>
-                    <yaw>   0.0 </yaw>
+                    <roll> 0 </roll>
+                    <pitch> 0 </pitch>
+                    <yaw> 0 </yaw>
                 </orient>
             </thruster>
         </engine>
 
         <engine file="RR-RB211">
             <location unit="IN">
-                <x>  900 </x>
-                <y>  470 </y>
+                <x> 900 </x>
+                <y> 470 </y>
                 <z> -100 </z>
             </location>
             <orient unit="DEG">
-                <roll>  0.0 </roll>
-                <pitch> 0.0 </pitch>
-                <yaw>   0.0 </yaw>
+                <roll> 0 </roll>
+                <pitch> 0 </pitch>
+                <yaw> 0 </yaw>
             </orient>
             <feed>3</feed>
             <thruster file="direct">
                 <location unit="IN">
-                    <x>  900 </x>
-                    <y>  470 </y>
+                    <x> 900 </x>
+                    <y> 470 </y>
                     <z> -100 </z>
                 </location>
                 <orient unit="DEG">
-                    <roll>  0.0 </roll>
-                    <pitch> 0.0 </pitch>
-                    <yaw>   0.0 </yaw>
+                    <roll> 0 </roll>
+                    <pitch> 0 </pitch>
+                    <yaw> 0 </yaw>
                 </orient>
             </thruster>
         </engine>
@@ -465,25 +532,25 @@
         <engine file="RR-RB211">
             <location unit="IN">
                 <x> 1400 </x>
-                <y>  834 </y>
+                <y> 834 </y>
                 <z> -100 </z>
             </location>
             <orient unit="DEG">
-                <roll>  0.0 </roll>
-                <pitch> 0.0 </pitch>
-                <yaw>   0.0 </yaw>
+                <roll> 0 </roll>
+                <pitch> 0 </pitch>
+                <yaw> 0 </yaw>
             </orient>
             <feed>4</feed>
             <thruster file="direct">
                 <location unit="IN">
                     <x> 1400 </x>
-                    <y>  834 </y>
+                    <y> 834 </y>
                     <z> -100 </z>
                 </location>
                 <orient unit="DEG">
-                    <roll>  0.0 </roll>
-                    <pitch> 0.0 </pitch>
-                    <yaw>   0.0 </yaw>
+                    <roll> 0 </roll>
+                    <pitch> 0 </pitch>
+                    <yaw> 0 </yaw>
                 </orient>
             </thruster>
         </engine>
@@ -491,25 +558,25 @@
         <engine file="APU_PW901">
             <location unit="IN">
                 <x> 2700 </x>
-                <y>    0 </y>
-                <z>  120 </z>
+                <y> 0 </y>
+                <z> 120 </z>
             </location>
             <orient unit="DEG">
-                <roll>  0.0 </roll>
-                <pitch> 0.0 </pitch>
-                <yaw>   0.0 </yaw>
+                <roll> 0 </roll>
+                <pitch> 0 </pitch>
+                <yaw> 0 </yaw>
             </orient>
             <feed>2</feed>
             <thruster file="direct">
                 <location unit="IN">
                     <x> 2700 </x>
-                    <y>    0 </y>
-                    <z>  120 </z>
+                    <y> 0 </y>
+                    <z> 120 </z>
                 </location>
                 <orient unit="DEG">
-                    <roll>  0.0 </roll>
-                    <pitch> 0.0 </pitch>
-                    <yaw>   0.0 </yaw>
+                    <roll> 0 </roll>
+                    <pitch> 0 </pitch>
+                    <yaw> 0 </yaw>
                 </orient>
             </thruster>
         </engine>
@@ -520,11 +587,11 @@
             <!-- Tank number 0 == center wing-->
             <location unit="IN">
                 <x> 1107 </x>
-                <y>    0 </y>
-                <z>  -39 </z>
+                <y> 0 </y>
+                <z> -39 </z>
             </location>
-            <capacity unit="LBS"> 114972.0 </capacity>
-            <contents unit="LBS">      0.0 </contents>
+            <capacity unit="LBS"> 114972 </capacity>
+            <contents unit="LBS"> 0 </contents>
             <temperature> 70 </temperature>
         </tank>
 
@@ -533,7 +600,7 @@
             <location unit="IN">
                 <x> 1491 </x>
                 <y> -673 </y>
-                <z>   -4 </z>
+                <z> -4 </z>
             </location>
             <capacity unit="LBS"> 29694.4 </capacity>
             <contents unit="LBS"> 29694.4 </contents>
@@ -545,10 +612,10 @@
             <location unit="IN">
                 <x> 1212 </x>
                 <y> -322 </y>
-                <z>  -28 </z>
+                <z> -28 </z>
             </location>
-            <capacity unit="LBS"> 84058.0 </capacity>
-            <contents unit="LBS"> 66138.0 </contents>
+            <capacity unit="LBS"> 84058 </capacity>
+            <contents unit="LBS"> 66138 </contents>
             <temperature> 70 </temperature>
         </tank>
 
@@ -556,11 +623,11 @@
             <!-- Tank number 3 == main #3-->
             <location unit="IN">
                 <x> 1212 </x>
-                <y>  322 </y>
-                <z>  -28 </z>
+                <y> 322 </y>
+                <z> -28 </z>
             </location>
-            <capacity unit="LBS"> 84058.0 </capacity>
-            <contents unit="LBS"> 66138.0 </contents>
+            <capacity unit="LBS"> 84058 </capacity>
+            <contents unit="LBS"> 66138 </contents>
             <temperature> 70 </temperature>
         </tank>
 
@@ -568,8 +635,8 @@
             <!-- Tank number 4 == Main #4-->
             <location unit="IN">
                 <x> 1491 </x>
-                <y>  673 </y>
-                <z>   -4 </z>
+                <y> 673 </y>
+                <z> -4 </z>
             </location>
             <capacity unit="LBS"> 29694.4 </capacity>
             <contents unit="LBS"> 29694.4 </contents>
@@ -579,9 +646,9 @@
         <tank type="FUEL">
             <!-- Tank number 5 == reserve #2-->
             <location unit="IN">
-                <x>  1732 </x>
+                <x> 1732 </x>
                 <y> -1035 </y>
-                <z>    35 </z>
+                <z> 35 </z>
             </location>
             <capacity unit="LBS"> 8857.4 </capacity>
             <contents unit="LBS"> 8857.4 </contents>
@@ -593,7 +660,7 @@
             <location unit="IN">
                 <x> 1732 </x>
                 <y> 1035 </y>
-                <z>   35 </z>
+                <z> 35 </z>
             </location>
             <capacity unit="LBS"> 8857.4 </capacity>
             <contents unit="LBS"> 8857.4 </contents>
@@ -604,11 +671,11 @@
             <!-- Tank number 7 == stab-->
             <location unit="IN">
                 <x> 2560 </x>
-                <y>    0 </y>
-                <z>   98 </z>
+                <y> 0 </y>
+                <z> 98 </z>
             </location>
-            <capacity unit="LBS"> 22110.0 </capacity>
-            <contents unit="LBS">     0.0 </contents>
+            <capacity unit="LBS"> 22110 </capacity>
+            <contents unit="LBS"> 0 </contents>
             <temperature> 70 </temperature>
         </tank>
     </propulsion>
@@ -641,10 +708,10 @@
                         <table>
                             <independentVar>fcs/elevator-cmd-norm</independentVar>
                             <tableData>
-                            -1 -25
-                             0  -1
-                             1  15
-                        </tableData>
+                                -1 -25
+                                0 -1
+                                1 15
+                            </tableData>
                         </table>
                     </toradians>
                 </function>
@@ -656,10 +723,10 @@
                         <table>
                             <independentVar>fcs/elevator-cmd-norm</independentVar>
                             <tableData>
-                            -1 -23
-                             0   1
-                             1  17
-                        </tableData>
+                                -1 -23
+                                0 1
+                                1 17
+                            </tableData>
                         </table>
                     </toradians>
                 </function>
@@ -673,11 +740,11 @@
                                 <independentVar lookup="row">velocities/mach</independentVar>
                                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                                 <tableData>
-                                       0    40000
-                                0      0        0
-                                0.3   -2        0
-                                0.7   -0.6     -0.6
-                            </tableData>
+                                    0 40000
+                                    0 0 0
+                                    0.3 -2 0
+                                    0.7 -0.6 -0.6
+                                </tableData>
                             </table>
                         </toradians>
                         <product>
@@ -703,13 +770,13 @@
                             <independentVar lookup="row">velocities/ve-kts</independentVar>
                             <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                             <tableData>
-                                      0  40000
-                               0    -25    -24
-                             270    -25    -24
-                             276    -25    -23.2
-                             313    -25    -23.2
-                             430    -15    -23.2
-                        </tableData>
+                                0 40000
+                                0 -25 -24
+                                270 -25 -24
+                                276 -25 -23.2
+                                313 -25 -23.2
+                                430 -15 -23.2
+                            </tableData>
                         </table>
                     </toradians>
                 </function>
@@ -722,11 +789,11 @@
                             <independentVar lookup="row">velocities/ve-kts</independentVar>
                             <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                             <tableData>
-                                      0  40000
-                               0     15     15
-                             247     15     15
-                             276     15     14
-                        </tableData>
+                                0 40000
+                                0 15 15
+                                247 15 15
+                                276 15 14
+                            </tableData>
                         </table>
                     </toradians>
                 </function>
@@ -770,7 +837,9 @@
 
             <actuator name="fcs/elevator[1]/actuator">
                 <input>fcs/elevator[1]/int-pos-rad</input>
-                <rate_limit sense="decr"> fcs/elevator-rate-down </rate_limit> <!-- I assume this is right? when I move elevator down, it is going from -1 to 1. When I move elevator up it is going back to -1? -->
+                <rate_limit sense="decr"> fcs/elevator-rate-down </rate_limit> <!-- I assume this is
+                right? when I move elevator down, it is going from -1 to 1. When I move elevator up
+                it is going back to -1? -->
                 <rate_limit sense="incr"> fcs/elevator-rate-up </rate_limit>
                 <clipto>
                     <min>fcs/inboard-elevator-float-blowdown-min</min>
@@ -800,13 +869,13 @@
                                 <independentVar lookup="row">velocities/mach</independentVar>
                                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                                 <tableData>
-                                      0    40000
-                                0     0        0
-                                0.3   0        0
-                                0.6   2        0
-                                0.8   1.5      1.4
-                                0.97  0        0
-                            </tableData>
+                                    0 40000
+                                    0 0 0
+                                    0.3 0 0
+                                    0.6 2 0
+                                    0.8 1.5 1.4
+                                    0.97 0 0
+                                </tableData>
                             </table>
                         </toradians>
                         <product>
@@ -835,7 +904,9 @@
 
             <actuator name="fcs/elevator[0]/actuator">
                 <input>fcs/elevator[0]/int-pos-rad</input>
-                <rate_limit sense="decr"> fcs/elevator-rate-down </rate_limit> <!-- I assume this is right? when I move elevator down, it is going from -1 to 1. When I move elevator up it is going back to -1? -->
+                <rate_limit sense="decr"> fcs/elevator-rate-down </rate_limit> <!-- I assume this is
+                right? when I move elevator down, it is going from -1 to 1. When I move elevator up
+                it is going back to -1? -->
                 <rate_limit sense="incr"> fcs/elevator-rate-up </rate_limit>
                 <output>fcs/elevator[0]/pos-rad</output>
             </actuator>
@@ -874,11 +945,11 @@
                             <!-- TODO: add single trim rates -->
                             <independentVar>velocities/vc-kts</independentVar>
                             <tableData>
-                              0 0.5
-                            180 0.5
-                            250 0.2
-                            450 0.2
-                        </tableData>
+                                0 0.5
+                                180 0.5
+                                250 0.2
+                                450 0.2
+                            </tableData>
                         </table>
                     </toradians>
                 </function>
@@ -919,7 +990,8 @@
                 </range>
             </aerosurface_scale>
 
-            <!--<aerosurface_scale name="Stabilizer Control Normalizer">
+            <!--<aerosurface_scale
+            name="Stabilizer Control Normalizer">
             <input>fcs/stabilizer/pos-rad</input>
             <domain>
                 <min>-0.209</min>
@@ -1000,8 +1072,10 @@
 
             <actuator name="fcs/aileron[0]/actuator">
                 <input>fcs/aileron[0]/int-pos-rad</input>
-                <rate_limit sense="incr"> systems/hydraulic/left-outboard-aileron/range-limit-down-rad_sec </rate_limit>
-                <rate_limit sense="decr"> systems/hydraulic/left-outboard-aileron/range-limit-up-rad_sec </rate_limit>
+                <rate_limit sense="incr">
+                    systems/hydraulic/left-outboard-aileron/range-limit-down-rad_sec </rate_limit>
+                <rate_limit sense="decr">
+                    systems/hydraulic/left-outboard-aileron/range-limit-up-rad_sec </rate_limit>
                 <output>fcs/aileron[0]/pos-rad</output>
             </actuator>
 
@@ -1027,8 +1101,10 @@
 
             <actuator name="fcs/aileron[3]/actuator">
                 <input>fcs/aileron[3]/int-pos-rad</input>
-                <rate_limit sense="incr"> systems/hydraulic/right-outboard-aileron/range-limit-down-rad_sec </rate_limit>
-                <rate_limit sense="decr"> systems/hydraulic/right-outboard-aileron/range-limit-up-rad_sec </rate_limit>
+                <rate_limit sense="incr">
+                    systems/hydraulic/right-outboard-aileron/range-limit-down-rad_sec </rate_limit>
+                <rate_limit sense="decr">
+                    systems/hydraulic/right-outboard-aileron/range-limit-up-rad_sec </rate_limit>
                 <output>fcs/aileron[3]/pos-rad</output>
             </actuator>
 
@@ -1054,8 +1130,10 @@
 
             <actuator name="fcs/aileron[1]/actuator">
                 <input>fcs/aileron[1]/int-pos-rad</input>
-                <rate_limit sense="incr"> systems/hydraulic/left-inboard-aileron/range-limit-down-rad_sec </rate_limit>
-                <rate_limit sense="decr"> systems/hydraulic/left-inboard-aileron/range-limit-up-rad_sec </rate_limit>
+                <rate_limit sense="incr">
+                    systems/hydraulic/left-inboard-aileron/range-limit-down-rad_sec </rate_limit>
+                <rate_limit sense="decr">
+                    systems/hydraulic/left-inboard-aileron/range-limit-up-rad_sec </rate_limit>
                 <output>fcs/aileron[1]/pos-rad</output>
             </actuator>
 
@@ -1081,8 +1159,10 @@
 
             <actuator name="fcs/aileron[2]/actuator">
                 <input>fcs/aileron[2]/int-pos-rad</input>
-                <rate_limit sense="incr"> systems/hydraulic/right-inboard-aileron/range-limit-down-rad_sec </rate_limit>
-                <rate_limit sense="decr"> systems/hydraulic/right-inboard-aileron/range-limit-up-rad_sec </rate_limit>
+                <rate_limit sense="incr">
+                    systems/hydraulic/right-inboard-aileron/range-limit-down-rad_sec </rate_limit>
+                <rate_limit sense="decr">
+                    systems/hydraulic/right-inboard-aileron/range-limit-up-rad_sec </rate_limit>
                 <output>fcs/aileron[2]/pos-rad</output>
             </actuator>
 
@@ -1146,10 +1226,10 @@
                         <!-- graph 19.0-10 -->
                         <independentVar>/autopilot/autospoilers/step</independentVar>
                         <tableData>
-                         0.0  0.0
-                         1.0  6.0
-                         2.0 37.0
-                         3.0 77.0
+                         0  0
+                         1  6.0
+                         2 37.0
+                         3 77.0
                     </tableData>
                     </table>
                 </function>
@@ -1163,12 +1243,12 @@
                         <independentVar lookup="row">fcs/speed-brake-handle-pos-deg</independentVar>
                         <independentVar lookup="column">fcs/wheel-pos-deg</independentVar>
                         <tableData>
-                             -80.0  -10.0  0.0  10.0  80.0
-                         0.0  45.0   0.0   0.0   0.0   0.0
-                         6.0  45.0   0.0   0.0   0.0   0.0  
-                        21.5  45.0   0.0   0.0   0.0   0.0
-                        37.0  45.0   0.0   0.0   0.0   0.0
-                        77.0  45.0  45.0  45.0  45.0   0.0
+                             -80  -10  0  10  80.0
+                         0  45   0   0   0   0
+                         6  45   0   0   0   0  
+                        21.5  45   0   0   0   0
+                        37  45   0   0   0   0
+                        77  45  45  45  45   0
                     </tableData>
                     </table>
                 </function>
@@ -1196,12 +1276,12 @@
                         <independentVar lookup="row">fcs/speed-brake-handle-pos-deg</independentVar>
                         <independentVar lookup="column">fcs/wheel-pos-deg</independentVar>
                         <tableData>
-                             -80.0 -38.0 -10.0   0.0  10.0  80.0
-                         0.0  45.0   0.0   0.0   0.0   0.0   0.0
-                         6.0  45.0   0.0   0.0   0.0   0.0   0.0
-                        21.5  45.0  45.0  25.0  22.5  20.0   0.0
-                        37.0  45.0  45.0  45.0  45.0  45.0   0.0
-                        77.0  45.0  45.0  45.0  45.0  45.0   0.0
+                             -80 -38 -10   0  10  80.0
+                         0  45   0   0   0   0   0
+                         6  45   0   0   0   0   0
+                        21.5  45  45  25  22.5  20   0
+                        37  45  45  45  45  45   0
+                        77  45  45  45  45  45   0
                     </tableData>
                     </table>
                 </function>
@@ -1229,12 +1309,12 @@
                         <independentVar lookup="row">fcs/speed-brake-handle-pos-deg</independentVar>
                         <independentVar lookup="column">fcs/wheel-pos-deg</independentVar>
                         <tableData>
-                             -80.0 -42.0 -10.0   0.0  10.0  40.0  80.0
-                         0.0  20.0  20.0   0.0   0.0   0.0   0.0   0.0
-                         6.0  20.0  20.0   0.0   0.0   0.0   0.0   0.0
-                        21.5  20.0  20.0  20.0  20.0  20.0   0.0   0.0
-                        37.0  20.0  20.0  20.0  20.0  20.0  20.0   0.0
-                        77.0  20.0  20.0  20.0  20.0  20.0  20.0   0.0
+                             -80 -42 -10   0  10  40  80.0
+                         0  20  20   0   0   0   0   0
+                         6  20  20   0   0   0   0   0
+                        21.5  20  20  20  20  20   0   0
+                        37  20  20  20  20  20  20   0
+                        77  20  20  20  20  20  20   0
                     </tableData>
                     </table>
                 </function>
@@ -1253,11 +1333,11 @@
                         <!-- graph 19.0-10 -->
                         <independentVar>fcs/speed-brake-handle-pos-deg</independentVar>
                         <tableData>
-                         0.0   0.0
-                         6.0   0.0
-                        21.5   0.0
-                        37.0  20.0
-                        77.0  20.0
+                         0   0
+                         6   0
+                        21.5   0
+                        37  20.0
+                        77  20.0
                     </tableData>
                     </table>
                 </function>
@@ -1285,12 +1365,12 @@
                         <independentVar lookup="row">fcs/speed-brake-handle-pos-deg</independentVar>
                         <independentVar lookup="column">fcs/wheel-pos-deg</independentVar>
                         <tableData>
-                             -80.0 -40.0 -10.0   0.0  10.0  42.0  80.0
-                         0.0   0.0   0.0   0.0   0.0   0.0  20.0  20.0
-                         6.0   0.0   0.0   0.0   0.0   0.0  20.0  20.0
-                        21.5   0.0   0.0  20.0  20.0  20.0  20.0  20.0
-                        37.0   0.0  20.0  20.0  20.0  20.0  20.0  20.0
-                        77.0   0.0  20.0  20.0  20.0  20.0  20.0  20.0
+                             -80 -40 -10   0  10  42  80.0
+                         0   0   0   0   0   0  20  20.0
+                         6   0   0   0   0   0  20  20.0
+                        21.5   0   0  20  20  20  20  20.0
+                        37   0  20  20  20  20  20  20.0
+                        77   0  20  20  20  20  20  20.0
                     </tableData>
                     </table>
                 </function>
@@ -1310,12 +1390,12 @@
                         <independentVar lookup="row">fcs/speed-brake-handle-pos-deg</independentVar>
                         <independentVar lookup="column">fcs/wheel-pos-deg</independentVar>
                         <tableData>
-                             -80.0 -10.0   0.0  10.0  38.0  80.0
-                         0.0   0.0   0.0   0.0   0.0   0.0  45.0
-                         6.0   0.0   0.0   0.0   0.0   0.0  45.0
-                        21.5   0.0  20.0  22.5  25.0  45.0  45.0
-                        37.0   0.0  45.0  45.0  45.0  45.0  45.0
-                        77.0   0.0  45.0  45.0  45.0  45.0  45.0
+                             -80 -10   0  10  38  80.0
+                         0   0   0   0   0   0  45.0
+                         6   0   0   0   0   0  45.0
+                        21.5   0  20  22.5  25  45  45.0
+                        37   0  45  45  45  45  45.0
+                        77   0  45  45  45  45  45.0
                     </tableData>
                     </table>
                 </function>
@@ -1342,12 +1422,12 @@
                         <independentVar lookup="row">fcs/speed-brake-handle-pos-deg</independentVar>
                         <independentVar lookup="column">fcs/wheel-pos-deg</independentVar>
                         <tableData>
-                             -80.0 -10.0   0.0  10.0  80.0
-                         0.0   0.0   0.0   0.0   0.0  45.0
-                         6.0   0.0   0.0   0.0   0.0  45.0  
-                        21.5   0.0   0.0   0.0   0.0  45.0
-                        37.0   0.0   0.0   0.0   0.0  45.0
-                        77.0   0.0  45.0  45.0  45.0  45.0
+                             -80 -10   0  10  80.0
+                         0   0   0   0   0  45.0
+                         6   0   0   0   0  45  
+                        21.5   0   0   0   0  45.0
+                        37   0   0   0   0  45.0
+                        77   0  45  45  45  45.0
                     </tableData>
                     </table>
                 </function>
@@ -1630,11 +1710,11 @@
                                     <independentVar lookup="row">/controls/gear/tiller-cmd-norm</independentVar>
                                     <independentVar lookup="column">/controls/flight/rudder</independentVar>
                                     <tableData>
-                    -1   0   1
-                    -1 -70 -70 -70
-                     0  -7   0   7
-                     1  70  70  70
-                    </tableData>
+                                        -1 0 1
+                                        -1 -70 -70 -70
+                                        0 -7 0 7
+                                        1 70 70 70
+                                    </tableData>
                                 </table>
                                 <property>/controls/gear/tiller-enabled</property>
                             </product>
@@ -1717,8 +1797,8 @@
                 <input>fcs/flaps-leading-edge/A/cmd-norm</input>
                 <traverse>
                     <setting>
-                        <position>0.0</position>
-                        <time>0.0</time>
+                        <position>0</position>
+                        <time>0</time>
                     </setting>
                     <setting>
                         <position>1.0</position>
@@ -1732,8 +1812,8 @@
                 <input>fcs/flaps-leading-edge/B/cmd-norm</input>
                 <traverse>
                     <setting>
-                        <position>0.0</position>
-                        <time>0.0</time>
+                        <position>0</position>
+                        <time>0</time>
                     </setting>
                     <setting>
                         <position>1.0</position>
@@ -2179,36 +2259,36 @@
                 <table>
                     <independentVar>propulsion/tank[0]/contents-kg</independentVar>
                     <tableData>
-                            0.0    0.0
-                        51300.0  -51.0
+                            0    0
+                        51300  -51.0
                     </tableData>
                 </table>
                 <table>
                     <independentVar>propulsion/tank-1-4-contents-kg</independentVar>
                     <tableData>
-                         0000.0    0.0
-                        26800.0   24.8
+                         0000    0
+                        26800   24.8
                     </tableData>
                 </table>
                 <table>
                     <independentVar>propulsion/tank-2-3-contents-kg</independentVar>
                     <tableData>
-                            0.0    0.0
-                        75000.0  -34.8
+                            0    0
+                        75000  -34.8
                     </tableData>
                 </table>
                 <table>
                     <independentVar>propulsion/tank-5-6-contents-kg</independentVar>
                     <tableData>
-                            0.0    0.0
-                         7900.0   16.8
+                            0    0
+                         7900   16.8
                     </tableData>
                 </table>
                 <table>
                     <independentVar>propulsion/tank[7]/contents-kg</independentVar>
                     <tableData>
-                            0.0    0.0
-                         9900.0   61.7
+                            0    0
+                         9900   61.7
                     </tableData>
                 </table>
             </sum>
@@ -2252,9 +2332,9 @@
                 <independentVar lookup="row">inertia/weight-kg</independentVar>
                 <independentVar lookup="column">weight-index-to</independentVar>
                 <tableData>
-                             1.0   29.0   80.0  91.0  132.0
-                    174000  14.0   14.0   32.0  35.8   32.0
-                    352000   9.6   14.1   23.0  25.0   32.0
+                             1   29   80  91  132.0
+                    174000  14   14   32  35.8   32.0
+                    352000   9.6   14.1   23  25   32.0
                     390000  14.1   14.1   22.1  23.9   32.0
                 </tableData>
             </table>
@@ -2265,9 +2345,9 @@
                 <independentVar lookup="row">inertia/zero-fuel-weight-kg</independentVar>
                 <independentVar lookup="column">weight-index-zfw</independentVar>
                 <tableData>
-                             1.0   29.0   80.0  91.0  132.0
-                    174000  14.0   14.0   32.0  35.8   32.0
-                    352000   9.6   14.1   23.0  25.0   32.0
+                             1   29   80  91  132.0
+                    174000  14   14   32  35.8   32.0
+                    352000   9.6   14.1   23  25   32.0
                     390000  14.1   14.1   22.1  23.9   32.0
                 </tableData>
             </table>
@@ -2366,10 +2446,10 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  30000  40000
-                0.0     1.0    1.0    1.0    1.0    1.0
-                0.1     0.99   1.0    1.0    1.0    1.0
-                0.2     0.98   0.99   1.0    1.0    1.0
-                0.3     0.96   0.98   0.99   1.0    0.99
+                0     1    1    1    1    1.0
+                0.1     0.99   1    1    1    1.0
+                0.2     0.98   0.99   1    1    1.0
+                0.3     0.96   0.98   0.99   1    0.99
                 0.4     0.94   0.97   0.98   0.99   0.99
                 0.5     0.93   0.96   0.97   0.99   1.0
                 0.6     0.92   0.95   0.96   0.98   1.0
@@ -2497,8 +2577,8 @@
                         <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                         <tableData>
                                   0   10000  20000  40000
-                        0.0     1.0     1.0    1.0    1.0
-                        0.1     1.0     0.99   1.0    1.0
+                        0     1     1    1    1.0
+                        0.1     1     0.99   1    1.0
                         0.2     0.98    0.99   0.99   0.99
                         0.3     0.92    0.95   0.97   0.97
                         0.4     0.86    0.92   0.94   0.95
@@ -2558,8 +2638,8 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  30000  40000
-                0.0     1.0     1.0    1.0    1.0    1.0
-                0.1     0.98    0.99   1.0    1.0    1.0
+                0     1     1    1    1    1.0
+                0.1     0.98    0.99   1    1    1.0
                 0.2     0.92    0.94   0.96   0.98   0.99
                 0.3     0.83    0.87   0.90   0.93   0.95
                 0.4     0.70    0.75   0.80   0.85   0.88
@@ -2581,9 +2661,9 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  30000  40000
-                0.0     1.0     1.0    1.0    1.0    1.0
-                0.1     1.0     1.0    1.0    1.0    1.0
-                0.2     0.98    0.99   1.0    1.0    1.0
+                0     1     1    1    1    1.0
+                0.1     1     1    1    1    1.0
+                0.2     0.98    0.99   1    1    1.0
                 0.3     0.94    0.96   0.98   0.99   1.0
                 0.4     0.88    0.91   0.94   0.96   0.99
                 0.5     0.79    0.85   0.89   0.93   0.96
@@ -2731,7 +2811,7 @@
                         <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                         <tableData>
                                      0.000  10000.000  40000.000
-                            0.0      0.000      0.000      0.000
+                            0      0.000      0.000      0.000
                             0.2     -0.004     -0.002     -0.001
                             0.5     -0.023     -0.019     -0.006
                             0.8     -0.049     -0.043     -0.022
@@ -2888,7 +2968,8 @@
                         <table>
                             <!-- graph 2.0-16 -->
                             <independentVar lookup="row">velocities/mach</independentVar>
-                            <independentVar lookup="column">atmosphere/density-altitude</independentVar> <!-- data beyond m0.82 at sea level extrapolated -->
+                            <independentVar lookup="column">atmosphere/density-altitude</independentVar> <!--
+                            data beyond m0.82 at sea level extrapolated -->
                             <tableData>
                                          0.0000 10000.0000 20000.0000 30000.0000 40000.0000
                                 0.00     0.0258     0.0258     0.0258     0.0258     0.0258
@@ -3337,7 +3418,7 @@
                     <!-- graph 2.0-30 -->
                     <independentVar>velocities/mach</independentVar>
                     <tableData>
-                        0.0   1.0
+                        0   1.0
                         0.3   1.0
                         0.6   1.9
                         0.7   2.4
@@ -3348,7 +3429,8 @@
         </function>
 
         <documentation>
-          CL = CL0 + ... + dCL_inboard_elevators + dCL_outboard_elevators + dCL_outboard_ailerons + dCL_landing_gear + dCL_ground_effect
+            CL = CL0 + ... + dCL_inboard_elevators + dCL_outboard_elevators + dCL_outboard_ailerons
+            + dCL_landing_gear + dCL_ground_effect
         </documentation>
 
         <!-- CL_star is needed for CD -->
@@ -3378,7 +3460,8 @@
 
         <axis name="LIFT">
             <documentation>
-              CL = CL0 + ... + dCL_inboard_elevators + dCL_outboard_elevators + dCL_outboard_ailerons + dCL_landing_gear + dCL_ground_effect
+                CL = CL0 + ... + dCL_inboard_elevators + dCL_outboard_elevators +
+                dCL_outboard_ailerons + dCL_landing_gear + dCL_ground_effect
             </documentation>
 
             <function name="my_lift">
@@ -3786,13 +3869,13 @@
                                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                                 <tableData>
                                           0   10000  20000  30000  40000
-                                0.0     1.0     1.0    1.0    1.0    1.0
-                                0.1     1.0     1.0    1.0    1.0    1.0
-                                0.2     1.0     1.0    1.0    1.0    1.0
-                                0.3     0.99    1.0    1.0    1.0    1.0
-                                0.4     0.98    1.0    1.0    1.0    1.0
-                                0.5     0.97    0.99   1.0    1.0    1.0
-                                0.6     0.95    0.98   0.99   1.0    1.0
+                                0     1     1    1    1    1.0
+                                0.1     1     1    1    1    1.0
+                                0.2     1     1    1    1    1.0
+                                0.3     0.99    1    1    1    1.0
+                                0.4     0.98    1    1    1    1.0
+                                0.5     0.97    0.99   1    1    1.0
+                                0.6     0.95    0.98   0.99   1    1.0
                                 0.7     0.93    0.95   0.97   0.99   1.0
                                 0.8     0.90    0.92   0.94   0.97   0.98
                                 0.9     0.90    0.90   0.93   0.96   0.97
@@ -3862,8 +3945,8 @@
                         <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                         <tableData>
                                   0   10000  20000  30000  40000
-                        0.0     1.0     1.0    1.0    1.0    1.0
-                        0.1     0.99    0.99   0.99   1.0    1.0
+                        0     1     1    1    1    1.0
+                        0.1     0.99    0.99   0.99   1    1.0
                         0.2     0.94    0.96   0.98   0.99   1.0
                         0.3     0.88    0.91   0.92   0.95   0.97
                         0.4     0.83    0.85   0.87   0.92   0.94
@@ -3915,16 +3998,16 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  25000   30000  40000
-                0.0     1.0     1.0    1.0    1.0     1.0    1.0
-                0.1     1.0     1.0    1.0    1.0     1.0    1.0
-                0.2    0.98    0.99    1.0   1.01     1.01   1.02
+                0     1     1    1    1     1    1.0
+                0.1     1     1    1    1     1    1.0
+                0.2    0.98    0.99    1   1.01     1.01   1.02
                 0.3    0.92    0.96   0.99   1.02     1.03   1.04
                 0.4    0.86    0.90   0.96   1.03     1.06   1.07
                 0.5    0.78    0.86   0.98   1.01     1.07   1.10
-                0.6    0.72    0.84    1.0   1.04     1.10   1.14
+                0.6    0.72    0.84    1   1.04     1.10   1.14
                 0.7    0.70    0.85   1.04   1.14     1.20   1.26
                 0.8    0.70    0.90   1.16   1.33     1.57   1.70
-                0.9    0.70    0.40   0.50   0.70      1.0   1.50
+                0.9    0.70    0.40   0.50   0.70      1   1.50
                 0.95   0.70    0.10   0.15   0.20     0.38   0.72
                 </tableData>
             </table>
@@ -4090,10 +4173,10 @@
                 <independentVar lookup="column">aero/alpha-wing-deg</independentVar>
                 <tableData>
                           0     2      4      6     8  
-                0.0       1.0   1.0    1.0    1.0   1.0
-                0.1       1.0   1.0    1.0    1.0   1.0
-                0.2       1.0   1.0    1.0    1.0   1.0
-                0.3       1.0   1.0    1.0    1.0   1.0
+                0       1   1    1    1   1.0
+                0.1       1   1    1    1   1.0
+                0.2       1   1    1    1   1.0
+                0.3       1   1    1    1   1.0
                 0.4       1.02  1.02   1.02   1.02  1.02   
                 0.5       1.04  1.04   1.04   1.04  1.04   
                 0.6       1.09  1.09   1.09   1.09  1.09
@@ -4250,9 +4333,9 @@
                             25.000  0.015  0.015
                         </tableData>
                         <tableData breakPoint="0">
-                                  0.0 30.0
-                             0.0  0.0  0.0
-                            25.0  0.0  0.0
+                                  0 30.0
+                             0  0  0
+                            25  0  0
                         </tableData>
                         <tableData breakPoint="0.2618">
                                     0.000 30.000
@@ -4271,9 +4354,9 @@
                             25.000 -0.015 -0.015
                         </tableData>
                         <tableData breakPoint="0">
-                                  0.0 30.0
-                             0.0  0.0  0.0
-                            25.0  0.0  0.0
+                                  0 30.0
+                             0  0  0
+                            25  0  0
                         </tableData>
                         <tableData breakPoint="0.2618">
                                     0.000 30.000
@@ -4892,8 +4975,8 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  30000  40000
-                0.0     1.0     1.0    1.0    1.0    1.0
-                0.1     0.98    0.98   0.99   1.0    1.0
+                0     1     1    1    1    1.0
+                0.1     0.98    0.98   0.99   1    1.0
                 0.2     0.95    0.96   0.97   0.98   0.98
                 0.3     0.90    0.93   0.95   0.96   0.97
                 0.4     0.85    0.90   0.94   0.96   0.98
@@ -4961,11 +5044,11 @@
                         <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                         <tableData>
                                   0   10000  20000  30000  40000
-                        0.0     1.0     1.0    1.0    1.0    1.0
-                        0.1     1.0     1.0    1.0    1.0    1.0
-                        0.2     1.0     1.0    1.0    1.0    1.0
-                        0.3     1.0     1.0    1.0    1.01   1.01
-                        0.4     1.0     1.01   1.05   1.10   1.15
+                        0     1     1    1    1    1.0
+                        0.1     1     1    1    1    1.0
+                        0.2     1     1    1    1    1.0
+                        0.3     1     1    1    1.01   1.01
+                        0.4     1     1.01   1.05   1.10   1.15
                         0.5     1.02    1.10   1.20   1.24   1.26   
                         0.6     1.24    1.25   1.35   1.40   1.60
                         0.7     1.45    1.60   1.75   1.85   2.00
@@ -5221,13 +5304,13 @@
                 <independentVar lookup="column">aero/alpha-wing-deg</independentVar>
                 <tableData>
                           0     2      4      6     8  
-                0.0       1.0   1.0    1.0    1.0   1.0
-                0.1       1.0   1.0    1.0    1.0   1.0
-                0.2       1.0   1.0    1.0    1.0   1.0
-                0.3       1.0   1.0    1.0    1.0   1.0
-                0.4       1.0   1.0    1.0    1.0   1.0 
-                0.5       1.0   1.0    1.0    1.0   0.98
-                0.6       1.0   1.0    1.0    1.0   0.95
+                0       1   1    1    1   1.0
+                0.1       1   1    1    1   1.0
+                0.2       1   1    1    1   1.0
+                0.3       1   1    1    1   1.0
+                0.4       1   1    1    1   1 
+                0.5       1   1    1    1   0.98
+                0.6       1   1    1    1   0.95
                 0.7       1.03  1.03   1.02   1.01  0.88
                 0.8       1.17  1.24   1.16   1.10  0.70
                 0.9       1.40  1.20   1.00   0.45  0.20
@@ -5353,9 +5436,9 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  30000  40000
-                0.0     1.0     1.0    1.0    1.0    1.0
-                0.1     1.0     1.0    1.0    1.0    1.0
-                0.2     0.97    0.99   1.0    1.0    1.0
+                0     1     1    1    1    1.0
+                0.1     1     1    1    1    1.0
+                0.2     0.97    0.99   1    1    1.0
                 0.3     0.88    0.94   0.97   0.98   0.99
                 0.4     0.77    0.87   0.93   0.95   0.97
                 0.5     0.65    0.78   0.85   0.90   0.94
@@ -5376,9 +5459,9 @@
                 <independentVar lookup="column">atmosphere/density-altitude</independentVar>
                 <tableData>
                           0   10000  20000  30000  40000
-                0.0     1.0     1.0    1.0    1.0    1.0
-                0.1     1.0     1.0    1.0    1.0    1.0
-                0.2     0.98    0.99   1.0    1.0    1.0
+                0     1     1    1    1    1.0
+                0.1     1     1    1    1    1.0
+                0.2     0.98    0.99   1    1    1.0
                 0.3     0.95    0.97   0.99   0.99   1.0
                 0.4     0.90    0.96   0.98   0.99   1.0
                 0.5     0.87    0.94   0.97   0.99   1.01
@@ -5435,8 +5518,8 @@
 
         <force name="tractor" frame="BODY">
             <location unit="IN">
-                <x>  300 </x>
-                <y>    0 </y>
+                <x> 300 </x>
+                <y> 0 </y>
                 <z> -170 </z>
             </location>
             <direction>

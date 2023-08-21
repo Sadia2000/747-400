@@ -6,14 +6,14 @@
 
     <fileheader>
         <author>Gijs de Rooy</author>
-        <filecreationdate>2008</filecreationdate>
+        <filecreationdate>2008-01-01</filecreationdate>
         <version>20200507</version>
         <description>Boeing 747-400 with GE CF6-80C2B1F engines</description>
 
-        <license>
+        <!-- <license>
             <licenseName>GPL</licenseName>
             <licenseURL>http://www.gnu.org/licenses/gpl.html</licenseURL>
-        </license>
+        </license> -->
 
         <reference
             refID="747 airplane characteristics, D6-58236"
@@ -81,12 +81,9 @@
     </metrics>
 
     <mass_balance>
-        <documentation>
-            - operational empty weight = 394088 lb
-            - empty CG at 23 % MAC (no payload)
-
-            inertia for empty weight from NASA
-        </documentation>
+        <!-- - operational empty weight = 394088 lb -->
+        <!-- - empty CG at 23 % MAC (no payload) -->
+        <!-- inertia for empty weight from NASA -->
         <ixx unit="SLUG*FT2"> 1.23e+07 </ixx>
         <iyy unit="SLUG*FT2"> 2.43e+07 </iyy>
         <izz unit="SLUG*FT2"> 3.52e+07 </izz>
@@ -102,7 +99,6 @@
         </location>
 
         <!-- average passenger is 80 kg -->
-
         <pointmass name="Passengers 0A">
             <weight unit="KG"> 3200 </weight> <!-- 40 passengers -->
             <location name="POINTMASS" unit="IN">
