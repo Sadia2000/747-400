@@ -81,12 +81,12 @@
         <max-m>500</max-m>
     </animation>
 
-    <!-- APU Flap -->
+    <!-- APU Cover -->
     <animation>
         <type>rotate</type>
         <object-name>apu.intake</object-name>
         <property>engines/engine[4]/n1</property>
-        <factor>0.8</factor>
+        <factor>-0.8</factor>
         <axis>
             <x1-m>35.82</x1-m>
             <y1-m>0.723838</y1-m>
@@ -979,7 +979,7 @@
         <object-name>aileron.LO</object-name>
         <object-name>lightning.ailL</object-name>
         <property>fdm/jsbsim/fcs/aileron[0]/pos-rad</property>
-        <factor>-57.3</factor>
+        <factor>-57.2958</factor>
         <axis>
             <x1-m>16.4928</x1-m>
             <y1-m>-28.5469</y1-m>
@@ -994,7 +994,7 @@
         <type>rotate</type>
         <object-name>aileron.LI</object-name>
         <property>fdm/jsbsim/fcs/aileron[1]/pos-rad</property>
-        <factor>-57.3</factor>
+        <factor>-57.2958</factor>
         <axis>
             <x1-m>6.31221</x1-m>
             <y1-m>-13.0553</y1-m>
@@ -1010,7 +1010,7 @@
         <object-name>aileron.RO</object-name>
         <object-name>lightning.ailR</object-name>
         <property>fdm/jsbsim/fcs/aileron[3]/pos-rad</property>
-        <factor>57.3</factor>
+        <factor>57.2958</factor>
         <axis>
             <x1-m>16.5207</x1-m>
             <y1-m>28.5303</y1-m>
@@ -1025,7 +1025,7 @@
         <type>rotate</type>
         <object-name>aileron.RI</object-name>
         <property>fdm/jsbsim/fcs/aileron[2]/pos-rad</property>
-        <factor>57.3</factor>
+        <factor>57.2958</factor>
         <axis>
             <x1-m>6.31221</x1-m>
             <y1-m>13.0553</y1-m>
@@ -1041,7 +1041,7 @@
         <object-name>elevator.L1</object-name>
         <object-name>elevator.L2</object-name>
         <property>fdm/jsbsim/fcs/elevator[0]/pos-rad</property>
-        <factor>57.3</factor>
+        <factor>57.2958</factor>
         <axis>
             <x1-m>38.3094</x1-m>
             <y1-m>-9.50775</y1-m>
@@ -1057,7 +1057,7 @@
         <object-name>elevator.R1</object-name>
         <object-name>elevator.R2</object-name>
         <property>fdm/jsbsim/fcs/elevator[0]/pos-rad</property>
-        <factor>57.3</factor>
+        <factor>57.2958</factor>
         <axis>
             <x1-m>33.9763</x1-m>
             <y1-m>1.23802</y1-m>
@@ -1073,7 +1073,7 @@
         <object-name>rudder1</object-name>
         <object-name>rudder2</object-name>
         <property>fdm/jsbsim/fcs/rudder-pos-rad</property>
-        <factor>57.3</factor>
+        <factor>57.2958</factor>
         <axis>
             <x1-m>38.8217</x1-m>
             <y1-m>-0.000002</y1-m>
@@ -1081,6 +1081,48 @@
             <x2-m>33.503</x2-m>
             <y2-m>-0.000001</y2-m>
             <z2-m>4.58822</z2-m>
+        </axis>
+    </animation>
+
+    <!-- Control Surface Trim -->
+    <animation>
+        <type>rotate</type>
+        <object-name>elevator.L1</object-name>
+        <object-name>elevator.L2</object-name>
+        <object-name>h-stab.L</object-name>
+        <object-name>h-stab.trimL</object-name>
+        <object-name>light.logoL</object-name>
+        <object-name>logo.left1</object-name>
+        <object-name>logo.left2</object-name>
+        <property>fdm/jsbsim/fcs/stabilizer/pos-rad</property>
+        <factor>-57.2958</factor>
+        <axis>
+            <x1-m>32.1175</x1-m>
+            <y1-m>-1.47872</y1-m>
+            <z1-m>2.06529</z1-m>
+            <x2-m>32.1189</x2-m>
+            <y2-m>-1.48862</y2-m>
+            <z2-m>2.06517</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>elevator.R1</object-name>
+        <object-name>elevator.R2</object-name>
+        <object-name>h-stab.R</object-name>
+        <object-name>h-stab.trimR</object-name>
+        <object-name>light.logoR</object-name>
+        <object-name>logo.right1</object-name>
+        <object-name>logo.right2</object-name>
+        <property>fdm/jsbsim/fcs/stabilizer/pos-rad</property>
+        <factor>57.2958</factor>
+        <axis>
+            <x1-m>32.1189</x1-m>
+            <y1-m>1.48862</y1-m>
+            <z1-m>2.06517</z1-m>
+            <x2-m>32.1175</x2-m>
+            <y2-m>1.47872</y2-m>
+            <z2-m>2.06529</z2-m>
         </axis>
     </animation>
 
