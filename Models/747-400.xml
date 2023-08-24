@@ -403,117 +403,7 @@
         </axis>
     </animation>
 
-    <!-- Inboard Flaps -->
-    <animation>
-        <type>translate</type>
-        <object-name>flap.LI3</object-name>
-        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.6667</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>1</ind>
-                <dep>0.3569</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x>0.9806</x>
-            <z>0.8961</z>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>flap.LI3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>20</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>30</ind>
-                <dep>-10</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x1-m>4.35815</x1-m>
-            <y1-m>-3.25937</y1-m>
-            <z1-m>-2.08966</z1-m>
-            <x2-m>6.95202</x2-m>
-            <y2-m>-11.3479</y2-m>
-            <z2-m>-0.831416</z2-m>
-        </axis>
-    </animation>
-    <animation>
-        <type>translate</type>
-        <object-name>flap.LI2</object-name>
-        <object-name>flap.LI3</object-name>
-        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.3333</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.6667</ind>
-                <dep>0.667</dep>
-            </entry>
-            <entry>
-                <ind>1</ind>
-                <dep>0.667</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x>0.663</x>
-            <z>0.0337</z>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>flap.LI2</object-name>
-        <object-name>flap.LI3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>10</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>20</ind>
-                <dep>-10</dep>
-            </entry>
-            <entry>
-                <ind>30</ind>
-                <dep>-10</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x1-m>2.7749</x1-m>
-            <y1-m>-3.42981</y1-m>
-            <z1-m>-2.05911</z1-m>
-            <x2-m>5.31511</x2-m>
-            <y2-m>-11.3586</y2-m>
-            <z2-m>-0.818167</z2-m>
-        </axis>
-    </animation>
+    <!-- Left Inboard Flaps -->
     <animation>
         <type>translate</type>
         <object-name>flap.LI1</object-name>
@@ -526,12 +416,12 @@
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>0.3333</ind>
-                <dep>1.4</dep>
+                <ind>0.33333</ind>
+                <dep>1.45</dep>
             </entry>
             <entry>
                 <ind>1</ind>
-                <dep>1.4</dep>
+                <dep>1.45</dep>
             </entry>
         </interpolation>
         <axis>
@@ -543,34 +433,155 @@
         <object-name>flap.LI1</object-name>
         <object-name>flap.LI2</object-name>
         <object-name>flap.LI3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>10</ind>
-                <dep>-10</dep>
+                <ind>0.33333</ind>
+                <dep>20</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>-10</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>2.51511</x1-m>
-            <y1-m>-3.37705</y1-m>
-            <z1-m>-1.96334</z1-m>
-            <x2-m>5.07773</x2-m>
-            <y2-m>-11.3764</y2-m>
-            <z2-m>-0.743647</z2-m>
+            <x1-m>5.0831</x1-m>
+            <y1-m>-11.3534</y1-m>
+            <z1-m>-0.649268</z1-m>
+            <x2-m>2.51334</x2-m>
+            <y2-m>-3.33359</y2-m>
+            <z2-m>-1.80073</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.LI2</object-name>
+        <object-name>flap.LI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0.47555</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.47555</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>4.18226</x1-m>
+            <y1-m>-7.46262</y1-m>
+            <z1-m>-1.26141</z1-m>
+            <x2-m>4.65781</x2-m>
+            <y2-m>-7.46262</y2-m>
+            <z2-m>-1.16757</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>flap.LI2</object-name>
+        <object-name>flap.LI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>-25</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>-25</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>3.81511</x1-m>
+            <y1-m>-6.31703</y1-m>
+            <z1-m>-1.42599</z1-m>
+            <x2-m>4.54941</x2-m>
+            <y2-m>-8.60821</y2-m>
+            <z2-m>-1.09683</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.LI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.1969418860984123</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>5.80965</x1-m>
+            <y1-m>-7.369</y1-m>
+            <z1-m>-1.38515</z1-m>
+            <x2-m>6.00173</x2-m>
+            <y2-m>-7.369</y2-m>
+            <z2-m>-1.34166</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>flap.LI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>25</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>7.10948</x1-m>
+            <y1-m>-11.4213</y1-m>
+            <z1-m>-0.786079</z1-m>
+            <x2-m>4.50982</x2-m>
+            <y2-m>-3.31666</y2-m>
+            <z2-m>-1.98422</z2-m>
         </axis>
     </animation>
 
+    <!-- Left Outboard Flaps -->
     <animation>
-        <type>translate</type>
-        <object-name>flap.RI3</object-name>
+        <type>translation</type>
+        <object-name>flap.LO1</object-name>
+        <object-name>flap.LO2</object-name>
+        <object-name>flap.LO3</object-name>
         <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -578,398 +589,625 @@
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>0.6667</ind>
-                <dep>0</dep>
+                <ind>0.33333</ind>
+                <dep>1.1</dep>
             </entry>
             <entry>
                 <ind>1</ind>
-                <dep>0.3569</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x>0.9806</x>
-            <z>0.8961</z>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>flap.RI3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>20</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>30</ind>
-                <dep>10</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x1-m>4.35815</x1-m>
-            <y1-m>3.25937</y1-m>
-            <z1-m>-2.08966</z1-m>
-            <x2-m>6.95202</x2-m>
-            <y2-m>11.3479</y2-m>
-            <z2-m>-0.831416</z2-m>
-        </axis>
-    </animation>
-    <animation>
-        <type>translate</type>
-        <object-name>flap.RI2</object-name>
-        <object-name>flap.RI3</object-name>
-        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.3333</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.6667</ind>
-                <dep>0.667</dep>
-            </entry>
-            <entry>
-                <ind>1</ind>
-                <dep>0.667</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x>0.663</x>
-            <z>0.0337</z>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>flap.RI2</object-name>
-        <object-name>flap.RI3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>10</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>20</ind>
-                <dep>10</dep>
-            </entry>
-            <entry>
-                <ind>30</ind>
-                <dep>10</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x1-m>2.7749</x1-m>
-            <y1-m>3.42981</y1-m>
-            <z1-m>-2.05911</z1-m>
-            <x2-m>5.31511</x2-m>
-            <y2-m>11.3586</y2-m>
-            <z2-m>-0.818167</z2-m>
-        </axis>
-    </animation>
-    <animation>
-        <type>translate</type>
-        <object-name>flap.RI1</object-name>
-        <object-name>flap.RI2</object-name>
-        <object-name>flap.RI3</object-name>
-        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.3333</ind>
-                <dep>1.4</dep>
-            </entry>
-            <entry>
-                <ind>1</ind>
-                <dep>1.4</dep>
+                <dep>1.1</dep>
             </entry>
         </interpolation>
         <axis>
             <x>1</x>
         </axis>
     </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>flap.RI1</object-name>
-        <object-name>flap.RI2</object-name>
-        <object-name>flap.RI3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>10</ind>
-                <dep>10</dep>
-            </entry>
-            <entry>
-                <ind>30</ind>
-                <dep>10</dep>
-            </entry>
-        </interpolation>
-        <axis>
-            <x1-m>2.51511</x1-m>
-            <y1-m>3.37705</y1-m>
-            <z1-m>-1.96334</z1-m>
-            <x2-m>5.07773</x2-m>
-            <y2-m>11.3764</y2-m>
-            <z2-m>-0.743647</z2-m>
-        </axis>
-    </animation>
-
-    <!-- Outboard Flaps -->
     <animation>
         <type>rotate</type>
         <object-name>flap.LO1</object-name>
         <object-name>flap.LO2</object-name>
         <object-name>flap.LO3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>10</ind>
-                <dep>-10</dep>
+                <ind>0.33333</ind>
+                <dep>20</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>-10</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>6.01328</x1-m>
-            <y1-m>-13.1107</y1-m>
-            <z1-m>-5.516848</z1-m>
-            <x2-m>11.16</x2-m>
-            <y2-m>-20.9928</y2-m>
-            <z2-m>-4.972488</z2-m>
+            <x1-m>11.4296</x1-m>
+            <y1-m>-20.9827</y1-m>
+            <z1-m>0.112633</z1-m>
+            <x2-m>6.21718</x2-m>
+            <y2-m>-13.1254</y2-m>
+            <z2-m>-0.399754</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.LO2</object-name>
+        <object-name>flap.LO3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0.3197041077308829</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.3197041077308829</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>8.89657</x1-m>
+            <y1-m>-17.129</y1-m>
+            <z1-m>-0.203337</z1-m>
+            <x2-m>9.21115</x2-m>
+            <y2-m>-17.129</y2-m>
+            <z2-m>-0.146327</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
         <object-name>flap.LO2</object-name>
         <object-name>flap.LO3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>10</ind>
+                <ind>0.33333</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>20</ind>
-                <dep>-2</dep>
+                <ind>0.66667</ind>
+                <dep>20</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>-2</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>6.01328</x1-m>
-            <y1-m>-13.1107</y1-m>
-            <z1-m>-5.516848</z1-m>
-            <x2-m>11.16</x2-m>
-            <y2-m>-20.9928</y2-m>
-            <z2-m>-4.972488</z2-m>
+            <x1-m>11.4137</x1-m>
+            <y1-m>-20.987</y1-m>
+            <z1-m>0.063861</z1-m>
+            <x2-m>6.28231</x2-m>
+            <y2-m>-13.1159</y2-m>
+            <z2-m>-0.479954</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.LO3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.1287427891611798</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>10.2252</x1-m>
+            <y1-m>-17.0513</y1-m>
+            <z1-m>-0.276977</z1-m>
+            <x2-m>10.3539</x2-m>
+            <y2-m>-17.0513</y2-m>
+            <z2-m>-0.280296</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
         <object-name>flap.LO3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>20</ind>
+                <ind>0.66667</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>-2</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>6.01328</x1-m>
-            <y1-m>-13.1107</y1-m>
-            <z1-m>-5.516848</z1-m>
-            <x2-m>11.16</x2-m>
-            <y2-m>-20.9928</y2-m>
-            <z2-m>-4.972488</z2-m>
+            <x1-m>12.6219</x1-m>
+            <y1-m>-20.9728</y1-m>
+            <z1-m>-0.004037</z1-m>
+            <x2-m>7.78356</x2-m>
+            <y2-m>-13.0562</y2-m>
+            <z2-m>-0.555058</z2-m>
         </axis>
     </animation>
 
+    <!-- Right Inboard Flaps -->
+    <animation>
+        <type>translate</type>
+        <object-name>flap.RI1</object-name>
+        <object-name>flap.RI2</object-name>
+        <object-name>flap.RI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>1.45</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>1.45</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>flap.RI1</object-name>
+        <object-name>flap.RI2</object-name>
+        <object-name>flap.RI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>20</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>20</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>2.51334</x1-m>
+            <y1-m>3.33359</y1-m>
+            <z1-m>-1.80073</z1-m>
+            <x2-m>5.0831</x2-m>
+            <y2-m>11.3534</y2-m>
+            <z2-m>-0.649268</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.RI2</object-name>
+        <object-name>flap.RI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0.47555</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.47555</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>4.18226</x1-m>
+            <y1-m>7.46262</y1-m>
+            <z1-m>-1.26141</z1-m>
+            <x2-m>4.65781</x2-m>
+            <y2-m>7.46262</y2-m>
+            <z2-m>-1.16757</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>flap.RI2</object-name>
+        <object-name>flap.RI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>25</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>25</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>3.81511</x1-m>
+            <y1-m>6.31703</y1-m>
+            <z1-m>-1.42599</z1-m>
+            <x2-m>4.54941</x2-m>
+            <y2-m>8.60821</y2-m>
+            <z2-m>-1.09683</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.RI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.1969418860984123</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>5.80965</x1-m>
+            <y1-m>7.369</y1-m>
+            <z1-m>-1.38515</z1-m>
+            <x2-m>6.00173</x2-m>
+            <y2-m>7.369</y2-m>
+            <z2-m>-1.34166</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>flap.RI3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>25</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>4.50982</x1-m>
+            <y1-m>3.31666</y1-m>
+            <z1-m>-1.98422</z1-m>
+            <x2-m>7.10948</x2-m>
+            <y2-m>11.4213</y2-m>
+            <z2-m>-0.786079</z2-m>
+        </axis>
+    </animation>
+
+    <!-- Right Outboard Flaps -->
+    <animation>
+        <type>translation</type>
+        <object-name>flap.RO1</object-name>
+        <object-name>flap.RO2</object-name>
+        <object-name>flap.RO3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>1.1</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>1.1</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
     <animation>
         <type>rotate</type>
         <object-name>flap.RO1</object-name>
         <object-name>flap.RO2</object-name>
         <object-name>flap.RO3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>10</ind>
-                <dep>10</dep>
+                <ind>0.33333</ind>
+                <dep>20</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>10</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>6.01328</x1-m>
-            <y1-m>13.1107</y1-m>
-            <z1-m>-5.516848</z1-m>
-            <x2-m>11.16</x2-m>
-            <y2-m>20.9928</y2-m>
-            <z2-m>-4.972488</z2-m>
+            <x1-m>6.21718</x1-m>
+            <y1-m>13.1254</y1-m>
+            <z1-m>-0.399754</z1-m>
+            <x2-m>11.4296</x2-m>
+            <y2-m>20.9827</y2-m>
+            <z2-m>0.112633</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.RO2</object-name>
+        <object-name>flap.RO3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.33333</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0.3197041077308829</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.3197041077308829</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>8.89657</x1-m>
+            <y1-m>17.129</y1-m>
+            <z1-m>-0.203337</z1-m>
+            <x2-m>9.21115</x2-m>
+            <y2-m>17.129</y2-m>
+            <z2-m>-0.146327</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
         <object-name>flap.RO2</object-name>
         <object-name>flap.RO3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>10</ind>
+                <ind>0.33333</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>20</ind>
-                <dep>2</dep>
+                <ind>0.66667</ind>
+                <dep>20</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>2</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>6.01328</x1-m>
-            <y1-m>13.1107</y1-m>
-            <z1-m>-5.516848</z1-m>
-            <x2-m>11.16</x2-m>
-            <y2-m>20.9928</y2-m>
-            <z2-m>-4.972488</z2-m>
+            <x1-m>6.28231</x1-m>
+            <y1-m>13.1159</y1-m>
+            <z1-m>-0.479954</z1-m>
+            <x2-m>11.4137</x2-m>
+            <y2-m>20.987</y2-m>
+            <z2-m>0.063861</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>flap.RO3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.66667</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.1287427891611798</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>10.2252</x1-m>
+            <y1-m>17.0513</y1-m>
+            <z1-m>-0.276977</z1-m>
+            <x2-m>10.3539</x2-m>
+            <y2-m>17.0513</y2-m>
+            <z2-m>-0.280296</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
         <object-name>flap.RO3</object-name>
-        <property>fdm/jsbsim/fcs/flaps/pos-deg</property>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>20</ind>
+                <ind>0.66667</ind>
                 <dep>0</dep>
             </entry>
             <entry>
-                <ind>30</ind>
-                <dep>2</dep>
+                <ind>1</ind>
+                <dep>20</dep>
             </entry>
         </interpolation>
         <axis>
-            <x1-m>6.01328</x1-m>
-            <y1-m>13.1107</y1-m>
-            <z1-m>-5.516848</z1-m>
-            <x2-m>11.16</x2-m>
-            <y2-m>20.9928</y2-m>
-            <z2-m>-4.972488</z2-m>
+            <x1-m>7.78356</x1-m>
+            <y1-m>13.0562</y1-m>
+            <z1-m>-0.555058</z1-m>
+            <x2-m>12.6219</x2-m>
+            <y2-m>20.9728</y2-m>
+            <z2-m>-0.004037</z2-m>
         </axis>
     </animation>
 
-    <!-- Flap fairings -->
+    <!-- Left Flap Covers -->
     <animation>
         <type>rotate</type>
-        <object-name>cover.L2</object-name>
-        <object-name>cover.R2</object-name>
+        <object-name>cover.L1</object-name>
         <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <factor>10</factor>
-        <center>
-            <x-m>2.80302</x-m>
-            <y-m>0</y-m>
-            <z-m>-2.1955</z-m>
-        </center>
+        <factor>-35</factor>
         <axis>
-            <y>1</y>
+            <x1-m>2.49644</x1-m>
+            <y1-m>-5.78729</y1-m>
+            <z1-m>-2.26574</z1-m>
+            <x2-m>2.49652</x2-m>
+            <y2-m>-6.44526</y2-m>
+            <z2-m>-2.16435</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>cover.L4</object-name>
-        <object-name>cover.R4</object-name>
+        <object-name>cover.L3</object-name>
         <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <factor>10</factor>
-        <center>
-            <x-m>4.00071</x-m>
-            <y-m>0</y-m>
-            <z-m>-1.76091</z-m>
-        </center>
+        <factor>-35</factor>
         <axis>
-            <y>1</y>
+            <x1-m>3.79666</x1-m>
+            <y1-m>-8.54919</y1-m>
+            <z1-m>-1.84486</z1-m>
+            <x2-m>3.79642</x2-m>
+            <y2-m>-9.19825</y2-m>
+            <z2-m>-1.74844</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>cover.L6</object-name>
-        <object-name>cover.R6</object-name>
+        <object-name>cover.L5</object-name>
         <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <factor>5</factor>
-        <center>
-            <x-m>7.03084</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.925522</z-m>
-        </center>
+        <factor>-35</factor>
         <axis>
-            <y>1</y>
+            <x1-m>7.01939</x1-m>
+            <y1-m>-14.6723</y1-m>
+            <z1-m>-0.921193</z1-m>
+            <x2-m>7.02008</x2-m>
+            <y2-m>-15.2786</y2-m>
+            <z2-m>-0.873538</z2-m>
         </axis>
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>cover.L8</object-name>
-        <object-name>cover.R8</object-name>
+        <object-name>cover.L7</object-name>
         <property>fdm/jsbsim/fcs/flap-pos-norm</property>
-        <factor>5</factor>
-        <center>
-            <x-m>9.65487</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.578688</z-m>
-        </center>
+        <factor>-35</factor>
         <axis>
-            <y>1</y>
+            <x1-m>9.7287</x1-m>
+            <y1-m>-18.7036</y1-m>
+            <z1-m>-0.636415</z1-m>
+            <x2-m>9.72883</x2-m>
+            <y2-m>-19.3466</y2-m>
+            <z2-m>-0.585758</z2-m>
+        </axis>
+    </animation>
+
+    <!-- Right Flap Covers -->
+    <animation>
+        <type>rotate</type>
+        <object-name>cover.R1</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <factor>-35</factor>
+        <axis>
+            <x1-m>2.49652</x1-m>
+            <y1-m>6.44526</y1-m>
+            <z1-m>-2.16435</z1-m>
+            <x2-m>2.49644</x2-m>
+            <y2-m>5.78729</y2-m>
+            <z2-m>-2.26574</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>cover.R3</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <factor>-35</factor>
+        <axis>
+            <x1-m>3.79642</x1-m>
+            <y1-m>9.19825</y1-m>
+            <z1-m>-1.74844</z1-m>
+            <x2-m>3.79666</x2-m>
+            <y2-m>8.54919</y2-m>
+            <z2-m>-1.84486</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>cover.R5</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <factor>-35</factor>
+        <axis>
+            <x1-m>7.02008</x1-m>
+            <y1-m>15.2786</y1-m>
+            <z1-m>-0.873538</z1-m>
+            <x2-m>7.01939</x2-m>
+            <y2-m>14.6723</y2-m>
+            <z2-m>-0.921193</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>cover.R7</object-name>
+        <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+        <factor>-35</factor>
+        <axis>
+            <x1-m>9.72883</x1-m>
+            <y1-m>19.3466</y1-m>
+            <z1-m>-0.585758</z1-m>
+            <x2-m>9.7287</x2-m>
+            <y2-m>18.7036</y2-m>
+            <z2-m>-0.636415</z2-m>
         </axis>
     </animation>
 
