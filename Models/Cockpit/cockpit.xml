@@ -132,6 +132,34 @@
         </action>
     </animation>
 
+    <!-- Analog Instruments -->
+    <animation>
+        <type>rotate</type>
+        <object-name>stdby.ai</object-name>
+        <property>orientation/pitch-deg</property>
+        <center>
+            <x-m>-1.50119</x-m>
+            <y-m>-0.144811</y-m>
+            <z-m>-0.031761</z-m>
+        </center>
+        <axis>
+            <y>1</y>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>stdby.ai</object-name>
+        <property>orientation/roll-deg</property>
+        <center>
+            <x-m>-1.50119</x-m>
+            <y-m>-0.144811</y-m>
+            <z-m>-0.031761</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+
     <!-- Mulit-Function Display -->
     <animation>
         <type>select</type>
@@ -238,37 +266,6 @@
         </action>
     </animation>
 
-    <!-- CDU -->
-    <!-- Side buttons -->
-    <animation>
-        <type>pick</type>
-        <object-name>cdu.capt-L1</object-name>
-        <object-name>cdu.center-L1</object-name>
-        <object-name>cdu.fo-L1</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable> 
-            <binding>
-                <command>nasal</command>
-                <script>cdu.sidebuttons('L1');</script>
-            </binding>
-        </action>
-    </animation>
-    <animation>
-        <type>pick</type>
-        <object-name>cdu.capt-L2</object-name>
-        <object-name>cdu.center-L2</object-name>
-        <object-name>cdu.fo-L2</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable> 
-            <binding>
-                <command>nasal</command>
-                <script>cdu.sidebuttons('L2');</script>
-            </binding>
-        </action>
-    </animation>
-
     <!-- Glareshield -->
     <!-- EFIS Panel, Left -->
     <animation>
@@ -296,5 +293,65 @@
         <axis>
             <x>1</x>
         </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>efis.mins-setL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/efis[0]/inputs/minimums/mins-altitude</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>efis.mins-setL</object-name>
+        <property>controls/switches/efis[0]/mins-altitude</property>
+        <factor>45</factor>
+        <center>
+            <x-m>-1.15153</x-m>
+            <y-m>-0.362841</y-m>
+            <z-m>0.178918</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>efis.baro-modeL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/efis[0]/inputs/baro/mode</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>efis.baro-modelL</object-name>
+        <property>controls/switches/efis[0]/baro-mode</property>
+        <factor>-60</factor>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>efis.mins-rstL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/efis[0]/inputs/minimums/mins-altitude</property>
+                <value>250</value>
+            </binding>
+        </action>
     </animation>
 </PropertyList>

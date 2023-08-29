@@ -668,13 +668,6 @@
             <turnoff-light-l type="bool">0</turnoff-light-l>
             <turnoff-light-r type="bool">0</turnoff-light-r>
         </lighting>
-
-        <switches>
-            <efis>
-                <mins-mode type="int">0</mins-mode>
-            </efis>
-        </switches>
-
     </controls>
 
     <input>
