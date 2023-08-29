@@ -4,8 +4,10 @@
     <sim>
         <model>
             <livery>
-                <name type="string">Blank livery</name> <!-- livery name -->
-                <texture>Liveries/blank.png</texture> <!-- livery image -->
+                <name type="string">Blank</name>
+                <texture>blank-pax.png</texture>
+                <registration>------</registration>
+                <selcal>----</selcal>
 				<livery-change>1</livery-change>
             </livery>
         </model>
