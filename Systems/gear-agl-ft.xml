@@ -215,4 +215,17 @@
         <max>60</max>
     </filter>
 
+    <!-- Not related to gear tilt, but filters only work in files like this -->
+    <!-- Figure out a solution to this later -->
+    <filter>
+		<name>Minimums Mode</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<property>instrumentation/efis[0]/inputs/minimums/mins-mode</property>
+		</input>
+		<output>
+			<property>/controls/switches/efis[0]/mins-mode</property>
+		</output>
+	</filter>
 </PropertyList>

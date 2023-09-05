@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">El Al Israel Airlines (Tel Aviv, 100 Years)</name>
+                <texture>Liveries/PW-PAX/ELY-TLV.png</texture>
+                <operator>ELY</operator>
+                <registration>4X-ELA</registration>
+                <selcal>EK-CH</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

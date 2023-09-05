@@ -1086,8 +1086,6 @@
             <file>Aircraft/747-400/Nasal/it-autoflight-interface.nas</file>
         </itaf>
         <Boeing747>
-            <!--<file>Aircraft/747-400/Nasal/autopilot.nas</file>
-		<file>Aircraft/747-400/Nasal/autopilot-routemanager.nas</file>-->
             <file>Aircraft/747-400/Nasal/copilot.nas</file>
             <file>Aircraft/747-400/Nasal/doors.nas</file>
             <file>Aircraft/747-400/Models/Cockpit/Instruments/EICAS/doors.nas</file>
@@ -1101,7 +1099,7 @@
             <file>Aircraft/747-400/Models/Cockpit/Instruments/PFD/PFD.nas</file>
             <file>Aircraft/747-400/Models/Cockpit/Instruments/CDU/CDU.nas</file>
             <file>Aircraft/747-400/Models/Cockpit/Instruments/ND/ND.nas</file>
-            <file>Aircraft/747-400/Nasal/system.nas</file>
+            <file>Aircraft/747-400/Nasal/systems.nas</file>
             <file>Aircraft/747-400/Nasal/vspeeds.nas</file>
             <file>Aircraft/747-400/Nasal/wipers.nas</file>
             <file>Aircraft/Generic/limits.nas</file>

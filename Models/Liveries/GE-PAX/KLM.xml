@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">KLM Royal Dutch Airlines</name>
+                <texture>Liveries/GE-PAX/KLM.png</texture>
+                <operator>KLM</operator>
+                <registration>PH-BFA</registration>
+                <selcal>DJ-BG</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 
