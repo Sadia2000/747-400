@@ -11,6 +11,26 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 <b>www2 Fixes to fuselage model.</b><br><br>
 <b><a href=https://github.com/sriemmanuel787>sriemmanuel787</a> Liveries, paintkit, and so on</b>
 <br><br><br>
+# Variants
+Included:
+<ul>
+  <li>747-400 with General Electric CF6 engines</li>
+  <li>747-400 with Rolls-Royce RB211 engines</li>
+  <li>747-400 with Pratt & Whitney PW4000 engines</li>
+</ul>
+In progress
+<ul>
+  <li>747-400 Combi with General Electric CF6 engines</li>
+  <li>747-400ER with General Electric CF6 engines</li>
+  <li>747-400D (no winglets) with General Electric CF6 engines</li>
+  <li>747-400F with General Electric CF6 engines</li>
+  <li>747-400F with Pratt & Whitney PW4000 engines</li>
+  <li>747-400ERF with General Electric CF6 engines</li>
+  <li>747-400ERF with Pratt & Whitney PW4000 engines</li>
+  <li>747-400BCF with General Electric CF6 engines</li>
+  <li>747-400BCF with Rolls-Royce RB211 engines</li>
+  <li>747-400BCF with Pratt & Whitney PW4000 engines</li>
+</ul>
 # Change-Log
 <ul>
   <li>Improved base textures for the cockpit</li>
