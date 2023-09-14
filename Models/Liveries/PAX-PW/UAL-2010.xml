@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">United Air Lines (Continental)</name>
+                <texture>Liveries/PAX-PW/UAL-2010.png</texture>
+                <operator>UAL</operator>
+                <registration>N174UA</registration>
+                <selcal>FG-DP</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">United Air Lines (Star Alliance)</name>
+                <texture>Liveries/PAX-PW/UAL-SA.png</texture>
+                <operator>UAL</operator>
+                <registration>N121UA</registration>
+                <selcal>BQ-PS</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

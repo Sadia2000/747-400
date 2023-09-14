@@ -13,6 +13,8 @@ var doorR6 = aircraft.door.new("/controls/doors/r6", 6);
 var doorC1 = aircraft.door.new("/controls/doors/c1", 6);
 var doorC2 = aircraft.door.new("/controls/doors/c2", 6);
 var doorC3 = aircraft.door.new("/controls/doors/c3", 6);
+var doorC4 = aircraft.door.new("/controls/doors/c4", 6);
+var doorC5 = aircraft.door.new("/controls/doors/c-nose", 15);
 
 ## flightdeck seats
 var captain_seat = aircraft.door.new("/controls/seat/captain", 3);

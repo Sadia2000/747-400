@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">China Airlines (Retro)</name>
+                <texture>Liveries/PAX-PW/CAL-RETRO.png</texture>
+                <operator>CAL</operator>
+                <registration>3B-SMC</registration>
+                <selcal>AK-LM</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

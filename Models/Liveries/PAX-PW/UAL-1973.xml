@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">United Air Lines (Saul Bass)</name>
+                <texture>Liveries/PAX-PW/UAL-1973.png</texture>
+                <operator>UAL</operator>
+                <registration>N172UA</registration>
+                <selcal>FG-BP</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

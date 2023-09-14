@@ -210,13 +210,13 @@ var strobe = aircraft.light.new( "/sim/model/lights/strobe", [0.05, 3,], "/contr
 ## Liveries ##
 var variant = getprop("sim/aircraft-id");
 if (variant == "747-400-GE") {
-	aircraft.livery.init("Aircraft/747-400/Models/Liveries/GE-PAX");
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/PAX-GE");
 	print("success");
 } elsif (variant == "747-400-RR") {
-	aircraft.livery.init("Aircraft/747-400/Models/Liveries/RR-PAX");
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/PAX-RR");
 	print("success");
 } elsif (variant == "747-400-PW") {
-	aircraft.livery.init("Aircraft/747-400/Models/Liveries/PW-PAX");
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/PAX-PW");
 	print("success");
 } else {
 	print("An error occurred with the aircraft ID");
