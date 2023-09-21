@@ -687,6 +687,7 @@
     <system file="gear" />
     <system file="hydraulics" />
     <system file="systems" />
+    <system file="switch-lag"/>
 
     <flight_control name="747-400">
         <property>fcs/LE-flap-cmd-norm</property>

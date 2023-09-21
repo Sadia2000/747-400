@@ -342,7 +342,7 @@ setlistener("/instrumentation/eicas/display", func {
 		"view": [1024, 1024],
 		"mipmapping": 1
 	});
-	secondary_eicas.addPlacement({"node": "Lower-EICAS-Screen"});
+	secondary_eicas.addPlacement({"node": "screen.mfd"});
 	var display = getprop("/instrumentation/eicas/display");
 	var group = secondary_eicas.createGroup();
 	if (display == "DRS")

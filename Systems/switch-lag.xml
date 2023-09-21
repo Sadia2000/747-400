@@ -1,14 +1,26 @@
-<PropertyList>
-    <!-- EFIS switches -->
-    <filter>
-		<name>Minimums Mode</name>
-		<type>gain</type>
-		<gain>1.0</gain>
-		<input>
-			<property>instrumentation/efis[0]/inputs/minimums/mins-mode</property>
-		</input>
-		<output>
-			<property>/controls/switches/efis[0]/mins-mode</property>
-		</output>
-	</filter>
-</PropertyList>
+<?xml version="1.0"?>
+
+<!-- Boeing 747-400 Cockpit -->
+
+<system name="747-400: Cockpit">
+	
+	<channel name="Animations">
+		<lag_filter name="/controls/switches/efis[0]/mins-mode">
+			<input>/instrumentation/efis[0]/inputs/minimums/mins-mode</input>
+			<c1>20</c1>
+		</lag_filter>
+		<lag_filter name="/controls/switches/efis[0]/mins-altitude">
+			<input>/instrumentation/efis[0]/inputs/minimums/mins-altitude</input>
+			<c1>20</c1>
+		</lag_filter>
+		<lag_filter name="/controls/switches/efis[0]/baro-mode">
+			<input>/instrumentation/efis[0]/inputs/baro/mode</input>
+			<c1>20</c1>
+		</lag_filter>
+		<lag_filter name="/controls/switches/efis[0]/baro-press">
+			<input>/instrumentation/efis[0]/inputs/baro/pressure</input>
+			<c1>20</c1>
+		</lag_filter>
+	</channel>
+
+</system>

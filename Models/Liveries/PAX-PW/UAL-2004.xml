@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">United Air Lines (Tulip)</name>
+                <texture>Liveries/PAX-PW/UAL-2004.png</texture>
+                <operator>UAL</operator>
+                <registration>N173UA</registration>
+                <selcal>FG-CP</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

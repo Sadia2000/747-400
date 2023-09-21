@@ -1,6 +1,9 @@
 <PropertyList>
     <path>cockpit.ac</path>
     <main include="CDU.xml" omit-node="y"/>
+    <main include="standby-analog.xml" omit-node="y"/>
+
+    <!-- REMINDER: When unwrapping textures, unwrap the rudder crank, tiller, yoke, oxygen masks and switches together -->
 
     <!-- Default Illumination -->
     <animation>
@@ -115,6 +118,7 @@
         <type>pick</type>
         <object-name>ap.discL</object-name>
         <object-name>ap.discR</object-name>
+        <object-name>ap.disengage</object-name>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -130,34 +134,6 @@
                 </script>
             </binding>
         </action>
-    </animation>
-
-    <!-- Analog Instruments -->
-    <animation>
-        <type>rotate</type>
-        <object-name>stdby.ai</object-name>
-        <property>orientation/pitch-deg</property>
-        <center>
-            <x-m>-1.50119</x-m>
-            <y-m>-0.144811</y-m>
-            <z-m>-0.031761</z-m>
-        </center>
-        <axis>
-            <y>1</y>
-        </axis>
-    </animation>
-    <animation>
-        <type>rotate</type>
-        <object-name>stdby.ai</object-name>
-        <property>orientation/roll-deg</property>
-        <center>
-            <x-m>-1.50119</x-m>
-            <y-m>-0.144811</y-m>
-            <z-m>-0.031761</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-        </axis>
     </animation>
 
     <!-- Mulit-Function Display -->
@@ -296,8 +272,9 @@
     </animation>
 
     <animation>
-        <type>pick</type>
+        <type>knob</type>
         <object-name>efis.mins-setL</object-name>
+        <factor>0</factor>
         <action>
             <button>0</button>
             <repeatable>true</repeatable>
@@ -320,6 +297,20 @@
         <axis>
             <x>1</x>
         </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>efis.mins-rstL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/efis[0]/inputs/minimums/mins-altitude</property>
+                <value>250</value>
+            </binding>
+        </action>
     </animation>
 
     <animation>
@@ -350,16 +341,35 @@
     </animation>
 
     <animation>
-        <type>pick</type>
-        <object-name>efis.mins-rstL</object-name>
+        <type>knob</type>
+        <object-name>efis.baro-setL</object-name>
+        <factor>0</factor>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
-                <command>property-assign</command>
-                <property>instrumentation/efis[0]/inputs/minimums/mins-altitude</property>
-                <value>250</value>
+                <command>property-adjust</command>
+                <property>instrumentation/efis[0]/inputs/baro/pressure</property>
             </binding>
         </action>
     </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>efis.baro-setL</object-name>
+        <property>controls/switches/efis[0]/baro-press</property>
+        <factor>45</factor>
+        <center>
+            <x-m>-1.16077</x-m>
+            <y-m>-0.277159</y-m>
+            <z-m>0.178918</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+        </axis>
+    </animation>
+
+    <!-- Autopilot Panel -->
+    <!-- <animation>
+        <type>pick</type>
+    </animation> -->
 </PropertyList>
