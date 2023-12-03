@@ -298,7 +298,6 @@
             <x>1</x>
         </axis>
     </animation>
-
     <animation>
         <type>pick</type>
         <object-name>efis.mins-rstL</object-name>
@@ -366,6 +365,19 @@
         <axis>
             <x>1</x>
         </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>efis.baro-rstL</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/efis[0]/inputs/baro/pressure</property>
+                <value>29.92</value>
+            </binding>
+        </action>
     </animation>
 
     <!-- Autopilot Panel -->
