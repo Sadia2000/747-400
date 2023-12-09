@@ -985,7 +985,8 @@
                 <RTE>
                     <num type="double">0</num>
                     <currentpage type="string">0</currentpage>
-                    <input type="string"></input>
+		    <input type="string">AGDAL</input>
+                    <index type="double">0</index>
                     <firststarwp type="double">9999</firststarwp>
                     <laststarwp type="double">9999</laststarwp>
                     <missedapp type="double">0</missedapp>
