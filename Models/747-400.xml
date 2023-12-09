@@ -7,6 +7,173 @@
         <object-name>fuselage</object-name>
     </effect>
 
+
+    <!--Engine contrails and fire effects-->
+  <model>
+        <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+        <name>enginefire.1</name>
+        <condition>
+                <property>engines/engine[0]/on-fire</property>
+        </condition>
+        <offsets>
+            <x-m> 10.5 </x-m>
+            <y-m>-21.23</y-m>
+            <z-m> -2.27</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+        <name>engineext.1</name>
+        <condition>
+            <property>engines/engine[0]/extinguished</property>
+        </condition>
+        <offsets>
+            <x-m> 10.5 </x-m>
+            <y-m>-21.23</y-m>
+            <z-m> -2.27</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+        <name>enginesmoke.1</name>
+        <condition>
+            <property>engines/engine[0]/smoke</property>
+        </condition>
+        <offsets>
+            <x-m> 17.5 </x-m>
+            <y-m>-21.23</y-m>
+            <z-m> -2.27</z-m>
+        </offsets>
+    </model>
+
+
+
+
+  <model>
+        <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+        <name>enginefire.2</name>
+        <condition>
+                <property>engines/engine[1]/on-fire</property>
+        </condition>
+        <offsets>
+            <x-m> 3 </x-m>
+            <y-m> -12.0 </y-m>
+            <z-m> -3.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+        <name>engineext.2</name>
+        <condition>
+            <property>engines/engine[1]/extinguished</property>
+        </condition>
+        <offsets>
+            <x-m> 3 </x-m>
+            <y-m> -12.0 </y-m>
+            <z-m> -3.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+        <name>enginesmoke.2</name>
+        <condition>
+            <property>engines/engine[1]/smoke</property>
+        </condition>
+        <offsets>
+            <x-m> 10 </x-m>
+            <y-m> -12.0 </y-m>
+            <z-m> -3.0 </z-m>
+        </offsets>
+    </model>
+
+
+
+  <model>
+        <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+        <name>enginefire.3</name>
+        <condition>
+                <property>engines/engine[2]/on-fire</property>
+        </condition>
+        <offsets>
+            <x-m> 3 </x-m>
+            <y-m> 12.0 </y-m>
+            <z-m> -3.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+        <name>engineext.3</name>
+        <condition>
+            <property>engines/engine[2]/extinguished</property>
+        </condition>
+        <offsets>
+            <x-m> 3 </x-m>
+            <y-m> 12.0 </y-m>
+            <z-m> -3.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+        <name>enginesmoke.3</name>
+        <condition>
+            <property>engines/engine[2]/smoke</property>
+        </condition>
+        <offsets>
+            <x-m> 10 </x-m>
+            <y-m> 12.0 </y-m>
+            <z-m> -3.0 </z-m>
+        </offsets>
+    </model>
+
+
+
+  <model>
+        <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
+        <name>enginefire.4</name>
+        <condition>
+                <property>engines/engine[3]/on-fire</property>
+        </condition>
+        <offsets>
+            <x-m> 10.5 </x-m>
+            <y-m>21.23</y-m>
+            <z-m> -2.27</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/ext.xml</path>
+        <name>engineext.4</name>
+        <condition>
+            <property>engines/engine[3]/extinguished</property>
+        </condition>
+        <offsets>
+            <x-m> 10.5 </x-m>
+            <y-m>21.23</y-m>
+            <z-m> -2.27</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/747-400/Models/Effects/firesmoke.xml</path>
+        <name>enginesmoke.4</name>
+        <condition>
+            <property>engines/engine[3]/smoke</property>
+        </condition>
+        <offsets>
+            <x-m> 17.5 </x-m>
+            <y-m>21.23</y-m>
+            <z-m> -2.27</z-m>
+        </offsets>
+    </model>
+
+
+
     <!-- Engine variants -->
     <model>
         <name>engines-ge</name>
