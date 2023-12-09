@@ -384,11 +384,11 @@ titre = "RTE 1";
 pagenum = currentpage~"/"~maxpage;
 r1 = "TO";
 l1 = "VIA";
-r2 = routepage()[0];
-r4 = routepage()[1];
-r6 = routepage()[2];
-r8 = routepage()[3];
-r10 = routepage()[4];
+r2 = routepage()[0].id;
+r4 = routepage()[1].id;
+r6 = routepage()[2].id;
+r8 = routepage()[3].id;
+r10 = routepage()[4].id;
 l2 = viacolumn()[0];
 l4 = viacolumn()[1];
 l6 = viacolumn()[2];
@@ -633,16 +633,75 @@ r4 = "<SEL>"~addspace(fp.approach_trans.id,"left");
 if(title == "rte choose waypoint"){
 titre = "SELECT DESIRED WPT";
 pagenum = currentpage~"/"~maxpage;
-l1 = multiplewaypointid()[0]~" "~multiplewaypoint("type")[0];
-l2 = multiplewaypoint("frequency")[0]~" "~multiplewaypoint("lat")[0]~" "~multiplewaypoint("lon")[0];
-l3 = multiplewaypointid()[1]~" "~multiplewaypoint("type")[1];
-l4 = multiplewaypoint("frequency")[1]~" "~multiplewaypoint("lat")[1]~" "~multiplewaypoint("lon")[1];
-l5 = multiplewaypointid()[2]~" "~multiplewaypoint("type")[2];
-l6 = multiplewaypoint("frequency")[2]~" "~multiplewaypoint("lat")[2]~" "~multiplewaypoint("lon")[2];
-l7 = multiplewaypointid()[3]~" "~multiplewaypoint("type")[3];
-l8 = multiplewaypoint("frequency")[3]~" "~multiplewaypoint("lat")[3]~" "~multiplewaypoint("lon")[3];
-l9 = multiplewaypointid()[4]~" "~multiplewaypoint("type")[4];
-l10 = multiplewaypoint("frequency")[4]~" "~multiplewaypoint("lat")[4]~" "~multiplewaypoint("lon")[4];
+l1 = multiplewaypoint()[0].id;
+if(l1 != " "){
+if(contains(findNavaidsByID(l1),multiplewaypoint()[0])){
+l2 = sprintf("%.2f", multiplewaypoint()[0].frequency / 100);
+l1 = l1~" "~multiplewaypoint()[0].type;
+}
+r2 = latdeg2dmm(multiplewaypoint()[0].lat)~" "~londeg2dmm(multiplewaypoint()[0].lon);
+}
+l3 = multiplewaypoint()[1].id;
+if(l3 != " "){
+if(contains(findNavaidsByID(l3),multiplewaypoint()[1])){
+l4 = sprintf("%.2f", multiplewaypoint()[1].frequency / 100);
+l3 = l3~" "~multiplewaypoint()[1].type;
+}
+r4 = latdeg2dmm(multiplewaypoint()[1].lat)~" "~londeg2dmm(multiplewaypoint()[1].lon);
+}
+l5 = multiplewaypoint()[2].id;
+if(l5 != " "){
+if(contains(findNavaidsByID(l5),multiplewaypoint()[2])){
+l6 = sprintf("%.2f", multiplewaypoint()[2].frequency / 100);
+l5 = l5~" "~multiplewaypoint()[2].type;
+}
+r6 = latdeg2dmm(multiplewaypoint()[2].lat)~" "~londeg2dmm(multiplewaypoint()[2].lon);
+}
+l7 = multiplewaypoint()[3].id;
+if(l7 != " "){
+if(contains(findNavaidsByID(l7),multiplewaypoint()[3])){
+l8 = sprintf("%.2f", multiplewaypoint()[3].frequency / 100);
+l7 = l7~" "~multiplewaypoint()[3].type;
+}
+r8 = latdeg2dmm(multiplewaypoint()[3].lat)~" "~londeg2dmm(multiplewaypoint()[3].lon);
+}
+l9 = multiplewaypoint()[4].id;
+if(l9 != " "){
+if(contains(findNavaidsByID(l9),multiplewaypoint()[4])){
+l10 = sprintf("%.2f", multiplewaypoint()[4].frequency / 100);
+l9 = l9~" "~multiplewaypoint()[4].type;
+}
+r10 = latdeg2dmm(multiplewaypoint()[4].lat)~" "~londeg2dmm(multiplewaypoint()[4].lon);
+}
+}
+
+if(title == "LEGS"){
+titre = "ACT RTE 1 LEGS";
+pagenum = currentpage~"/"~maxpage;
+#wp names
+l2=legspage("name")[0];
+l4=legspage("name")[1];
+l6=legspage("name")[2];
+l8=legspage("name")[3];
+l10=legspage("name")[4];
+#wp bearing
+l1 = legspage("bearing")[0];
+l3 = legspage("bearing")[1];
+l5 = legspage("bearing")[2];
+l7 = legspage("bearing")[3];
+l9 = legspage("bearing")[4];
+#wp distance from prev wp
+c1 = legspage("distance")[0];
+c3 = legspage("distance")[1];
+c5 = legspage("distance")[2];
+c7 = legspage("distance")[3];
+c9 = legspage("distance")[4];
+#constraints
+r2 = legspage("cstr")[0];
+r4 = legspage("cstr")[1];
+r6 = legspage("cstr")[2];
+r8 = legspage("cstr")[3];
+r10 = legspage("cstr")[4];
 }
 
     setprop("/instrumentation/cdu/lines/l1", l1);
