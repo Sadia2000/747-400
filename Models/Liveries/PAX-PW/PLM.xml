@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Wamos Air</name>
+                <texture>Liveries/PAX-PW/PLM.png</texture>
+                <operator>PLN</operator>
+                <registration>EC-MNM</registration>
+                <selcal>CS-MP</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 
