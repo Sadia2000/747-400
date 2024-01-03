@@ -6,6 +6,26 @@ Discord server link: <https://discord.gg/jZPuxwNmgw>.
 
 ![747-400](Splash/splash1.png)
 
+## Variants
+
+### Included
+
+* 747-400 with General Electric CF6 engines
+* 747-400 with Rolls-Royce RB211 engines
+* 747-400 with Pratt & Whitney PW4000 engines
+
+### In progress
+* 747-400 Combi with General Electric CF6 engines
+* 747-400ER with General Electric CF6 engines
+* 747-400D (no winglets) with General Electric CF6 engines
+* 747-400F with General Electric CF6 engines
+* 747-400F with Pratt & Whitney PW4000 engines
+* 747-400ERF with General Electric CF6 engines
+* 747-400ERF with Pratt & Whitney PW4000 engines
+* 747-400BCF with General Electric CF6 engines
+* 747-400BCF with Rolls-Royce RB211 engines
+* 747-400BCF with Pratt & Whitney PW4000 engines
+
 ## Currently being developed by
 
 * [**Itmam Mahmud (aka Sadia2000/AVIONADE)**](https://github.com/Sadia2000) - Remodel of the Entire Cockpit.
