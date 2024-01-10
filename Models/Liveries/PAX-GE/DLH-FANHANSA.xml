@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Lufthansa (Fanhansa)</name>
+                <texture>Liveries/PAX-GE/DLH-FANHANSA.png</texture>
+                <operator>DLH</operator>
+                <registration>D-ABVS</registration>
+                <selcal>MR-DJ</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

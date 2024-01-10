@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<PropertyList include="747-400-common.xml">
+    <sim>
+        <description>Boeing 747-400 Extended Range (General Electric CF6)</description>
+        <aero>747-400ER-GE</aero>
+        <variant-of>747-400-GE</variant-of>
+    </sim>
+</PropertyList>

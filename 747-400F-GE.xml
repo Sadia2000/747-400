@@ -61,7 +61,6 @@
         <htailarm unit="FT"> 106.63 </htailarm>
         <vtailarea unit="FT2"> 1060 </vtailarea>
         <vtailarm unit="FT"> 0 </vtailarm>
-        <wing_incidence unit="DEG"> 2 </wing_incidence>
         <location name="AERORP" unit="IN">
             <x> 1340 </x> <!-- located at 25% MAC = 1258+0.25*327.78, automatically moved to coincide
             with CoG -->

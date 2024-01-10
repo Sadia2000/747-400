@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Lufthansa (FC Bayern)</name>
+                <texture>Liveries/PAX-GE/DLH-BAYERN.png</texture>
+                <operator>DLH</operator>
+                <registration>D-ABVU</registration>
+                <selcal>CD-AP</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

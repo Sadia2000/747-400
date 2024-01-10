@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<PropertyList include="747-400F-common.xml">
+    <sim>
+        <description>Boeing 747-400 Freighter (General Electric CF6)</description>
+        <aero>747-400F-GE</aero>
+        <primary-set>true</primary-set>
+    </sim>
+</PropertyList>

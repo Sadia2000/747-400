@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Transaero</name>
+                <texture>Liveries/PAX-GE/TSO.png</texture>
+                <operator>TSO</operator>
+                <registration>EI-XLK</registration>
+                <selcal>EG-AL</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

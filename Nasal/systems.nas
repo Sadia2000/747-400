@@ -187,6 +187,7 @@ var autostart = func {
 	setprop("/controls/pneumatic/pack-control[1]",1);
 	setprop("/controls/pneumatic/pack-control[2]",1);
 	setprop("/controls/pneumatic/pack-control[3]",1);
+	setprop("/controls/engines/engine[4]/cutoff", 0);
 	#setprop("/controls/engines/auto-ignition",1);
 	var autostartCutoff = func {
 		if (getprop("/engines/engine[0]/n2") > 17) {
@@ -217,6 +218,36 @@ if (variant == "747-400-GE") {
 	print("success");
 } elsif (variant == "747-400-PW") {
 	aircraft.livery.init("Aircraft/747-400/Models/Liveries/PAX-PW");
+	print("success");
+} elsif (variant == "747-400COMBI-GE") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/COMBI-GE");
+	print("success");
+} elsif (variant == "747-400ER-GE") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/ER-GE");
+	print("success");
+} elsif (variant == "747-400D-GE") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/D-GE");
+	print("success");
+} elsif (variant == "747-400F-GE") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/F-GE");
+	print("success");
+} elsif (variant == "747-400F-PW") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/F-PW");
+	print("success");
+} elsif (variant == "747-400ERF-GE") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/ERF-GE");
+	print("success");
+} elsif (variant == "747-400ERF-PW") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/ERF-PW");
+	print("success");
+} elsif (variant == "747-400BCF-GE") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/BCF-GE");
+	print("success");
+} elsif (variant == "747-400BCF-RR") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/BCF-RR");
+	print("success");
+} elsif (variant == "747-400BCF-PW") {
+	aircraft.livery.init("Aircraft/747-400/Models/Liveries/BCF-PW");
 	print("success");
 } else {
 	print("An error occurred with the aircraft ID");

@@ -1520,7 +1520,7 @@
         <object-name>logo.right1</object-name>
         <object-name>logo.right2</object-name>
         <property>fdm/jsbsim/fcs/stabilizer/pos-rad</property>
-        <factor>57.2958</factor>
+        <factor>-57.2958</factor>
         <axis>
             <x1-m>32.1189</x1-m>
             <y1-m>1.48862</y1-m>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Lufthansa (Star Alliance)</name>
+                <texture>Liveries/PAX-GE/DLH-SA.png</texture>
+                <operator>DLH</operator>
+                <registration>D-ABVU</registration>
+                <selcal>BF-LQ</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 
