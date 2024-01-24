@@ -1,19 +1,20 @@
 <PropertyList>
     <path>747-400.ac</path>
-    <main include="doors.xml" omit-node="y"/>
-    <main include="gear.xml" omit-node="y"/>
+    <main include="doors.xml" omit-node="y" />
+    <main include="gear.xml" omit-node="y" />
     <effect>
         <inherits-from>Aircraft/747-400/Models/Effects/bumpspec</inherits-from>
         <object-name>fuselage</object-name>
     </effect>
 
 
-    <!--Engine contrails and fire effects-->
-  <model>
+    <!--Engine
+    contrails and fire effects-->
+    <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.1</name>
         <condition>
-                <property>engines/engine[0]/on-fire</property>
+            <property>engines/engine[0]/on-fire</property>
         </condition>
         <offsets>
             <x-m> 10.5 </x-m>
@@ -49,13 +50,11 @@
     </model>
 
 
-
-
-  <model>
+    <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.2</name>
         <condition>
-                <property>engines/engine[1]/on-fire</property>
+            <property>engines/engine[1]/on-fire</property>
         </condition>
         <offsets>
             <x-m> 3 </x-m>
@@ -91,12 +90,11 @@
     </model>
 
 
-
-  <model>
+    <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.3</name>
         <condition>
-                <property>engines/engine[2]/on-fire</property>
+            <property>engines/engine[2]/on-fire</property>
         </condition>
         <offsets>
             <x-m> 3 </x-m>
@@ -132,12 +130,11 @@
     </model>
 
 
-
-  <model>
+    <model>
         <path>Aircraft/747-400/Models/Effects/enginefire.xml</path>
         <name>enginefire.4</name>
         <condition>
-                <property>engines/engine[3]/on-fire</property>
+            <property>engines/engine[3]/on-fire</property>
         </condition>
         <offsets>
             <x-m> 10.5 </x-m>
@@ -173,7 +170,6 @@
     </model>
 
 
-
     <!-- Engine variants -->
     <model>
         <name>engines-ge</name>
@@ -201,10 +197,16 @@
         <type>select</type>
         <object-name>engines-ge</object-name>
         <condition>
-            <equals>
-                <property>sim/aircraft-id</property>
-                <value>747-400-GE</value>
-            </equals>
+            <or>
+                <equals>
+                    <property>sim/aircraft-id</property>
+                    <value>747-400-GE</value>
+                </equals>
+                <equals>
+                    <property>sim/aircraft-id</property>
+                    <value>747-400ER-GE</value>
+                </equals>
+            </or>
         </condition>
     </animation>
     <animation>
@@ -223,7 +225,7 @@
         <path>Aircraft/747-400/Models/Autopush/Goldhofert.xml</path>
         <offsets>
             <x-m>-21.993</x-m>
-            <y-m>  0.000</y-m>
+            <y-m> 0.000</y-m>
             <z-m> -5.625</z-m>
         </offsets>
     </model>
@@ -283,7 +285,7 @@
             <z-m>2.09761</z-m>
         </offsets>
     </model>
-    
+
     <!-- Wing Flex -->
     <animation>
         <type>rotate</type>
@@ -2547,7 +2549,7 @@
         <spot-cutoff>75</spot-cutoff>
         <range-m>32</range-m>
     </light>
-    
+
     <!-- Light Conditions -->
     <animation>
         <type>material</type>
@@ -2738,7 +2740,7 @@
                     <value>0</value>
                 </equals>
             </and>
-            
+
         </condition>
     </animation>
     <animation>
@@ -2801,7 +2803,7 @@
                     <value>0</value>
                 </equals>
             </and>
-            
+
         </condition>
     </animation>
     <animation>
