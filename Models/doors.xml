@@ -578,7 +578,7 @@
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>door.L10</object-name>
+        <object-name>door.L6</object-name>
         <object-name>overlay.doorL6</object-name>
         <property>controls/doors/l6/position-norm</property>
         <interpolation>
@@ -1088,7 +1088,7 @@
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>door.R10</object-name>
+        <object-name>door.R6</object-name>
         <object-name>overlay.doorR6</object-name>
         <property>controls/doors/r6/position-norm</property>
         <interpolation>

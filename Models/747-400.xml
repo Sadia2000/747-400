@@ -204,7 +204,15 @@
                 </equals>
                 <equals>
                     <property>sim/aircraft-id</property>
+                    <value>747-400M-GE</value>
+                </equals>
+                <equals>
+                    <property>sim/aircraft-id</property>
                     <value>747-400ER-GE</value>
+                </equals>
+                <equals>
+                    <property>sim/aircraft-id</property>
+                    <value>747-400F-GE</value>
                 </equals>
             </or>
         </condition>

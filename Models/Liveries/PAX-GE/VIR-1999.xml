@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Virgin Atlantic (Tubular Belle)</name>
+                <texture>Liveries/PAX-GE/VIR-1999.png</texture>
+                <operator>VIR</operator>
+                <registration>G-VHOT</registration>
+                <selcal>EJ-QS</selcal>
+				<livery-change>1</livery-change>
+            </livery>
+        </model>
+    </sim>
+
+</PropertyList> 

@@ -1,5 +1,5 @@
 <PropertyList>
-    <path>747-400.ac</path>
+    <path>747-400F.ac</path>
 
     <!-- Cargo Door Animations -->
     <animation>
@@ -194,6 +194,108 @@
             <x2-m>-20.9149</x2-m>
             <y2-m>-2.87456</y2-m>
             <z2-m>0.232729</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>door.L6</object-name>
+        <object-name>overlay.doorL6</object-name>
+        <object-name>hinge.L9</object-name>
+        <object-name>hinge.L10</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+                <script>Boeing747.doorL6.toggle();</script>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>door.L6</object-name>
+        <object-name>overlay.doorL6</object-name>
+        <object-name>hinge.L9</object-name>
+        <object-name>hinge.L10</object-name>
+        <property>controls/doors/l6/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>90</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>24.4689</x1-m>
+            <y1-m>-2.79251</y1-m>
+            <z1-m>0.966724</z1-m>
+            <x2-m>24.4697</x2-m>
+            <y2-m>-2.7417</y2-m>
+            <z2-m>0.496524</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>hinge.L10</object-name>
+        <object-name>door.L6</object-name>
+        <object-name>overlay.doorL6</object-name>
+        <property>controls/doors/l6/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.25</ind>
+                <dep>-45</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>24.5833</x1-m>
+            <y1-m>-2.78002</y1-m>
+            <z1-m>0.966549</z1-m>
+            <x2-m>24.5839</x2-m>
+            <y2-m>-2.72487</y2-m>
+            <z2-m>0.49652</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>door.L6</object-name>
+        <object-name>overlay.doorL6</object-name>
+        <property>controls/doors/l6/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.25</ind>
+                <dep>45</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>90</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x1-m>24.8231</x1-m>
+            <y1-m>-2.744</y1-m>
+            <z1-m>0.966729</z1-m>
+            <x2-m>24.8238</x2-m>
+            <y2-m>-2.68492</y2-m>
+            <z2-m>0.496529</z2-m>
         </axis>
     </animation>
 </PropertyList>

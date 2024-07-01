@@ -219,7 +219,7 @@ if (variant == "747-400-GE") {
 } elsif (variant == "747-400-PW") {
 	aircraft.livery.init("Aircraft/747-400/Models/Liveries/PAX-PW");
 	print("success");
-} elsif (variant == "747-400COMBI-GE") {
+} elsif (variant == "747-400M-GE") {
 	aircraft.livery.init("Aircraft/747-400/Models/Liveries/COMBI-GE");
 	print("success");
 } elsif (variant == "747-400ER-GE") {

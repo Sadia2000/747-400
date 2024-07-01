@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<PropertyList include="747-400F-common.xml">
+    <sim>
+        <description>Boeing 747-400 Freighter (Pratt and Whitney PW4000)</description>
+        <aero>747-400F-PW</aero>
+        <variant-of>747-400F-GE</variant-of>
+    </sim>
+</PropertyList>
