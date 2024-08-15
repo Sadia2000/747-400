@@ -2,6 +2,7 @@
 <PropertyList>
 
     <sim>
+        <gui n="0" include="gui/it-gui.xml" />
         <long-description>The 747-400 is a four-engine, jet passanger aircraft, produced by Boeing since 1989 to 2009.</long-description>
         <tags>
             <tag>passenger</tag>
