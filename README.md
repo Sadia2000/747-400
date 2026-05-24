@@ -5,7 +5,6 @@ Discord server link: https://discord.gg/jZPuxwNmgw.<br><br>
 
 # Currently being developed by:
 <b><a href=https://github.com/Sadia2000>Itmam Mahmud (aka Sadia2000/AVIONADE)</a> Working on a total remodel of the entire cockpit</b><br><br>
-<b><a href=https://github.com/mohamedaissa>Mohamed Aissa (aka Uncle Aissa)</a> Working on Enhancing systems, Cockpit 3D model, and new effects</b><br><br>
 <b><a href=https://github.com/SP-NTX>SP-NTX (aka NTX)</a> Working on Enhancing systems, Cockpit Textures, new UV Map and paintkit, liveries</b><br><br>
 <b><a href=https://github.com/Hornet979>Hornet (aka Hornet979)</a> Working on Cockpit Textures, effects and reflections.</b><br><br>
 <b>www2 Fixes to fuselage model.</b><br><br>
